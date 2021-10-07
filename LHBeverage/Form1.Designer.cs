@@ -36,16 +36,18 @@ namespace LHBeverage
             // 
             // HomePanel
             // 
-            this.HomePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.HomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.HomePanel.Location = new System.Drawing.Point(0, 0);
+            this.HomePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.HomePanel.BackColor = System.Drawing.Color.White;
+            this.HomePanel.Location = new System.Drawing.Point(100, 80);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(1264, 681);
+            this.HomePanel.Size = new System.Drawing.Size(1164, 720);
             this.HomePanel.TabIndex = 0;
             // 
             // NavigationPanel
             // 
-            this.NavigationPanel.BackColor = System.Drawing.Color.DarkRed;
+            this.NavigationPanel.BackColor = System.Drawing.Color.White;
             this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.NavigationPanel.Location = new System.Drawing.Point(0, 0);
             this.NavigationPanel.Name = "NavigationPanel";
@@ -54,7 +56,7 @@ namespace LHBeverage
             // 
             // SearchPanel
             // 
-            this.SearchPanel.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.SearchPanel.BackColor = System.Drawing.Color.White;
             this.SearchPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.SearchPanel.Location = new System.Drawing.Point(100, 0);
             this.SearchPanel.Name = "SearchPanel";
