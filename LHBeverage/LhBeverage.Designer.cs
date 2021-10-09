@@ -59,16 +59,37 @@ namespace LHBeverage
             this.ProductLargeBtn = new System.Windows.Forms.Button();
             this.HomeLargeBtn = new System.Windows.Forms.Button();
             this.MenuLargeBtn = new System.Windows.Forms.Button();
+            this.BigCard_panel = new System.Windows.Forms.Panel();
+            this.DesShortBC_lbl = new System.Windows.Forms.Label();
+            this.BuyBC_btn = new System.Windows.Forms.Button();
+            this.priceDrinksBC_lbl = new System.Windows.Forms.Label();
+            this.HotSaleBC_lbl = new System.Windows.Forms.Label();
+            this.nameDrinkBC_lbl = new System.Windows.Forms.Label();
+            this.BigCard_picture = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
+            this.AccountName_lbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nameCompany_lbl = new System.Windows.Forms.Label();
+            this.searchIcon_btn = new System.Windows.Forms.Button();
+            this.search_tb = new System.Windows.Forms.TextBox();
             this.HomePanel.SuspendLayout();
             this.ProductBeveragePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).BeginInit();
             this.NavigationPanel.SuspendLayout();
+            this.SearchPanel.SuspendLayout();
             this.NavigationLargePanel.SuspendLayout();
+            this.BigCard_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HomePanel
             // 
             this.HomePanel.BackColor = System.Drawing.Color.White;
+            this.HomePanel.Controls.Add(this.BigCard_panel);
             this.HomePanel.Controls.Add(this.ProductBeveragePanel);
             this.HomePanel.Location = new System.Drawing.Point(80, 80);
             this.HomePanel.Name = "HomePanel";
@@ -255,6 +276,7 @@ namespace LHBeverage
             // SearchPanel
             // 
             this.SearchPanel.BackColor = System.Drawing.Color.White;
+            this.SearchPanel.Controls.Add(this.panel1);
             this.SearchPanel.Location = new System.Drawing.Point(80, 0);
             this.SearchPanel.Name = "SearchPanel";
             this.SearchPanel.Size = new System.Drawing.Size(1184, 80);
@@ -455,11 +477,175 @@ namespace LHBeverage
             this.MenuLargeBtn.MouseLeave += new System.EventHandler(this.BtnSpecial_Leave);
             this.MenuLargeBtn.MouseHover += new System.EventHandler(this.BtnSpecial_Hover);
             // 
+            // BigCard_panel
+            // 
+            this.BigCard_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(84)))));
+            this.BigCard_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BigCard_panel.Controls.Add(this.DesShortBC_lbl);
+            this.BigCard_panel.Controls.Add(this.BuyBC_btn);
+            this.BigCard_panel.Controls.Add(this.priceDrinksBC_lbl);
+            this.BigCard_panel.Controls.Add(this.HotSaleBC_lbl);
+            this.BigCard_panel.Controls.Add(this.nameDrinkBC_lbl);
+            this.BigCard_panel.Controls.Add(this.BigCard_picture);
+            this.BigCard_panel.Location = new System.Drawing.Point(90, 15);
+            this.BigCard_panel.Name = "BigCard_panel";
+            this.BigCard_panel.Size = new System.Drawing.Size(512, 245);
+            this.BigCard_panel.TabIndex = 4;
+            // 
+            // DesShortBC_lbl
+            // 
+            this.DesShortBC_lbl.AutoSize = true;
+            this.DesShortBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DesShortBC_lbl.ForeColor = System.Drawing.Color.MintCream;
+            this.DesShortBC_lbl.Location = new System.Drawing.Point(290, 113);
+            this.DesShortBC_lbl.Name = "DesShortBC_lbl";
+            this.DesShortBC_lbl.Size = new System.Drawing.Size(215, 17);
+            this.DesShortBC_lbl.TabIndex = 5;
+            this.DesShortBC_lbl.Text = "Green tea with a little sweetness \r\n";
+            // 
+            // BuyBC_btn
+            // 
+            this.BuyBC_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(143)))), ((int)(((byte)(209)))));
+            this.BuyBC_btn.FlatAppearance.BorderSize = 0;
+            this.BuyBC_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuyBC_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuyBC_btn.ForeColor = System.Drawing.Color.White;
+            this.BuyBC_btn.Location = new System.Drawing.Point(390, 165);
+            this.BuyBC_btn.Name = "BuyBC_btn";
+            this.BuyBC_btn.Size = new System.Drawing.Size(104, 42);
+            this.BuyBC_btn.TabIndex = 4;
+            this.BuyBC_btn.Text = "Buy now!!";
+            this.BuyBC_btn.UseVisualStyleBackColor = false;
+            // 
+            // priceDrinksBC_lbl
+            // 
+            this.priceDrinksBC_lbl.AutoSize = true;
+            this.priceDrinksBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceDrinksBC_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.priceDrinksBC_lbl.Location = new System.Drawing.Point(289, 176);
+            this.priceDrinksBC_lbl.Name = "priceDrinksBC_lbl";
+            this.priceDrinksBC_lbl.Size = new System.Drawing.Size(32, 24);
+            this.priceDrinksBC_lbl.TabIndex = 3;
+            this.priceDrinksBC_lbl.Text = "$5";
+            // 
+            // HotSaleBC_lbl
+            // 
+            this.HotSaleBC_lbl.AutoSize = true;
+            this.HotSaleBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HotSaleBC_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(149)))));
+            this.HotSaleBC_lbl.Location = new System.Drawing.Point(290, 10);
+            this.HotSaleBC_lbl.Name = "HotSaleBC_lbl";
+            this.HotSaleBC_lbl.Size = new System.Drawing.Size(60, 17);
+            this.HotSaleBC_lbl.TabIndex = 2;
+            this.HotSaleBC_lbl.Text = "Hot sale";
+            // 
+            // nameDrinkBC_lbl
+            // 
+            this.nameDrinkBC_lbl.AutoSize = true;
+            this.nameDrinkBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameDrinkBC_lbl.ForeColor = System.Drawing.Color.White;
+            this.nameDrinkBC_lbl.Location = new System.Drawing.Point(289, 49);
+            this.nameDrinkBC_lbl.Name = "nameDrinkBC_lbl";
+            this.nameDrinkBC_lbl.Size = new System.Drawing.Size(177, 48);
+            this.nameDrinkBC_lbl.TabIndex = 1;
+            this.nameDrinkBC_lbl.Text = "Black sugar pearl \r\nmilk tea";
+            // 
+            // BigCard_picture
+            // 
+            this.BigCard_picture.Image = ((System.Drawing.Image)(resources.GetObject("BigCard_picture.Image")));
+            this.BigCard_picture.Location = new System.Drawing.Point(0, 0);
+            this.BigCard_picture.Name = "BigCard_picture";
+            this.BigCard_picture.Size = new System.Drawing.Size(270, 245);
+            this.BigCard_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BigCard_picture.TabIndex = 0;
+            this.BigCard_picture.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.Avatar_picturebox);
+            this.panel1.Controls.Add(this.AccountName_lbl);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.nameCompany_lbl);
+            this.panel1.Controls.Add(this.searchIcon_btn);
+            this.panel1.Controls.Add(this.search_tb);
+            this.panel1.Location = new System.Drawing.Point(4, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1184, 80);
+            this.panel1.TabIndex = 5;
+            // 
+            // Avatar_picturebox
+            // 
+            this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
+            this.Avatar_picturebox.Location = new System.Drawing.Point(1127, 16);
+            this.Avatar_picturebox.Name = "Avatar_picturebox";
+            this.Avatar_picturebox.Size = new System.Drawing.Size(44, 50);
+            this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Avatar_picturebox.TabIndex = 6;
+            this.Avatar_picturebox.TabStop = false;
+            // 
+            // AccountName_lbl
+            // 
+            this.AccountName_lbl.AutoSize = true;
+            this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
+            this.AccountName_lbl.Location = new System.Drawing.Point(998, 35);
+            this.AccountName_lbl.Name = "AccountName_lbl";
+            this.AccountName_lbl.Size = new System.Drawing.Size(123, 20);
+            this.AccountName_lbl.TabIndex = 5;
+            this.AccountName_lbl.Text = "Huy To Quang";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(458, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // nameCompany_lbl
+            // 
+            this.nameCompany_lbl.AutoSize = true;
+            this.nameCompany_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameCompany_lbl.Location = new System.Drawing.Point(503, 31);
+            this.nameCompany_lbl.Name = "nameCompany_lbl";
+            this.nameCompany_lbl.Size = new System.Drawing.Size(115, 24);
+            this.nameCompany_lbl.TabIndex = 3;
+            this.nameCompany_lbl.Text = "LHBeverage";
+            // 
+            // searchIcon_btn
+            // 
+            this.searchIcon_btn.BackColor = System.Drawing.Color.White;
+            this.searchIcon_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchIcon_btn.BackgroundImage")));
+            this.searchIcon_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchIcon_btn.FlatAppearance.BorderSize = 0;
+            this.searchIcon_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.searchIcon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchIcon_btn.Location = new System.Drawing.Point(197, 33);
+            this.searchIcon_btn.Name = "searchIcon_btn";
+            this.searchIcon_btn.Size = new System.Drawing.Size(18, 18);
+            this.searchIcon_btn.TabIndex = 1;
+            this.searchIcon_btn.UseVisualStyleBackColor = false;
+            // 
+            // search_tb
+            // 
+            this.search_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.search_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_tb.ForeColor = System.Drawing.Color.Silver;
+            this.search_tb.Location = new System.Drawing.Point(24, 31);
+            this.search_tb.Name = "search_tb";
+            this.search_tb.Size = new System.Drawing.Size(196, 20);
+            this.search_tb.TabIndex = 0;
+            this.search_tb.Text = "Search";
+            // 
             // LHBeverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1589, 681);
+            this.ClientSize = new System.Drawing.Size(1370, 681);
             this.Controls.Add(this.NavigationLargePanel);
             this.Controls.Add(this.SearchPanel);
             this.Controls.Add(this.NavigationPanel);
@@ -471,7 +657,15 @@ namespace LHBeverage
             this.ProductBeveragePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).EndInit();
             this.NavigationPanel.ResumeLayout(false);
+            this.SearchPanel.ResumeLayout(false);
             this.NavigationLargePanel.ResumeLayout(false);
+            this.BigCard_panel.ResumeLayout(false);
+            this.BigCard_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -506,6 +700,20 @@ namespace LHBeverage
         private System.Windows.Forms.PictureBox ImageBeverage;
         private System.Windows.Forms.Label ProductNameLabel;
         private System.Windows.Forms.Label ProductPriceLabel;
+        private System.Windows.Forms.Panel BigCard_panel;
+        private System.Windows.Forms.Label DesShortBC_lbl;
+        private System.Windows.Forms.Button BuyBC_btn;
+        private System.Windows.Forms.Label priceDrinksBC_lbl;
+        private System.Windows.Forms.Label HotSaleBC_lbl;
+        private System.Windows.Forms.Label nameDrinkBC_lbl;
+        private System.Windows.Forms.PictureBox BigCard_picture;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox Avatar_picturebox;
+        private System.Windows.Forms.Label AccountName_lbl;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label nameCompany_lbl;
+        private System.Windows.Forms.Button searchIcon_btn;
+        private System.Windows.Forms.TextBox search_tb;
     }
 }
 
