@@ -16,7 +16,7 @@ namespace LHBeverage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LHBeverage());
+            Application.Run(new LoginPage());
         }
     }
 }

@@ -38,50 +38,49 @@ namespace LHBeverage
             this.priceDrinksBC_lbl = new System.Windows.Forms.Label();
             this.HotSaleBC_lbl = new System.Windows.Forms.Label();
             this.nameDrinkBC_lbl = new System.Windows.Forms.Label();
-            this.BigCard_picture = new System.Windows.Forms.PictureBox();
             this.ProductBeveragePanel = new System.Windows.Forms.Panel();
             this.ProductPriceLabel = new System.Windows.Forms.Label();
             this.ProductNameLabel = new System.Windows.Forms.Label();
-            this.ImageBeverage = new System.Windows.Forms.PictureBox();
             this.NavigationPanel = new System.Windows.Forms.Panel();
             this.SwitchLabel = new System.Windows.Forms.Label();
-            this.UserBtn = new System.Windows.Forms.Button();
             this.UserIconList = new System.Windows.Forms.ImageList(this.components);
-            this.HomeBtn = new System.Windows.Forms.Button();
             this.HomeIconList = new System.Windows.Forms.ImageList(this.components);
-            this.ProductBtn = new System.Windows.Forms.Button();
             this.CoffeeIconList = new System.Windows.Forms.ImageList(this.components);
-            this.CartBtn = new System.Windows.Forms.Button();
             this.CartIconList = new System.Windows.Forms.ImageList(this.components);
-            this.MenuBtn = new System.Windows.Forms.Button();
             this.TopBarPanel = new System.Windows.Forms.Panel();
-            this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
             this.AccountName_lbl = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.nameCompany_lbl = new System.Windows.Forms.Label();
-            this.searchIcon_btn = new System.Windows.Forms.Button();
             this.search_tb = new System.Windows.Forms.TextBox();
             this.NavigationLargePanel = new System.Windows.Forms.Panel();
             this.SwitchLargeLabel = new System.Windows.Forms.Label();
+            this.MoreIconList = new System.Windows.Forms.ImageList(this.components);
+            this.MenuLargeBtn = new System.Windows.Forms.Button();
+            this.LogoPic = new System.Windows.Forms.PictureBox();
+            this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
+            this.searchIcon_btn = new System.Windows.Forms.Button();
             this.BackToNavigationSmall = new System.Windows.Forms.Button();
             this.UserLargeBtn = new System.Windows.Forms.Button();
             this.CartMoreOptionBtn = new System.Windows.Forms.Button();
-            this.MoreIconList = new System.Windows.Forms.ImageList(this.components);
             this.CartLargeBtn = new System.Windows.Forms.Button();
             this.ProductMoreOptionBtn = new System.Windows.Forms.Button();
             this.ProductLargeBtn = new System.Windows.Forms.Button();
             this.HomeLargeBtn = new System.Windows.Forms.Button();
-            this.MenuLargeBtn = new System.Windows.Forms.Button();
+            this.UserBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.ProductBtn = new System.Windows.Forms.Button();
+            this.CartBtn = new System.Windows.Forms.Button();
+            this.MenuBtn = new System.Windows.Forms.Button();
+            this.BigCard_picture = new System.Windows.Forms.PictureBox();
+            this.ImageBeverage = new System.Windows.Forms.PictureBox();
             this.HomePanel.SuspendLayout();
             this.BigCard_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).BeginInit();
             this.ProductBeveragePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).BeginInit();
             this.NavigationPanel.SuspendLayout();
             this.TopBarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.NavigationLargePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).BeginInit();
             this.SuspendLayout();
             // 
             // HomePanel
@@ -167,16 +166,6 @@ namespace LHBeverage
             this.nameDrinkBC_lbl.TabIndex = 1;
             this.nameDrinkBC_lbl.Text = "Black sugar pearl \r\nmilk tea";
             // 
-            // BigCard_picture
-            // 
-            this.BigCard_picture.Image = ((System.Drawing.Image)(resources.GetObject("BigCard_picture.Image")));
-            this.BigCard_picture.Location = new System.Drawing.Point(0, 0);
-            this.BigCard_picture.Name = "BigCard_picture";
-            this.BigCard_picture.Size = new System.Drawing.Size(270, 245);
-            this.BigCard_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BigCard_picture.TabIndex = 0;
-            this.BigCard_picture.TabStop = false;
-            // 
             // ProductBeveragePanel
             // 
             this.ProductBeveragePanel.BackColor = System.Drawing.SystemColors.Control;
@@ -208,15 +197,6 @@ namespace LHBeverage
             this.ProductNameLabel.TabIndex = 1;
             this.ProductNameLabel.Text = "Product Name";
             // 
-            // ImageBeverage
-            // 
-            this.ImageBeverage.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ImageBeverage.Location = new System.Drawing.Point(15, 5);
-            this.ImageBeverage.Name = "ImageBeverage";
-            this.ImageBeverage.Size = new System.Drawing.Size(170, 170);
-            this.ImageBeverage.TabIndex = 0;
-            this.ImageBeverage.TabStop = false;
-            // 
             // NavigationPanel
             // 
             this.NavigationPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -235,31 +215,12 @@ namespace LHBeverage
             // 
             // SwitchLabel
             // 
-            this.SwitchLabel.BackColor = System.Drawing.Color.Olive;
+            this.SwitchLabel.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.SwitchLabel.Location = new System.Drawing.Point(0, 95);
             this.SwitchLabel.Name = "SwitchLabel";
             this.SwitchLabel.Size = new System.Drawing.Size(5, 70);
             this.SwitchLabel.TabIndex = 5;
             this.SwitchLabel.Text = "label1";
-            // 
-            // UserBtn
-            // 
-            this.UserBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserBtn.BackColor = System.Drawing.Color.Transparent;
-            this.UserBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.UserBtn.FlatAppearance.BorderSize = 0;
-            this.UserBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UserBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserBtn.ForeColor = System.Drawing.Color.Black;
-            this.UserBtn.ImageIndex = 0;
-            this.UserBtn.ImageList = this.UserIconList;
-            this.UserBtn.Location = new System.Drawing.Point(0, 601);
-            this.UserBtn.Name = "UserBtn";
-            this.UserBtn.Size = new System.Drawing.Size(80, 80);
-            this.UserBtn.TabIndex = 4;
-            this.UserBtn.UseVisualStyleBackColor = false;
             // 
             // UserIconList
             // 
@@ -268,46 +229,12 @@ namespace LHBeverage
             this.UserIconList.Images.SetKeyName(0, "User_normal.png");
             this.UserIconList.Images.SetKeyName(1, "User_active.png");
             // 
-            // HomeBtn
-            // 
-            this.HomeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.HomeBtn.FlatAppearance.BorderSize = 0;
-            this.HomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.ImageIndex = 0;
-            this.HomeBtn.ImageList = this.HomeIconList;
-            this.HomeBtn.Location = new System.Drawing.Point(0, 90);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(80, 80);
-            this.HomeBtn.TabIndex = 3;
-            this.HomeBtn.UseVisualStyleBackColor = false;
-            this.HomeBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
-            // 
             // HomeIconList
             // 
             this.HomeIconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("HomeIconList.ImageStream")));
             this.HomeIconList.TransparentColor = System.Drawing.Color.Transparent;
             this.HomeIconList.Images.SetKeyName(0, "Home_nomal.png");
             this.HomeIconList.Images.SetKeyName(1, "Home_active.png");
-            // 
-            // ProductBtn
-            // 
-            this.ProductBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ProductBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ProductBtn.FlatAppearance.BorderSize = 0;
-            this.ProductBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ProductBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ProductBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProductBtn.ImageIndex = 0;
-            this.ProductBtn.ImageList = this.CoffeeIconList;
-            this.ProductBtn.Location = new System.Drawing.Point(0, 175);
-            this.ProductBtn.Name = "ProductBtn";
-            this.ProductBtn.Size = new System.Drawing.Size(80, 80);
-            this.ProductBtn.TabIndex = 2;
-            this.ProductBtn.UseVisualStyleBackColor = false;
-            this.ProductBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
             // 
             // CoffeeIconList
             // 
@@ -316,24 +243,6 @@ namespace LHBeverage
             this.CoffeeIconList.Images.SetKeyName(0, "coffee_normal.png");
             this.CoffeeIconList.Images.SetKeyName(1, "coffee_active.png");
             // 
-            // CartBtn
-            // 
-            this.CartBtn.BackColor = System.Drawing.Color.Transparent;
-            this.CartBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CartBtn.FlatAppearance.BorderSize = 0;
-            this.CartBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CartBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CartBtn.ForeColor = System.Drawing.Color.Black;
-            this.CartBtn.ImageIndex = 0;
-            this.CartBtn.ImageList = this.CartIconList;
-            this.CartBtn.Location = new System.Drawing.Point(0, 260);
-            this.CartBtn.Name = "CartBtn";
-            this.CartBtn.Size = new System.Drawing.Size(80, 80);
-            this.CartBtn.TabIndex = 1;
-            this.CartBtn.UseVisualStyleBackColor = false;
-            this.CartBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
-            // 
             // CartIconList
             // 
             this.CartIconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("CartIconList.ImageStream")));
@@ -341,48 +250,20 @@ namespace LHBeverage
             this.CartIconList.Images.SetKeyName(0, "Cart_normal.png");
             this.CartIconList.Images.SetKeyName(1, "Cart_active.png");
             // 
-            // MenuBtn
-            // 
-            this.MenuBtn.BackColor = System.Drawing.Color.Black;
-            this.MenuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.MenuBtn.FlatAppearance.BorderSize = 0;
-            this.MenuBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MenuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuBtn.Image = global::LHBeverage.Properties.Resources.Menu;
-            this.MenuBtn.Location = new System.Drawing.Point(0, 0);
-            this.MenuBtn.Name = "MenuBtn";
-            this.MenuBtn.Size = new System.Drawing.Size(80, 80);
-            this.MenuBtn.TabIndex = 0;
-            this.MenuBtn.UseVisualStyleBackColor = false;
-            this.MenuBtn.Click += new System.EventHandler(this.MenuLarge_Click);
-            // 
             // TopBarPanel
             // 
             this.TopBarPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TopBarPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TopBarPanel.Controls.Add(this.LogoPic);
             this.TopBarPanel.Controls.Add(this.Avatar_picturebox);
             this.TopBarPanel.Controls.Add(this.AccountName_lbl);
-            this.TopBarPanel.Controls.Add(this.pictureBox1);
-            this.TopBarPanel.Controls.Add(this.nameCompany_lbl);
             this.TopBarPanel.Controls.Add(this.searchIcon_btn);
             this.TopBarPanel.Controls.Add(this.search_tb);
             this.TopBarPanel.Location = new System.Drawing.Point(80, 0);
             this.TopBarPanel.Name = "TopBarPanel";
             this.TopBarPanel.Size = new System.Drawing.Size(1184, 80);
             this.TopBarPanel.TabIndex = 5;
-            // 
-            // Avatar_picturebox
-            // 
-            this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
-            this.Avatar_picturebox.Location = new System.Drawing.Point(1120, 15);
-            this.Avatar_picturebox.Name = "Avatar_picturebox";
-            this.Avatar_picturebox.Size = new System.Drawing.Size(50, 50);
-            this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Avatar_picturebox.TabIndex = 6;
-            this.Avatar_picturebox.TabStop = false;
             // 
             // AccountName_lbl
             // 
@@ -395,41 +276,6 @@ namespace LHBeverage
             this.AccountName_lbl.TabIndex = 5;
             this.AccountName_lbl.Text = "Huy To Quang";
             this.AccountName_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(458, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // nameCompany_lbl
-            // 
-            this.nameCompany_lbl.AutoSize = true;
-            this.nameCompany_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameCompany_lbl.Location = new System.Drawing.Point(503, 28);
-            this.nameCompany_lbl.Name = "nameCompany_lbl";
-            this.nameCompany_lbl.Size = new System.Drawing.Size(115, 24);
-            this.nameCompany_lbl.TabIndex = 3;
-            this.nameCompany_lbl.Text = "LHBeverage";
-            // 
-            // searchIcon_btn
-            // 
-            this.searchIcon_btn.BackColor = System.Drawing.Color.White;
-            this.searchIcon_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchIcon_btn.BackgroundImage")));
-            this.searchIcon_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchIcon_btn.FlatAppearance.BorderSize = 0;
-            this.searchIcon_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.searchIcon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchIcon_btn.Location = new System.Drawing.Point(215, 32);
-            this.searchIcon_btn.Name = "searchIcon_btn";
-            this.searchIcon_btn.Size = new System.Drawing.Size(16, 16);
-            this.searchIcon_btn.TabIndex = 1;
-            this.searchIcon_btn.UseVisualStyleBackColor = false;
             // 
             // search_tb
             // 
@@ -464,12 +310,76 @@ namespace LHBeverage
             // 
             // SwitchLargeLabel
             // 
-            this.SwitchLargeLabel.BackColor = System.Drawing.Color.Olive;
+            this.SwitchLargeLabel.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.SwitchLargeLabel.Location = new System.Drawing.Point(0, 95);
             this.SwitchLargeLabel.Name = "SwitchLargeLabel";
             this.SwitchLargeLabel.Size = new System.Drawing.Size(5, 70);
             this.SwitchLargeLabel.TabIndex = 11;
             this.SwitchLargeLabel.Text = "label1";
+            // 
+            // MoreIconList
+            // 
+            this.MoreIconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("MoreIconList.ImageStream")));
+            this.MoreIconList.TransparentColor = System.Drawing.Color.Transparent;
+            this.MoreIconList.Images.SetKeyName(0, "right-arrow.png");
+            this.MoreIconList.Images.SetKeyName(1, "arrow-down-sign-to-navigate.png");
+            // 
+            // MenuLargeBtn
+            // 
+            this.MenuLargeBtn.BackColor = System.Drawing.Color.Black;
+            this.MenuLargeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.MenuLargeBtn.FlatAppearance.BorderSize = 0;
+            this.MenuLargeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MenuLargeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MenuLargeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuLargeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuLargeBtn.ForeColor = System.Drawing.Color.White;
+            this.MenuLargeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.MenuLargeBtn.Location = new System.Drawing.Point(0, 0);
+            this.MenuLargeBtn.Name = "MenuLargeBtn";
+            this.MenuLargeBtn.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.MenuLargeBtn.Size = new System.Drawing.Size(300, 80);
+            this.MenuLargeBtn.TabIndex = 1;
+            this.MenuLargeBtn.Text = "Menu";
+            this.MenuLargeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MenuLargeBtn.UseVisualStyleBackColor = false;
+            this.MenuLargeBtn.MouseLeave += new System.EventHandler(this.BtnSpecial_Leave);
+            this.MenuLargeBtn.MouseHover += new System.EventHandler(this.BtnSpecial_Hover);
+            // 
+            // LogoPic
+            // 
+            this.LogoPic.BackgroundImage = global::LHBeverage.Properties.Resources.logo;
+            this.LogoPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogoPic.Location = new System.Drawing.Point(467, 5);
+            this.LogoPic.Name = "LogoPic";
+            this.LogoPic.Size = new System.Drawing.Size(250, 70);
+            this.LogoPic.TabIndex = 7;
+            this.LogoPic.TabStop = false;
+            // 
+            // Avatar_picturebox
+            // 
+            this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
+            this.Avatar_picturebox.Location = new System.Drawing.Point(1120, 15);
+            this.Avatar_picturebox.Name = "Avatar_picturebox";
+            this.Avatar_picturebox.Size = new System.Drawing.Size(50, 50);
+            this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Avatar_picturebox.TabIndex = 6;
+            this.Avatar_picturebox.TabStop = false;
+            // 
+            // searchIcon_btn
+            // 
+            this.searchIcon_btn.BackColor = System.Drawing.Color.White;
+            this.searchIcon_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchIcon_btn.BackgroundImage")));
+            this.searchIcon_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchIcon_btn.FlatAppearance.BorderSize = 0;
+            this.searchIcon_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.searchIcon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchIcon_btn.Location = new System.Drawing.Point(215, 32);
+            this.searchIcon_btn.Name = "searchIcon_btn";
+            this.searchIcon_btn.Size = new System.Drawing.Size(16, 16);
+            this.searchIcon_btn.TabIndex = 1;
+            this.searchIcon_btn.UseVisualStyleBackColor = false;
             // 
             // BackToNavigationSmall
             // 
@@ -525,13 +435,6 @@ namespace LHBeverage
             this.CartMoreOptionBtn.Size = new System.Drawing.Size(40, 80);
             this.CartMoreOptionBtn.TabIndex = 8;
             this.CartMoreOptionBtn.UseVisualStyleBackColor = false;
-            // 
-            // MoreIconList
-            // 
-            this.MoreIconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("MoreIconList.ImageStream")));
-            this.MoreIconList.TransparentColor = System.Drawing.Color.Transparent;
-            this.MoreIconList.Images.SetKeyName(0, "right-arrow.png");
-            this.MoreIconList.Images.SetKeyName(1, "arrow-down-sign-to-navigate.png");
             // 
             // CartLargeBtn
             // 
@@ -619,27 +522,111 @@ namespace LHBeverage
             this.HomeLargeBtn.UseVisualStyleBackColor = false;
             this.HomeLargeBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
             // 
-            // MenuLargeBtn
+            // UserBtn
             // 
-            this.MenuLargeBtn.BackColor = System.Drawing.Color.Black;
-            this.MenuLargeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.MenuLargeBtn.FlatAppearance.BorderSize = 0;
-            this.MenuLargeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MenuLargeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.MenuLargeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuLargeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuLargeBtn.ForeColor = System.Drawing.Color.White;
-            this.MenuLargeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.MenuLargeBtn.Location = new System.Drawing.Point(0, 0);
-            this.MenuLargeBtn.Name = "MenuLargeBtn";
-            this.MenuLargeBtn.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
-            this.MenuLargeBtn.Size = new System.Drawing.Size(300, 80);
-            this.MenuLargeBtn.TabIndex = 1;
-            this.MenuLargeBtn.Text = "Menu";
-            this.MenuLargeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MenuLargeBtn.UseVisualStyleBackColor = false;
-            this.MenuLargeBtn.MouseLeave += new System.EventHandler(this.BtnSpecial_Leave);
-            this.MenuLargeBtn.MouseHover += new System.EventHandler(this.BtnSpecial_Hover);
+            this.UserBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UserBtn.BackColor = System.Drawing.Color.Transparent;
+            this.UserBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.UserBtn.FlatAppearance.BorderSize = 0;
+            this.UserBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UserBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserBtn.ForeColor = System.Drawing.Color.Black;
+            this.UserBtn.ImageIndex = 0;
+            this.UserBtn.ImageList = this.UserIconList;
+            this.UserBtn.Location = new System.Drawing.Point(0, 601);
+            this.UserBtn.Name = "UserBtn";
+            this.UserBtn.Size = new System.Drawing.Size(80, 80);
+            this.UserBtn.TabIndex = 4;
+            this.UserBtn.UseVisualStyleBackColor = false;
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.HomeBtn.FlatAppearance.BorderSize = 0;
+            this.HomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.ImageIndex = 0;
+            this.HomeBtn.ImageList = this.HomeIconList;
+            this.HomeBtn.Location = new System.Drawing.Point(0, 90);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(80, 80);
+            this.HomeBtn.TabIndex = 3;
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
+            // 
+            // ProductBtn
+            // 
+            this.ProductBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ProductBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ProductBtn.FlatAppearance.BorderSize = 0;
+            this.ProductBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ProductBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ProductBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProductBtn.ImageIndex = 0;
+            this.ProductBtn.ImageList = this.CoffeeIconList;
+            this.ProductBtn.Location = new System.Drawing.Point(0, 175);
+            this.ProductBtn.Name = "ProductBtn";
+            this.ProductBtn.Size = new System.Drawing.Size(80, 80);
+            this.ProductBtn.TabIndex = 2;
+            this.ProductBtn.UseVisualStyleBackColor = false;
+            this.ProductBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
+            // 
+            // CartBtn
+            // 
+            this.CartBtn.BackColor = System.Drawing.Color.Transparent;
+            this.CartBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CartBtn.FlatAppearance.BorderSize = 0;
+            this.CartBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CartBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CartBtn.ForeColor = System.Drawing.Color.Black;
+            this.CartBtn.ImageIndex = 0;
+            this.CartBtn.ImageList = this.CartIconList;
+            this.CartBtn.Location = new System.Drawing.Point(0, 260);
+            this.CartBtn.Name = "CartBtn";
+            this.CartBtn.Size = new System.Drawing.Size(80, 80);
+            this.CartBtn.TabIndex = 1;
+            this.CartBtn.UseVisualStyleBackColor = false;
+            this.CartBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
+            // 
+            // MenuBtn
+            // 
+            this.MenuBtn.BackColor = System.Drawing.Color.Black;
+            this.MenuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.MenuBtn.FlatAppearance.BorderSize = 0;
+            this.MenuBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MenuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MenuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuBtn.Image = global::LHBeverage.Properties.Resources.Menu;
+            this.MenuBtn.Location = new System.Drawing.Point(0, 0);
+            this.MenuBtn.Name = "MenuBtn";
+            this.MenuBtn.Size = new System.Drawing.Size(80, 80);
+            this.MenuBtn.TabIndex = 0;
+            this.MenuBtn.UseVisualStyleBackColor = false;
+            this.MenuBtn.Click += new System.EventHandler(this.MenuLarge_Click);
+            // 
+            // BigCard_picture
+            // 
+            this.BigCard_picture.Image = ((System.Drawing.Image)(resources.GetObject("BigCard_picture.Image")));
+            this.BigCard_picture.Location = new System.Drawing.Point(0, 0);
+            this.BigCard_picture.Name = "BigCard_picture";
+            this.BigCard_picture.Size = new System.Drawing.Size(270, 245);
+            this.BigCard_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BigCard_picture.TabIndex = 0;
+            this.BigCard_picture.TabStop = false;
+            // 
+            // ImageBeverage
+            // 
+            this.ImageBeverage.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ImageBeverage.Location = new System.Drawing.Point(15, 5);
+            this.ImageBeverage.Name = "ImageBeverage";
+            this.ImageBeverage.Size = new System.Drawing.Size(170, 170);
+            this.ImageBeverage.TabIndex = 0;
+            this.ImageBeverage.TabStop = false;
             // 
             // LHBeverage
             // 
@@ -652,18 +639,19 @@ namespace LHBeverage
             this.Controls.Add(this.HomePanel);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "LHBeverage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LHBeverage";
             this.HomePanel.ResumeLayout(false);
             this.BigCard_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).EndInit();
             this.ProductBeveragePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).EndInit();
             this.NavigationPanel.ResumeLayout(false);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.NavigationLargePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageBeverage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -707,10 +695,9 @@ namespace LHBeverage
         private System.Windows.Forms.Panel TopBarPanel;
         private System.Windows.Forms.PictureBox Avatar_picturebox;
         private System.Windows.Forms.Label AccountName_lbl;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label nameCompany_lbl;
         private System.Windows.Forms.Button searchIcon_btn;
         private System.Windows.Forms.TextBox search_tb;
+        private System.Windows.Forms.PictureBox LogoPic;
     }
 }
 

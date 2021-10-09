@@ -91,10 +91,25 @@
     <Compile Include="LhBeverage.Designer.cs">
       <DependentUpon>LhBeverage.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LhBeverage.resx">
       <DependentUpon>LhBeverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +121,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
