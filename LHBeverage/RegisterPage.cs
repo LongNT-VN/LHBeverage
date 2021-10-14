@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LHBeverage.Model;
+using LHBeverage.ModelService;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,7 +64,7 @@ namespace LHBeverage
 
         private void Checkinfo()
         {
-            if (FirstNameTextBox.Text == "" || LastNameTextBox.Text == "" || CheckPhoneNumber(LastNameTextBox.Text) || EmailTextBox.Text == "" || !IsValidEmailAddress(EmailTextBox.Text) || PasswordTextBox.Text == "" || PasswordTextBox.Text.Length < 8)
+            if (FirstNameTextBox.Text == "" || LastNameTextBox.Text == "" || !CheckPhoneNumber(PhoneNumberTextBox.Text) || EmailTextBox.Text == "" || CustomerConnect.IsCustomerExisted(EmailTextBox.Text) || !IsValidEmailAddress(EmailTextBox.Text) || PasswordTextBox.Text == "" || PasswordTextBox.Text.Length < 8)
             {
                 RegisterBtn.Enabled = false;
             }
@@ -81,6 +83,25 @@ namespace LHBeverage
         }
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
+            //Tạo tài khoản
+            Customer customer = new Customer();
+            customer.Name= FirstNameTextBox.Text + LastNameTextBox.Text;
+            if(AddressTextBox.Text!="")
+            {
+                customer.Address = AddressTextBox.Text;
+            }
+            else
+            {
+                customer.Address = "";
+            }
+            customer.PhoneNumber = PhoneNumberTextBox.Text;
+            customer.Email = EmailTextBox.Text;
+            customer.Age = 0;
+            customer.Gender = 0;
+            customer.Password = PasswordTextBox.Text;
+            customer.Authorized = "Admin";
+            CustomerConnect.CreateCustomer(customer);
+            //Chuyển về trang đăng nhập
             var LoginPage = new LoginPage();
             this.Hide();
             LoginPage.ShowDialog();
@@ -114,6 +135,11 @@ namespace LHBeverage
                 ErrorEmailLabel.Visible = false;
             }
             Checkinfo();
+            if (CustomerConnect.IsCustomerExisted(emailBox.Text))
+            {
+                ErrorEmailLabel.Text = "Existed Account !";
+                ErrorEmailLabel.Visible = true;
+            }
         }
 
         private void PhoneNumberTextBox_Leave(object sender, EventArgs e)

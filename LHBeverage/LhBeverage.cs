@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LHBeverage.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace LHBeverage
 {
     public partial class LHBeverage : Form
     {
-        public LHBeverage()
+        public LHBeverage(Customer customer)
         {
             InitializeComponent();
+            AccountName_lbl.Text = customer.Email;
         }
 
         private void SwitchLabelControl(Button btn, Label Switch)

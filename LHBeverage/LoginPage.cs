@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LHBeverage.Model;
+using LHBeverage.ModelService;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,10 +54,19 @@ namespace LHBeverage
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            var HomePage = new LHBeverage();
-            this.Hide();
-            HomePage.ShowDialog();
-            this.Close();
+            int IDCus = CustomerConnect.CheckLogin(EmailTextBox.Text, PasswordTextBox.Text);
+            if (IDCus != -1)
+            {
+                Customer customer = CustomerConnect.CustomerInfo(IDCus);
+                var HomePage = new LHBeverage(customer);
+                this.Hide();
+                HomePage.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Thông tin sai");
+            }
 
         }
         private void EmailText_Leave(object sender, EventArgs e)
