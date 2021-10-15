@@ -14,13 +14,13 @@ namespace LHBeverage
 {
     public partial class AdminPage : Form
     {
-       
+        Customer cust;
         public AdminPage(Customer customer)
-        {
-            
+        { 
             InitializeComponent();
             Dashboard dashboard = new Dashboard();
             addUserControl(dashboard);
+            cust = customer;
 
         }
         Color activeColor = Color.FromArgb(209, 218, 235);
@@ -54,11 +54,12 @@ namespace LHBeverage
 
         private void ProductsNav_Btn_Click(object sender, EventArgs e)
         {
-            ManageProducts manageProducts = new ManageProducts();
-            addUserControl(manageProducts);
+           
             // set active button
             setBg_Color_Btn_SideBar();
             ProductsNav_Btn.BackColor = activeColor;
+            ManageProduct manageProduct = new ManageProduct(cust);
+            addUserControl(manageProduct);
         }
 
         private void CategoryNav_Btn_Click(object sender, EventArgs e)
@@ -66,6 +67,8 @@ namespace LHBeverage
             // set active button
             setBg_Color_Btn_SideBar();
             CategoryNav_Btn.BackColor = activeColor;
+            ManageCategory manageCategory = new ManageCategory();
+            addUserControl(manageCategory);
         }
 
         private void OrdersNav_Btn_Click(object sender, EventArgs e)

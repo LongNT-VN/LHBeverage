@@ -8,15 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LHBeverage.UserControls
+namespace LHBeverage.UserControls.Component
 {
-    public partial class ManageProducts : UserControl
+    public partial class AdminProductCard : UserControl
     {
-        public ManageProducts()
+        public AdminProductCard(Bitmap bmp, string name)
         {
             InitializeComponent();
-            this.AutoScroll = true;
-           
+            Picture_Pro.Image = bmp;
+            NameProduct_lbl.Text = name;
         }
     }
 }
