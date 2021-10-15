@@ -117,6 +117,18 @@
     <Compile Include="RegisterPage.Designer.cs">
       <DependentUpon>RegisterPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\BigCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\BigCard.Designer.cs">
+      <DependentUpon>BigCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\ItemCardcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\ItemCardcs.Designer.cs">
+      <DependentUpon>ItemCardcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterPage.resx">
       <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\BigCard.resx">
+      <DependentUpon>BigCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

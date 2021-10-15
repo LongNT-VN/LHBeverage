@@ -1,4 +1,5 @@
 ﻿using LHBeverage.Model;
+using LHBeverage.UserControls.Component;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,8 @@ namespace LHBeverage
         {
             InitializeComponent();
             AccountName_lbl.Text = customer.Email;
+            BigCard bc = new BigCard("Huy To");
+            HomePanel.Controls.Add(bc);
         }
 
         private void SwitchLabelControl(Button btn, Label Switch)
