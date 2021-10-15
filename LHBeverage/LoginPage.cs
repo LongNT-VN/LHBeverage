@@ -58,16 +58,25 @@ namespace LHBeverage
             if (IDCus != -1)
             {
                 Customer customer = CustomerConnect.CustomerInfo(IDCus);
-                var HomePage = new LHBeverage(customer);
-                this.Hide();
-                HomePage.ShowDialog();
-                this.Close();
+                if(customer.Authorized=="Admin")
+                {
+                    var AdminPage = new AdminPage(customer);
+                    this.Hide();
+                    AdminPage.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    var HomePage = new LHBeverage(customer);
+                    this.Hide();
+                    HomePage.ShowDialog();
+                    this.Close();
+                }
             }
             else
             {
-                MessageBox.Show("Thông tin sai");
+                MessageBox.Show("Thông tin tài khoản hoặc mật khẩu không đúng!");
             }
-
         }
         private void EmailText_Leave(object sender, EventArgs e)
         {

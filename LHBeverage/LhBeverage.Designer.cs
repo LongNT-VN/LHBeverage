@@ -93,7 +93,7 @@ namespace LHBeverage
             this.HomePanel.Controls.Add(this.ProductBeveragePanel);
             this.HomePanel.Location = new System.Drawing.Point(80, 80);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(990, 601);
+            this.HomePanel.Size = new System.Drawing.Size(1184, 601);
             this.HomePanel.TabIndex = 0;
             // 
             // BigCard_panel
@@ -368,11 +368,12 @@ namespace LHBeverage
             this.TopBarPanel.Controls.Add(this.search_tb);
             this.TopBarPanel.Location = new System.Drawing.Point(80, 0);
             this.TopBarPanel.Name = "TopBarPanel";
-            this.TopBarPanel.Size = new System.Drawing.Size(990, 80);
+            this.TopBarPanel.Size = new System.Drawing.Size(1184, 80);
             this.TopBarPanel.TabIndex = 5;
             // 
             // LogoPic
             // 
+            this.LogoPic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LogoPic.BackgroundImage = global::LHBeverage.Properties.Resources.logo;
             this.LogoPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.LogoPic.Location = new System.Drawing.Point(467, 5);
@@ -385,7 +386,7 @@ namespace LHBeverage
             // 
             this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
-            this.Avatar_picturebox.Location = new System.Drawing.Point(926, 15);
+            this.Avatar_picturebox.Location = new System.Drawing.Point(1120, 15);
             this.Avatar_picturebox.Name = "Avatar_picturebox";
             this.Avatar_picturebox.Size = new System.Drawing.Size(50, 50);
             this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -397,7 +398,7 @@ namespace LHBeverage
             this.AccountName_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
-            this.AccountName_lbl.Location = new System.Drawing.Point(706, 20);
+            this.AccountName_lbl.Location = new System.Drawing.Point(900, 20);
             this.AccountName_lbl.Name = "AccountName_lbl";
             this.AccountName_lbl.Size = new System.Drawing.Size(212, 40);
             this.AccountName_lbl.TabIndex = 5;
@@ -632,7 +633,7 @@ namespace LHBeverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.TopBarPanel);
             this.Controls.Add(this.NavigationLargePanel);
             this.Controls.Add(this.NavigationPanel);

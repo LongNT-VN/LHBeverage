@@ -1,4 +1,5 @@
-﻿using LHBeverage.UserControls;
+﻿using LHBeverage.Model;
+using LHBeverage.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace LHBeverage
     public partial class AdminPage : Form
     {
        
-        public AdminPage()
+        public AdminPage(Customer customer)
         {
             
             InitializeComponent();

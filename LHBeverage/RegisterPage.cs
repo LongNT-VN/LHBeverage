@@ -99,7 +99,7 @@ namespace LHBeverage
             customer.Age = 0;
             customer.Gender = 0;
             customer.Password = PasswordTextBox.Text;
-            customer.Authorized = "Admin";
+            customer.Authorized = "Member";
             CustomerConnect.CreateCustomer(customer);
             //Chuyển về trang đăng nhập
             var LoginPage = new LoginPage();

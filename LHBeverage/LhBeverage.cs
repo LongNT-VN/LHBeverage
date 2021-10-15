@@ -48,6 +48,8 @@ namespace LHBeverage
         {
             NavigationPanel.Visible = false;
             NavigationLargePanel.Visible = true;
+            search_tb.Visible = false;
+            searchIcon_btn.Visible = false;
             HomePanel.Width = HomePanel.Width - 220;
             HomePanel.Location = new Point(300, 80);
             TopBarPanel.Width = TopBarPanel.Width - 220;
@@ -59,6 +61,8 @@ namespace LHBeverage
         {
             NavigationPanel.Visible = true;
             NavigationLargePanel.Visible = false;
+            search_tb.Visible = true;
+            searchIcon_btn.Visible = true;
             HomePanel.Width = HomePanel.Width + 220;
             HomePanel.Location = new Point(80, 80);
             TopBarPanel.Width = TopBarPanel.Width + 220;
