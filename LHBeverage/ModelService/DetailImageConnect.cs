@@ -22,11 +22,12 @@ namespace LHBeverage.ModelService
         //        return detailImages.ToList();
         //    }
         //}
-        public static List<DetailImage> LoadImage()
+        public static List<DetailImage> LoadImage(Product product)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var detailImages = connection.Query<DetailImage>("select * from DetailImage", new DynamicParameters());
+                string query = string.Format($"select * from DetailImage where Email='{product.IDPro}'");
+                var detailImages = connection.Query<DetailImage>("query", new DynamicParameters());
                 return detailImages.ToList();
             }
         }

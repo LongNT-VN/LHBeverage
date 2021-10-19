@@ -20,7 +20,7 @@ namespace LHBeverage
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminPage(customer));
+            Application.Run(new LoginPage());
         }
     }
 }

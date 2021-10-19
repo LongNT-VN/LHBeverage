@@ -25,32 +25,32 @@ namespace LHBeverage.UserControls
         public ManageProduct(Customer customer)
         {
             InitializeComponent();
-            loadData();
+            //loadData();
             cust = customer;
         }
-        private void loadData()
-        {
-            categories = CategoryConnect.LoadCategory();
-            // create Dictionnary comboSource to 
-            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+        //private void loadData()
+        //{
+        //    categories = CategoryConnect.LoadCategory();
+        //    // create Dictionnary comboSource to 
+        //    Dictionary<string, string> comboSource = new Dictionary<string, string>();
           
-            foreach ( Category category in categories)
-            {
-                comboSource.Add(category.IDCate.ToString(), category.Name);
-            }
-            category_Cb.DataSource = new BindingSource(comboSource, null);
-            category_Cb.DisplayMember = "Value";
-            category_Cb.ValueMember = "Key";
+        //    foreach ( Category category in categories)
+        //    {
+        //        comboSource.Add(category.IDCate.ToString(), category.Name);
+        //    }
+        //    category_Cb.DataSource = new BindingSource(comboSource, null);
+        //    category_Cb.DisplayMember = "Value";
+        //    category_Cb.ValueMember = "Key";
 
-            List<DetailImage> detailImages = DetailImageConnect.LoadImage();
-            foreach (DetailImage detailImage in detailImages)
-            {
-                Bitmap bmp = converBase64ToBitmap(detailImage.ImageData);
-                AdminProductCard adminProductCard = new AdminProductCard(bmp,"Cafe");
-                ListPro_flowpanel.Controls.Add(adminProductCard);
+        //    List<DetailImage> detailImages = DetailImageConnect.LoadImage();
+        //    foreach (DetailImage detailImage in detailImages)
+        //    {
+        //        Bitmap bmp = converBase64ToBitmap(detailImage.ImageData);
+        //        AdminProductCard adminProductCard = new AdminProductCard(bmp,"Cafe");
+        //        ListPro_flowpanel.Controls.Add(adminProductCard);
 
-            }
-        }
+        //    }
+        //}
 
         // Function convert image:
         public static string convertBitmapToBase64(Bitmap bmp)

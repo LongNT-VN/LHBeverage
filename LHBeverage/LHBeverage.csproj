@@ -147,6 +147,18 @@
     <Compile Include="UserControls\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\PageComponent\ItemCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\ItemCart.Designer.cs">
+      <DependentUpon>ItemCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\ItemcardComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\ItemcardComponent.Designer.cs">
+      <DependentUpon>ItemcardComponent.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ManageCategory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +170,24 @@
     </Compile>
     <Compile Include="UserControls\ManageProduct.Designer.cs">
       <DependentUpon>ManageProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\CartPagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\CartPagePanel.Designer.cs">
+      <DependentUpon>CartPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\DetailProductPagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\DetailProductPagePanel.Designer.cs">
+      <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\ProductPagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageComponent\ProductPagePanel.Designer.cs">
+      <DependentUpon>ProductPagePanel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
@@ -190,11 +220,26 @@
     <EmbeddedResource Include="UserControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageComponent\ItemCart.resx">
+      <DependentUpon>ItemCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageComponent\ItemcardComponent.resx">
+      <DependentUpon>ItemcardComponent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ManageCategory.resx">
       <DependentUpon>ManageCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ManageProduct.resx">
       <DependentUpon>ManageProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageComponent\CartPagePanel.resx">
+      <DependentUpon>CartPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageComponent\DetailProductPagePanel.resx">
+      <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PageComponent\ProductPagePanel.resx">
+      <DependentUpon>ProductPagePanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LHBeveragedb.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
