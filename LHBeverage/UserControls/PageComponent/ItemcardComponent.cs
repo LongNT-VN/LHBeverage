@@ -14,9 +14,11 @@ namespace LHBeverage.UserControls.LHComponent
 {
     public partial class ItemcardComponent : UserControl
     {
+
         public ItemcardComponent(Product product, Image image)
         {
             InitializeComponent();
+            CreateComponent(product, image);
         }
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         private void CreateComponent(Product product, Image image)

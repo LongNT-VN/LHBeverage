@@ -13,7 +13,7 @@ namespace LHBeverage.ModelService
 {
     public class DetailImageConnect
     {
-       
+
         //public static List<DetailImage> SelectImage(string IdPro)
         //{
         //    using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -26,11 +26,20 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                string query = string.Format($"select * from DetailImage where Email='{product.IDPro}'");
-                var detailImages = connection.Query<DetailImage>("query", new DynamicParameters());
+                string query = string.Format($"select * from DetailImage where IDPro='{product.IDPro}'");
+                var detailImages = connection.Query<DetailImage>(query, new DynamicParameters());
                 return detailImages.ToList();
             }
         }
+        //public static List<DetailImage> LoadImage()
+        //{
+        //    using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+        //    {
+        //        string query = string.Format($"select * from DetailImage");
+        //        var detailImages = connection.Query<DetailImage>(query, new DynamicParameters());
+        //        return detailImages.ToList();
+        //    }
+        //}
         public static void CreateDetailImage(DetailImage detailImage)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))

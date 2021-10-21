@@ -33,13 +33,6 @@ namespace LHBeverage
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LHBeverage));
             this.HomePanel = new System.Windows.Forms.Panel();
             this.ItemcartsPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.NavigationPanel = new System.Windows.Forms.Panel();
             this.SwitchLabel = new System.Windows.Forms.Label();
             this.UserBtn = new System.Windows.Forms.Button();
@@ -69,7 +62,6 @@ namespace LHBeverage
             this.HomeLargeBtn = new System.Windows.Forms.Button();
             this.MenuLargeBtn = new System.Windows.Forms.Button();
             this.HomePanel.SuspendLayout();
-            this.ItemcartsPanel.SuspendLayout();
             this.NavigationPanel.SuspendLayout();
             this.TopBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
@@ -92,74 +84,11 @@ namespace LHBeverage
             // ItemcartsPanel
             // 
             this.ItemcartsPanel.AutoScroll = true;
-            this.ItemcartsPanel.Controls.Add(this.panel1);
-            this.ItemcartsPanel.Controls.Add(this.panel2);
-            this.ItemcartsPanel.Controls.Add(this.panel3);
-            this.ItemcartsPanel.Controls.Add(this.panel4);
-            this.ItemcartsPanel.Controls.Add(this.panel5);
-            this.ItemcartsPanel.Controls.Add(this.panel6);
-            this.ItemcartsPanel.Controls.Add(this.panel7);
             this.ItemcartsPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ItemcartsPanel.Location = new System.Drawing.Point(20, 310);
             this.ItemcartsPanel.Name = "ItemcartsPanel";
             this.ItemcartsPanel.Size = new System.Drawing.Size(1144, 325);
             this.ItemcartsPanel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 260);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(209, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 260);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(415, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 260);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(621, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 260);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(827, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 260);
-            this.panel5.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(1033, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 260);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(1239, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 260);
-            this.panel7.TabIndex = 6;
             // 
             // NavigationPanel
             // 
@@ -588,7 +517,6 @@ namespace LHBeverage
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LHBeverage";
             this.HomePanel.ResumeLayout(false);
-            this.ItemcartsPanel.ResumeLayout(false);
             this.NavigationPanel.ResumeLayout(false);
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
@@ -631,13 +559,6 @@ namespace LHBeverage
         private System.Windows.Forms.TextBox search_tb;
         private System.Windows.Forms.PictureBox LogoPic;
         private System.Windows.Forms.FlowLayoutPanel ItemcartsPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
     }
 }
 

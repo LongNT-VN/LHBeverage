@@ -18,6 +18,7 @@ namespace LHBeverage.UserControls
     public partial class ManageProduct : UserControl
     {
         List<Category> categories;
+        List<Product> Products;
         Customer cust;
         Bitmap bmp;
         string base64Img;
@@ -25,32 +26,36 @@ namespace LHBeverage.UserControls
         public ManageProduct(Customer customer)
         {
             InitializeComponent();
-            //loadData();
+            loadData();
             cust = customer;
         }
-        //private void loadData()
-        //{
-        //    categories = CategoryConnect.LoadCategory();
-        //    // create Dictionnary comboSource to 
-        //    Dictionary<string, string> comboSource = new Dictionary<string, string>();
-          
-        //    foreach ( Category category in categories)
-        //    {
-        //        comboSource.Add(category.IDCate.ToString(), category.Name);
-        //    }
-        //    category_Cb.DataSource = new BindingSource(comboSource, null);
-        //    category_Cb.DisplayMember = "Value";
-        //    category_Cb.ValueMember = "Key";
-
-        //    List<DetailImage> detailImages = DetailImageConnect.LoadImage();
-        //    foreach (DetailImage detailImage in detailImages)
-        //    {
-        //        Bitmap bmp = converBase64ToBitmap(detailImage.ImageData);
-        //        AdminProductCard adminProductCard = new AdminProductCard(bmp,"Cafe");
-        //        ListPro_flowpanel.Controls.Add(adminProductCard);
-
-        //    }
-        //}
+        private void loadData()
+        {
+            categories = CategoryConnect.LoadCategory();
+            // create Dictionnary comboSource to 
+            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+            Products = ProductConnect.LoadProduct();
+            foreach (Category category in categories)
+            {
+                comboSource.Add(category.IDCate.ToString(), category.Name);
+            }
+            category_Cb.DataSource = new BindingSource(comboSource, null);
+            category_Cb.DisplayMember = "Value";
+            category_Cb.ValueMember = "Key";
+            foreach (Product product in Products)
+            {
+                List<DetailImage> detailImages = DetailImageConnect.LoadImage(product);
+                foreach (DetailImage detailImage in detailImages)
+                {
+                    Bitmap bmp = converBase64ToBitmap(detailImage.ImageData);
+                    AdminProductCard adminProductCard = new AdminProductCard(bmp, product.Name);
+                    ListPro_flowpanel.Controls.Add(adminProductCard);
+                }
+               
+            }
+        
+           
+        }
 
         // Function convert image:
         public static string convertBitmapToBase64(Bitmap bmp)

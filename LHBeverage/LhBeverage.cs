@@ -21,9 +21,8 @@ namespace LHBeverage
         {
             InitializeComponent();
             AccountName_lbl.Text = customer.Email;
-            BigCard bc = new BigCard("Huy To");
-            HomePanel.Controls.Add(bc);
-            //CreateItemCard();
+            //HomePanel.Controls.Add(bc);
+            CreateItemCard();
         }
 
         private void SwitchLabelControl(Button btn, Label Switch)
