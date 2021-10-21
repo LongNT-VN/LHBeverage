@@ -59,11 +59,13 @@ namespace LHBeverage.UserControls.LHComponent
             // 
             // ImageProductBeverage
             // 
-            this.ImageProductBeverage.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ImageProductBeverage.BackColor = System.Drawing.Color.White;
+            this.ImageProductBeverage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ImageProductBeverage.Enabled = false;
             this.ImageProductBeverage.Location = new System.Drawing.Point(15, 3);
             this.ImageProductBeverage.Name = "ImageProductBeverage";
             this.ImageProductBeverage.Size = new System.Drawing.Size(170, 170);
+            this.ImageProductBeverage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageProductBeverage.TabIndex = 3;
             this.ImageProductBeverage.TabStop = false;
             // 

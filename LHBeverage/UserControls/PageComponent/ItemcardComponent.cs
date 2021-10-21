@@ -15,12 +15,12 @@ namespace LHBeverage.UserControls.LHComponent
     public partial class ItemcardComponent : UserControl
     {
 
+        CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         public ItemcardComponent(Product product, Image image)
         {
             InitializeComponent();
             CreateComponent(product, image);
         }
-        CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         private void CreateComponent(Product product, Image image)
         {
             ImageProductBeverage.BackgroundImage = image;
