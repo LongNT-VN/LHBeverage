@@ -103,6 +103,16 @@ namespace LHBeverage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cart_normal1 {
+            get {
+                object obj = ResourceManager.GetObject("Cart_normal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_active {
             get {
                 object obj = ResourceManager.GetObject("coffee_active", resourceCulture);
@@ -116,6 +126,16 @@ namespace LHBeverage.Properties {
         internal static System.Drawing.Bitmap coffee_normal {
             get {
                 object obj = ResourceManager.GetObject("coffee_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favourite {
+            get {
+                object obj = ResourceManager.GetObject("favourite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
