@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LHBeverage.Model;
+using LHBeverage.ModelService;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +14,29 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class AdminProductCard : UserControl
     {
-        public AdminProductCard(Bitmap bmp, string name)
+        Product tmpPro = new Product();
+        public AdminProductCard(Bitmap bmp,Product product)
         {
             InitializeComponent();
             Picture_Pro.Image = bmp;
-            NameProduct_lbl.Text = name;
+            NameProduct_lbl.Text = product.Name;
+            PriceProduct_lbl.Text = product.Price.ToString();
+            Quantity_lbl.Text = product.Quantity.ToString();
+            tmpPro = product;
+        }
+
+        private void EditPro_btn_Click(object sender, EventArgs e)
+        {
+            AdminManageProduct.instance.Edit_Product(tmpPro);
+        }
+
+        private void DeletePro_btn_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure delete this product?","Notify",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                ProductConnect.DeleteProduct(tmpPro.IDPro);
+                AdminManageProduct.instance.loadData();
+            }
         }
     }
 }

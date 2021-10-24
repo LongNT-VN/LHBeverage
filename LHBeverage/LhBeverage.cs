@@ -120,7 +120,7 @@ namespace LHBeverage
                 if(product!=null)
                 {
                     //truyền vào product để chọn select tất cả các hình có trùng IDPRO
-                    List<DetailImage> images = DetailImageConnect.LoadImage(product);
+                    List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
                     foreach(DetailImage image in images)
                     {
                         if(image!=null)

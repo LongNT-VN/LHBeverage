@@ -22,11 +22,11 @@ namespace LHBeverage.ModelService
         //        return detailImages.ToList();
         //    }
         //}
-        public static List<DetailImage> LoadImage(Product product)
+        public static List<DetailImage> LoadImage(int idpro)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                string query = string.Format($"select * from DetailImage where IDPro='{product.IDPro}'");
+                string query = string.Format($"select * from DetailImage where IDPro='{idpro}'");
                 var detailImages = connection.Query<DetailImage>(query, new DynamicParameters());
                 return detailImages.ToList();
             }
@@ -45,6 +45,13 @@ namespace LHBeverage.ModelService
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 connection.Execute("insert into DetailImage (IDPro,IDImage,ImageData) values (@IDPro,@IDImage,@ImageData)", detailImage);
+            }
+        }
+        public static void DeleteImageOfPro(int idpro)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Execute($"Delete From DetailImage where IDPro='{idpro}'", new DynamicParameters());
             }
         }
 

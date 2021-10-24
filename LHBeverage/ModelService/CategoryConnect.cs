@@ -17,11 +17,18 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var categories = connection.Query<Category>("select * from Category", new DynamicParameters());
+                var categories = connection.Query<Category>("select * from Category order by IDCate DESC", new DynamicParameters());
                 return categories.ToList();
             }
         }
-       
+        public static List<Category> SelectCategory(int idCate)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var categories = connection.Query<Category>($"select * from Category where IDCate ='{idCate}'", new DynamicParameters());
+                return categories.ToList();
+            }
+        }
         public static void CreateCategory(Category category)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -29,7 +36,20 @@ namespace LHBeverage.ModelService
                 connection.Execute("insert into Category (Name) values (@Name)", category);
             }
         }
-       
+        public static void UpdateCategory(Category category)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Execute($"update Category set Name='{category.Name}' where IDCate='{category.IDCate}'", category);
+            }
+        }
+        public static void DeleteCategory(Category category)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Execute($"Delete From Category where IDCate='{category.IDCate}'", category);
+            }
+        }
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

@@ -18,10 +18,17 @@ namespace LHBeverage
         public AdminPage(Customer customer)
         { 
             InitializeComponent();
-            Dashboard dashboard = new Dashboard();
+            AdminDashboard dashboard = new AdminDashboard();
+            PublicParam.panelRoot.Location = new Point(250, 80);
+            PublicParam.panelRoot.Size = new Size(1014, 600);
+            PublicParam.panelRoot.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+            this.Controls.Add(PublicParam.panelRoot);
+
             addUserControl(dashboard);
             cust = customer;
-
+            PublicParam.dataTableImgPro.Columns.Add("IdPro", typeof(int));
+            PublicParam.dataTableImgPro.Columns.Add("IdImage", typeof(int));
+            PublicParam.dataTableImgPro.Columns.Add("ImageData", typeof(string));
         }
         Color activeColor = Color.FromArgb(209, 218, 235);
         //Gainsboro;
@@ -46,7 +53,7 @@ namespace LHBeverage
         private void DashBoardNav_Btn_Click(object sender, EventArgs e)
         {
             // set active button
-            Dashboard dashboard = new Dashboard();
+            AdminDashboard dashboard = new AdminDashboard();
             addUserControl(dashboard);
             setBg_Color_Btn_SideBar();
             DashBoardNav_Btn.BackColor = activeColor;
@@ -58,7 +65,7 @@ namespace LHBeverage
             // set active button
             setBg_Color_Btn_SideBar();
             ProductsNav_Btn.BackColor = activeColor;
-            ManageProduct manageProduct = new ManageProduct(cust);
+            AdminManageProduct manageProduct = new AdminManageProduct(cust);
             addUserControl(manageProduct);
         }
 
@@ -67,7 +74,7 @@ namespace LHBeverage
             // set active button
             setBg_Color_Btn_SideBar();
             CategoryNav_Btn.BackColor = activeColor;
-            ManageCategory manageCategory = new ManageCategory();
+            AdminManageCategory manageCategory = new AdminManageCategory();
             addUserControl(manageCategory);
         }
 

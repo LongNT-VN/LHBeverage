@@ -31,25 +31,25 @@ namespace LHBeverage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.SideBarPanel = new System.Windows.Forms.Panel();
-            this.panelRoot = new System.Windows.Forms.Panel();
-            this.panelTopBar = new System.Windows.Forms.Panel();
-            this.AccountName_lbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.search_tb = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
-            this.searchIcon_btn = new System.Windows.Forms.Button();
             this.EmployeesNav_btn = new System.Windows.Forms.Button();
             this.CategoryNav_Btn = new System.Windows.Forms.Button();
             this.OrdersNav_Btn = new System.Windows.Forms.Button();
             this.ProductsNav_Btn = new System.Windows.Forms.Button();
             this.DashBoardNav_Btn = new System.Windows.Forms.Button();
             this.LogoPic = new System.Windows.Forms.PictureBox();
+            this.panelRoot = new System.Windows.Forms.Panel();
+            this.panelTopBar = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
+            this.AccountName_lbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.searchIcon_btn = new System.Windows.Forms.Button();
+            this.search_tb = new System.Windows.Forms.TextBox();
             this.SideBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
             this.panelTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBarPanel
@@ -66,103 +66,6 @@ namespace LHBeverage
             this.SideBarPanel.Name = "SideBarPanel";
             this.SideBarPanel.Size = new System.Drawing.Size(250, 681);
             this.SideBarPanel.TabIndex = 0;
-            // 
-            // panelRoot
-            // 
-            this.panelRoot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
-            this.panelRoot.Location = new System.Drawing.Point(250, 80);
-            this.panelRoot.Name = "panelRoot";
-            this.panelRoot.Size = new System.Drawing.Size(1014, 600);
-            this.panelRoot.TabIndex = 1;
-            // 
-            // panelTopBar
-            // 
-            this.panelTopBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelTopBar.BackColor = System.Drawing.Color.White;
-            this.panelTopBar.Controls.Add(this.pictureBox6);
-            this.panelTopBar.Controls.Add(this.Avatar_picturebox);
-            this.panelTopBar.Controls.Add(this.AccountName_lbl);
-            this.panelTopBar.Controls.Add(this.label1);
-            this.panelTopBar.Controls.Add(this.searchIcon_btn);
-            this.panelTopBar.Controls.Add(this.search_tb);
-            this.panelTopBar.Location = new System.Drawing.Point(295, 0);
-            this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(969, 80);
-            this.panelTopBar.TabIndex = 2;
-            // 
-            // AccountName_lbl
-            // 
-            this.AccountName_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
-            this.AccountName_lbl.Location = new System.Drawing.Point(662, 20);
-            this.AccountName_lbl.Name = "AccountName_lbl";
-            this.AccountName_lbl.Size = new System.Drawing.Size(212, 40);
-            this.AccountName_lbl.TabIndex = 6;
-            this.AccountName_lbl.Text = "Huy To Quang";
-            this.AccountName_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(381, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin dashboard LH Beverage";
-            // 
-            // search_tb
-            // 
-            this.search_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.search_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.search_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_tb.ForeColor = System.Drawing.Color.Silver;
-            this.search_tb.Location = new System.Drawing.Point(50, 30);
-            this.search_tb.Name = "search_tb";
-            this.search_tb.Size = new System.Drawing.Size(220, 20);
-            this.search_tb.TabIndex = 2;
-            this.search_tb.Text = "Search";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(719, 20);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 40);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
-            // Avatar_picturebox
-            // 
-            this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
-            this.Avatar_picturebox.Location = new System.Drawing.Point(880, 20);
-            this.Avatar_picturebox.Name = "Avatar_picturebox";
-            this.Avatar_picturebox.Size = new System.Drawing.Size(40, 40);
-            this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Avatar_picturebox.TabIndex = 7;
-            this.Avatar_picturebox.TabStop = false;
-            // 
-            // searchIcon_btn
-            // 
-            this.searchIcon_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.searchIcon_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchIcon_btn.BackgroundImage")));
-            this.searchIcon_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchIcon_btn.FlatAppearance.BorderSize = 0;
-            this.searchIcon_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.searchIcon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchIcon_btn.Location = new System.Drawing.Point(235, 32);
-            this.searchIcon_btn.Name = "searchIcon_btn";
-            this.searchIcon_btn.Size = new System.Drawing.Size(16, 16);
-            this.searchIcon_btn.TabIndex = 3;
-            this.searchIcon_btn.UseVisualStyleBackColor = false;
             // 
             // EmployeesNav_btn
             // 
@@ -255,6 +158,103 @@ namespace LHBeverage
             this.LogoPic.TabIndex = 8;
             this.LogoPic.TabStop = false;
             // 
+            // panelRoot
+            // 
+            this.panelRoot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
+            this.panelRoot.Location = new System.Drawing.Point(250, 80);
+            this.panelRoot.Name = "panelRoot";
+            this.panelRoot.Size = new System.Drawing.Size(1014, 600);
+            this.panelRoot.TabIndex = 1;
+            // 
+            // panelTopBar
+            // 
+            this.panelTopBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTopBar.BackColor = System.Drawing.Color.White;
+            this.panelTopBar.Controls.Add(this.pictureBox6);
+            this.panelTopBar.Controls.Add(this.Avatar_picturebox);
+            this.panelTopBar.Controls.Add(this.AccountName_lbl);
+            this.panelTopBar.Controls.Add(this.label1);
+            this.panelTopBar.Controls.Add(this.searchIcon_btn);
+            this.panelTopBar.Controls.Add(this.search_tb);
+            this.panelTopBar.Location = new System.Drawing.Point(295, 0);
+            this.panelTopBar.Name = "panelTopBar";
+            this.panelTopBar.Size = new System.Drawing.Size(969, 80);
+            this.panelTopBar.TabIndex = 2;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(719, 20);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 40);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
+            // Avatar_picturebox
+            // 
+            this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
+            this.Avatar_picturebox.Location = new System.Drawing.Point(880, 20);
+            this.Avatar_picturebox.Name = "Avatar_picturebox";
+            this.Avatar_picturebox.Size = new System.Drawing.Size(40, 40);
+            this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Avatar_picturebox.TabIndex = 7;
+            this.Avatar_picturebox.TabStop = false;
+            // 
+            // AccountName_lbl
+            // 
+            this.AccountName_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
+            this.AccountName_lbl.Location = new System.Drawing.Point(662, 20);
+            this.AccountName_lbl.Name = "AccountName_lbl";
+            this.AccountName_lbl.Size = new System.Drawing.Size(212, 40);
+            this.AccountName_lbl.TabIndex = 6;
+            this.AccountName_lbl.Text = "Huy To Quang";
+            this.AccountName_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(381, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Admin dashboard LH Beverage";
+            // 
+            // searchIcon_btn
+            // 
+            this.searchIcon_btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.searchIcon_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchIcon_btn.BackgroundImage")));
+            this.searchIcon_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchIcon_btn.FlatAppearance.BorderSize = 0;
+            this.searchIcon_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.searchIcon_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchIcon_btn.Location = new System.Drawing.Point(235, 32);
+            this.searchIcon_btn.Name = "searchIcon_btn";
+            this.searchIcon_btn.Size = new System.Drawing.Size(16, 16);
+            this.searchIcon_btn.TabIndex = 3;
+            this.searchIcon_btn.UseVisualStyleBackColor = false;
+            // 
+            // search_tb
+            // 
+            this.search_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.search_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.search_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_tb.ForeColor = System.Drawing.Color.Silver;
+            this.search_tb.Location = new System.Drawing.Point(50, 30);
+            this.search_tb.Name = "search_tb";
+            this.search_tb.Size = new System.Drawing.Size(220, 20);
+            this.search_tb.TabIndex = 2;
+            this.search_tb.Text = "Search";
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,12 +267,13 @@ namespace LHBeverage
             this.Name = "AdminPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.SideBarPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).EndInit();
             this.panelTopBar.ResumeLayout(false);
             this.panelTopBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).EndInit();
             this.ResumeLayout(false);
 
         }
