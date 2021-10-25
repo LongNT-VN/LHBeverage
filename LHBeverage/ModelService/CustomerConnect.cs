@@ -64,7 +64,15 @@ namespace LHBeverage.ModelService
                 return customer.First();
             }
         }
-
+        public static Customer GetCustomerByEmail(string Email)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                string query = string.Format($"select * from Customer where Email='{Email}'");
+                var customer = connection.Query<Customer>(query);
+                return customer.First();
+            }
+        }
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LHBeverage.UserControls.LHComponent
+namespace LHBeverage.UserControls.Component
 {
     public partial class ItemcardComponent : UserControl
     {
@@ -21,11 +21,32 @@ namespace LHBeverage.UserControls.LHComponent
             InitializeComponent();
             CreateComponent(product, image);
         }
+        public int id;
         private void CreateComponent(Product product, Image image)
         {
+            id = product.IDPro;
             ImageProductBeverage.BackgroundImage = image;
             ProductNameLabel.Text = product.Name;
             ProductPriceLabel.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
+        //public new event EventHandler Click
+        //{
+        //    add
+        //    {
+        //        base.Click += value;
+        //        foreach (Control control in Controls)
+        //        {
+        //            control.Click += value;
+        //        }
+        //    }
+        //    remove
+        //    {
+        //        base.Click -= value;
+        //        foreach (Control control in Controls)
+        //        {
+        //            control.Click -= value;
+        //        }
+        //    }
+        //}
     }
 }

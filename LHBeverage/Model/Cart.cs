@@ -10,7 +10,7 @@ namespace LHBeverage.Model
     {
         public int IDCart { get; set; }
         public int IDCus { get; set; }
-        public DateTime CreateAt { get; set; }
-        public DateTime UpdateAt { get; set; }
+        public string CreateAt { get; set; }
+        public string UpdateAt { get; set; }
     }
 }

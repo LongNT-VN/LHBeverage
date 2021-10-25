@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LHBeverage.Model
 {
-    class DetailCart
+    public class DetailCart
     {
         public int IDDetail {get;set;}
         public int IDCart { get; set; }

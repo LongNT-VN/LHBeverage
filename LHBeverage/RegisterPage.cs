@@ -101,6 +101,8 @@ namespace LHBeverage
             customer.Password = PasswordTextBox.Text;
             customer.Authorized = "Member";
             CustomerConnect.CreateCustomer(customer);
+            Customer customer1 = CustomerConnect.GetCustomerByEmail(customer.Email);
+            CartConnect.CreateCart(customer1);
             //Chuyển về trang đăng nhập
             var LoginPage = new LoginPage();
             this.Hide();

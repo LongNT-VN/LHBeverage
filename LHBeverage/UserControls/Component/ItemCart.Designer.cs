@@ -1,5 +1,5 @@
 ﻿
-namespace LHBeverage.UserControls.PageComponent
+namespace LHBeverage.UserControls.Component
 {
     partial class ItemCart
     {

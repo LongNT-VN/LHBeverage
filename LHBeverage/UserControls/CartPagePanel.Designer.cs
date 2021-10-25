@@ -244,6 +244,7 @@ namespace LHBeverage.UserControls.PageComponent
             this.ItemsCart.Name = "ItemsCart";
             this.ItemsCart.Size = new System.Drawing.Size(800, 400);
             this.ItemsCart.TabIndex = 7;
+
             // 
             // CartPagePanel
             // 

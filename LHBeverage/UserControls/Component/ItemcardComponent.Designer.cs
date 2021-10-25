@@ -1,5 +1,5 @@
 ﻿
-namespace LHBeverage.UserControls.LHComponent
+namespace LHBeverage.UserControls.Component
 {
     partial class ItemcardComponent
     {
