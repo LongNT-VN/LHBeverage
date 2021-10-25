@@ -53,18 +53,19 @@ namespace LHBeverage.UserControls.Component
             this.BigCard_panel.Controls.Add(this.BigCard_picture);
             this.BigCard_panel.Location = new System.Drawing.Point(0, 0);
             this.BigCard_panel.Name = "BigCard_panel";
-            this.BigCard_panel.Size = new System.Drawing.Size(512, 245);
+            this.BigCard_panel.Size = new System.Drawing.Size(512, 210);
             this.BigCard_panel.TabIndex = 5;
             // 
             // DesShortBC_lbl
             // 
             this.DesShortBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DesShortBC_lbl.ForeColor = System.Drawing.Color.MintCream;
-            this.DesShortBC_lbl.Location = new System.Drawing.Point(280, 120);
+            this.DesShortBC_lbl.Location = new System.Drawing.Point(243, 120);
             this.DesShortBC_lbl.Name = "DesShortBC_lbl";
-            this.DesShortBC_lbl.Size = new System.Drawing.Size(220, 40);
+            this.DesShortBC_lbl.Size = new System.Drawing.Size(257, 40);
             this.DesShortBC_lbl.TabIndex = 5;
             this.DesShortBC_lbl.Text = "Green tea with a little sweetness \r\n";
+            this.DesShortBC_lbl.Click += new System.EventHandler(this.DesShortBC_lbl_Click);
             // 
             // BuyBC_btn
             // 
@@ -73,7 +74,7 @@ namespace LHBeverage.UserControls.Component
             this.BuyBC_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuyBC_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuyBC_btn.ForeColor = System.Drawing.Color.White;
-            this.BuyBC_btn.Location = new System.Drawing.Point(390, 190);
+            this.BuyBC_btn.Location = new System.Drawing.Point(400, 160);
             this.BuyBC_btn.Name = "BuyBC_btn";
             this.BuyBC_btn.Size = new System.Drawing.Size(100, 40);
             this.BuyBC_btn.TabIndex = 4;
@@ -84,9 +85,9 @@ namespace LHBeverage.UserControls.Component
             // 
             this.priceDrinksBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceDrinksBC_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.priceDrinksBC_lbl.Location = new System.Drawing.Point(280, 190);
+            this.priceDrinksBC_lbl.Location = new System.Drawing.Point(242, 160);
             this.priceDrinksBC_lbl.Name = "priceDrinksBC_lbl";
-            this.priceDrinksBC_lbl.Size = new System.Drawing.Size(100, 40);
+            this.priceDrinksBC_lbl.Size = new System.Drawing.Size(152, 40);
             this.priceDrinksBC_lbl.TabIndex = 3;
             this.priceDrinksBC_lbl.Text = "$5";
             this.priceDrinksBC_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,9 +96,9 @@ namespace LHBeverage.UserControls.Component
             // 
             this.HotSaleBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotSaleBC_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(149)))));
-            this.HotSaleBC_lbl.Location = new System.Drawing.Point(280, 10);
+            this.HotSaleBC_lbl.Location = new System.Drawing.Point(236, 10);
             this.HotSaleBC_lbl.Name = "HotSaleBC_lbl";
-            this.HotSaleBC_lbl.Size = new System.Drawing.Size(220, 20);
+            this.HotSaleBC_lbl.Size = new System.Drawing.Size(264, 20);
             this.HotSaleBC_lbl.TabIndex = 2;
             this.HotSaleBC_lbl.Text = "Hot sale";
             // 
@@ -105,18 +106,18 @@ namespace LHBeverage.UserControls.Component
             // 
             this.nameDrinkBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameDrinkBC_lbl.ForeColor = System.Drawing.Color.White;
-            this.nameDrinkBC_lbl.Location = new System.Drawing.Point(280, 50);
+            this.nameDrinkBC_lbl.Location = new System.Drawing.Point(239, 50);
             this.nameDrinkBC_lbl.Name = "nameDrinkBC_lbl";
-            this.nameDrinkBC_lbl.Size = new System.Drawing.Size(220, 60);
+            this.nameDrinkBC_lbl.Size = new System.Drawing.Size(261, 60);
             this.nameDrinkBC_lbl.TabIndex = 1;
-            this.nameDrinkBC_lbl.Text = "Black sugar pearl \r\nmilk tea";
+            this.nameDrinkBC_lbl.Text = "Trà sữa trân châu đường đen";
             // 
             // BigCard_picture
             // 
             this.BigCard_picture.Image = ((System.Drawing.Image)(resources.GetObject("BigCard_picture.Image")));
             this.BigCard_picture.Location = new System.Drawing.Point(0, 0);
             this.BigCard_picture.Name = "BigCard_picture";
-            this.BigCard_picture.Size = new System.Drawing.Size(270, 245);
+            this.BigCard_picture.Size = new System.Drawing.Size(230, 210);
             this.BigCard_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BigCard_picture.TabIndex = 0;
             this.BigCard_picture.TabStop = false;
@@ -127,7 +128,7 @@ namespace LHBeverage.UserControls.Component
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BigCard_panel);
             this.Name = "BigCard";
-            this.Size = new System.Drawing.Size(512, 245);
+            this.Size = new System.Drawing.Size(512, 210);
             this.BigCard_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).EndInit();
             this.ResumeLayout(false);

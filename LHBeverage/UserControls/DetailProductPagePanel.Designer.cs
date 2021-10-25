@@ -31,6 +31,10 @@ namespace LHBeverage.UserControls.PageComponent
         {
             this.RelationItemPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.DetailItemPanel = new System.Windows.Forms.Panel();
+            this.DescriptionItem = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AddCartBtn = new System.Windows.Forms.PictureBox();
+            this.ImgItem = new System.Windows.Forms.PictureBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -46,10 +50,6 @@ namespace LHBeverage.UserControls.PageComponent
             this.SizeLabel = new System.Windows.Forms.Label();
             this.pricelabel = new System.Windows.Forms.Label();
             this.NameItem = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.AddCartBtn = new System.Windows.Forms.PictureBox();
-            this.ImgItem = new System.Windows.Forms.PictureBox();
-            this.DescriptionItem = new System.Windows.Forms.TextBox();
             this.DetailItemPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddCartBtn)).BeginInit();
@@ -89,6 +89,54 @@ namespace LHBeverage.UserControls.PageComponent
             this.DetailItemPanel.Name = "DetailItemPanel";
             this.DetailItemPanel.Size = new System.Drawing.Size(1050, 490);
             this.DetailItemPanel.TabIndex = 1;
+            // 
+            // DescriptionItem
+            // 
+            this.DescriptionItem.AllowDrop = true;
+            this.DescriptionItem.BackColor = System.Drawing.Color.White;
+            this.DescriptionItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DescriptionItem.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.DescriptionItem.Enabled = false;
+            this.DescriptionItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescriptionItem.Location = new System.Drawing.Point(57, 120);
+            this.DescriptionItem.Multiline = true;
+            this.DescriptionItem.Name = "DescriptionItem";
+            this.DescriptionItem.ReadOnly = true;
+            this.DescriptionItem.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.DescriptionItem.Size = new System.Drawing.Size(623, 100);
+            this.DescriptionItem.TabIndex = 9;
+            this.DescriptionItem.Text = "Công thức siêu cấp từ bà ngoại.\r\n";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LHBeverage.Properties.Resources.favourite;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(310, 375);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // AddCartBtn
+            // 
+            this.AddCartBtn.BackgroundImage = global::LHBeverage.Properties.Resources.Cart_normal1;
+            this.AddCartBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddCartBtn.Location = new System.Drawing.Point(370, 375);
+            this.AddCartBtn.Name = "AddCartBtn";
+            this.AddCartBtn.Size = new System.Drawing.Size(32, 32);
+            this.AddCartBtn.TabIndex = 8;
+            this.AddCartBtn.TabStop = false;
+            // 
+            // ImgItem
+            // 
+            this.ImgItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
+            this.ImgItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ImgItem.ErrorImage = null;
+            this.ImgItem.Location = new System.Drawing.Point(700, 120);
+            this.ImgItem.Name = "ImgItem";
+            this.ImgItem.Size = new System.Drawing.Size(300, 300);
+            this.ImgItem.TabIndex = 7;
+            this.ImgItem.TabStop = false;
             // 
             // checkBox5
             // 
@@ -263,54 +311,6 @@ namespace LHBeverage.UserControls.PageComponent
             this.NameItem.Text = "Trà sữa trân châu đường đen";
             this.NameItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LHBeverage.Properties.Resources.favourite;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(310, 375);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // AddCartBtn
-            // 
-            this.AddCartBtn.BackgroundImage = global::LHBeverage.Properties.Resources.Cart_normal1;
-            this.AddCartBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddCartBtn.Location = new System.Drawing.Point(370, 375);
-            this.AddCartBtn.Name = "AddCartBtn";
-            this.AddCartBtn.Size = new System.Drawing.Size(32, 32);
-            this.AddCartBtn.TabIndex = 8;
-            this.AddCartBtn.TabStop = false;
-            // 
-            // ImgItem
-            // 
-            this.ImgItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
-            this.ImgItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ImgItem.ErrorImage = null;
-            this.ImgItem.Location = new System.Drawing.Point(700, 120);
-            this.ImgItem.Name = "ImgItem";
-            this.ImgItem.Size = new System.Drawing.Size(300, 300);
-            this.ImgItem.TabIndex = 7;
-            this.ImgItem.TabStop = false;
-            // 
-            // DescriptionItem
-            // 
-            this.DescriptionItem.AllowDrop = true;
-            this.DescriptionItem.BackColor = System.Drawing.Color.White;
-            this.DescriptionItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DescriptionItem.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.DescriptionItem.Enabled = false;
-            this.DescriptionItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescriptionItem.Location = new System.Drawing.Point(57, 120);
-            this.DescriptionItem.Multiline = true;
-            this.DescriptionItem.Name = "DescriptionItem";
-            this.DescriptionItem.ReadOnly = true;
-            this.DescriptionItem.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.DescriptionItem.Size = new System.Drawing.Size(623, 100);
-            this.DescriptionItem.TabIndex = 9;
-            this.DescriptionItem.Text = "Công thức siêu cấp từ bà ngoại.\r\n";
-            // 
             // DetailProductPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,7 +320,7 @@ namespace LHBeverage.UserControls.PageComponent
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1150, 600);
+            this.Size = new System.Drawing.Size(1133, 600);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

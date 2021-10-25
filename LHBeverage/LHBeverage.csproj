@@ -134,6 +134,12 @@
     <Compile Include="RegisterPage.Designer.cs">
       <DependentUpon>RegisterPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\CategoryComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\CategoryComponent.Designer.cs">
+      <DependentUpon>CategoryComponent.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Component\AdminImageCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterPage.resx">
       <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\CategoryComponent.resx">
+      <DependentUpon>CategoryComponent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\AdminCardCategory.resx">
       <DependentUpon>AdminCardCategory.cs</DependentUpon>

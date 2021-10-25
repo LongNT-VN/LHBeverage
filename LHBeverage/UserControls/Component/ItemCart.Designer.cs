@@ -39,6 +39,7 @@ namespace LHBeverage.UserControls.PageComponent
             this.QuantityDown = new System.Windows.Forms.Button();
             this.QuantityUp = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
+            this.Topping = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@ namespace LHBeverage.UserControls.PageComponent
             this.NameItem.ForeColor = System.Drawing.Color.DimGray;
             this.NameItem.Location = new System.Drawing.Point(250, 5);
             this.NameItem.Name = "NameItem";
-            this.NameItem.Size = new System.Drawing.Size(350, 40);
+            this.NameItem.Size = new System.Drawing.Size(415, 40);
             this.NameItem.TabIndex = 1;
             this.NameItem.Text = "Trà sữa trân châu đường đen";
             this.NameItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -59,7 +60,7 @@ namespace LHBeverage.UserControls.PageComponent
             this.PriceItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.PriceItem.Location = new System.Drawing.Point(250, 139);
             this.PriceItem.Name = "PriceItem";
-            this.PriceItem.Size = new System.Drawing.Size(350, 40);
+            this.PriceItem.Size = new System.Drawing.Size(184, 40);
             this.PriceItem.TabIndex = 1;
             this.PriceItem.Text = "50.000 VNĐ";
             this.PriceItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,11 +166,20 @@ namespace LHBeverage.UserControls.PageComponent
             this.RemoveBtn.Text = "Xóa";
             this.RemoveBtn.UseVisualStyleBackColor = false;
             // 
+            // Topping
+            // 
+            this.Topping.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Topping.Location = new System.Drawing.Point(440, 55);
+            this.Topping.Name = "Topping";
+            this.Topping.Size = new System.Drawing.Size(222, 100);
+            this.Topping.TabIndex = 4;
+            // 
             // ItemCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.Topping);
             this.Controls.Add(this.QuantityItem);
             this.Controls.Add(this.SizeLBtn);
             this.Controls.Add(this.SizeMBtn);
@@ -199,5 +209,6 @@ namespace LHBeverage.UserControls.PageComponent
         private System.Windows.Forms.Button QuantityDown;
         private System.Windows.Forms.Button QuantityUp;
         private System.Windows.Forms.Button RemoveBtn;
+        private System.Windows.Forms.FlowLayoutPanel Topping;
     }
 }

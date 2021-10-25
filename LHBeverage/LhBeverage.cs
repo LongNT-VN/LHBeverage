@@ -21,8 +21,9 @@ namespace LHBeverage
         {
             InitializeComponent();
             AccountName_lbl.Text = customer.Email;
-            //HomePanel.Controls.Add(bc);
             CreateItemCard();
+            CreateBigCard();
+            CreateCategory();
         }
 
         private void SwitchLabelControl(Button btn, Label Switch)
@@ -108,7 +109,48 @@ namespace LHBeverage
                 CartMoreOptionBtn.BackColor = Color.FromArgb(30, 30, 0);
             }
         }
+        //Khởi tạo Category
+        private void CreateCategory()
+        {
+            List<Category> categories = CategoryConnect.LoadCategory();
+            foreach (Category category in categories)
+            {
+                if (category != null)
+                {
+                    CategoryComponent categorycomponent = new CategoryComponent(category);
+                    CategoryPanel.Controls.Add(categorycomponent);
+                }
+            }
+        }
+        //Khởi tạo BigCard
+        private void CreateBigCard()
+        {
+            List<Product> products = ProductConnect.LoadProduct();
+            string productimagebase64 = "";
+            Image productimage;
+            foreach (Product product in products)
+            {
+                if (product != null)
+                {
+                    //truyền vào product để chọn select tất cả các hình có trùng IDPRO
+                    List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
+                    foreach (DetailImage image in images)
+                    {
+                        if (image != null)
+                        {
+                            //Lấy hình đầu tiên ra làm hình đại diện sản phẩm
+                            productimagebase64 = image.ImageData;
+                            break;
+                        }
+                    }
+                    productimage = LoadImage(productimagebase64);
+                    BigCard bigCard = new BigCard(product, productimage);
+                    BigCardPanel.Controls.Add(bigCard);
+                }
+            }
+        }
         //Khởi tạo item card
+
         private void CreateItemCard()
         {
             ItemcartsPanel.Controls.Clear();

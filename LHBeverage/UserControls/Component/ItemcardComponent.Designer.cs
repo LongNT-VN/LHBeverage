@@ -39,7 +39,7 @@ namespace LHBeverage.UserControls.LHComponent
             // 
             this.ProductPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductPriceLabel.ForeColor = System.Drawing.Color.Green;
-            this.ProductPriceLabel.Location = new System.Drawing.Point(0, 218);
+            this.ProductPriceLabel.Location = new System.Drawing.Point(10, 218);
             this.ProductPriceLabel.Name = "ProductPriceLabel";
             this.ProductPriceLabel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.ProductPriceLabel.Size = new System.Drawing.Size(200, 40);
@@ -50,7 +50,7 @@ namespace LHBeverage.UserControls.LHComponent
             // 
             this.ProductNameLabel.Enabled = false;
             this.ProductNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductNameLabel.Location = new System.Drawing.Point(0, 178);
+            this.ProductNameLabel.Location = new System.Drawing.Point(10, 178);
             this.ProductNameLabel.Name = "ProductNameLabel";
             this.ProductNameLabel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.ProductNameLabel.Size = new System.Drawing.Size(200, 40);
@@ -59,10 +59,10 @@ namespace LHBeverage.UserControls.LHComponent
             // 
             // ImageProductBeverage
             // 
-            this.ImageProductBeverage.BackColor = System.Drawing.Color.White;
+            this.ImageProductBeverage.BackColor = System.Drawing.Color.Transparent;
             this.ImageProductBeverage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ImageProductBeverage.Enabled = false;
-            this.ImageProductBeverage.Location = new System.Drawing.Point(15, 3);
+            this.ImageProductBeverage.Location = new System.Drawing.Point(25, 3);
             this.ImageProductBeverage.Name = "ImageProductBeverage";
             this.ImageProductBeverage.Size = new System.Drawing.Size(170, 170);
             this.ImageProductBeverage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,11 +73,12 @@ namespace LHBeverage.UserControls.LHComponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.ProductPriceLabel);
             this.Controls.Add(this.ProductNameLabel);
             this.Controls.Add(this.ImageProductBeverage);
             this.Name = "ItemcardComponent";
-            this.Size = new System.Drawing.Size(200, 260);
+            this.Size = new System.Drawing.Size(220, 260);
             ((System.ComponentModel.ISupportInitialize)(this.ImageProductBeverage)).EndInit();
             this.ResumeLayout(false);
 

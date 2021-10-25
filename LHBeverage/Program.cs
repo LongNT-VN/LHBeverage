@@ -15,11 +15,9 @@ namespace LHBeverage
         [STAThread]
         static void Main()
         {
-            Customer customer = new Customer();
-            customer.Authorized = "Admin";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminPage(customer));
+            Application.Run(new LoginPage());
         }
     }
 }
