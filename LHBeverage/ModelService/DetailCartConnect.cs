@@ -73,7 +73,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"DELETE FROM DetaiCart WHERE IDDetail='{detailcart.IDDetail}'");
+                connection.Execute($"DELETE FROM DetailCart WHERE IDDetail='{detailcart.IDDetail}'");
             }
         }
         
@@ -84,6 +84,39 @@ namespace LHBeverage.ModelService
             {
                 connection.Execute($"DELETE FROM DetaiCart WHERE IDCart='{cart.IDCart}'");
             }
+        }
+
+        //Sửa itemCart
+        //Nếu change size lại trùng nhau thì gộp lại
+        public static void ModifyItemCartSize(string size, DetailCart detailCart)
+        {
+            Cart cart = CartConnect.GetCartByID(detailCart.IDCart);
+            List<DetailCart> cartcheck = LoadDetailCart(cart);
+            foreach (DetailCart detail in cartcheck)
+            {
+                if (detail != null)
+                {
+
+                    //trùng size, trùng product thì cộng số lượng lên
+                    if (detailCart.IDPro == detail.IDPro && size == detail.Size)
+                    {
+                        int updateQuantity = detail.Quantity + detailCart.Quantity;
+                        using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+                        {
+                            connection.Query<Product>($"Update DetailCart set Quantity='{updateQuantity}', Size='{size}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
+                            DeleteDetailCart(detailCart);
+                        }
+                    }
+                }
+            }
+        }
+        public static void ModifyItemCartQuantity(int Quantity, DetailCart detailCart)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Query<Product>($"Update DetailCart set Quantity='{Quantity}' where IDDetail = '{detailCart.IDDetail}'", new DynamicParameters());
+            }
+
         }
 
 

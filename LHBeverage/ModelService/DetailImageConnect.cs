@@ -31,6 +31,15 @@ namespace LHBeverage.ModelService
                 return detailImages.ToList();
             }
         }
+        public static DetailImage LoadOneImage(int idpro)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                string query = string.Format($"select * from DetailImage where IDPro='{idpro}'");
+                var detailImages = connection.Query<DetailImage>(query, new DynamicParameters());
+                return detailImages.First();
+            }
+        }
         //public static List<DetailImage> LoadImage()
         //{
         //    using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))

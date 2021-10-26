@@ -77,6 +77,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeSBtn.TabIndex = 2;
             this.SizeSBtn.Text = "S";
             this.SizeSBtn.UseVisualStyleBackColor = false;
+            this.SizeSBtn.Click += new System.EventHandler(this.SizeSBtn_Click);
             // 
             // SizeMBtn
             // 
@@ -90,6 +91,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeMBtn.TabIndex = 2;
             this.SizeMBtn.Text = "M";
             this.SizeMBtn.UseVisualStyleBackColor = false;
+            this.SizeMBtn.Click += new System.EventHandler(this.SizeMBtn_Click);
             // 
             // SizeLBtn
             // 
@@ -103,6 +105,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeLBtn.TabIndex = 2;
             this.SizeLBtn.Text = "L";
             this.SizeLBtn.UseVisualStyleBackColor = false;
+            this.SizeLBtn.Click += new System.EventHandler(this.SizeLBtn_Click);
             // 
             // QuantityItem
             // 
@@ -115,10 +118,11 @@ namespace LHBeverage.UserControls.Component
             this.QuantityItem.TabIndex = 3;
             this.QuantityItem.Text = "11";
             this.QuantityItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.QuantityItem.TextChanged += new System.EventHandler(this.QuantityItem_TextChanged);
             // 
             // ImageItem
             // 
-            this.ImageItem.BackColor = System.Drawing.SystemColors.Control;
+            this.ImageItem.BackColor = System.Drawing.Color.White;
             this.ImageItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
             this.ImageItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ImageItem.InitialImage = null;
@@ -139,6 +143,7 @@ namespace LHBeverage.UserControls.Component
             this.QuantityDown.TabIndex = 2;
             this.QuantityDown.Text = "-";
             this.QuantityDown.UseVisualStyleBackColor = false;
+            this.QuantityDown.Click += new System.EventHandler(this.QuantityDown_Click);
             // 
             // QuantityUp
             // 
@@ -151,6 +156,7 @@ namespace LHBeverage.UserControls.Component
             this.QuantityUp.TabIndex = 2;
             this.QuantityUp.Text = "+";
             this.QuantityUp.UseVisualStyleBackColor = false;
+            this.QuantityUp.Click += new System.EventHandler(this.QuantityUp_Click);
             // 
             // RemoveBtn
             // 
@@ -165,6 +171,7 @@ namespace LHBeverage.UserControls.Component
             this.RemoveBtn.TabIndex = 2;
             this.RemoveBtn.Text = "Xóa";
             this.RemoveBtn.UseVisualStyleBackColor = false;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // Topping
             // 

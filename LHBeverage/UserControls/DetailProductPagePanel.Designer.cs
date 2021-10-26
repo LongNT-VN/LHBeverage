@@ -327,6 +327,7 @@ namespace LHBeverage.UserControls
             this.OrderItemBtn.TabIndex = 1;
             this.OrderItemBtn.Text = "Order";
             this.OrderItemBtn.UseVisualStyleBackColor = false;
+            this.OrderItemBtn.Click += new System.EventHandler(this.OrderItemBtn_Click);
             // 
             // ToppingLabel
             // 
@@ -389,7 +390,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1179, 583);
+            this.Size = new System.Drawing.Size(1225, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

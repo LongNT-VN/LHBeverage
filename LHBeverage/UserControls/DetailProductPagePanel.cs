@@ -111,6 +111,25 @@ namespace LHBeverage.UserControls
             quantity = Convert.ToInt32(QuantityItem.Text);
         }
 
+        private void OrderItemBtn_Click(object sender, EventArgs e)
+        {
+            Cart cart = CartConnect.LoadCart(customerinfo);
+            DetailCartConnect.CreateDetailCart(cart, id, "", size, quantity);
+        }
+
+        public new event EventHandler Click
+        {
+            add
+            {
+                base.Click += value;
+                OrderItemBtn.Click += value;
+            }
+            remove
+            {
+                base.Click -= value;
+                OrderItemBtn.Click -= value;
+            }
+        }
 
         //Thêm hàm kiểm tra thay đổi check để thêm topping
     }

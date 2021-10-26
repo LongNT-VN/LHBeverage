@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using LHBeverage.UserControls;
 using LHBeverage.UserControls.Component;
@@ -28,6 +29,32 @@ namespace LHBeverage
             CreateCategory();
         }
 
+
+        //Function
+        private void GetCartInfo()
+        {
+
+            Cart cart = CartConnect.LoadCart(customerinfo);
+            CartPanel.Controls.Clear();
+            CartPagePanel cartPagePanel = new CartPagePanel(cart);
+            //Chổ này chưa nhận anchor
+            cartPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+            CartPanel.Controls.Add(cartPagePanel);
+
+        }
+        private void ResizePaneltoSmall(Panel panel)
+        {
+            panel.Width = panel.Width - 220;
+            panel.Location = new Point(300, 80);
+        }
+        private void ResizePaneltoLarge(Panel panel)
+        {
+            panel.Width = panel.Width + 220;
+            panel.Location = new Point(80, 80);
+        }
+
+
+        //Event
         private void SwitchLabelControl(Button btn, Label Switch)
         {
             int n = Switch.Location.Y;
@@ -44,6 +71,19 @@ namespace LHBeverage
                     Switch.Location = new Point(0, n);
                 }
             }
+            ProductPanel.Visible = false;
+            CartPanel.Visible = false;
+            DetailProductPanel.Visible = false;
+            if(btn==CartBtn)
+            {
+                CartPanel.Visible = true;
+                GetCartInfo();
+            }
+            else if(btn == ProductBtn)
+            {
+                ProductPanel.Visible = true;
+            }
+
         }
 
         private void NavigationBtnSwitch(object sender, EventArgs e)
@@ -59,12 +99,15 @@ namespace LHBeverage
             NavigationLargePanel.Visible = true;
             search_tb.Visible = false;
             searchIcon_btn.Visible = false;
-            ProductPanel.Width = ProductPanel.Width - 220;
-            ProductPanel.Location = new Point(300, 80);
+            NavigationLargePanel.Location = new Point(0, 0);
+            ResizePaneltoSmall(ProductPanel);
             TopBarPanel.Width = TopBarPanel.Width - 220;
             TopBarPanel.Location = new Point(300, 0);
-            NavigationLargePanel.Location = new Point(0, 0);
+            ResizePaneltoSmall(DetailProductPanel);
+            ResizePaneltoSmall(CartPanel);
         }
+
+
 
         private void BackToNavigationSmall_Click(object sender, EventArgs e)
         {
@@ -72,10 +115,11 @@ namespace LHBeverage
             NavigationLargePanel.Visible = false;
             search_tb.Visible = true;
             searchIcon_btn.Visible = true;
-            ProductPanel.Width = ProductPanel.Width + 220;
-            ProductPanel.Location = new Point(80, 80);
+            ResizePaneltoLarge(ProductPanel);
             TopBarPanel.Width = TopBarPanel.Width + 220;
             TopBarPanel.Location = new Point(80, 0);
+            ResizePaneltoLarge(DetailProductPanel);
+            ResizePaneltoLarge(CartPanel);
         }
 
         private void BtnSpecial_Hover(object sender, EventArgs e)
@@ -145,7 +189,7 @@ namespace LHBeverage
                             break;
                         }
                     }
-                    productimage = LoadImage(productimagebase64);
+                    productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     BigCard bigCard = new BigCard(product, productimage);
                     BigCardPanel.Controls.Add(bigCard);
                 }
@@ -174,24 +218,12 @@ namespace LHBeverage
                             break;
                         }    
                     }
-                    productimage = LoadImage(productimagebase64);
+                    productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     ItemcardComponent itemcart = new ItemcardComponent(product, productimage);
                     itemcart.Click += ItemClick;
                     ItemcartsPanel.Controls.Add(itemcart);
                 }
             }
-        }
-        //Load image từ base64
-        private Image LoadImage(string imagebase64)
-        {
-            byte[] bytes = Convert.FromBase64String(imagebase64);
-
-            Image image;
-            using (MemoryStream ms = new MemoryStream(bytes))
-            {
-                image = Image.FromStream(ms);
-            }
-            return image;
         }
         private void ItemClick(object sender, EventArgs e)
         {
@@ -210,13 +242,15 @@ namespace LHBeverage
                         List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
                         foreach (DetailImage image in images)
                         {
-                            Image img = LoadImage(image.ImageData);
+                            Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
                             Listimages.Add(img);
                         }
                         DetailProductPagePanel detailProductPage = new DetailProductPagePanel(product, Listimages, customerinfo);
                         detailProductPage.Location = new Point(0, 0);
                         detailProductPage.AutoScroll = true;
                         detailProductPage.Click += DetailProductPage_Click;
+                        DetailProductPanel.Controls.Clear();
+                        DetailProductPanel.Controls.Add(BackHomeBtn);
                         DetailProductPanel.Controls.Add(detailProductPage);
                     }
                 }
@@ -225,12 +259,12 @@ namespace LHBeverage
 
         private void DetailProductPage_Click(object sender, EventArgs e)
         {
-            DetailProductPagePanel detail = sender as DetailProductPagePanel;
+            Button detail = sender as Button;
             if(detail != null)
             {
-                    Cart cart = CartConnect.LoadCart(customerinfo);
-                    DetailCartConnect.CreateDetailCart(cart, detail.id, "", detail.size, detail.quantity);
-                //Chưa xong
+                DetailProductPanel.Visible = false;
+                CartPanel.Visible = true;
+                GetCartInfo();
             }
         }
 

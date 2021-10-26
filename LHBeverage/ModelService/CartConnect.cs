@@ -35,6 +35,16 @@ namespace LHBeverage.ModelService
                 return cart.First();
             }
         }
+
+        public static Cart GetCartByID(int ID)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var cart = connection.Query<Cart>($"select * from Cart where IDCart='{ID}'", new DynamicParameters());
+                return cart.First();
+            }
+        }
+
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

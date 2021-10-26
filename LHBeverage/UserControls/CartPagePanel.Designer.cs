@@ -1,5 +1,5 @@
 ﻿
-namespace LHBeverage.UserControls.PageComponent
+namespace LHBeverage.UserControls
 {
     partial class CartPagePanel
     {
@@ -72,7 +72,7 @@ namespace LHBeverage.UserControls.PageComponent
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(850, 420);
             this.panel2.Name = "panel2";
@@ -114,7 +114,7 @@ namespace LHBeverage.UserControls.PageComponent
             // 
             // PaymentMethodPanel
             // 
-            this.PaymentMethodPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PaymentMethodPanel.BackColor = System.Drawing.Color.White;
             this.PaymentMethodPanel.Controls.Add(this.Method4Pic);
             this.PaymentMethodPanel.Controls.Add(this.Method3Pic);
             this.PaymentMethodPanel.Controls.Add(this.Method2Pic);
@@ -223,7 +223,7 @@ namespace LHBeverage.UserControls.PageComponent
             // 
             // TotalPricePanel
             // 
-            this.TotalPricePanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TotalPricePanel.BackColor = System.Drawing.Color.White;
             this.TotalPricePanel.Controls.Add(this.TotalPriceLabel);
             this.TotalPricePanel.Controls.Add(this.TotalLabel);
             this.TotalPricePanel.Controls.Add(this.label2);
@@ -244,13 +244,12 @@ namespace LHBeverage.UserControls.PageComponent
             this.ItemsCart.Name = "ItemsCart";
             this.ItemsCart.Size = new System.Drawing.Size(800, 400);
             this.ItemsCart.TabIndex = 7;
-
             // 
             // CartPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PaymentMethodPanel);
             this.Controls.Add(this.TotalPricePanel);
