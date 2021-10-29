@@ -262,9 +262,7 @@ namespace LHBeverage
             Button detail = sender as Button;
             if(detail != null)
             {
-                DetailProductPanel.Visible = false;
-                CartPanel.Visible = true;
-                GetCartInfo();
+                CartBtn.PerformClick();
             }
         }
 

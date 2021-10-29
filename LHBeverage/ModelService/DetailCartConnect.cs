@@ -107,6 +107,13 @@ namespace LHBeverage.ModelService
                             DeleteDetailCart(detailCart);
                         }
                     }
+                    else if(detailCart.IDPro == detail.IDPro)
+                    {
+                        using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+                        {
+                            connection.Query<Product>($"Update DetailCart set Size='{size}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
+                        }
+                    }
                 }
             }
         }
