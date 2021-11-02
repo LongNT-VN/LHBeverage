@@ -59,7 +59,7 @@ namespace LHBeverage.UserControls
         {
             try
             {
-                List<Product> products = ProductConnect.SelectProductByCategory(category);
+                List<Product> products = ProductConnect.SelectProductByCategory(category.IDCate);
                 if (products.Count > 0)
                 {
                     MessageBox.Show("Exist product of category. Cannot delete it");

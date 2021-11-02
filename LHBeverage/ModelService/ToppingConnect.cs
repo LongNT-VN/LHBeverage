@@ -11,43 +11,43 @@ using System.Threading.Tasks;
 
 namespace LHBeverage.ModelService
 {
-    class CategoryConnect
+    class ToppingConnect
     {
-        public static List<Category> LoadCategory()
+        public static List<Topping> LoadTopping()
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var categories = connection.Query<Category>("select * from Category order by IDCate DESC", new DynamicParameters());
-                return categories.ToList();
+                var toppings = connection.Query<Topping>("select * from Topping order by IDTopping DESC", new DynamicParameters());
+                return toppings.ToList();
             }
         }
-        public static Category SelectCategory(int idCate)
+        public static List<Topping> SelectToppingByCate(int idCate)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var categories = connection.Query<Category>($"select * from Category where IDCate ='{idCate}'", new DynamicParameters());
-                return categories.First();
+                var toppings = connection.Query<Topping>($"select * from Topping where IDCate ='{idCate}' order by IDTopping DESC", new DynamicParameters());
+                return toppings.ToList();
             }
         }
-        public static void CreateCategory(Category category)
+        public static void CreateTopping(Topping topping)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Category (Name) values (@Name)", category);
+                connection.Execute("insert into Topping (IDCate,ToppingName) values (@IDCate,@ToppingName)", topping);
             }
         }
-        public static void UpdateCategory(Category category)
+        public static void UpdateTopping(Topping topping)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"update Category set Name='{category.Name}' where IDCate='{category.IDCate}'", category);
+                connection.Execute($"update Topping set IDCate='{topping.IDCate}',ToppingName='{topping.ToppingName}' where IDTopping='{topping.IDTopping}'", new DynamicParameters());
             }
         }
-        public static void DeleteCategory(Category category)
+        public static void DeleteTopping(Topping topping)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"Delete From Category where IDCate='{category.IDCate}'", category);
+                connection.Execute($"Delete From Topping where IDTopping='{topping.IDTopping}'", new DynamicParameters());
             }
         }
         private static string LoadConnectionString(string id = "Default")

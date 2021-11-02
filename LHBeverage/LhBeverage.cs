@@ -19,18 +19,25 @@ namespace LHBeverage
     public partial class LHBeverage : Form
     {
         Customer customerinfo = new Customer();
+        public static LHBeverage instance;
         public LHBeverage(Customer customer)
         {
             InitializeComponent();
             customerinfo = customer;
             AccountName_lbl.Text = customer.Email;
+           // HomeBtn.PerformClick();
             CreateItemCard();
             CreateBigCard();
             CreateCategory();
+            instance = this;
         }
 
 
         //Function
+        private void LHBeverage_Shown(object sender, EventArgs e)
+        {
+            HomeBtn.PerformClick();
+        }
         private void GetCartInfo()
         {
 
@@ -71,10 +78,21 @@ namespace LHBeverage
                     Switch.Location = new Point(0, n);
                 }
             }
+            HomePanel.Visible = false;
             ProductPanel.Visible = false;
             CartPanel.Visible = false;
             DetailProductPanel.Visible = false;
-            if(btn==CartBtn)
+            AccountPanel.Visible = false;
+            if(btn == HomeBtn)
+            {
+                HomePanel.Visible = true;
+                HomePanel.Controls.Clear();
+                HomePagePanel homePagePanel = new HomePagePanel();
+                homePagePanel.Dock = DockStyle.Fill;
+                //homePagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+                HomePanel.Controls.Add(homePagePanel);
+            }
+            else if(btn==CartBtn)
             {
                 CartPanel.Visible = true;
                 GetCartInfo();
@@ -82,6 +100,13 @@ namespace LHBeverage
             else if(btn == ProductBtn)
             {
                 ProductPanel.Visible = true;
+            }
+            else if(btn == UserBtn)
+            {
+                AccountPanel.Visible = true;
+                AccountPagePanel accountPagePanel = new AccountPagePanel();
+                accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+                AccountPanel.Controls.Add(accountPagePanel);
             }
 
         }
@@ -158,6 +183,7 @@ namespace LHBeverage
         //Khởi tạo Category
         private void CreateCategory()
         {
+          
             List<Category> categories = CategoryConnect.LoadCategory();
             foreach (Category category in categories)
             {
@@ -225,6 +251,32 @@ namespace LHBeverage
                 }
             }
         }
+        public void NavProductFromHomeToDetail(Product product)
+        {
+            ProductBtn.PerformClick();
+            HomePanel.Visible = false;
+            ProductPanel.Visible = false;
+            DetailProductPanel.Visible = true;
+            DetailProductPanel.BringToFront();
+            List<Image> Listimages = new List<Image>();
+            if (product != null)
+            {
+                List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
+                foreach (DetailImage image in images)
+                {
+                    Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
+                    Listimages.Add(img);
+                }
+                DetailProductPagePanel detailProductPage = new DetailProductPagePanel(product, Listimages, customerinfo);
+                detailProductPage.Location = new Point(0, 0);
+                detailProductPage.AutoScroll = true;
+                detailProductPage.Click += DetailProductPage_Click;
+                DetailProductPanel.Controls.Clear();
+                DetailProductPanel.Controls.Add(BackHomeBtn);
+                DetailProductPanel.Controls.Add(detailProductPage);
+            }
+
+        }
         private void ItemClick(object sender, EventArgs e)
         {
             ItemcardComponent productcard = sender as ItemcardComponent;
@@ -271,5 +323,7 @@ namespace LHBeverage
             ProductPanel.Visible = true;
             DetailProductPanel.Visible = false;
         }
+
+      
     }
 }

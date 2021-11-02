@@ -17,7 +17,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-              connection.Query<Product>($"Update Product set IDCate='{product.IDCate}',Name ='{product.Name}',Price='{product.Price}',Quantity='{product.Quantity}',Description='{product.Description}' where IDPro='{product.IDPro}'", new DynamicParameters());           
+              connection.Query<Product>($"Update Product set IDCate='{product.IDCate}',Name ='{product.Name}',PriceS='{product.PriceS}',PriceM='{product.PriceM}',PriceL='{product.PriceL}',Quantity='{product.Quantity}',Description='{product.Description}' where IDPro='{product.IDPro}'", new DynamicParameters());           
             }
         
         }
@@ -29,11 +29,11 @@ namespace LHBeverage.ModelService
                 return products.ToList();
             }
         }
-        public static List<Product> SelectProductByCategory(Category category)
+        public static List<Product> SelectProductByCategory(int  idcategory)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var products = connection.Query<Product>($"select * from Product where IDCate = '{category.IDCate}'", new DynamicParameters());
+                var products = connection.Query<Product>($"select * from Product where IDCate = '{idcategory}' order by IDPro DESC", new DynamicParameters());
                 return products.ToList();
             }
         }
@@ -49,7 +49,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Product (IDCate,IDCust,Name,Price,Quantity,Description,Type) values (@IDCate,@IDCust,@Name,@Price,@Quantity,@Description,@Type)", product);
+                connection.Execute("insert into Product (IDCate,IDCust,Name,PriceS,PriceM,PriceL,Quantity,Description,Type) values (@IDCate,@IDCust,@Name,@PriceS,@PriceM,@PriceL,@Quantity,@Description,@Type)", product);
             }
         }
         public static void DeleteProduct(int idpro)

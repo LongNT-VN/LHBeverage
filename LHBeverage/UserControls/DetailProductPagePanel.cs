@@ -33,7 +33,7 @@ namespace LHBeverage.UserControls
             NameItem.Text = product.Name;
 
             DescriptionItem.Text = product.Description;
-            PriceItem.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
+           // PriceItem.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
             int index = 0;
             foreach(Image image in images)
             {

@@ -91,5 +91,14 @@ namespace LHBeverage
             setBg_Color_Btn_SideBar();
             EmployeesNav_btn.BackColor = activeColor;
         }
+
+        private void ToppingsNav_Btn_Click(object sender, EventArgs e)
+        {
+            AdminManageTopping adminManageTopping = new AdminManageTopping();
+            addUserControl(adminManageTopping);
+            setBg_Color_Btn_SideBar();
+            ToppingsNav_Btn.BackColor = activeColor;
+        }
+       
     }
 }

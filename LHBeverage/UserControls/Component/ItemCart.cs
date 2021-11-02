@@ -36,7 +36,7 @@ namespace LHBeverage.UserControls.Component
                 {
                     NameItem.Text = product.Name;
                     //Chưa cộng thêm giá topping
-                    PriceItem.Text = (product.Price * detailcart.Quantity).ToString("#,###", cul.NumberFormat) + " VNĐ";
+                    //PriceItem.Text = (product.Price * detailcart.Quantity).ToString("#,###", cul.NumberFormat) + " VNĐ";
                     DetailImage image = DetailImageConnect.LoadOneImage(product.IDPro);
                     Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
                     ImageItem.BackgroundImage = img;

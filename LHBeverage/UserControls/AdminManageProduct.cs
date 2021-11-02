@@ -28,18 +28,22 @@ namespace LHBeverage.UserControls
         public AdminManageProduct(Customer customer)
         {
             InitializeComponent();
+            loadCategoryInComboBox();
             loadData();
             instance = this;
             cust = customer;
-            loadCategoryInComboBox();
+            
         }
         private void loadCategoryInComboBox()
         {
+            Dictionary<string, string> comboSourceManageCate = new Dictionary<string, string>();
             categories = CategoryConnect.LoadCategory();
+            comboSourceManageCate.Add("0", "All");
             // create Dictionnary comboSource to 
             foreach (Category category in categories)
             {
                 comboSource.Add(category.IDCate.ToString(), category.Name);
+                comboSourceManageCate.Add(category.IDCate.ToString(), category.Name);
             }
             category_Cb.DataSource = new BindingSource(comboSource, null);
             category_Cb.DisplayMember = "Value";
@@ -48,11 +52,25 @@ namespace LHBeverage.UserControls
             cbEditCategory.DataSource = new BindingSource(comboSource, null);
             cbEditCategory.DisplayMember = "Value";
             cbEditCategory.ValueMember = "Key";
+
+            CategoryManage_Cb.DataSource = new BindingSource(comboSourceManageCate, null);
+            CategoryManage_Cb.DisplayMember = "Value";
+            CategoryManage_Cb.ValueMember = "Key";
         }
         public void loadData()
         {
             int i = 0;
-            Products = ProductConnect.LoadProduct();
+            int categoryManage = Convert.ToInt32(((KeyValuePair<string, string>)CategoryManage_Cb.SelectedItem).Key);
+            if (categoryManage == 0)
+            {
+                Products = ProductConnect.LoadProduct();
+            }
+            else
+            {
+                Products = ProductConnect.SelectProductByCategory(categoryManage);
+
+            }
+           
             ListPro_flowpanel.Controls.Clear();
             foreach (Product product in Products)
             {
@@ -109,7 +127,9 @@ namespace LHBeverage.UserControls
                     product.IDCate = key;
                     product.IDCust = cust.IDCus;
                     product.Name = NamePro_tb.Text;
-                    product.Price = Convert.ToInt32(Price_tb.Text);
+                    product.PriceS = Convert.ToInt32(PriceS_tb.Text);
+                    product.PriceM = Convert.ToInt32(PriceM_tb.Text);
+                    product.PriceL = Convert.ToInt32(PriceL_tb.Text);
                     product.Description = Des_Tb.Text;
                     product.Quantity = Convert.ToInt32(Quantity_tb.Text);
                     product.Type = "Normal";
@@ -120,12 +140,14 @@ namespace LHBeverage.UserControls
                     NamePro_tb.Text = "";
                     Des_Tb.Text = "";
                     Quantity_tb.Text = "";
-                    Price_tb.Text = "";
-   
+                    PriceS_tb.Text = "";
+                    PriceM_tb.Text = "";
+                    PriceL_tb.Text = "";
                     AddPro_panel.Visible = false;
                     AddImg_panel.Visible = true;
 
                     flowPanel_AddImagePro.Controls.Clear();
+                    CategoryManage_Cb.SelectedValue = product.IDCate.ToString();
                     renderListProduct();
                     loadData();
                 }
@@ -146,17 +168,20 @@ namespace LHBeverage.UserControls
             if (product != null)
             {
                 EditProductName_tb.Text = product.Name;
-                EditPrice_tb.Text = product.Price.ToString();
+                EditPriceS_tb.Text = product.PriceS.ToString();
+                EditPriceM_tb.Text = product.PriceM.ToString();
+                EditPriceL_tb.Text = product.PriceL.ToString();
                 EditDes_tb.Text = product.Description;
                 EditQuantity_tb.Text = product.Quantity.ToString();
                 // set selecteditem in category of product edit and selected product in upload image
                 try
                 {
-                    List<Category> categories = CategoryConnect.SelectCategory(product.IDCate);                  
-                    foreach (Category category in categories)
-                    {                       
-                        cbEditCategory.SelectedValue = category.IDCate.ToString();
-                    }
+                    cbEditCategory.SelectedValue = product.IDCate.ToString();
+                    //List<Category> categories = CategoryConnect.SelectCategory(product.IDCate);                  
+                    //foreach (Category category in categories)
+                    //{                       
+                    //    cbEditCategory.SelectedValue = category.IDCate.ToString();
+                    //}
                 }
                 catch (Exception ex)
                 {
@@ -265,10 +290,12 @@ namespace LHBeverage.UserControls
         private void btnOpenpanelAddPro_Click(object sender, EventArgs e)
         {
             panelCtnAddPro.Visible = true;
+            panelCtnAddPro.BringToFront();
             AddPro_panel.Visible = true;
-           
+            panelEditCtn.Visible = false;
+
             NamePro_tb.Text = "";
-            Price_tb.Text = "";
+            PriceS_tb.Text = "";
             Des_Tb.Text = "";
             Quantity_tb.Text = "";
         }
@@ -323,6 +350,7 @@ namespace LHBeverage.UserControls
                     }
                     MessageBox.Show("Update image for product successfull");
                 }
+               
                 loadData();
             }
             catch(Exception ex)
@@ -335,7 +363,9 @@ namespace LHBeverage.UserControls
         {
             // update edit product with infor
             EditProduct.Name = EditProductName_tb.Text;
-            EditProduct.Price = Convert.ToInt32(EditPrice_tb.Text);
+            EditProduct.PriceS = Convert.ToInt32(EditPriceS_tb.Text);
+            EditProduct.PriceM = Convert.ToInt32(EditPriceM_tb.Text);
+            EditProduct.PriceL = Convert.ToInt32(EditPriceL_tb.Text);
             EditProduct.Description = EditDes_tb.Text;
             EditProduct.Quantity = Convert.ToInt32(EditQuantity_tb.Text);
             EditProduct.IDCate = Convert.ToInt32(((KeyValuePair<string, string>)cbEditCategory.SelectedItem).Key);
@@ -344,6 +374,7 @@ namespace LHBeverage.UserControls
             {
                 ProductConnect.UpdateProduct(EditProduct);
                 MessageBox.Show("Update Information of product successfull");
+                CategoryManage_Cb.SelectedValue = EditProduct.IDCate.ToString();
                 loadData();
             }
             catch(Exception ex)
@@ -409,6 +440,11 @@ namespace LHBeverage.UserControls
                 AdminImageCard adminImageCard = new AdminImageCard(converBase64ToBitmap(dataRow["ImageData"].ToString()), Convert.ToInt32(dataRow["IDImage"].ToString()), 1);
                 flowPanel_AddImagePro.Controls.Add(adminImageCard);
             }
+        }
+
+        private void CategoryManage_Cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadData();
         }
     }
 }

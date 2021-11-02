@@ -66,6 +66,8 @@ namespace LHBeverage
             this.DetailProductPanel = new System.Windows.Forms.Panel();
             this.BackHomeBtn = new System.Windows.Forms.Button();
             this.CartPanel = new System.Windows.Forms.Panel();
+            this.HomePanel = new System.Windows.Forms.Panel();
+            this.AccountPanel = new System.Windows.Forms.Panel();
             this.ProductPanel.SuspendLayout();
             this.NavigationPanel.SuspendLayout();
             this.TopBarPanel.SuspendLayout();
@@ -88,6 +90,7 @@ namespace LHBeverage
             this.ProductPanel.Name = "ProductPanel";
             this.ProductPanel.Size = new System.Drawing.Size(1184, 600);
             this.ProductPanel.TabIndex = 0;
+            this.ProductPanel.Visible = false;
             // 
             // ItemcartsPanel
             // 
@@ -166,6 +169,7 @@ namespace LHBeverage
             this.UserBtn.Size = new System.Drawing.Size(80, 80);
             this.UserBtn.TabIndex = 4;
             this.UserBtn.UseVisualStyleBackColor = false;
+            this.UserBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
             // 
             // UserIconList
             // 
@@ -304,7 +308,7 @@ namespace LHBeverage
             // 
             this.AccountName_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
+            this.AccountName_lbl.ForeColor = System.Drawing.Color.White;
             this.AccountName_lbl.Location = new System.Drawing.Point(900, 20);
             this.AccountName_lbl.Name = "AccountName_lbl";
             this.AccountName_lbl.Size = new System.Drawing.Size(212, 40);
@@ -565,21 +569,44 @@ namespace LHBeverage
             this.CartPanel.TabIndex = 7;
             this.CartPanel.Visible = false;
             // 
+            // HomePanel
+            // 
+            this.HomePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.HomePanel.BackColor = System.Drawing.SystemColors.Control;
+            this.HomePanel.Location = new System.Drawing.Point(80, 80);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(1184, 600);
+            this.HomePanel.TabIndex = 8;
+            this.HomePanel.Visible = false;
+            // 
+            // AccountPanel
+            // 
+            this.AccountPanel.Location = new System.Drawing.Point(80, 80);
+            this.AccountPanel.Name = "AccountPanel";
+            this.AccountPanel.Size = new System.Drawing.Size(1184, 600);
+            this.AccountPanel.TabIndex = 9;
+            this.AccountPanel.Visible = false;
+            // 
             // LHBeverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.CartPanel);
-            this.Controls.Add(this.DetailProductPanel);
             this.Controls.Add(this.TopBarPanel);
             this.Controls.Add(this.NavigationLargePanel);
             this.Controls.Add(this.NavigationPanel);
+            this.Controls.Add(this.CartPanel);
+            this.Controls.Add(this.DetailProductPanel);
             this.Controls.Add(this.ProductPanel);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.AccountPanel);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "LHBeverage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LHBeverage";
+            this.Shown += new System.EventHandler(this.LHBeverage_Shown);
             this.ProductPanel.ResumeLayout(false);
             this.NavigationPanel.ResumeLayout(false);
             this.TopBarPanel.ResumeLayout(false);
@@ -629,6 +656,8 @@ namespace LHBeverage
         private System.Windows.Forms.Panel DetailProductPanel;
         private System.Windows.Forms.Button BackHomeBtn;
         private System.Windows.Forms.Panel CartPanel;
+        private System.Windows.Forms.Panel HomePanel;
+        private System.Windows.Forms.Panel AccountPanel;
     }
 }
 

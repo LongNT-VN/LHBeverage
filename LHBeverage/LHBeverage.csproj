@@ -115,6 +115,7 @@
     <Compile Include="ModelService\DetailImageConnect.cs" />
     <Compile Include="ModelService\OrderConnect.cs" />
     <Compile Include="ModelService\ProductConnect.cs" />
+    <Compile Include="ModelService\ToppingConnect.cs" />
     <Compile Include="Model\Cart.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Customer.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductIngredient.cs" />
     <Compile Include="Model\Promotion.cs" />
+    <Compile Include="Model\Topping.cs" />
     <Compile Include="Model\TypeIngredient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +136,30 @@
     </Compile>
     <Compile Include="RegisterPage.Designer.cs">
       <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AccountPagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AccountPagePanel.Designer.cs">
+      <DependentUpon>AccountPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AdminManageTopping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminManageTopping.Designer.cs">
+      <DependentUpon>AdminManageTopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminCardCateForTopping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminCardCateForTopping.Designer.cs">
+      <DependentUpon>AdminCardCateForTopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminCardTopping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminCardTopping.Designer.cs">
+      <DependentUpon>AdminCardTopping.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Component\CategoryComponent.cs">
       <SubType>UserControl</SubType>
@@ -207,11 +233,23 @@
     <Compile Include="UserControls\CartPagePanel.Designer.cs">
       <DependentUpon>CartPagePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\PopularProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\PopularProduct.Designer.cs">
+      <DependentUpon>PopularProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DetailProductPagePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\DetailProductPagePanel.Designer.cs">
       <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HomePagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomePagePanel.Designer.cs">
+      <DependentUpon>HomePagePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ProductPagePanel.cs">
       <SubType>UserControl</SubType>
@@ -240,6 +278,18 @@
     </Compile>
     <EmbeddedResource Include="RegisterPage.resx">
       <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AccountPagePanel.resx">
+      <DependentUpon>AccountPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminManageTopping.resx">
+      <DependentUpon>AdminManageTopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\AdminCardCateForTopping.resx">
+      <DependentUpon>AdminCardCateForTopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\AdminCardTopping.resx">
+      <DependentUpon>AdminCardTopping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\CategoryComponent.resx">
       <DependentUpon>CategoryComponent.cs</DependentUpon>
@@ -274,8 +324,14 @@
     <EmbeddedResource Include="UserControls\CartPagePanel.resx">
       <DependentUpon>CartPagePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\PopularProduct.resx">
+      <DependentUpon>PopularProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DetailProductPagePanel.resx">
       <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomePagePanel.resx">
+      <DependentUpon>HomePagePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductPagePanel.resx">
       <DependentUpon>ProductPagePanel.cs</DependentUpon>

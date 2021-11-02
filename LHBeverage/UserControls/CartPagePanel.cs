@@ -35,7 +35,7 @@ namespace LHBeverage.UserControls
                     if(product!=null)
                     {
                         //Chưa cộng thêm giá các topping
-                        Subtotal += product.Price* itemcart.Quantity;
+                        //Subtotal += product.Price* itemcart.Quantity;
                     }
                 }
             }

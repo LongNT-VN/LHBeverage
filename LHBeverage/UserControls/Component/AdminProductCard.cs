@@ -20,8 +20,11 @@ namespace LHBeverage.UserControls.Component
             InitializeComponent();
             Picture_Pro.Image = bmp;
             NameProduct_lbl.Text = product.Name;
-            PriceProduct_lbl.Text = product.Price.ToString();
+            PriceSProduct_lbl.Text = product.PriceS.ToString();
+            PriceMProduct_lbl.Text = product.PriceM.ToString();
+            PriceLProduct_lbl.Text = product.PriceL.ToString();
             Quantity_lbl.Text = product.Quantity.ToString();
+            //CategoryPro_lbl.Text = product.IDCate
             tmpPro = product;
         }
 

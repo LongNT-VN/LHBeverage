@@ -20,7 +20,7 @@ namespace LHBeverage.UserControls.Component
             InitializeComponent();
             nameDrinkBC_lbl.Text = product.Name;
             DesShortBC_lbl.Text = product.Description;
-            priceDrinksBC_lbl.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
+            //priceDrinksBC_lbl.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
             BigCard_picture.Image = image;
         }
 

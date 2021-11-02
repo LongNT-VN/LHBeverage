@@ -45,6 +45,7 @@ namespace LHBeverage
             this.label1 = new System.Windows.Forms.Label();
             this.searchIcon_btn = new System.Windows.Forms.Button();
             this.search_tb = new System.Windows.Forms.TextBox();
+            this.ToppingsNav_Btn = new System.Windows.Forms.Button();
             this.SideBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
             this.panelTopBar.SuspendLayout();
@@ -55,6 +56,7 @@ namespace LHBeverage
             // SideBarPanel
             // 
             this.SideBarPanel.BackColor = System.Drawing.Color.White;
+            this.SideBarPanel.Controls.Add(this.ToppingsNav_Btn);
             this.SideBarPanel.Controls.Add(this.EmployeesNav_btn);
             this.SideBarPanel.Controls.Add(this.CategoryNav_Btn);
             this.SideBarPanel.Controls.Add(this.OrdersNav_Btn);
@@ -75,7 +77,7 @@ namespace LHBeverage
             this.EmployeesNav_btn.ForeColor = System.Drawing.Color.DeepPink;
             this.EmployeesNav_btn.Image = ((System.Drawing.Image)(resources.GetObject("EmployeesNav_btn.Image")));
             this.EmployeesNav_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmployeesNav_btn.Location = new System.Drawing.Point(20, 420);
+            this.EmployeesNav_btn.Location = new System.Drawing.Point(20, 500);
             this.EmployeesNav_btn.Name = "EmployeesNav_btn";
             this.EmployeesNav_btn.Size = new System.Drawing.Size(230, 80);
             this.EmployeesNav_btn.TabIndex = 13;
@@ -107,7 +109,7 @@ namespace LHBeverage
             this.OrdersNav_Btn.ForeColor = System.Drawing.Color.DarkOrange;
             this.OrdersNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("OrdersNav_Btn.Image")));
             this.OrdersNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OrdersNav_Btn.Location = new System.Drawing.Point(20, 340);
+            this.OrdersNav_Btn.Location = new System.Drawing.Point(20, 420);
             this.OrdersNav_Btn.Name = "OrdersNav_Btn";
             this.OrdersNav_Btn.Size = new System.Drawing.Size(230, 80);
             this.OrdersNav_Btn.TabIndex = 11;
@@ -255,6 +257,22 @@ namespace LHBeverage
             this.search_tb.TabIndex = 2;
             this.search_tb.Text = "Search";
             // 
+            // ToppingsNav_Btn
+            // 
+            this.ToppingsNav_Btn.FlatAppearance.BorderSize = 0;
+            this.ToppingsNav_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToppingsNav_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToppingsNav_Btn.ForeColor = System.Drawing.Color.OrangeRed;
+            this.ToppingsNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("ToppingsNav_Btn.Image")));
+            this.ToppingsNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToppingsNav_Btn.Location = new System.Drawing.Point(20, 340);
+            this.ToppingsNav_Btn.Name = "ToppingsNav_Btn";
+            this.ToppingsNav_Btn.Size = new System.Drawing.Size(230, 80);
+            this.ToppingsNav_Btn.TabIndex = 14;
+            this.ToppingsNav_Btn.Text = "   Manage Toppings";
+            this.ToppingsNav_Btn.UseVisualStyleBackColor = true;
+            this.ToppingsNav_Btn.Click += new System.EventHandler(this.ToppingsNav_Btn_Click);
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,5 +313,6 @@ namespace LHBeverage
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button searchIcon_btn;
         private System.Windows.Forms.TextBox search_tb;
+        private System.Windows.Forms.Button ToppingsNav_Btn;
     }
 }
