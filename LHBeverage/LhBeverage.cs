@@ -190,6 +190,7 @@ namespace LHBeverage
                 if (category != null)
                 {
                     CategoryComponent categorycomponent = new CategoryComponent(category);
+                    categorycomponent.Click += Filtercatagory;
                     CategoryPanel.Controls.Add(categorycomponent);
                 }
             }
@@ -217,6 +218,7 @@ namespace LHBeverage
                     }
                     productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     BigCard bigCard = new BigCard(product, productimage);
+                    bigCard.Click += ItemClick;
                     BigCardPanel.Controls.Add(bigCard);
                 }
             }
@@ -243,6 +245,36 @@ namespace LHBeverage
                             productimagebase64 = image.ImageData;
                             break;
                         }    
+                    }
+                    productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
+                    ItemcardComponent itemcart = new ItemcardComponent(product, productimage);
+                    itemcart.Click += ItemClick;
+                    ItemcartsPanel.Controls.Add(itemcart);
+                }
+            }
+        }
+        //Filter itemcard
+        private void CreateItemCardFilter(int idcategory)
+        {
+            BigCardPanel.Controls.Clear();
+            ItemcartsPanel.Controls.Clear();
+            List<Product> products = ProductConnect.SelectProductByCategory(idcategory);
+            string productimagebase64 = "";
+            Image productimage;
+            foreach (Product product in products)
+            {
+                if (product != null)
+                {
+                    //truyền vào product để chọn select tất cả các hình có trùng IDPRO
+                    List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
+                    foreach (DetailImage image in images)
+                    {
+                        if (image != null)
+                        {
+                            //Lấy hình đầu tiên ra làm hình đại diện sản phẩm
+                            productimagebase64 = image.ImageData;
+                            break;
+                        }
                     }
                     productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     ItemcardComponent itemcart = new ItemcardComponent(product, productimage);
@@ -280,32 +312,40 @@ namespace LHBeverage
         private void ItemClick(object sender, EventArgs e)
         {
             ItemcardComponent productcard = sender as ItemcardComponent;
+            Button productbigcard = sender as Button;
             List<Image> Listimages= new List<Image>();
-            if (productcard != null)
+            if (productcard != null || productbigcard!= null)
             {
-                int id = productcard.id;
-                List<Product> Products = ProductConnect.SelectProductByIDPro(id);
+                int id;
+                if (productcard!=null)
+                {
+                    id = productcard.id;
+                }
+                else
+                {
+                    id = Convert.ToInt32(productbigcard.Name);
+                }
+                Product product = ProductConnect.SelectProductByIDPro(id);
                 ProductPanel.Visible = false;
                 DetailProductPanel.Visible = true;
-                foreach (Product product in Products)
+
+                if (product != null)
                 {
-                    if(product!=null)
+                    List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
+                    foreach (DetailImage image in images)
                     {
-                        List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
-                        foreach (DetailImage image in images)
-                        {
-                            Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
-                            Listimages.Add(img);
-                        }
-                        DetailProductPagePanel detailProductPage = new DetailProductPagePanel(product, Listimages, customerinfo);
-                        detailProductPage.Location = new Point(0, 0);
-                        detailProductPage.AutoScroll = true;
-                        detailProductPage.Click += DetailProductPage_Click;
-                        DetailProductPanel.Controls.Clear();
-                        DetailProductPanel.Controls.Add(BackHomeBtn);
-                        DetailProductPanel.Controls.Add(detailProductPage);
+                        Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
+                        Listimages.Add(img);
                     }
+                    DetailProductPagePanel detailProductPage = new DetailProductPagePanel(product, Listimages, customerinfo);
+                    detailProductPage.Location = new Point(0, 0);
+                    detailProductPage.AutoScroll = true;
+                    detailProductPage.Click += DetailProductPage_Click;
+                    DetailProductPanel.Controls.Clear();
+                    DetailProductPanel.Controls.Add(BackHomeBtn);
+                    DetailProductPanel.Controls.Add(detailProductPage);
                 }
+                
             }
         }
 
@@ -324,6 +364,16 @@ namespace LHBeverage
             DetailProductPanel.Visible = false;
         }
 
-      
+        //Filter Catagory
+        private void Filtercatagory(object sender, EventArgs e)
+        {
+            Button CatagoryBtn = sender as Button;
+            if(CatagoryBtn!=null)
+            {
+                CreateItemCardFilter(Convert.ToInt32(CatagoryBtn.Name));
+            }
+        }
+
+
     }
 }

@@ -29,7 +29,7 @@ namespace LHBeverage.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.ProceedBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PaymentMethodLabel = new System.Windows.Forms.Label();
             this.TotalPriceLabel = new System.Windows.Forms.Label();
@@ -56,24 +56,24 @@ namespace LHBeverage.UserControls
             this.TotalPricePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // ProceedBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(50, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Proceed";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ProceedBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.ProceedBtn.FlatAppearance.BorderSize = 0;
+            this.ProceedBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProceedBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProceedBtn.ForeColor = System.Drawing.Color.Black;
+            this.ProceedBtn.Location = new System.Drawing.Point(50, 10);
+            this.ProceedBtn.Name = "ProceedBtn";
+            this.ProceedBtn.Size = new System.Drawing.Size(200, 60);
+            this.ProceedBtn.TabIndex = 1;
+            this.ProceedBtn.Text = "Proceed";
+            this.ProceedBtn.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.ProceedBtn);
             this.panel2.Location = new System.Drawing.Point(850, 420);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(304, 80);
@@ -269,7 +269,7 @@ namespace LHBeverage.UserControls
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ProceedBtn;
         private System.Windows.Forms.PictureBox Method4Pic;
         private System.Windows.Forms.PictureBox Method3Pic;
         private System.Windows.Forms.PictureBox Method2Pic;

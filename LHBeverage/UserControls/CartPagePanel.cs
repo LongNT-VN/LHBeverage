@@ -26,18 +26,11 @@ namespace LHBeverage.UserControls
             List<DetailCart> itemcarts = DetailCartConnect.LoadDetailCart(cart);
             foreach (DetailCart itemcart in itemcarts)
             {
+                string[] idingredients = itemcart.ListIDIngredient.Split(',');
                 ItemCart itemCart = new ItemCart(itemcart);
                 itemCart.Click += Redisplay;
                 ItemsCart.Controls.Add(itemCart);
-                List<Product> Products = ProductConnect.SelectProductByIDPro(itemcart.IDPro);
-                foreach(Product product in Products)
-                {
-                    if(product!=null)
-                    {
-                        //Chưa cộng thêm giá các topping
-                        //Subtotal += product.Price* itemcart.Quantity;
-                    }
-                }
+                Subtotal += itemcart.Price;
             }
             Total = Subtotal + ShippingPrice;
             SubtotalPriceLabel.Text = Subtotal.ToString("#,###", cul.NumberFormat) + " VNĐ";

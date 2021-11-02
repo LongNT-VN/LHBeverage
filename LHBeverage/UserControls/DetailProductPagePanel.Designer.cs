@@ -31,6 +31,7 @@ namespace LHBeverage.UserControls
         {
             this.RelationItemPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.DetailItemPanel = new System.Windows.Forms.Panel();
+            this.ListToppings = new System.Windows.Forms.FlowLayoutPanel();
             this.QuantityItem = new System.Windows.Forms.Label();
             this.QuantityUp = new System.Windows.Forms.Button();
             this.QuantityDown = new System.Windows.Forms.Button();
@@ -39,12 +40,6 @@ namespace LHBeverage.UserControls
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AddCartBtn = new System.Windows.Forms.PictureBox();
             this.ImgItem = new System.Windows.Forms.PictureBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.Pudding = new System.Windows.Forms.CheckBox();
             this.SizeLBtn = new System.Windows.Forms.Button();
             this.SizeMBtn = new System.Windows.Forms.Button();
             this.SizeSBtn = new System.Windows.Forms.Button();
@@ -72,6 +67,7 @@ namespace LHBeverage.UserControls
             // DetailItemPanel
             // 
             this.DetailItemPanel.BackColor = System.Drawing.Color.White;
+            this.DetailItemPanel.Controls.Add(this.ListToppings);
             this.DetailItemPanel.Controls.Add(this.QuantityItem);
             this.DetailItemPanel.Controls.Add(this.QuantityUp);
             this.DetailItemPanel.Controls.Add(this.QuantityDown);
@@ -80,12 +76,6 @@ namespace LHBeverage.UserControls
             this.DetailItemPanel.Controls.Add(this.pictureBox1);
             this.DetailItemPanel.Controls.Add(this.AddCartBtn);
             this.DetailItemPanel.Controls.Add(this.ImgItem);
-            this.DetailItemPanel.Controls.Add(this.checkBox5);
-            this.DetailItemPanel.Controls.Add(this.checkBox3);
-            this.DetailItemPanel.Controls.Add(this.checkBox2);
-            this.DetailItemPanel.Controls.Add(this.checkBox4);
-            this.DetailItemPanel.Controls.Add(this.checkBox1);
-            this.DetailItemPanel.Controls.Add(this.Pudding);
             this.DetailItemPanel.Controls.Add(this.SizeLBtn);
             this.DetailItemPanel.Controls.Add(this.SizeMBtn);
             this.DetailItemPanel.Controls.Add(this.SizeSBtn);
@@ -99,6 +89,13 @@ namespace LHBeverage.UserControls
             this.DetailItemPanel.Name = "DetailItemPanel";
             this.DetailItemPanel.Size = new System.Drawing.Size(1050, 490);
             this.DetailItemPanel.TabIndex = 1;
+            // 
+            // ListToppings
+            // 
+            this.ListToppings.Location = new System.Drawing.Point(372, 270);
+            this.ListToppings.Name = "ListToppings";
+            this.ListToppings.Size = new System.Drawing.Size(308, 87);
+            this.ListToppings.TabIndex = 14;
             // 
             // QuantityItem
             // 
@@ -195,72 +192,6 @@ namespace LHBeverage.UserControls
             this.ImgItem.Size = new System.Drawing.Size(300, 300);
             this.ImgItem.TabIndex = 7;
             this.ImgItem.TabStop = false;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(520, 333);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(86, 24);
-            this.checkBox5.TabIndex = 6;
-            this.checkBox5.Text = "Pudding";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(520, 303);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(86, 24);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Pudding";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(520, 273);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(86, 24);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Pudding";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(370, 333);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(86, 24);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Pudding";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(370, 303);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 24);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Pudding";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // Pudding
-            // 
-            this.Pudding.AutoSize = true;
-            this.Pudding.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pudding.Location = new System.Drawing.Point(370, 273);
-            this.Pudding.Name = "Pudding";
-            this.Pudding.Size = new System.Drawing.Size(137, 24);
-            this.Pudding.TabIndex = 6;
-            this.Pudding.Text = "Pudding x 3000";
-            this.Pudding.UseVisualStyleBackColor = true;
             // 
             // SizeLBtn
             // 
@@ -390,7 +321,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1225, 583);
+            this.Size = new System.Drawing.Size(1174, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -412,12 +343,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Button SizeLBtn;
         private System.Windows.Forms.Button SizeMBtn;
         private System.Windows.Forms.Button SizeSBtn;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox Pudding;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.PictureBox ImgItem;
         private System.Windows.Forms.PictureBox AddCartBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -428,5 +353,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Button QuantityUp;
         private System.Windows.Forms.Button QuantityDown;
         private System.Windows.Forms.Label pricelabel;
+        private System.Windows.Forms.FlowLayoutPanel ListToppings;
     }
 }

@@ -17,7 +17,25 @@ namespace LHBeverage.UserControls.Component
         public CategoryComponent(Category catagory)
         {
             InitializeComponent();
+            createCatagory(catagory);
+        }
+        private void createCatagory(Category catagory)
+        {
             Categorybtn.Text = catagory.Name;
+            Categorybtn.Name = catagory.IDCate.ToString();
+        }
+        public new event EventHandler Click
+        {
+            add
+            {
+                base.Click += value;
+                Categorybtn.Click += value;
+            }
+            remove
+            {
+                base.Click -= value;
+                Categorybtn.Click -= value;
+            }
         }
     }
 }

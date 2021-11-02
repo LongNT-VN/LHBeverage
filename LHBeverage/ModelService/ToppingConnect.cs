@@ -29,11 +29,20 @@ namespace LHBeverage.ModelService
                 return toppings.ToList();
             }
         }
+        public static Topping SelectToppingByID(int IDTopping)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var toppings = connection.Query<Topping>($"select * from Topping where IDTopping ='{IDTopping}'", new DynamicParameters());
+                return toppings.First();
+            }
+        }
+
         public static void CreateTopping(Topping topping)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Topping (IDCate,ToppingName) values (@IDCate,@ToppingName)", topping);
+                connection.Execute("insert into Topping (IDCate,ToppingName,Price) values (@IDCate,@ToppingName,@Price)", topping);
             }
         }
         public static void UpdateTopping(Topping topping)

@@ -37,12 +37,12 @@ namespace LHBeverage.ModelService
                 return products.ToList();
             }
         }
-        public static List<Product> SelectProductByIDPro(int IDPro)
+        public static Product SelectProductByIDPro(int IDPro)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 var products = connection.Query<Product>($"select * from Product where IDPro = '{IDPro}'", new DynamicParameters());
-                return products.ToList();
+                return products.First();
             }
         }
         public static void CreateProduct(Product product)

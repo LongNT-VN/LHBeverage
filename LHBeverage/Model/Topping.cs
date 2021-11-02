@@ -11,5 +11,6 @@ namespace LHBeverage.Model
         public int IDTopping { get; set; }
         public int IDCate { get; set; }
         public string ToppingName { get; set; }
+        public int Price { get; set; }
     }
 }

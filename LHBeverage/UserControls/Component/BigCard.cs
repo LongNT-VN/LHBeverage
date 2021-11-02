@@ -18,15 +18,29 @@ namespace LHBeverage.UserControls.Component
         public BigCard(Product product, Image image)
         {
             InitializeComponent();
+            CreateBigCart(product, image);
+        }
+        private void CreateBigCart(Product product, Image image)
+        {
+            BuyBC_btn.Name = product.IDPro.ToString();
             nameDrinkBC_lbl.Text = product.Name;
             DesShortBC_lbl.Text = product.Description;
-            //priceDrinksBC_lbl.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
+            priceDrinksBC_lbl.Text = product.PriceS.ToString("#,###", cul.NumberFormat) + " VNĐ";
             BigCard_picture.Image = image;
         }
 
-        private void DesShortBC_lbl_Click(object sender, EventArgs e)
+        public new event EventHandler Click
         {
-
+            add
+            {
+                base.Click += value;
+                BuyBC_btn.Click += value;
+            }
+            remove
+            {
+                base.Click -= value;
+                BuyBC_btn.Click -= value;
+            }
         }
     }
 }

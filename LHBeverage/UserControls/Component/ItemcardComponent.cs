@@ -27,7 +27,7 @@ namespace LHBeverage.UserControls.Component
             id = product.IDPro;
             ImageProductBeverage.BackgroundImage = image;
             ProductNameLabel.Text = product.Name;
-           // ProductPriceLabel.Text = product.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
+            ProductPriceLabel.Text = product.PriceS.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
         //public new event EventHandler Click
         //{
