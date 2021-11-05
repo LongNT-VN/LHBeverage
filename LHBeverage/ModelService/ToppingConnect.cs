@@ -49,7 +49,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"update Topping set IDCate='{topping.IDCate}',ToppingName='{topping.ToppingName}' where IDTopping='{topping.IDTopping}'", new DynamicParameters());
+                connection.Execute($"update Topping set IDCate='{topping.IDCate}',ToppingName='{topping.ToppingName}',Price='{topping.Price}' where IDTopping='{topping.IDTopping}'", new DynamicParameters());
             }
         }
         public static void DeleteTopping(Topping topping)

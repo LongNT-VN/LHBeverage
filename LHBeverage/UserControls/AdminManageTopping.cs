@@ -84,7 +84,8 @@ namespace LHBeverage.UserControls
         }
         public void renderToppingEdit(Topping toppingEdit)
         { 
-                AddNameTopping_tb.Text = toppingEdit.ToppingName;
+                NameTopping_tb.Text = toppingEdit.ToppingName;
+                PriceTopping_tb.Text = toppingEdit.Price.ToString();
                 Category_cb.SelectedValue = toppingEdit.IDCate.ToString();
                 toppingEditTmp = toppingEdit;
         }
@@ -99,7 +100,7 @@ namespace LHBeverage.UserControls
 
         private void AddCate_btn_Click(object sender, EventArgs e)
         {
-            if(AddNameTopping_tb.Text == "")
+            if(NameTopping_tb.Text == "")
             {
                 MessageBox.Show("Please enter topping name");
             }
@@ -113,17 +114,20 @@ namespace LHBeverage.UserControls
                 }
                 else
                 {
-                    Topping topping = new Topping();
-                    topping.IDCate = key;
-                    topping.ToppingName = AddNameTopping_tb.Text;
-
-                    ToppingConnect.CreateTopping(topping);
-                    MessageBox.Show("Add topping success");
-                    LoadToppingInListPanelByCate(key);
-                    topping.ToppingName = "";
+                    
                     try
                     {
-
+                        Topping topping = new Topping();
+                        topping.IDCate = key;
+                        topping.ToppingName = NameTopping_tb.Text;
+                        topping.Price = Convert.ToInt32(PriceTopping_tb.Text);
+                        ToppingConnect.CreateTopping(topping);
+                        MessageBox.Show("Add topping success");
+                        LoadToppingInListPanelByCate(key);
+                        //topping.ToppingName = "";
+                        //topping.Price = 0;
+                        NameTopping_tb.Text = "";
+                        PriceTopping_tb.Text = "";
                     }
                     catch (Exception ex)
                     {
@@ -142,7 +146,8 @@ namespace LHBeverage.UserControls
                 {
                     int key = Convert.ToInt32(((KeyValuePair<string, string>)Category_cb.SelectedItem).Key);
                     toppingEditTmp.IDCate = key;
-                    toppingEditTmp.ToppingName = AddNameTopping_tb.Text;
+                    toppingEditTmp.ToppingName = NameTopping_tb.Text;
+                    toppingEditTmp.Price = Convert.ToInt32(PriceTopping_tb.Text);
                     ToppingConnect.UpdateTopping(toppingEditTmp);
                     MessageBox.Show("Update successfull");
                     LoadToppingInListPanelByCate(key);

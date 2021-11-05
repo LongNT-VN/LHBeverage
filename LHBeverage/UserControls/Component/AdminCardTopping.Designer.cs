@@ -34,6 +34,7 @@ namespace LHBeverage.UserControls.Component
             this.panel4 = new System.Windows.Forms.Panel();
             this.delete_btn = new System.Windows.Forms.Button();
             this.Edit_btn = new System.Windows.Forms.Button();
+            this.PriceTopping_lbl = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +45,7 @@ namespace LHBeverage.UserControls.Component
             this.nameTopping_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.nameTopping_lbl.Location = new System.Drawing.Point(3, 14);
             this.nameTopping_lbl.Name = "nameTopping_lbl";
-            this.nameTopping_lbl.Size = new System.Drawing.Size(305, 28);
+            this.nameTopping_lbl.Size = new System.Drawing.Size(169, 28);
             this.nameTopping_lbl.TabIndex = 17;
             this.nameTopping_lbl.Text = "Name Topping";
             this.nameTopping_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,6 +55,7 @@ namespace LHBeverage.UserControls.Component
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.PriceTopping_lbl);
             this.panel3.Controls.Add(this.nameTopping_lbl);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -63,6 +65,7 @@ namespace LHBeverage.UserControls.Component
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.delete_btn);
             this.panel4.Controls.Add(this.Edit_btn);
             this.panel4.Location = new System.Drawing.Point(314, 0);
@@ -100,6 +103,17 @@ namespace LHBeverage.UserControls.Component
             this.Edit_btn.UseVisualStyleBackColor = false;
             this.Edit_btn.Click += new System.EventHandler(this.Edit_btn_Click);
             // 
+            // PriceTopping_lbl
+            // 
+            this.PriceTopping_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTopping_lbl.ForeColor = System.Drawing.Color.Red;
+            this.PriceTopping_lbl.Location = new System.Drawing.Point(170, 15);
+            this.PriceTopping_lbl.Name = "PriceTopping_lbl";
+            this.PriceTopping_lbl.Size = new System.Drawing.Size(138, 28);
+            this.PriceTopping_lbl.TabIndex = 18;
+            this.PriceTopping_lbl.Text = "Price";
+            this.PriceTopping_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AdminCardTopping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,5 +134,6 @@ namespace LHBeverage.UserControls.Component
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button delete_btn;
         private System.Windows.Forms.Button Edit_btn;
+        private System.Windows.Forms.Label PriceTopping_lbl;
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,15 +15,16 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class AdminProductCard : UserControl
     {
+        CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Product tmpPro = new Product();
         public AdminProductCard(Bitmap bmp,Product product)
         {
             InitializeComponent();
             Picture_Pro.Image = bmp;
             NameProduct_lbl.Text = product.Name;
-            PriceSProduct_lbl.Text = product.PriceS.ToString();
-            PriceMProduct_lbl.Text = product.PriceM.ToString();
-            PriceLProduct_lbl.Text = product.PriceL.ToString();
+            PriceSProduct_lbl.Text = product.PriceS.ToString("#,###", cul.NumberFormat)+"VNĐ";
+            PriceMProduct_lbl.Text = product.PriceM.ToString("#,###", cul.NumberFormat)+"VNĐ";
+            PriceLProduct_lbl.Text = product.PriceL.ToString("#,###", cul.NumberFormat)+"VNĐ";
             Quantity_lbl.Text = product.Quantity.ToString();
             //CategoryPro_lbl.Text = product.IDCate
             tmpPro = product;

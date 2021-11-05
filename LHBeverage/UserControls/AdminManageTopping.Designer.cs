@@ -31,6 +31,7 @@ namespace LHBeverage.UserControls
         {
             this.panelManageCategory = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.ListTopping_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -40,9 +41,10 @@ namespace LHBeverage.UserControls
             this.panel4 = new System.Windows.Forms.Panel();
             this.UpdateCate_btn = new System.Windows.Forms.Button();
             this.AddCate_btn = new System.Windows.Forms.Button();
-            this.AddNameTopping_tb = new System.Windows.Forms.TextBox();
+            this.NameTopping_tb = new System.Windows.Forms.TextBox();
             this.lbl_categortName = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.PriceTopping_tb = new System.Windows.Forms.TextBox();
             this.panelManageCategory.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -72,6 +74,16 @@ namespace LHBeverage.UserControls
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(851, 551);
             this.panel3.TabIndex = 25;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Location = new System.Drawing.Point(832, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(53, 409);
+            this.panel5.TabIndex = 26;
             // 
             // panel1
             // 
@@ -107,16 +119,18 @@ namespace LHBeverage.UserControls
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.PriceTopping_tb);
             this.panel2.Controls.Add(this.Category_cb);
             this.panel2.Controls.Add(this.NameToppings_lbl);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.UpdateCate_btn);
             this.panel2.Controls.Add(this.AddCate_btn);
-            this.panel2.Controls.Add(this.AddNameTopping_tb);
+            this.panel2.Controls.Add(this.NameTopping_tb);
             this.panel2.Controls.Add(this.lbl_categortName);
             this.panel2.Location = new System.Drawing.Point(4, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 280);
+            this.panel2.Size = new System.Drawing.Size(320, 400);
             this.panel2.TabIndex = 3;
             // 
             // Category_cb
@@ -157,7 +171,7 @@ namespace LHBeverage.UserControls
             this.UpdateCate_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateCate_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateCate_btn.ForeColor = System.Drawing.Color.White;
-            this.UpdateCate_btn.Location = new System.Drawing.Point(173, 228);
+            this.UpdateCate_btn.Location = new System.Drawing.Point(173, 331);
             this.UpdateCate_btn.Name = "UpdateCate_btn";
             this.UpdateCate_btn.Size = new System.Drawing.Size(97, 33);
             this.UpdateCate_btn.TabIndex = 17;
@@ -172,7 +186,7 @@ namespace LHBeverage.UserControls
             this.AddCate_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCate_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddCate_btn.ForeColor = System.Drawing.Color.White;
-            this.AddCate_btn.Location = new System.Drawing.Point(47, 228);
+            this.AddCate_btn.Location = new System.Drawing.Point(47, 331);
             this.AddCate_btn.Name = "AddCate_btn";
             this.AddCate_btn.Size = new System.Drawing.Size(97, 33);
             this.AddCate_btn.TabIndex = 13;
@@ -180,15 +194,15 @@ namespace LHBeverage.UserControls
             this.AddCate_btn.UseVisualStyleBackColor = false;
             this.AddCate_btn.Click += new System.EventHandler(this.AddCate_btn_Click);
             // 
-            // AddNameTopping_tb
+            // NameTopping_tb
             // 
-            this.AddNameTopping_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.AddNameTopping_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AddNameTopping_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddNameTopping_tb.Location = new System.Drawing.Point(47, 171);
-            this.AddNameTopping_tb.Name = "AddNameTopping_tb";
-            this.AddNameTopping_tb.Size = new System.Drawing.Size(223, 20);
-            this.AddNameTopping_tb.TabIndex = 12;
+            this.NameTopping_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NameTopping_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameTopping_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTopping_tb.Location = new System.Drawing.Point(47, 171);
+            this.NameTopping_tb.Name = "NameTopping_tb";
+            this.NameTopping_tb.Size = new System.Drawing.Size(223, 20);
+            this.NameTopping_tb.TabIndex = 12;
             // 
             // lbl_categortName
             // 
@@ -201,15 +215,26 @@ namespace LHBeverage.UserControls
             this.lbl_categortName.TabIndex = 11;
             this.lbl_categortName.Text = "Category:";
             // 
-            // panel5
+            // label1
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Location = new System.Drawing.Point(832, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(53, 409);
-            this.panel5.TabIndex = 26;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(44, 223);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 18);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Topping price:";
+            // 
+            // PriceTopping_tb
+            // 
+            this.PriceTopping_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PriceTopping_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PriceTopping_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTopping_tb.Location = new System.Drawing.Point(47, 263);
+            this.PriceTopping_tb.Name = "PriceTopping_tb";
+            this.PriceTopping_tb.Size = new System.Drawing.Size(223, 20);
+            this.PriceTopping_tb.TabIndex = 28;
             // 
             // AdminManageTopping
             // 
@@ -239,10 +264,12 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button UpdateCate_btn;
         private System.Windows.Forms.Button AddCate_btn;
-        private System.Windows.Forms.TextBox AddNameTopping_tb;
+        private System.Windows.Forms.TextBox NameTopping_tb;
         private System.Windows.Forms.Label lbl_categortName;
         private System.Windows.Forms.Label NameToppings_lbl;
         private System.Windows.Forms.ComboBox Category_cb;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox PriceTopping_tb;
     }
 }

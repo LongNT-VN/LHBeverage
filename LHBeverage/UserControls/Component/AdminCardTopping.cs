@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace LHBeverage.UserControls.Component
     public partial class AdminCardTopping : UserControl
     {
         Topping toppingtmp;
+        CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         public AdminCardTopping(Topping topping)
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace LHBeverage.UserControls.Component
         private void loadData(Topping topping)
         {
             nameTopping_lbl.Text = topping.ToppingName;
+            PriceTopping_lbl.Text = topping.Price.ToString("#,###", cul.NumberFormat)+ "VNĐ";
         }
 
         private void Edit_btn_Click(object sender, EventArgs e)
