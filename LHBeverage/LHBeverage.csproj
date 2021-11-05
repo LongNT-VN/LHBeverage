@@ -96,6 +96,7 @@
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\ConvertBase64toImage.cs" />
+    <Compile Include="Helper\ConvertImageToBase64.cs" />
     <Compile Include="LhBeverage.cs">
       <SubType>Form</SubType>
     </Compile>

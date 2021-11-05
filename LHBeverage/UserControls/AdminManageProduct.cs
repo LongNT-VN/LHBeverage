@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,7 +33,14 @@ namespace LHBeverage.UserControls
             loadData();
             instance = this;
             cust = customer;
-            
+            // khởi tạo opendialog:
+            this.openFileDialog_Img.Filter =
+       "Images (*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|" +
+       "All files (*.*)|*.*";
+
+            //  Allow the user to select multiple images.
+            this.openFileDialog_Img.Multiselect = true;
+
         }
         private void loadCategoryInComboBox()
         {
@@ -68,7 +76,6 @@ namespace LHBeverage.UserControls
             else
             {
                 Products = ProductConnect.SelectProductByCategory(categoryManage);
-
             }
            
             ListPro_flowpanel.Controls.Clear();
@@ -117,6 +124,7 @@ namespace LHBeverage.UserControls
             return bmpReturn;
         }
         // manage product:
+        // add and edit info product:
         private void AddPro_btn_Click(object sender, EventArgs e)
         {           
                 try
@@ -190,6 +198,7 @@ namespace LHBeverage.UserControls
             }
         }
 
+        // Add and Edit image for product 
         private void AddImg_btn_Click(object sender, EventArgs e)
         {
             PublicParam.dataTableImgPro.Clear();
@@ -235,13 +244,37 @@ namespace LHBeverage.UserControls
         {
             if(openFileDialog_Img.ShowDialog() == DialogResult.OK)
             {
-                bmp = new Bitmap(openFileDialog_Img.FileName);
-                base64Img = convertBitmapToBase64(bmp);
-              
-                int idimg = setIdImageByDatatable();
-                int IdPro = Convert.ToInt32(((KeyValuePair<string, string>)ProductList_cb.SelectedItem).Key);
-                PublicParam.dataTableImgPro.Rows.Add(IdPro, idimg, base64Img);
-                renderImgProByTable();           
+               
+                    foreach (String file in openFileDialog_Img.FileNames)
+                    {
+                        try
+                        {
+                            bmp = new Bitmap(file);
+                            base64Img = convertBitmapToBase64(bmp);
+
+                            int idimg = setIdImageByDatatable();
+                            int IdPro = Convert.ToInt32(((KeyValuePair<string, string>)ProductList_cb.SelectedItem).Key);
+                            PublicParam.dataTableImgPro.Rows.Add(IdPro, idimg, base64Img);
+                          
+                        }
+                        catch (SecurityException ex)
+                        {
+                            // The user lacks appropriate permissions to read files, discover paths, etc.
+                            MessageBox.Show("Security error.\n\n" +
+                                "Error message: " + ex.Message + "\n\n" +
+                                "Details (send to Support):\n\n" + ex.StackTrace
+                            );
+                        }
+                        catch (Exception ex)
+                        {
+                            // Could not load the image - probably related to Windows file system permissions.
+                            MessageBox.Show("Cannot display the image: " + file.Substring(file.LastIndexOf('\\'))
+                                + ". You may not have permission to read the file, or " +
+                                "it may be corrupt.\n\nReported error: " + ex.Message);
+                        }
+                       
+                    }     
+             renderImgProByTable();           
             }
         }
         // save image to data when add new product
@@ -386,11 +419,33 @@ namespace LHBeverage.UserControls
         private void loadImgFromLocal_Btn_Click(object sender, EventArgs e)
         {
             if(openFileDialog_Img.ShowDialog() == DialogResult.OK)
-            {            
-                bmp = new Bitmap(openFileDialog_Img.FileName);
-                base64Img = convertBitmapToBase64(bmp);
-                int idimg = setIdImageByDatatable();
-                PublicParam.dataTableImgPro.Rows.Add(EditProduct.IDPro, idimg, base64Img);
+            {       
+                foreach(String file in openFileDialog_Img.FileNames)
+                {
+                    try
+                    {
+                        bmp = new Bitmap(file);
+                        base64Img = convertBitmapToBase64(bmp);
+                        int idimg = setIdImageByDatatable();
+                        PublicParam.dataTableImgPro.Rows.Add(EditProduct.IDPro, idimg, base64Img);
+                    }
+                    catch (SecurityException ex)
+                    {
+                        // The user lacks appropriate permissions to read files, discover paths, etc.
+                        MessageBox.Show("Security error.\n\n" +
+                            "Error message: " + ex.Message + "\n\n" +
+                            "Details (send to Support):\n\n" + ex.StackTrace
+                        );
+                    }
+                    catch (Exception ex)
+                    {
+                        // Could not load the image - probably related to Windows file system permissions.
+                        MessageBox.Show("Cannot display the image: " + file.Substring(file.LastIndexOf('\\'))
+                            + ". You may not have permission to read the file, or " +
+                            "it may be corrupt.\n\nReported error: " + ex.Message);
+                    }
+                }
+              
                 renderImgEditProByTable();
             }
         }
@@ -444,6 +499,11 @@ namespace LHBeverage.UserControls
 
         private void CategoryManage_Cb_SelectedIndexChanged(object sender, EventArgs e)
         {
+         
+            if( CategoryManage_Cb.SelectedIndex != 0)
+            {
+                category_Cb.SelectedValue =((KeyValuePair<string, string>)CategoryManage_Cb.SelectedItem).Key.ToString();
+            }
             loadData();
         }
     }
