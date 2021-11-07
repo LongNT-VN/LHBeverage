@@ -8,6 +8,7 @@ namespace LHBeverage.Model
 {
     class DetailOrder
     {
+        public int IDDetailOrder { get; set; }
         public int IDOrder { get; set; }
         public int IDPro { get; set; }
     }
