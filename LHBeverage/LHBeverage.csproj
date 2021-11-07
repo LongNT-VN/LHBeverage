@@ -114,6 +114,7 @@
     <Compile Include="ModelService\CategoryConnect.cs" />
     <Compile Include="ModelService\CustomerConnect.cs" />
     <Compile Include="ModelService\DetailImageConnect.cs" />
+    <Compile Include="ModelService\DetailOrderConnect.cs" />
     <Compile Include="ModelService\OrderConnect.cs" />
     <Compile Include="ModelService\ProductConnect.cs" />
     <Compile Include="ModelService\ToppingConnect.cs" />
@@ -234,6 +235,12 @@
     <Compile Include="UserControls\CartPagePanel.Designer.cs">
       <DependentUpon>CartPagePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\ItemOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\ItemOrder.Designer.cs">
+      <DependentUpon>ItemOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Component\PopularProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,6 +252,12 @@
     </Compile>
     <Compile Include="UserControls\DetailProductPagePanel.Designer.cs">
       <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HistoryOrderPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HistoryOrderPage.Designer.cs">
+      <DependentUpon>HistoryOrderPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HomePagePanel.cs">
       <SubType>UserControl</SubType>
@@ -325,11 +338,17 @@
     <EmbeddedResource Include="UserControls\CartPagePanel.resx">
       <DependentUpon>CartPagePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\ItemOrder.resx">
+      <DependentUpon>ItemOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\PopularProduct.resx">
       <DependentUpon>PopularProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DetailProductPagePanel.resx">
       <DependentUpon>DetailProductPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HistoryOrderPage.resx">
+      <DependentUpon>HistoryOrderPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomePagePanel.resx">
       <DependentUpon>HomePagePanel.cs</DependentUpon>

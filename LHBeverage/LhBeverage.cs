@@ -26,8 +26,6 @@ namespace LHBeverage
             customerinfo = customer;
             AccountName_lbl.Text = customer.Email;
            // HomeBtn.PerformClick();
-            CreateItemCard();
-            CreateBigCard();
             CreateCategory();
             instance = this;
         }
@@ -99,14 +97,18 @@ namespace LHBeverage
             }
             else if(btn == ProductBtn)
             {
+                CreateItemCard();
+                CreateBigCard();
                 ProductPanel.Visible = true;
             }
             else if(btn == UserBtn)
             {
                 AccountPanel.Visible = true;
-                AccountPagePanel accountPagePanel = new AccountPagePanel();
-                accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
-                AccountPanel.Controls.Add(accountPagePanel);
+                //AccountPagePanel accountPagePanel = new AccountPagePanel();
+                //accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+                //AccountPanel.Controls.Add(accountPagePanel);
+                AccountPanel.Controls.Clear();
+                AccountPanel.Controls.Add(new HistoryOrderPage(customerinfo));
             }
 
         }
@@ -228,6 +230,7 @@ namespace LHBeverage
         private void CreateItemCard()
         {
             ItemcartsPanel.Controls.Clear();
+            ItemcartsPanel.Location = new Point(BigCardPanel.Location.X, BigCardPanel.Location.Y + +BigCardPanel.Height - 20);
             List<Product> products = ProductConnect.LoadProduct();
             string productimagebase64="";
             Image productimage;
@@ -282,7 +285,15 @@ namespace LHBeverage
                     ItemcartsPanel.Controls.Add(itemcart);
                 }
             }
+            ItemcartsPanel.Size = new Size(ItemcartsPanel.Size.Width, BigCardPanel.Size.Height + ItemcartsPanel.Size.Height);
+            ItemcartsPanel.Location = BigCardPanel.Location;
+            ItemcartsPanel.BringToFront();
         }
+        private void RemoveFilter()
+        {
+            ProductBtn.PerformClick();
+        }
+
         public void NavProductFromHomeToDetail(Product product)
         {
             ProductBtn.PerformClick();
@@ -374,6 +385,15 @@ namespace LHBeverage
             }
         }
 
+        //Hàm chuyển sang trang hóa đơn
+        private void ProcessList(object sender, EventArgs e)
+        {
+            Button process = sender as Button;
+            if (process != null)
+            {
+                UserBtn.PerformClick();
+            }
+        }
 
     }
 }

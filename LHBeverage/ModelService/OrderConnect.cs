@@ -1,5 +1,10 @@
-﻿using System;
+﻿using Dapper;
+using LHBeverage.Model;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +13,69 @@ namespace LHBeverage.ModelService
 {
     class OrderConnect
     {
+        //Lấy ra giỏ hàng thuộc khách hàng
+        public static void CreateOrder(Cart cart)
+        {
+            Order order = new Order();
+            order.DateOrder = DateTime.Now.ToString();
+            order.IDCus = cart.IDCus;
+            order.Status = "Đang vận chuyển";
+            int total = 0;
+            int Discount = 0;
+            int LHcoin = 0;
+            int Totalpayment = 0;
+            //Lấy tất cả các detail carts để lấy tổng tiền.
+            List<DetailCart> detailcarts = DetailCartConnect.LoadDetailCart(cart);
+            foreach (DetailCart detailcart in detailcarts)
+            {
+                if(detailcart!=null)
+                {
+                    total+=detailcart.Price;
+                }
+            }
+            Totalpayment = total - LHcoin - (total - LHcoin) * Discount / 100;
+            order.Total = total;
+            order.Discount = Discount;
+            order.LHcoin = LHcoin;
+            order.Totalpayment = Totalpayment;
+            
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Execute("insert into 'Order'(IDCus,DateOrder,Status,Total,Discount,LHcoin,Totalpayment) values (@IDCus,@DateOrder,@Status,@Total,@Discount,@LHcoin,@Totalpayment)", order);
+                var successorder = connection.Query<Order>($"select * from 'Order' where IDCus='{order.IDCus}' and DateOrder = '{order.DateOrder}'", new DynamicParameters()).First();
+                DetailOrderConnect.CreateDetailOrder(successorder, cart);
+            }
+        }
+        // Lấy tất cả các order của khách hàng
+        public static List<Order> LoadOrder(Customer customer)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var order = connection.Query<Order>($"select * from 'Order' where IDCus='{customer.IDCus}'", new DynamicParameters());
+                return order.ToList();
+            }
+        }
+        public static List<Order> GetOrderByStatus(Customer customer,String status)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var order = connection.Query<Order>($"select * from 'Order' where IDCus='{customer.IDCus}' and Status='{status}'", new DynamicParameters());
+                return order.ToList();
+            }
+        }
 
+        public static void ModifyOrder(Order order,String status)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Query<Order>($"Update 'Order' set Status='{status}' where IDOrder = '{order.IDOrder}'", new DynamicParameters());
+            }
+                
+        }
+
+        private static string LoadConnectionString(string id = "Default")
+        {
+            return ConfigurationManager.ConnectionStrings[id].ConnectionString;
+        }
     }
 }

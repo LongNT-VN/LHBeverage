@@ -51,7 +51,7 @@ namespace LHBeverage.ModelService
                             int updateQuantity = detailCart.Quantity + quantity;
                             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
                             {
-                                connection.Query<Product>($"Update DetailCart set Quantity='{updateQuantity}' where IDDetail = '{detailCart.IDDetail}'", new DynamicParameters());
+                                connection.Query<DetailCart>($"Update DetailCart set Quantity='{updateQuantity}' where IDDetail = '{detailCart.IDDetail}'", new DynamicParameters());
                             }
                             ismodify = true;
                             break;
@@ -83,7 +83,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"DELETE FROM DetaiCart WHERE IDCart='{cart.IDCart}'");
+                connection.Execute($"DELETE FROM DetailCart WHERE IDCart='{cart.IDCart}'");
             }
         }
 
@@ -104,7 +104,7 @@ namespace LHBeverage.ModelService
                         int updateQuantity = detail.Quantity + detailCart.Quantity;
                         using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
                         {
-                            connection.Query<Product>($"Update DetailCart set Quantity='{updateQuantity}', Size='{size}', Price = '{price}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
+                            connection.Query<DetailCart>($"Update DetailCart set Quantity='{updateQuantity}', Size='{size}', Price = '{price}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
                             DeleteDetailCart(detailCart);
                         }
                     }
@@ -112,7 +112,7 @@ namespace LHBeverage.ModelService
                     {
                         using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
                         {
-                            connection.Query<Product>($"Update DetailCart set Size='{size}', Price = '{price}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
+                            connection.Query<DetailCart>($"Update DetailCart set Size='{size}', Price = '{price}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());
                         }
                     }
                 }
@@ -122,7 +122,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Query<Product>($"Update DetailCart set Quantity='{Quantity}', Price = '{price}' where IDDetail = '{detailCart.IDDetail}'", new DynamicParameters());
+                connection.Query<DetailCart>($"Update DetailCart set Quantity='{Quantity}', Price = '{price}' where IDDetail = '{detailCart.IDDetail}'", new DynamicParameters());
             }
 
         }

@@ -47,5 +47,12 @@ namespace LHBeverage.UserControls
                 CreateCartItem(cartinfo);
             }
         }
+
+        private void ProceedBtn_Click(object sender, EventArgs e)
+        {
+            OrderConnect.CreateOrder(cartinfo);
+            DetailCartConnect.ClearCart(cartinfo);
+
+        }
     }
 }

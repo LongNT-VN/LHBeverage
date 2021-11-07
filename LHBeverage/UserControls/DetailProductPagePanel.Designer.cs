@@ -321,7 +321,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1174, 583);
+            this.Size = new System.Drawing.Size(1239, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

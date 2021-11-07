@@ -35,10 +35,6 @@ namespace LHBeverage.UserControls
             this.TotalPriceLabel = new System.Windows.Forms.Label();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.PaymentMethodPanel = new System.Windows.Forms.Panel();
-            this.Method4Pic = new System.Windows.Forms.PictureBox();
-            this.Method3Pic = new System.Windows.Forms.PictureBox();
-            this.Method2Pic = new System.Windows.Forms.PictureBox();
-            this.Method1Pic = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ShippingPriceLabel = new System.Windows.Forms.Label();
             this.ShippingLabel = new System.Windows.Forms.Label();
@@ -47,13 +43,18 @@ namespace LHBeverage.UserControls
             this.SubtotalLabel = new System.Windows.Forms.Label();
             this.TotalPricePanel = new System.Windows.Forms.Panel();
             this.ItemsCart = new System.Windows.Forms.FlowLayoutPanel();
+            this.Method4Pic = new System.Windows.Forms.PictureBox();
+            this.Method3Pic = new System.Windows.Forms.PictureBox();
+            this.Method2Pic = new System.Windows.Forms.PictureBox();
+            this.Method1Pic = new System.Windows.Forms.PictureBox();
+            this.Title = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.PaymentMethodPanel.SuspendLayout();
+            this.TotalPricePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Method4Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method3Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method2Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method1Pic)).BeginInit();
-            this.TotalPricePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProceedBtn
@@ -69,6 +70,7 @@ namespace LHBeverage.UserControls
             this.ProceedBtn.TabIndex = 1;
             this.ProceedBtn.Text = "Proceed";
             this.ProceedBtn.UseVisualStyleBackColor = false;
+            this.ProceedBtn.Click += new System.EventHandler(this.ProceedBtn_Click);
             // 
             // panel2
             // 
@@ -124,42 +126,6 @@ namespace LHBeverage.UserControls
             this.PaymentMethodPanel.Name = "PaymentMethodPanel";
             this.PaymentMethodPanel.Size = new System.Drawing.Size(304, 85);
             this.PaymentMethodPanel.TabIndex = 8;
-            // 
-            // Method4Pic
-            // 
-            this.Method4Pic.BackColor = System.Drawing.Color.OrangeRed;
-            this.Method4Pic.Location = new System.Drawing.Point(210, 45);
-            this.Method4Pic.Name = "Method4Pic";
-            this.Method4Pic.Size = new System.Drawing.Size(50, 30);
-            this.Method4Pic.TabIndex = 5;
-            this.Method4Pic.TabStop = false;
-            // 
-            // Method3Pic
-            // 
-            this.Method3Pic.BackColor = System.Drawing.Color.OrangeRed;
-            this.Method3Pic.Location = new System.Drawing.Point(145, 45);
-            this.Method3Pic.Name = "Method3Pic";
-            this.Method3Pic.Size = new System.Drawing.Size(50, 30);
-            this.Method3Pic.TabIndex = 5;
-            this.Method3Pic.TabStop = false;
-            // 
-            // Method2Pic
-            // 
-            this.Method2Pic.BackColor = System.Drawing.Color.OrangeRed;
-            this.Method2Pic.Location = new System.Drawing.Point(80, 45);
-            this.Method2Pic.Name = "Method2Pic";
-            this.Method2Pic.Size = new System.Drawing.Size(50, 30);
-            this.Method2Pic.TabIndex = 5;
-            this.Method2Pic.TabStop = false;
-            // 
-            // Method1Pic
-            // 
-            this.Method1Pic.BackColor = System.Drawing.Color.OrangeRed;
-            this.Method1Pic.Location = new System.Drawing.Point(15, 45);
-            this.Method1Pic.Name = "Method1Pic";
-            this.Method1Pic.Size = new System.Drawing.Size(50, 30);
-            this.Method1Pic.TabIndex = 4;
-            this.Method1Pic.TabStop = false;
             // 
             // label2
             // 
@@ -245,11 +211,57 @@ namespace LHBeverage.UserControls
             this.ItemsCart.Size = new System.Drawing.Size(800, 400);
             this.ItemsCart.TabIndex = 7;
             // 
+            // Method4Pic
+            // 
+            this.Method4Pic.BackColor = System.Drawing.Color.OrangeRed;
+            this.Method4Pic.Location = new System.Drawing.Point(210, 45);
+            this.Method4Pic.Name = "Method4Pic";
+            this.Method4Pic.Size = new System.Drawing.Size(50, 30);
+            this.Method4Pic.TabIndex = 5;
+            this.Method4Pic.TabStop = false;
+            // 
+            // Method3Pic
+            // 
+            this.Method3Pic.BackColor = System.Drawing.Color.OrangeRed;
+            this.Method3Pic.Location = new System.Drawing.Point(145, 45);
+            this.Method3Pic.Name = "Method3Pic";
+            this.Method3Pic.Size = new System.Drawing.Size(50, 30);
+            this.Method3Pic.TabIndex = 5;
+            this.Method3Pic.TabStop = false;
+            // 
+            // Method2Pic
+            // 
+            this.Method2Pic.BackColor = System.Drawing.Color.OrangeRed;
+            this.Method2Pic.Location = new System.Drawing.Point(80, 45);
+            this.Method2Pic.Name = "Method2Pic";
+            this.Method2Pic.Size = new System.Drawing.Size(50, 30);
+            this.Method2Pic.TabIndex = 5;
+            this.Method2Pic.TabStop = false;
+            // 
+            // Method1Pic
+            // 
+            this.Method1Pic.BackColor = System.Drawing.Color.OrangeRed;
+            this.Method1Pic.Location = new System.Drawing.Point(15, 45);
+            this.Method1Pic.Name = "Method1Pic";
+            this.Method1Pic.Size = new System.Drawing.Size(50, 30);
+            this.Method1Pic.TabIndex = 4;
+            this.Method1Pic.TabStop = false;
+            // 
+            // Title
+            // 
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(24, 26);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(200, 40);
+            this.Title.TabIndex = 11;
+            this.Title.Text = "Giỏ hàng";
+            // 
             // CartPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.Title);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PaymentMethodPanel);
             this.Controls.Add(this.TotalPricePanel);
@@ -258,11 +270,11 @@ namespace LHBeverage.UserControls
             this.Size = new System.Drawing.Size(1184, 600);
             this.panel2.ResumeLayout(false);
             this.PaymentMethodPanel.ResumeLayout(false);
+            this.TotalPricePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Method4Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method3Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method2Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Method1Pic)).EndInit();
-            this.TotalPricePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -287,5 +299,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label SubtotalLabel;
         private System.Windows.Forms.Panel TotalPricePanel;
         private System.Windows.Forms.FlowLayoutPanel ItemsCart;
+        private System.Windows.Forms.Label Title;
     }
 }
