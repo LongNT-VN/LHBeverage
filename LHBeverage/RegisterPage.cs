@@ -97,7 +97,7 @@ namespace LHBeverage
             customer.PhoneNumber = PhoneNumberTextBox.Text;
             customer.Email = EmailTextBox.Text;
             customer.Age = 0;
-            customer.Gender = 0;
+            customer.Gender = "";
             customer.Password = PasswordTextBox.Text;
             customer.Authorized = "Member";
             CustomerConnect.CreateCustomer(customer);

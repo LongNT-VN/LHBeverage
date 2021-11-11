@@ -22,6 +22,7 @@ namespace LHBeverage.ModelService
                 return customer.ToList();
             }
         }
+      
         public static bool IsCustomerExisted(String Email)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -72,6 +73,14 @@ namespace LHBeverage.ModelService
                 var customer = connection.Query<Customer>(query);
                 return customer.First();
             }
+        }
+        public static void UpdateCustomer(Customer customer)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Query<Customer>($"Update Customer set Email ='{customer.Email}',Password='{customer.Password}',Age='{customer.Age}',Gender='{customer.Gender}',Address='{customer.Address}', PhoneNumber = '{customer.PhoneNumber}',Authorized='{customer.Authorized}',Name='{customer.Name}',Avatar='{customer.Avatar}' where IDCus='{customer.IDCus}'", new DynamicParameters());
+            }
+
         }
         private static string LoadConnectionString(string id = "Default")
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,14 @@ namespace LHBeverage.Helper
             memoryStream = null;
             byteBuffer = null;
             return bmpReturn;
+        }
+        public static string convertBitmapToBase64(Bitmap bmp)
+        {
+            MemoryStream ms = new MemoryStream();
+            bmp.Save(ms, ImageFormat.Png);
+            byte[] byteImage = ms.ToArray();
+            string base64ImageString = Convert.ToBase64String(byteImage);
+            return base64ImageString;
         }
     }
 }

@@ -30,6 +30,14 @@ namespace LHBeverage.ModelService
                 }
             }
         }
+        public static List<DetailOrder> SelectItemOrderByIDOrder(int IDOrder)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var detailOrders = connection.Query<DetailOrder>($"select * from DetailOrder where IDOrder = '{IDOrder}'", new DynamicParameters());
+                return detailOrders.ToList();
+            }
+        }
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

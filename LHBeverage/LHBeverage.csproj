@@ -163,6 +163,18 @@
     <Compile Include="UserControls\Component\AdminCardTopping.Designer.cs">
       <DependentUpon>AdminCardTopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\CardItemOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\CardItemOrder.Designer.cs">
+      <DependentUpon>CardItemOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\CardOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\CardOrder.Designer.cs">
+      <DependentUpon>CardOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Component\CategoryComponent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -304,6 +316,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\AdminCardTopping.resx">
       <DependentUpon>AdminCardTopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\CardItemOrder.resx">
+      <DependentUpon>CardItemOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\CardOrder.resx">
+      <DependentUpon>CardOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\CategoryComponent.resx">
       <DependentUpon>CategoryComponent.cs</DependentUpon>

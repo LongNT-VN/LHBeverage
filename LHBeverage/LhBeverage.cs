@@ -104,11 +104,11 @@ namespace LHBeverage
             else if(btn == UserBtn)
             {
                 AccountPanel.Visible = true;
-                //AccountPagePanel accountPagePanel = new AccountPagePanel();
-                //accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
-                //AccountPanel.Controls.Add(accountPagePanel);
-                AccountPanel.Controls.Clear();
-                AccountPanel.Controls.Add(new HistoryOrderPage(customerinfo));
+                AccountPagePanel accountPagePanel = new AccountPagePanel(customerinfo);
+                accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+                AccountPanel.Controls.Add(accountPagePanel);
+                //AccountPanel.Controls.Clear();
+                //AccountPanel.Controls.Add(new HistoryOrderPage(customerinfo));
             }
 
         }
