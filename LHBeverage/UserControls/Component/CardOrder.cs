@@ -41,5 +41,6 @@ namespace LHBeverage.UserControls.Component
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

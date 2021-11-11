@@ -19,13 +19,14 @@ namespace LHBeverage.UserControls
         Color globalColorActive;
         Bitmap AvatarTmp;
         Customer customerTmp = new Customer();
+        public static AccountPagePanel instance;
         public AccountPagePanel(Customer cust )
         {
             InitializeComponent();
             globalColorActive = Color.Azure;
             initDataAccountPage(cust);
             customerTmp = cust;
-
+            instance = this;
 
         }
         void initDataAccountPage(Customer customer)
@@ -141,6 +142,6 @@ namespace LHBeverage.UserControls
                 Order_Flowpanel.Controls.Add(cardOrder);
             }
         }
-
+       
     }
 }

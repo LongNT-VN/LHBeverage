@@ -28,6 +28,7 @@ namespace LHBeverage
            // HomeBtn.PerformClick();
             CreateCategory();
             instance = this;
+            this.Invalidate(true);
         }
 
 
@@ -42,6 +43,7 @@ namespace LHBeverage
             Cart cart = CartConnect.LoadCart(customerinfo);
             CartPanel.Controls.Clear();
             CartPagePanel cartPagePanel = new CartPagePanel(cart);
+           
             //Chổ này chưa nhận anchor
             cartPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
             CartPanel.Controls.Add(cartPagePanel);
@@ -93,6 +95,7 @@ namespace LHBeverage
             else if(btn==CartBtn)
             {
                 CartPanel.Visible = true;
+               
                 GetCartInfo();
             }
             else if(btn == ProductBtn)
@@ -229,9 +232,11 @@ namespace LHBeverage
 
         private void CreateItemCard()
         {
+            ItemcartsPanel.Size = new Size(BigCardPanel.Size.Width+74, 287);         
             ItemcartsPanel.Controls.Clear();
             ItemcartsPanel.Location = new Point(BigCardPanel.Location.X, BigCardPanel.Location.Y + +BigCardPanel.Height - 20);
             List<Product> products = ProductConnect.LoadProduct();
+            ItemcartsPanel.AutoScroll = true;
             string productimagebase64="";
             Image productimage;
             foreach(Product product in products)
@@ -282,12 +287,15 @@ namespace LHBeverage
                     productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     ItemcardComponent itemcart = new ItemcardComponent(product, productimage);
                     itemcart.Click += ItemClick;
+
                     ItemcartsPanel.Controls.Add(itemcart);
                 }
             }
             ItemcartsPanel.Size = new Size(ItemcartsPanel.Size.Width, BigCardPanel.Size.Height + ItemcartsPanel.Size.Height);
             ItemcartsPanel.Location = BigCardPanel.Location;
+            ItemcartsPanel.AutoScroll = true;
             ItemcartsPanel.BringToFront();
+
         }
         private void RemoveFilter()
         {
