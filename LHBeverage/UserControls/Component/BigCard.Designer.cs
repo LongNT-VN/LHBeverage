@@ -43,7 +43,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.DesShortBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DesShortBC_lbl.ForeColor = System.Drawing.Color.MintCream;
-            this.DesShortBC_lbl.Location = new System.Drawing.Point(249, 120);
+            this.DesShortBC_lbl.Location = new System.Drawing.Point(210, 90);
             this.DesShortBC_lbl.Name = "DesShortBC_lbl";
             this.DesShortBC_lbl.Size = new System.Drawing.Size(257, 40);
             this.DesShortBC_lbl.TabIndex = 11;
@@ -56,7 +56,7 @@ namespace LHBeverage.UserControls.Component
             this.BuyBC_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuyBC_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuyBC_btn.ForeColor = System.Drawing.Color.White;
-            this.BuyBC_btn.Location = new System.Drawing.Point(406, 160);
+            this.BuyBC_btn.Location = new System.Drawing.Point(371, 130);
             this.BuyBC_btn.Name = "BuyBC_btn";
             this.BuyBC_btn.Size = new System.Drawing.Size(100, 40);
             this.BuyBC_btn.TabIndex = 10;
@@ -67,18 +67,18 @@ namespace LHBeverage.UserControls.Component
             // 
             this.priceDrinksBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceDrinksBC_lbl.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.priceDrinksBC_lbl.Location = new System.Drawing.Point(248, 160);
+            this.priceDrinksBC_lbl.Location = new System.Drawing.Point(222, 130);
             this.priceDrinksBC_lbl.Name = "priceDrinksBC_lbl";
             this.priceDrinksBC_lbl.Size = new System.Drawing.Size(152, 40);
             this.priceDrinksBC_lbl.TabIndex = 9;
             this.priceDrinksBC_lbl.Text = "$5";
-            this.priceDrinksBC_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.priceDrinksBC_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HotSaleBC_lbl
             // 
             this.HotSaleBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotSaleBC_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(149)))));
-            this.HotSaleBC_lbl.Location = new System.Drawing.Point(242, 10);
+            this.HotSaleBC_lbl.Location = new System.Drawing.Point(210, 5);
             this.HotSaleBC_lbl.Name = "HotSaleBC_lbl";
             this.HotSaleBC_lbl.Size = new System.Drawing.Size(264, 20);
             this.HotSaleBC_lbl.TabIndex = 8;
@@ -88,7 +88,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.nameDrinkBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameDrinkBC_lbl.ForeColor = System.Drawing.Color.White;
-            this.nameDrinkBC_lbl.Location = new System.Drawing.Point(245, 50);
+            this.nameDrinkBC_lbl.Location = new System.Drawing.Point(210, 30);
             this.nameDrinkBC_lbl.Name = "nameDrinkBC_lbl";
             this.nameDrinkBC_lbl.Size = new System.Drawing.Size(261, 60);
             this.nameDrinkBC_lbl.TabIndex = 7;
@@ -98,9 +98,9 @@ namespace LHBeverage.UserControls.Component
             // 
             this.BigCard_picture.Enabled = false;
             this.BigCard_picture.Image = ((System.Drawing.Image)(resources.GetObject("BigCard_picture.Image")));
-            this.BigCard_picture.Location = new System.Drawing.Point(6, 5);
+            this.BigCard_picture.Location = new System.Drawing.Point(5, 5);
             this.BigCard_picture.Name = "BigCard_picture";
-            this.BigCard_picture.Size = new System.Drawing.Size(230, 200);
+            this.BigCard_picture.Size = new System.Drawing.Size(200, 170);
             this.BigCard_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BigCard_picture.TabIndex = 6;
             this.BigCard_picture.TabStop = false;
@@ -117,7 +117,7 @@ namespace LHBeverage.UserControls.Component
             this.Controls.Add(this.nameDrinkBC_lbl);
             this.Controls.Add(this.BigCard_picture);
             this.Name = "BigCard";
-            this.Size = new System.Drawing.Size(512, 210);
+            this.Size = new System.Drawing.Size(475, 180);
             ((System.ComponentModel.ISupportInitialize)(this.BigCard_picture)).EndInit();
             this.ResumeLayout(false);
 

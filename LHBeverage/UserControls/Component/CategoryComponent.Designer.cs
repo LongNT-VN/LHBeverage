@@ -37,11 +37,14 @@ namespace LHBeverage.UserControls.Component
             this.Categorybtn.FlatAppearance.BorderSize = 0;
             this.Categorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Categorybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Categorybtn.Image = global::LHBeverage.Properties.Resources.User_active;
+            this.Categorybtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Categorybtn.Location = new System.Drawing.Point(0, 0);
             this.Categorybtn.Name = "Categorybtn";
-            this.Categorybtn.Size = new System.Drawing.Size(150, 70);
+            this.Categorybtn.Size = new System.Drawing.Size(150, 60);
             this.Categorybtn.TabIndex = 0;
             this.Categorybtn.Text = "Categorybtn";
+            this.Categorybtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Categorybtn.UseVisualStyleBackColor = true;
             // 
             // CategoryComponent
@@ -51,7 +54,7 @@ namespace LHBeverage.UserControls.Component
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.Categorybtn);
             this.Name = "CategoryComponent";
-            this.Size = new System.Drawing.Size(150, 70);
+            this.Size = new System.Drawing.Size(150, 60);
             this.ResumeLayout(false);
 
         }

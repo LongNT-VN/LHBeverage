@@ -32,10 +32,12 @@ namespace LHBeverage
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LHBeverage));
             this.ProductPanel = new System.Windows.Forms.Panel();
+            this.ListProductLabel = new System.Windows.Forms.Label();
             this.ItemcartsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.BigCardPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.CategoryPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.NavigationPanel = new System.Windows.Forms.Panel();
+            this.QuantityLabel = new System.Windows.Forms.Label();
             this.SwitchLabel = new System.Windows.Forms.Label();
             this.UserBtn = new System.Windows.Forms.Button();
             this.UserIconList = new System.Windows.Forms.ImageList(this.components);
@@ -83,6 +85,7 @@ namespace LHBeverage
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.ProductPanel.Controls.Add(this.ListProductLabel);
             this.ProductPanel.Controls.Add(this.ItemcartsPanel);
             this.ProductPanel.Controls.Add(this.BigCardPanel);
             this.ProductPanel.Controls.Add(this.CategoryPanel);
@@ -91,6 +94,18 @@ namespace LHBeverage
             this.ProductPanel.Size = new System.Drawing.Size(1184, 600);
             this.ProductPanel.TabIndex = 0;
             this.ProductPanel.Visible = false;
+            // 
+            // ListProductLabel
+            // 
+            this.ListProductLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ListProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListProductLabel.Location = new System.Drawing.Point(30, 265);
+            this.ListProductLabel.Name = "ListProductLabel";
+            this.ListProductLabel.Size = new System.Drawing.Size(1324, 40);
+            this.ListProductLabel.TabIndex = 3;
+            this.ListProductLabel.Text = "Beverage of LHBeverage";
+            this.ListProductLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // ItemcartsPanel
             // 
@@ -110,9 +125,9 @@ namespace LHBeverage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BigCardPanel.AutoScroll = true;
             this.BigCardPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.BigCardPanel.Location = new System.Drawing.Point(30, 105);
+            this.BigCardPanel.Location = new System.Drawing.Point(30, 80);
             this.BigCardPanel.Name = "BigCardPanel";
-            this.BigCardPanel.Size = new System.Drawing.Size(1124, 247);
+            this.BigCardPanel.Size = new System.Drawing.Size(1124, 205);
             this.BigCardPanel.TabIndex = 1;
             // 
             // CategoryPanel
@@ -121,9 +136,9 @@ namespace LHBeverage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CategoryPanel.AutoScroll = true;
             this.CategoryPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.CategoryPanel.Location = new System.Drawing.Point(30, 20);
+            this.CategoryPanel.Location = new System.Drawing.Point(30, 10);
             this.CategoryPanel.Name = "CategoryPanel";
-            this.CategoryPanel.Size = new System.Drawing.Size(1124, 100);
+            this.CategoryPanel.Size = new System.Drawing.Size(1124, 90);
             this.CategoryPanel.TabIndex = 2;
             // 
             // NavigationPanel
@@ -131,6 +146,7 @@ namespace LHBeverage
             this.NavigationPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.NavigationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
+            this.NavigationPanel.Controls.Add(this.QuantityLabel);
             this.NavigationPanel.Controls.Add(this.SwitchLabel);
             this.NavigationPanel.Controls.Add(this.UserBtn);
             this.NavigationPanel.Controls.Add(this.HomeBtn);
@@ -141,6 +157,18 @@ namespace LHBeverage
             this.NavigationPanel.Name = "NavigationPanel";
             this.NavigationPanel.Size = new System.Drawing.Size(80, 681);
             this.NavigationPanel.TabIndex = 1;
+            // 
+            // QuantityLabel
+            // 
+            this.QuantityLabel.AutoSize = true;
+            this.QuantityLabel.BackColor = System.Drawing.Color.Transparent;
+            this.QuantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityLabel.ForeColor = System.Drawing.Color.White;
+            this.QuantityLabel.Location = new System.Drawing.Point(55, 309);
+            this.QuantityLabel.Name = "QuantityLabel";
+            this.QuantityLabel.Size = new System.Drawing.Size(19, 20);
+            this.QuantityLabel.TabIndex = 6;
+            this.QuantityLabel.Text = "0";
             // 
             // SwitchLabel
             // 
@@ -542,6 +570,9 @@ namespace LHBeverage
             // 
             // DetailProductPanel
             // 
+            this.DetailProductPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DetailProductPanel.Controls.Add(this.BackHomeBtn);
             this.DetailProductPanel.Location = new System.Drawing.Point(80, 80);
             this.DetailProductPanel.Name = "DetailProductPanel";
@@ -559,10 +590,13 @@ namespace LHBeverage
             this.BackHomeBtn.Size = new System.Drawing.Size(50, 30);
             this.BackHomeBtn.TabIndex = 0;
             this.BackHomeBtn.UseVisualStyleBackColor = true;
-            this.BackHomeBtn.Click += new System.EventHandler(this.BackHomeBtn_Click_1);
+            this.BackHomeBtn.Click += new System.EventHandler(this.BackHomeBtn_Click);
             // 
             // CartPanel
             // 
+            this.CartPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CartPanel.Location = new System.Drawing.Point(80, 80);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(1184, 600);
@@ -612,6 +646,7 @@ namespace LHBeverage
             this.Shown += new System.EventHandler(this.LHBeverage_Shown);
             this.ProductPanel.ResumeLayout(false);
             this.NavigationPanel.ResumeLayout(false);
+            this.NavigationPanel.PerformLayout();
             this.TopBarPanel.ResumeLayout(false);
             this.TopBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).EndInit();
@@ -661,6 +696,8 @@ namespace LHBeverage
         private System.Windows.Forms.Panel CartPanel;
         private System.Windows.Forms.Panel HomePanel;
         private System.Windows.Forms.Panel AccountPanel;
+        private System.Windows.Forms.Label ListProductLabel;
+        private System.Windows.Forms.Label QuantityLabel;
     }
 }
 

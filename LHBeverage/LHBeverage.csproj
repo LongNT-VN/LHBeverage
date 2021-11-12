@@ -115,6 +115,7 @@
     <Compile Include="ModelService\CustomerConnect.cs" />
     <Compile Include="ModelService\DetailImageConnect.cs" />
     <Compile Include="ModelService\DetailOrderConnect.cs" />
+    <Compile Include="ModelService\LocationConnect.cs" />
     <Compile Include="ModelService\OrderConnect.cs" />
     <Compile Include="ModelService\ProductConnect.cs" />
     <Compile Include="ModelService\ToppingConnect.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Model\DetailCart.cs" />
     <Compile Include="Model\DetailImage.cs" />
     <Compile Include="Model\DetailOrder.cs" />
+    <Compile Include="Model\Location.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductIngredient.cs" />
@@ -377,6 +379,7 @@
     <None Include="LHBeveragedb.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="location.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -444,6 +447,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -181,6 +181,7 @@ namespace LHBeverage.UserControls
             this.AddCartBtn.Size = new System.Drawing.Size(32, 32);
             this.AddCartBtn.TabIndex = 8;
             this.AddCartBtn.TabStop = false;
+            this.AddCartBtn.Click += new System.EventHandler(this.OrderItemBtn_Click);
             // 
             // ImgItem
             // 
@@ -321,7 +322,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1239, 583);
+            this.Size = new System.Drawing.Size(1222, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

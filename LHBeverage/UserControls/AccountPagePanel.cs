@@ -64,7 +64,7 @@ namespace LHBeverage.UserControls
             Account_MyDetail_panel.BringToFront();
             btn_Mydetail.BackColor = globalColorActive;
             btn_MyOrders.BackColor = Color.White;
-
+            DetailOrderPanel.Visible = false;
         }
 
         private void btn_MyOrders_Click(object sender, EventArgs e)
@@ -74,8 +74,9 @@ namespace LHBeverage.UserControls
             MyOrder_panel.BringToFront();
             btn_Mydetail.BackColor = Color.White;
             btn_MyOrders.BackColor = globalColorActive;
-
-            renderOrder();
+            DetailOrderPanel.Visible = false;
+            ChooseDeliveryBtn.PerformClick();
+            renderOrder("Đang vận chuyển");
            
         }
 
@@ -131,17 +132,89 @@ namespace LHBeverage.UserControls
         }
 
         // My Order
-         private void renderOrder()
+         private void renderOrder(string choosing)
         {
             Order_Flowpanel.Controls.Clear();
-            List<Order> orders = new List<Order>();
-            orders = OrderConnect.LoadOrder(customerTmp);
-            foreach(Order order in orders)
+            List<Order> orders = OrderConnect.GetOrderByStatus(customerTmp, choosing);
+            //List<Order> orders = new List<Order>();
+            //orders = OrderConnect.LoadOrder(customerTmp);
+            if(orders.Count() == 0)
             {
-                CardOrder cardOrder = new CardOrder(order, customerTmp);
-                Order_Flowpanel.Controls.Add(cardOrder);
+                Order_Flowpanel.Controls.Add(NonePanel);
+            }
+            else
+            {
+                foreach (Order order in orders)
+                {
+                    CardOrder cardOrder = new CardOrder(order, customerTmp);
+                    cardOrder.Click += DetailOrder;
+                    Order_Flowpanel.Controls.Add(cardOrder);
+                }
             }
         }
-       
+
+        private void ChooseConfirmBtn_Click(object sender, EventArgs e)
+        {
+            clearchoosing();
+            ChooseConfirmBtn.BackColor = Color.DarkOrange;
+            renderOrder("Đã xác nhận");
+        }
+
+        private void ChooseDeliveryBtn_Click(object sender, EventArgs e)
+        {
+            clearchoosing();
+            ChooseDeliveryBtn.BackColor = Color.DarkOrange;
+            renderOrder("Đang vận chuyển");
+        }
+
+        private void ChooseSuccessBtn_Click(object sender, EventArgs e)
+        {
+            clearchoosing();
+            ChooseSuccessBtn.BackColor = Color.DarkOrange;
+            renderOrder("Hoàn tất");
+        }
+
+        private void ChooseCancelBtn_Click(object sender, EventArgs e)
+        {
+            clearchoosing();
+            ChooseCancelBtn.BackColor = Color.DarkOrange;
+            renderOrder("Đã hủy");
+        }
+        private void clearchoosing()
+        {
+            ChooseConfirmBtn.BackColor = Color.White;
+            ChooseCancelBtn.BackColor = Color.White;
+            ChooseDeliveryBtn.BackColor = Color.White;
+            ChooseSuccessBtn.BackColor = Color.White;
+        }
+        public void DetailOrder(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if(btn!=null)
+            {
+                ListProductOrder.Controls.Clear();
+                MyOrder_panel.Visible = false;
+                DetailOrderPanel.Visible = true;
+                DetailOrderPanel.BringToFront();
+                this.Controls.Add(DetailOrderPanel);
+                Order order = OrderConnect.GetOrderByID(Convert.ToInt32(btn.Tag));
+                List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(Convert.ToInt32(btn.Tag));
+                CodeOrder_lbl.Text = order.IDOrder.ToString();
+                TotalPrice.Text = order.Total.ToString();
+                PricePayment_lbl.Text = order.Totalpayment.ToString();
+                Discount_lbl.Text = order.Discount.ToString();
+                LhCoin_lbl.Text = order.LHcoin.ToString();
+                foreach (DetailOrder detail in detailOrders)
+                {
+                    CardItemOrder cardItem = new CardItemOrder(detail);
+                    ListProductOrder.Controls.Add(cardItem);
+                }
+            }
+        }
+        public void orderclick()
+        {
+            btn_MyOrders.PerformClick();
+        }
+
     }
 }

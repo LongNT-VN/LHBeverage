@@ -179,6 +179,7 @@ namespace LHBeverage.UserControls.Component
         {
             //Thêm form Are you sure about that ?
             DetailCartConnect.DeleteDetailCart(detailcartinfo);
+            LHBeverage.instance.init();
         }
     }
 }

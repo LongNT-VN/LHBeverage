@@ -24,14 +24,24 @@ namespace LHBeverage
         {
             InitializeComponent();
             customerinfo = customer;
-            AccountName_lbl.Text = customer.Email;
-           // HomeBtn.PerformClick();
-            CreateCategory();
+            // HomeBtn.PerformClick();
             instance = this;
             this.Invalidate(true);
+            init();
         }
 
-
+        public void init()
+        {
+            int quantity=0;
+            Cart getCart = CartConnect.LoadCart(customerinfo);
+            List<DetailCart> details = DetailCartConnect.LoadDetailCart(getCart);
+            foreach(DetailCart detailCart in details)
+            {
+                quantity+=detailCart.Quantity;
+            }
+            QuantityLabel.Text = quantity.ToString();
+            AccountName_lbl.Text = customerinfo.Email;
+        }
         //Function
         private void LHBeverage_Shown(object sender, EventArgs e)
         {
@@ -42,8 +52,8 @@ namespace LHBeverage
 
             Cart cart = CartConnect.LoadCart(customerinfo);
             CartPanel.Controls.Clear();
-            CartPagePanel cartPagePanel = new CartPagePanel(cart);
-           
+            CartPagePanel cartPagePanel = new CartPagePanel(cart,customerinfo);
+            cartPagePanel.Click += CartComponentBtn;
             //Chổ này chưa nhận anchor
             cartPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
             CartPanel.Controls.Add(cartPagePanel);
@@ -64,26 +74,14 @@ namespace LHBeverage
         //Event
         private void SwitchLabelControl(Button btn, Label Switch)
         {
-            int n = Switch.Location.Y;
-            while (Switch.Location.Y - 5 != btn.Location.Y)
-            {
-                if (Switch.Location.Y - 5 < btn.Location.Y)
-                {
-                    n++;
-                    Switch.Location = new Point(0, n);
-                }
-                else
-                {
-                    n--;
-                    Switch.Location = new Point(0, n);
-                }
-            }
+            int n = btn.Location.Y;
+            Switch.Location = new Point(0, n);
             HomePanel.Visible = false;
             ProductPanel.Visible = false;
             CartPanel.Visible = false;
             DetailProductPanel.Visible = false;
             AccountPanel.Visible = false;
-            if(btn == HomeBtn)
+            if (btn == HomeBtn)
             {
                 HomePanel.Visible = true;
                 HomePanel.Controls.Clear();
@@ -100,18 +98,18 @@ namespace LHBeverage
             }
             else if(btn == ProductBtn)
             {
+                CreateCategory();
                 CreateItemCard();
                 CreateBigCard();
                 ProductPanel.Visible = true;
             }
             else if(btn == UserBtn)
             {
+                AccountPanel.Controls.Clear();
                 AccountPanel.Visible = true;
                 AccountPagePanel accountPagePanel = new AccountPagePanel(customerinfo);
                 accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
                 AccountPanel.Controls.Add(accountPagePanel);
-                //AccountPanel.Controls.Clear();
-                //AccountPanel.Controls.Add(new HistoryOrderPage(customerinfo));
             }
 
         }
@@ -190,12 +188,13 @@ namespace LHBeverage
         {
           
             List<Category> categories = CategoryConnect.LoadCategory();
+            CategoryPanel.Controls.Clear();
             foreach (Category category in categories)
             {
                 if (category != null)
                 {
                     CategoryComponent categorycomponent = new CategoryComponent(category);
-                    categorycomponent.Click += Filtercatagory;
+                    categorycomponent.Click += Filtercategory;
                     CategoryPanel.Controls.Add(categorycomponent);
                 }
             }
@@ -204,6 +203,7 @@ namespace LHBeverage
         private void CreateBigCard()
         {
             List<Product> products = ProductConnect.LoadProduct();
+            BigCardPanel.Controls.Clear();
             string productimagebase64 = "";
             Image productimage;
             foreach (Product product in products)
@@ -211,20 +211,16 @@ namespace LHBeverage
                 if (product != null)
                 {
                     //truyền vào product để chọn select tất cả các hình có trùng IDPRO
-                    List<DetailImage> images = DetailImageConnect.LoadImage(product.IDPro);
-                    foreach (DetailImage image in images)
-                    {
-                        if (image != null)
-                        {
-                            //Lấy hình đầu tiên ra làm hình đại diện sản phẩm
-                            productimagebase64 = image.ImageData;
-                            break;
-                        }
-                    }
+                    DetailImage image = DetailImageConnect.LoadOneImage(product.IDPro);
+                    productimagebase64 = image.ImageData;
                     productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
                     BigCard bigCard = new BigCard(product, productimage);
                     bigCard.Click += ItemClick;
                     BigCardPanel.Controls.Add(bigCard);
+                    if(products.IndexOf(product)==4)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -234,9 +230,8 @@ namespace LHBeverage
         {
             ItemcartsPanel.Size = new Size(BigCardPanel.Size.Width+74, 287);         
             ItemcartsPanel.Controls.Clear();
-            ItemcartsPanel.Location = new Point(BigCardPanel.Location.X, BigCardPanel.Location.Y + +BigCardPanel.Height - 20);
+            ItemcartsPanel.Location = new Point(BigCardPanel.Location.X, BigCardPanel.Location.Y + +BigCardPanel.Height + 30);
             List<Product> products = ProductConnect.LoadProduct();
-            ItemcartsPanel.AutoScroll = true;
             string productimagebase64="";
             Image productimage;
             foreach(Product product in products)
@@ -377,29 +372,48 @@ namespace LHBeverage
             }
         }
 
-        private void BackHomeBtn_Click_1(object sender, EventArgs e)
+        private void BackHomeBtn_Click(object sender, EventArgs e)
         {
             ProductPanel.Visible = true;
             DetailProductPanel.Visible = false;
         }
 
-        //Filter Catagory
-        private void Filtercatagory(object sender, EventArgs e)
+        //Filter Category
+        private void Filtercategory(object sender, EventArgs e)
         {
-            Button CatagoryBtn = sender as Button;
-            if(CatagoryBtn!=null)
+            foreach(CategoryComponent categoryComponent in CategoryPanel.Controls)
             {
-                CreateItemCardFilter(Convert.ToInt32(CatagoryBtn.Name));
+                foreach (Button Categorybtn in categoryComponent.Controls)
+                {
+                    if (Categorybtn != null)
+                    {
+                        Categorybtn.BackColor = Color.White;
+                    }
+                }
+            }
+            Button CategoryBtn = sender as Button;
+            CategoryBtn.BackColor = Color.DarkOrange;
+            if (CategoryBtn != null)
+            {
+                CreateItemCardFilter(Convert.ToInt32(CategoryBtn.Name));
             }
         }
 
         //Hàm chuyển sang trang hóa đơn
-        private void ProcessList(object sender, EventArgs e)
+        private void CartComponentBtn(object sender, EventArgs e)
         {
-            Button process = sender as Button;
-            if (process != null)
+            Button btn = sender as Button;
+            if (btn.Name == "ChooseBeverageBtn")
+            {
+                ProductBtn.PerformClick();
+            }
+            else if(btn.Name == "ConfirmBtn")
             {
                 UserBtn.PerformClick();
+                AccountPanel.Controls.Clear();
+                AccountPagePanel accountPagePanel = new AccountPagePanel(customerinfo);
+                AccountPagePanel.instance.orderclick();
+                AccountPanel.Controls.Add(accountPagePanel);
             }
         }
 

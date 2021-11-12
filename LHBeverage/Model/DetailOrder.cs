@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace LHBeverage.Model
 {
-    class DetailOrder
+    public class DetailOrder
     {
         public int IDDetailOrder { get; set; }
         public int IDOrder { get; set; }
         public int IDPro { get; set; }
+        public string Size { get; set; }
+        public int Quantity { get; set; }
+        public string Topping { get; set; }
+        public int Price { get; set; }
     }
 }

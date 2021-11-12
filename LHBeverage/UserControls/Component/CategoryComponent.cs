@@ -23,6 +23,7 @@ namespace LHBeverage.UserControls.Component
         {
             Categorybtn.Text = catagory.Name;
             Categorybtn.Name = catagory.IDCate.ToString();
+            Categorybtn.BackColor = Color.White;
         }
         public new event EventHandler Click
         {

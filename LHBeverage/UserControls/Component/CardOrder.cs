@@ -21,13 +21,14 @@ namespace LHBeverage.UserControls.Component
         }
         void initOrder(Order order, Customer customer)
         {
-            CodeOrder_lbl.Text = order.IDOrder.ToString();
             NameUser.Text = customer.Name;
+            CodeOrder_lbl.Text = order.IDOrder.ToString();
             TotalPrice.Text = order.Total.ToString();
             PricePayment_lbl.Text = order.Totalpayment.ToString();
             Discount_lbl.Text = order.Discount.ToString();
             LhCoin_lbl.Text = order.LHcoin.ToString();
             DateOrder_lbl.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            DetailOrderBtn.Tag = order.IDOrder;
             try
             {
                 Flow_ItemOrder.Controls.Clear();
@@ -41,6 +42,19 @@ namespace LHBeverage.UserControls.Component
                 MessageBox.Show(ex.Message);
             }
         }
+        public new event EventHandler Click
+        {
+            add
+            {
+                base.Click += value;
+                DetailOrderBtn.Click += value;
+            }
+            remove
+            {
+                base.Click -= value;
+                DetailOrderBtn.Click -= value;
 
+            }
+        }
     }
 }

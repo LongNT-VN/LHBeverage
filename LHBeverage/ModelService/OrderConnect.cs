@@ -14,15 +14,13 @@ namespace LHBeverage.ModelService
     class OrderConnect
     {
         //Lấy ra giỏ hàng thuộc khách hàng
-        public static void CreateOrder(Cart cart)
+        public static void CreateOrder(Cart cart, int Shipping = 0, int Discount = 0, int LHCoin =0)
         {
             Order order = new Order();
             order.DateOrder = DateTime.Now.ToString();
             order.IDCus = cart.IDCus;
             order.Status = "Đang vận chuyển";
             int total = 0;
-            int Discount = 0;
-            int LHcoin = 0;
             int Totalpayment = 0;
             //Lấy tất cả các detail carts để lấy tổng tiền.
             List<DetailCart> detailcarts = DetailCartConnect.LoadDetailCart(cart);
@@ -33,10 +31,10 @@ namespace LHBeverage.ModelService
                     total+=detailcart.Price;
                 }
             }
-            Totalpayment = total - LHcoin - (total - LHcoin) * Discount / 100;
+            Totalpayment = total - LHCoin - (total - LHCoin) * Discount / 100 + Shipping;
             order.Total = total;
             order.Discount = Discount;
-            order.LHcoin = LHcoin;
+            order.LHcoin = LHCoin;
             order.Totalpayment = Totalpayment;
             
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -61,6 +59,15 @@ namespace LHBeverage.ModelService
             {
                 var order = connection.Query<Order>($"select * from 'Order' where IDCus='{customer.IDCus}' and Status='{status}'", new DynamicParameters());
                 return order.ToList();
+            }
+        }
+
+        public static Order GetOrderByID(int id)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var order = connection.Query<Order>($"select * from 'Order' where IDOrder='{id}'", new DynamicParameters());
+                return order.First();
             }
         }
 

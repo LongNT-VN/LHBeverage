@@ -146,8 +146,8 @@ namespace LHBeverage
 
         private void PhoneNumberTextBox_Leave(object sender, EventArgs e)
         {
-            TextBox LastNameBox = sender as TextBox;
-            if (CheckPhoneNumber(LastNameBox.Text))
+            TextBox Phonenumber = sender as TextBox;
+            if (CheckPhoneNumber(Phonenumber.Text))
             {
                 ErrorPhoneLabel.Visible = false;
             }

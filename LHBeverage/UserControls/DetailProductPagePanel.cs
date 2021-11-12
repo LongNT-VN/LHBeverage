@@ -176,6 +176,11 @@ namespace LHBeverage.UserControls
 
         private void OrderItemBtn_Click(object sender, EventArgs e)
         {
+            PictureBox pictureBox = sender as PictureBox;
+            if(pictureBox!=null)
+            {
+                MessageBox.Show("Thêm vào giỏ thành công");
+            }
             Cart cart = CartConnect.LoadCart(customerinfo);
             string toppings="";
             foreach (string topping in Toppings)
@@ -183,6 +188,7 @@ namespace LHBeverage.UserControls
                 toppings += topping+",";
             }
             DetailCartConnect.CreateDetailCart(cart, id, toppings, size, quantity, TempPrice);
+            LHBeverage.instance.init();
         }
 
         public new event EventHandler Click

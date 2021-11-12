@@ -22,10 +22,14 @@ namespace LHBeverage.ModelService
             {
                 if (detailcart != null)
                 {
+                    detailOrder.Size = detailcart.Size;
+                    detailOrder.Quantity = detailcart.Quantity;
                     detailOrder.IDPro = detailcart.IDPro;
+                    detailOrder.Topping = detailcart.ListIDIngredient;
+                    detailOrder.Price = detailcart.Price;
                     using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
                     {
-                        connection.Execute("insert into DetailOrder (IDOrder, IDPro) values (@IDOrder, @IDPro)", detailOrder);
+                        connection.Execute("insert into DetailOrder (IDOrder, IDPro,Size,Quantity,Topping,Price) values (@IDOrder, @IDPro,@Size,@Quantity,@Topping,@Price)", detailOrder);
                     }
                 }
             }
