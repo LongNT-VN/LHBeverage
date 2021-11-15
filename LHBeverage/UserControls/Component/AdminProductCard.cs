@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using System;
 using System.Collections.Generic;
@@ -25,10 +26,13 @@ namespace LHBeverage.UserControls.Component
             PriceSProduct_lbl.Text = product.PriceS.ToString("#,###", cul.NumberFormat)+"VNĐ";
             PriceMProduct_lbl.Text = product.PriceM.ToString("#,###", cul.NumberFormat)+"VNĐ";
             PriceLProduct_lbl.Text = product.PriceL.ToString("#,###", cul.NumberFormat)+"VNĐ";
-            Quantity_lbl.Text = product.Quantity.ToString();
+            QuantitysizeS_lbl.Text = product.QuantitysizeS.ToString();
+            QuantitysizeM_lbl.Text = product.QuantitysizeM.ToString();
+            QuantitysizeL_lbl.Text = product.QuantitysizeL.ToString();
             //CategoryPro_lbl.Text = product.IDCate
             tmpPro = product;
         }
+     
 
         private void EditPro_btn_Click(object sender, EventArgs e)
         {
@@ -42,6 +46,12 @@ namespace LHBeverage.UserControls.Component
                 ProductConnect.DeleteProduct(tmpPro.IDPro);
                 AdminManageProduct.instance.loadData();
             }
+        }
+
+        private void Picture_Pro_Click(object sender, EventArgs e)
+        {
+            AdminDetailProduct adminDetailProduct = new AdminDetailProduct(tmpPro);
+            AddNewPage.addUserControl(adminDetailProduct);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-              connection.Query<Product>($"Update Product set IDCate='{product.IDCate}',Name ='{product.Name}',PriceS='{product.PriceS}',PriceM='{product.PriceM}',PriceL='{product.PriceL}',Quantity='{product.Quantity}',Description='{product.Description}' where IDPro='{product.IDPro}'", new DynamicParameters());           
+              connection.Query<Product>($"Update Product set IDCate='{product.IDCate}',Name ='{product.Name}',PriceS='{product.PriceS}',PriceM='{product.PriceM}',PriceL='{product.PriceL}',QuantitysizeS='{product.QuantitysizeS}',QuantitysizeM='{product.QuantitysizeM}',QuantitysizeL='{product.QuantitysizeL}',Description='{product.Description}' where IDPro='{product.IDPro}'", new DynamicParameters());           
             }
         
         }
@@ -49,7 +49,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Product (IDCate,IDCust,Name,PriceS,PriceM,PriceL,Quantity,Description,Type) values (@IDCate,@IDCust,@Name,@PriceS,@PriceM,@PriceL,@Quantity,@Description,@Type)", product);
+                connection.Execute("insert into Product (IDCate,IDCust,Name,PriceS,PriceM,PriceL,QuantitysizeS,QuantitysizeM,QuantitysizeL,Description,Type) values (@IDCate,@IDCust,@Name,@PriceS,@PriceM,@PriceL,@QuantitysizeS,@QuantitysizeM,@QuantitysizeL,@Description,@Type)", product);
             }
         }
         public static void DeleteProduct(int idpro)

@@ -53,6 +53,14 @@ namespace LHBeverage.ModelService
                 return order.ToList();
             }
         }
+        public static List<Order> LoadAllOrder()
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var order = connection.Query<Order>($"select * from 'Order' order by IDOrder DESC", new DynamicParameters());
+                return order.ToList();
+            }
+        }
         public static List<Order> GetOrderByStatus(Customer customer,String status)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
@@ -79,7 +87,14 @@ namespace LHBeverage.ModelService
             }
                 
         }
+        public static void UpdateReasonOrder(Order order, String reason, String status)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Query<Order>($"Update 'Order' set Reason='{reason}', Status='{status}' where IDOrder = '{order.IDOrder}'", new DynamicParameters());
+            }
 
+        }
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

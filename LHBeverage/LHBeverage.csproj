@@ -89,12 +89,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCancelOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCancelOrder.Designer.cs">
+      <DependentUpon>AdminCancelOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\AddNewPage.cs" />
     <Compile Include="Helper\ConvertBase64toImage.cs" />
     <Compile Include="Helper\ConvertImageToBase64.cs" />
     <Compile Include="LhBeverage.cs">
@@ -147,6 +154,24 @@
     <Compile Include="UserControls\AccountPagePanel.Designer.cs">
       <DependentUpon>AccountPagePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\AdminDetailOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminDetailOrder.Designer.cs">
+      <DependentUpon>AdminDetailOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AdminDetailProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminDetailProduct.Designer.cs">
+      <DependentUpon>AdminDetailProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AdminManageOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminManageOrder.Designer.cs">
+      <DependentUpon>AdminManageOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\AdminManageTopping.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,11 +184,23 @@
     <Compile Include="UserControls\Component\AdminCardCateForTopping.Designer.cs">
       <DependentUpon>AdminCardCateForTopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Component\AdminCardOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminCardOrder.Designer.cs">
+      <DependentUpon>AdminCardOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Component\AdminCardTopping.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Component\AdminCardTopping.Designer.cs">
       <DependentUpon>AdminCardTopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminItemCardOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\AdminItemCardOrder.Designer.cs">
+      <DependentUpon>AdminItemCardOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Component\CardItemOrder.cs">
       <SubType>UserControl</SubType>
@@ -285,6 +322,9 @@
     <Compile Include="UserControls\ProductPagePanel.Designer.cs">
       <DependentUpon>ProductPagePanel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminCancelOrder.resx">
+      <DependentUpon>AdminCancelOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,14 +350,29 @@
     <EmbeddedResource Include="UserControls\AccountPagePanel.resx">
       <DependentUpon>AccountPagePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminDetailOrder.resx">
+      <DependentUpon>AdminDetailOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminDetailProduct.resx">
+      <DependentUpon>AdminDetailProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminManageOrder.resx">
+      <DependentUpon>AdminManageOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AdminManageTopping.resx">
       <DependentUpon>AdminManageTopping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\AdminCardCateForTopping.resx">
       <DependentUpon>AdminCardCateForTopping.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\AdminCardOrder.resx">
+      <DependentUpon>AdminCardOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\AdminCardTopping.resx">
       <DependentUpon>AdminCardTopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\AdminItemCardOrder.resx">
+      <DependentUpon>AdminItemCardOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\CardItemOrder.resx">
       <DependentUpon>CardItemOrder.cs</DependentUpon>

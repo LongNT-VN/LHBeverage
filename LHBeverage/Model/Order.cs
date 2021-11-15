@@ -16,5 +16,6 @@ namespace LHBeverage.Model
         public int Discount { get; set; }
         public int LHcoin { get; set; }
         public int Totalpayment { get; set; }
+        public string Reason { get; set; }
     }
 }

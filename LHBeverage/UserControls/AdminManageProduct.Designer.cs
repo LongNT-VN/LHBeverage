@@ -43,8 +43,16 @@ namespace LHBeverage.UserControls
             this.label12 = new System.Windows.Forms.Label();
             this.EditSubmitImg_btn = new System.Windows.Forms.Button();
             this.panelCtnUpdateInfor = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.EditPriceM_tb = new System.Windows.Forms.TextBox();
+            this.EditQuantitysizeL_tb = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.EditQuantitysizeM_tb = new System.Windows.Forms.TextBox();
+            this.EditPriceL_tb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.EditQuantity_tb = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.EditQuantitysizeS_tb = new System.Windows.Forms.TextBox();
             this.EditDes_tb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.UpdateInfo_btn = new System.Windows.Forms.Button();
@@ -67,8 +75,16 @@ namespace LHBeverage.UserControls
             this.ProductList_cb = new System.Windows.Forms.ComboBox();
             this.AddImage = new System.Windows.Forms.Button();
             this.AddPro_panel = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.QuantitySizeL_tb = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.QuantitySizeM_tb = new System.Windows.Forms.TextBox();
+            this.PriceL_tb = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.PriceM_tb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Quantity_tb = new System.Windows.Forms.TextBox();
+            this.QuantitySizeS_tb = new System.Windows.Forms.TextBox();
             this.Des_Tb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.AddPro_btn = new System.Windows.Forms.Button();
@@ -94,14 +110,6 @@ namespace LHBeverage.UserControls
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog_Img = new System.Windows.Forms.OpenFileDialog();
-            this.PriceM_tb = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PriceL_tb = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.EditPriceL_tb = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.EditPriceM_tb = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.panelManageProduct.SuspendLayout();
             this.panelEditCtn.SuspendLayout();
             this.panelCtnUpdateImg.SuspendLayout();
@@ -147,15 +155,14 @@ namespace LHBeverage.UserControls
             // panelEditCtn
             // 
             this.panelEditCtn.BackColor = System.Drawing.Color.White;
-            this.panelEditCtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEditCtn.Controls.Add(this.Btn_Nav_EditInfor);
             this.panelEditCtn.Controls.Add(this.Btn_Nav_UpdateImg);
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateImg);
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateInfor);
             this.panelEditCtn.Controls.Add(this.close_panelCtnEdit);
-            this.panelEditCtn.Location = new System.Drawing.Point(82, 90);
+            this.panelEditCtn.Location = new System.Drawing.Point(82, 89);
             this.panelEditCtn.Name = "panelEditCtn";
-            this.panelEditCtn.Size = new System.Drawing.Size(897, 432);
+            this.panelEditCtn.Size = new System.Drawing.Size(897, 435);
             this.panelEditCtn.TabIndex = 26;
             this.panelEditCtn.Visible = false;
             // 
@@ -164,7 +171,7 @@ namespace LHBeverage.UserControls
             this.Btn_Nav_EditInfor.BackColor = System.Drawing.Color.OrangeRed;
             this.Btn_Nav_EditInfor.FlatAppearance.BorderSize = 0;
             this.Btn_Nav_EditInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nav_EditInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Nav_EditInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nav_EditInfor.ForeColor = System.Drawing.Color.White;
             this.Btn_Nav_EditInfor.Location = new System.Drawing.Point(8, 40);
             this.Btn_Nav_EditInfor.Name = "Btn_Nav_EditInfor";
@@ -179,7 +186,7 @@ namespace LHBeverage.UserControls
             this.Btn_Nav_UpdateImg.BackColor = System.Drawing.Color.OrangeRed;
             this.Btn_Nav_UpdateImg.FlatAppearance.BorderSize = 0;
             this.Btn_Nav_UpdateImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nav_UpdateImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Nav_UpdateImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nav_UpdateImg.ForeColor = System.Drawing.Color.White;
             this.Btn_Nav_UpdateImg.Location = new System.Drawing.Point(8, 80);
             this.Btn_Nav_UpdateImg.Name = "Btn_Nav_UpdateImg";
@@ -200,7 +207,7 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateImg.Controls.Add(this.EditSubmitImg_btn);
             this.panelCtnUpdateImg.Location = new System.Drawing.Point(150, 12);
             this.panelCtnUpdateImg.Name = "panelCtnUpdateImg";
-            this.panelCtnUpdateImg.Size = new System.Drawing.Size(645, 372);
+            this.panelCtnUpdateImg.Size = new System.Drawing.Size(680, 397);
             this.panelCtnUpdateImg.TabIndex = 24;
             this.panelCtnUpdateImg.Visible = false;
             // 
@@ -208,7 +215,7 @@ namespace LHBeverage.UserControls
             // 
             this.EditProductName_lbl.AutoSize = true;
             this.EditProductName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProductName_lbl.Location = new System.Drawing.Point(128, 47);
+            this.EditProductName_lbl.Location = new System.Drawing.Point(152, 45);
             this.EditProductName_lbl.Name = "EditProductName_lbl";
             this.EditProductName_lbl.Size = new System.Drawing.Size(128, 17);
             this.EditProductName_lbl.TabIndex = 29;
@@ -218,7 +225,7 @@ namespace LHBeverage.UserControls
             // 
             this.EditImage_FlowPanel.AutoScroll = true;
             this.EditImage_FlowPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.EditImage_FlowPanel.Location = new System.Drawing.Point(64, 76);
+            this.EditImage_FlowPanel.Location = new System.Drawing.Point(89, 79);
             this.EditImage_FlowPanel.Name = "EditImage_FlowPanel";
             this.EditImage_FlowPanel.Size = new System.Drawing.Size(507, 256);
             this.EditImage_FlowPanel.TabIndex = 28;
@@ -228,7 +235,7 @@ namespace LHBeverage.UserControls
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(248, 7);
+            this.label8.Location = new System.Drawing.Point(288, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(143, 22);
             this.label8.TabIndex = 24;
@@ -243,7 +250,7 @@ namespace LHBeverage.UserControls
             this.loadImgFromLocal_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadImgFromLocal_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadImgFromLocal_Btn.ForeColor = System.Drawing.Color.Black;
-            this.loadImgFromLocal_Btn.Location = new System.Drawing.Point(464, 21);
+            this.loadImgFromLocal_Btn.Location = new System.Drawing.Point(489, 20);
             this.loadImgFromLocal_Btn.Name = "loadImgFromLocal_Btn";
             this.loadImgFromLocal_Btn.Size = new System.Drawing.Size(107, 52);
             this.loadImgFromLocal_Btn.TabIndex = 27;
@@ -255,7 +262,7 @@ namespace LHBeverage.UserControls
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(61, 47);
+            this.label12.Location = new System.Drawing.Point(85, 45);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 17);
             this.label12.TabIndex = 24;
@@ -266,25 +273,29 @@ namespace LHBeverage.UserControls
             this.EditSubmitImg_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.EditSubmitImg_btn.FlatAppearance.BorderSize = 0;
             this.EditSubmitImg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditSubmitImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditSubmitImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditSubmitImg_btn.ForeColor = System.Drawing.Color.White;
-            this.EditSubmitImg_btn.Location = new System.Drawing.Point(270, 336);
+            this.EditSubmitImg_btn.Location = new System.Drawing.Point(284, 351);
             this.EditSubmitImg_btn.Name = "EditSubmitImg_btn";
             this.EditSubmitImg_btn.Size = new System.Drawing.Size(108, 33);
             this.EditSubmitImg_btn.TabIndex = 25;
-            this.EditSubmitImg_btn.Text = "Submit Image";
+            this.EditSubmitImg_btn.Text = "Update";
             this.EditSubmitImg_btn.UseVisualStyleBackColor = false;
             this.EditSubmitImg_btn.Click += new System.EventHandler(this.EditSubmitImg_btn_Click);
             // 
             // panelCtnUpdateInfor
             // 
             this.panelCtnUpdateInfor.BackColor = System.Drawing.Color.White;
+            this.panelCtnUpdateInfor.Controls.Add(this.label24);
             this.panelCtnUpdateInfor.Controls.Add(this.EditPriceM_tb);
+            this.panelCtnUpdateInfor.Controls.Add(this.EditQuantitysizeL_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.label21);
+            this.panelCtnUpdateInfor.Controls.Add(this.label25);
+            this.panelCtnUpdateInfor.Controls.Add(this.EditQuantitysizeM_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.EditPriceL_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.label13);
             this.panelCtnUpdateInfor.Controls.Add(this.label20);
-            this.panelCtnUpdateInfor.Controls.Add(this.EditQuantity_tb);
+            this.panelCtnUpdateInfor.Controls.Add(this.EditQuantitysizeS_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.EditDes_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.label14);
             this.panelCtnUpdateInfor.Controls.Add(this.UpdateInfo_btn);
@@ -297,49 +308,135 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateInfor.Controls.Add(this.label18);
             this.panelCtnUpdateInfor.Location = new System.Drawing.Point(150, 12);
             this.panelCtnUpdateInfor.Name = "panelCtnUpdateInfor";
-            this.panelCtnUpdateInfor.Size = new System.Drawing.Size(648, 372);
+            this.panelCtnUpdateInfor.Size = new System.Drawing.Size(680, 397);
             this.panelCtnUpdateInfor.TabIndex = 3;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Gray;
+            this.label24.Location = new System.Drawing.Point(344, 164);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(122, 17);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Quantity size L:";
+            // 
+            // EditPriceM_tb
+            // 
+            this.EditPriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditPriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EditPriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditPriceM_tb.Location = new System.Drawing.Point(131, 126);
+            this.EditPriceM_tb.Name = "EditPriceM_tb";
+            this.EditPriceM_tb.Size = new System.Drawing.Size(180, 16);
+            this.EditPriceM_tb.TabIndex = 28;
+            // 
+            // EditQuantitysizeL_tb
+            // 
+            this.EditQuantitysizeL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditQuantitysizeL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EditQuantitysizeL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditQuantitysizeL_tb.ForeColor = System.Drawing.Color.DarkCyan;
+            this.EditQuantitysizeL_tb.Location = new System.Drawing.Point(486, 165);
+            this.EditQuantitysizeL_tb.Name = "EditQuantitysizeL_tb";
+            this.EditQuantitysizeL_tb.Size = new System.Drawing.Size(143, 16);
+            this.EditQuantitysizeL_tb.TabIndex = 33;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Gray;
+            this.label21.Location = new System.Drawing.Point(14, 126);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(101, 17);
+            this.label21.TabIndex = 27;
+            this.label21.Text = "Price size M:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Gray;
+            this.label25.Location = new System.Drawing.Point(344, 126);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(125, 17);
+            this.label25.TabIndex = 32;
+            this.label25.Text = "Quantity size M:";
+            // 
+            // EditQuantitysizeM_tb
+            // 
+            this.EditQuantitysizeM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditQuantitysizeM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EditQuantitysizeM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditQuantitysizeM_tb.ForeColor = System.Drawing.Color.Purple;
+            this.EditQuantitysizeM_tb.Location = new System.Drawing.Point(485, 127);
+            this.EditQuantitysizeM_tb.Name = "EditQuantitysizeM_tb";
+            this.EditQuantitysizeM_tb.Size = new System.Drawing.Size(143, 16);
+            this.EditQuantitysizeM_tb.TabIndex = 31;
+            // 
+            // EditPriceL_tb
+            // 
+            this.EditPriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditPriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EditPriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditPriceL_tb.Location = new System.Drawing.Point(133, 161);
+            this.EditPriceL_tb.Name = "EditPriceL_tb";
+            this.EditPriceL_tb.Size = new System.Drawing.Size(180, 16);
+            this.EditPriceL_tb.TabIndex = 28;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(334, 124);
+            this.label13.Location = new System.Drawing.Point(344, 91);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 17);
+            this.label13.Size = new System.Drawing.Size(118, 17);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Quantity:";
+            this.label13.Text = "Quantity size S";
             // 
-            // EditQuantity_tb
+            // label20
             // 
-            this.EditQuantity_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.EditQuantity_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditQuantity_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditQuantity_tb.Location = new System.Drawing.Point(423, 125);
-            this.EditQuantity_tb.Name = "EditQuantity_tb";
-            this.EditQuantity_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditQuantity_tb.TabIndex = 21;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Gray;
+            this.label20.Location = new System.Drawing.Point(15, 160);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 17);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Price size L:";
+            // 
+            // EditQuantitysizeS_tb
+            // 
+            this.EditQuantitysizeS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditQuantitysizeS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EditQuantitysizeS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditQuantitysizeS_tb.Location = new System.Drawing.Point(485, 92);
+            this.EditQuantitysizeS_tb.Name = "EditQuantitysizeS_tb";
+            this.EditQuantitysizeS_tb.Size = new System.Drawing.Size(144, 16);
+            this.EditQuantitysizeS_tb.TabIndex = 21;
             // 
             // EditDes_tb
             // 
             this.EditDes_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditDes_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EditDes_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditDes_tb.Location = new System.Drawing.Point(133, 167);
+            this.EditDes_tb.Location = new System.Drawing.Point(133, 193);
             this.EditDes_tb.Multiline = true;
             this.EditDes_tb.Name = "EditDes_tb";
-            this.EditDes_tb.Size = new System.Drawing.Size(472, 122);
+            this.EditDes_tb.Size = new System.Drawing.Size(496, 122);
             this.EditDes_tb.TabIndex = 20;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(14, 167);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Navy;
+            this.label14.Location = new System.Drawing.Point(14, 216);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 17);
+            this.label14.Size = new System.Drawing.Size(95, 17);
             this.label14.TabIndex = 19;
             this.label14.Text = "Description:";
             // 
@@ -348,13 +445,13 @@ namespace LHBeverage.UserControls
             this.UpdateInfo_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.UpdateInfo_btn.FlatAppearance.BorderSize = 0;
             this.UpdateInfo_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateInfo_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateInfo_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateInfo_btn.ForeColor = System.Drawing.Color.White;
-            this.UpdateInfo_btn.Location = new System.Drawing.Point(266, 300);
+            this.UpdateInfo_btn.Location = new System.Drawing.Point(292, 351);
             this.UpdateInfo_btn.Name = "UpdateInfo_btn";
             this.UpdateInfo_btn.Size = new System.Drawing.Size(127, 33);
             this.UpdateInfo_btn.TabIndex = 13;
-            this.UpdateInfo_btn.Text = "Submit Infor";
+            this.UpdateInfo_btn.Text = " Update Infor";
             this.UpdateInfo_btn.UseVisualStyleBackColor = false;
             this.UpdateInfo_btn.Click += new System.EventHandler(this.UpdateInfo_btn_Click);
             // 
@@ -363,10 +460,11 @@ namespace LHBeverage.UserControls
             this.cbEditCategory.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbEditCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbEditCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEditCategory.ForeColor = System.Drawing.Color.Black;
             this.cbEditCategory.FormattingEnabled = true;
-            this.cbEditCategory.Location = new System.Drawing.Point(459, 48);
+            this.cbEditCategory.Location = new System.Drawing.Point(485, 48);
             this.cbEditCategory.Name = "cbEditCategory";
-            this.cbEditCategory.Size = new System.Drawing.Size(144, 24);
+            this.cbEditCategory.Size = new System.Drawing.Size(158, 24);
             this.cbEditCategory.TabIndex = 18;
             // 
             // EditPriceS_tb
@@ -382,22 +480,22 @@ namespace LHBeverage.UserControls
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gray;
             this.label15.Location = new System.Drawing.Point(14, 91);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 17);
+            this.label15.Size = new System.Drawing.Size(99, 17);
             this.label15.TabIndex = 16;
             this.label15.Text = "Price size S:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(334, 51);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Purple;
+            this.label16.Location = new System.Drawing.Point(344, 51);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(119, 17);
+            this.label16.Size = new System.Drawing.Size(135, 17);
             this.label16.TabIndex = 14;
             this.label16.Text = "Choose category:";
             // 
@@ -414,11 +512,11 @@ namespace LHBeverage.UserControls
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Gray;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Maroon;
             this.label17.Location = new System.Drawing.Point(14, 51);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 17);
+            this.label17.Size = new System.Drawing.Size(113, 17);
             this.label17.TabIndex = 11;
             this.label17.Text = "Product name:";
             // 
@@ -451,7 +549,6 @@ namespace LHBeverage.UserControls
             // panelCtnAddPro
             // 
             this.panelCtnAddPro.BackColor = System.Drawing.Color.White;
-            this.panelCtnAddPro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCtnAddPro.Controls.Add(this.btn_Toggle_AddInfor);
             this.panelCtnAddPro.Controls.Add(this.AddImg_btn);
             this.panelCtnAddPro.Controls.Add(this.AddImg_panel);
@@ -468,7 +565,7 @@ namespace LHBeverage.UserControls
             this.btn_Toggle_AddInfor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_Toggle_AddInfor.FlatAppearance.BorderSize = 0;
             this.btn_Toggle_AddInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Toggle_AddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Toggle_AddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Toggle_AddInfor.ForeColor = System.Drawing.Color.White;
             this.btn_Toggle_AddInfor.Location = new System.Drawing.Point(11, 30);
             this.btn_Toggle_AddInfor.Name = "btn_Toggle_AddInfor";
@@ -483,7 +580,7 @@ namespace LHBeverage.UserControls
             this.AddImg_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddImg_btn.FlatAppearance.BorderSize = 0;
             this.AddImg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddImg_btn.ForeColor = System.Drawing.Color.White;
             this.AddImg_btn.Location = new System.Drawing.Point(11, 71);
             this.AddImg_btn.Name = "AddImg_btn";
@@ -504,7 +601,7 @@ namespace LHBeverage.UserControls
             this.AddImg_panel.Controls.Add(this.AddImage);
             this.AddImg_panel.Location = new System.Drawing.Point(167, 9);
             this.AddImg_panel.Name = "AddImg_panel";
-            this.AddImg_panel.Size = new System.Drawing.Size(681, 381);
+            this.AddImg_panel.Size = new System.Drawing.Size(680, 397);
             this.AddImg_panel.TabIndex = 24;
             this.AddImg_panel.Visible = false;
             // 
@@ -522,7 +619,7 @@ namespace LHBeverage.UserControls
             this.lbl_Title_panelImg.AutoSize = true;
             this.lbl_Title_panelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title_panelImg.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Title_panelImg.Location = new System.Drawing.Point(269, 11);
+            this.lbl_Title_panelImg.Location = new System.Drawing.Point(281, 9);
             this.lbl_Title_panelImg.Name = "lbl_Title_panelImg";
             this.lbl_Title_panelImg.Size = new System.Drawing.Size(104, 22);
             this.lbl_Title_panelImg.TabIndex = 24;
@@ -548,7 +645,7 @@ namespace LHBeverage.UserControls
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(60, 48);
+            this.label7.Location = new System.Drawing.Point(79, 48);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 17);
             this.label7.TabIndex = 24;
@@ -571,11 +668,11 @@ namespace LHBeverage.UserControls
             this.AddImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddImage.FlatAppearance.BorderSize = 0;
             this.AddImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddImage.ForeColor = System.Drawing.Color.White;
             this.AddImage.Location = new System.Drawing.Point(273, 345);
             this.AddImage.Name = "AddImage";
-            this.AddImage.Size = new System.Drawing.Size(108, 33);
+            this.AddImage.Size = new System.Drawing.Size(129, 33);
             this.AddImage.TabIndex = 25;
             this.AddImage.Text = "Submit Image";
             this.AddImage.UseVisualStyleBackColor = false;
@@ -584,12 +681,16 @@ namespace LHBeverage.UserControls
             // AddPro_panel
             // 
             this.AddPro_panel.BackColor = System.Drawing.Color.White;
+            this.AddPro_panel.Controls.Add(this.label23);
+            this.AddPro_panel.Controls.Add(this.QuantitySizeL_tb);
+            this.AddPro_panel.Controls.Add(this.label22);
+            this.AddPro_panel.Controls.Add(this.QuantitySizeM_tb);
             this.AddPro_panel.Controls.Add(this.PriceL_tb);
             this.AddPro_panel.Controls.Add(this.label19);
             this.AddPro_panel.Controls.Add(this.PriceM_tb);
             this.AddPro_panel.Controls.Add(this.label1);
             this.AddPro_panel.Controls.Add(this.label6);
-            this.AddPro_panel.Controls.Add(this.Quantity_tb);
+            this.AddPro_panel.Controls.Add(this.QuantitySizeS_tb);
             this.AddPro_panel.Controls.Add(this.Des_Tb);
             this.AddPro_panel.Controls.Add(this.label5);
             this.AddPro_panel.Controls.Add(this.AddPro_btn);
@@ -602,36 +703,125 @@ namespace LHBeverage.UserControls
             this.AddPro_panel.Controls.Add(this.lbl_Title_panelPro);
             this.AddPro_panel.Location = new System.Drawing.Point(167, 9);
             this.AddPro_panel.Name = "AddPro_panel";
-            this.AddPro_panel.Size = new System.Drawing.Size(680, 383);
+            this.AddPro_panel.Size = new System.Drawing.Size(680, 397);
             this.AddPro_panel.TabIndex = 3;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Gray;
+            this.label23.Location = new System.Drawing.Point(357, 160);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(122, 17);
+            this.label23.TabIndex = 30;
+            this.label23.Text = "Quantity size L:";
+            // 
+            // QuantitySizeL_tb
+            // 
+            this.QuantitySizeL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.QuantitySizeL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuantitySizeL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantitySizeL_tb.ForeColor = System.Drawing.Color.DarkCyan;
+            this.QuantitySizeL_tb.Location = new System.Drawing.Point(483, 161);
+            this.QuantitySizeL_tb.Name = "QuantitySizeL_tb";
+            this.QuantitySizeL_tb.Size = new System.Drawing.Size(143, 16);
+            this.QuantitySizeL_tb.TabIndex = 29;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Gray;
+            this.label22.Location = new System.Drawing.Point(357, 122);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(125, 17);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "Quantity size M:";
+            // 
+            // QuantitySizeM_tb
+            // 
+            this.QuantitySizeM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.QuantitySizeM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuantitySizeM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantitySizeM_tb.ForeColor = System.Drawing.Color.Purple;
+            this.QuantitySizeM_tb.Location = new System.Drawing.Point(483, 123);
+            this.QuantitySizeM_tb.Name = "QuantitySizeM_tb";
+            this.QuantitySizeM_tb.Size = new System.Drawing.Size(143, 16);
+            this.QuantitySizeM_tb.TabIndex = 27;
+            // 
+            // PriceL_tb
+            // 
+            this.PriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceL_tb.ForeColor = System.Drawing.Color.DarkCyan;
+            this.PriceL_tb.Location = new System.Drawing.Point(155, 160);
+            this.PriceL_tb.Name = "PriceL_tb";
+            this.PriceL_tb.Size = new System.Drawing.Size(180, 16);
+            this.PriceL_tb.TabIndex = 26;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Gray;
+            this.label19.Location = new System.Drawing.Point(37, 160);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(98, 17);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "Price size L:";
+            // 
+            // PriceM_tb
+            // 
+            this.PriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceM_tb.ForeColor = System.Drawing.Color.Purple;
+            this.PriceM_tb.Location = new System.Drawing.Point(155, 123);
+            this.PriceM_tb.Name = "PriceM_tb";
+            this.PriceM_tb.Size = new System.Drawing.Size(180, 16);
+            this.PriceM_tb.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(37, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Price size M:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(358, 121);
+            this.label6.Location = new System.Drawing.Point(357, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 17);
+            this.label6.Size = new System.Drawing.Size(123, 17);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Quantity:";
+            this.label6.Text = "Quantity size S:";
             // 
-            // Quantity_tb
+            // QuantitySizeS_tb
             // 
-            this.Quantity_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Quantity_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Quantity_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantity_tb.Location = new System.Drawing.Point(447, 122);
-            this.Quantity_tb.Name = "Quantity_tb";
-            this.Quantity_tb.Size = new System.Drawing.Size(180, 16);
-            this.Quantity_tb.TabIndex = 21;
+            this.QuantitySizeS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.QuantitySizeS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QuantitySizeS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantitySizeS_tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.QuantitySizeS_tb.Location = new System.Drawing.Point(483, 86);
+            this.QuantitySizeS_tb.Name = "QuantitySizeS_tb";
+            this.QuantitySizeS_tb.Size = new System.Drawing.Size(143, 16);
+            this.QuantitySizeS_tb.TabIndex = 21;
             // 
             // Des_Tb
             // 
             this.Des_Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Des_Tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Des_Tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Des_Tb.Location = new System.Drawing.Point(155, 178);
+            this.Des_Tb.Location = new System.Drawing.Point(156, 202);
             this.Des_Tb.Multiline = true;
             this.Des_Tb.Name = "Des_Tb";
             this.Des_Tb.Size = new System.Drawing.Size(472, 122);
@@ -640,11 +830,11 @@ namespace LHBeverage.UserControls
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(38, 178);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(39, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 17);
+            this.label5.Size = new System.Drawing.Size(95, 17);
             this.label5.TabIndex = 19;
             this.label5.Text = "Description:";
             // 
@@ -653,9 +843,9 @@ namespace LHBeverage.UserControls
             this.AddPro_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddPro_btn.FlatAppearance.BorderSize = 0;
             this.AddPro_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddPro_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddPro_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddPro_btn.ForeColor = System.Drawing.Color.White;
-            this.AddPro_btn.Location = new System.Drawing.Point(290, 311);
+            this.AddPro_btn.Location = new System.Drawing.Point(285, 350);
             this.AddPro_btn.Name = "AddPro_btn";
             this.AddPro_btn.Size = new System.Drawing.Size(127, 33);
             this.AddPro_btn.TabIndex = 13;
@@ -667,6 +857,7 @@ namespace LHBeverage.UserControls
             // 
             this.category_Cb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.category_Cb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.category_Cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category_Cb.FormattingEnabled = true;
             this.category_Cb.Location = new System.Drawing.Point(505, 46);
             this.category_Cb.Name = "category_Cb";
@@ -677,7 +868,8 @@ namespace LHBeverage.UserControls
             // 
             this.PriceS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PriceS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceS_tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.PriceS_tb.Location = new System.Drawing.Point(154, 86);
             this.PriceS_tb.Name = "PriceS_tb";
             this.PriceS_tb.Size = new System.Drawing.Size(180, 16);
@@ -686,22 +878,22 @@ namespace LHBeverage.UserControls
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
             this.label4.Location = new System.Drawing.Point(37, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 17);
+            this.label4.Size = new System.Drawing.Size(99, 17);
             this.label4.TabIndex = 16;
             this.label4.Text = "Price size S:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Purple;
             this.label3.Location = new System.Drawing.Point(357, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 17);
+            this.label3.Size = new System.Drawing.Size(135, 17);
             this.label3.TabIndex = 14;
             this.label3.Text = "Choose category:";
             // 
@@ -709,7 +901,7 @@ namespace LHBeverage.UserControls
             // 
             this.NamePro_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.NamePro_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NamePro_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NamePro_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NamePro_tb.Location = new System.Drawing.Point(154, 47);
             this.NamePro_tb.Name = "NamePro_tb";
             this.NamePro_tb.Size = new System.Drawing.Size(180, 16);
@@ -718,11 +910,11 @@ namespace LHBeverage.UserControls
             // lbl_categortName
             // 
             this.lbl_categortName.AutoSize = true;
-            this.lbl_categortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_categortName.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_categortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_categortName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_categortName.Location = new System.Drawing.Point(37, 46);
             this.lbl_categortName.Name = "lbl_categortName";
-            this.lbl_categortName.Size = new System.Drawing.Size(100, 17);
+            this.lbl_categortName.Size = new System.Drawing.Size(113, 17);
             this.lbl_categortName.TabIndex = 11;
             this.lbl_categortName.Text = "Product name:";
             // 
@@ -909,90 +1101,6 @@ namespace LHBeverage.UserControls
             // 
             this.openFileDialog_Img.FileName = "openFileDialog1";
             // 
-            // PriceM_tb
-            // 
-            this.PriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceM_tb.Location = new System.Drawing.Point(155, 123);
-            this.PriceM_tb.Name = "PriceM_tb";
-            this.PriceM_tb.Size = new System.Drawing.Size(180, 16);
-            this.PriceM_tb.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(38, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Price size M:";
-            // 
-            // PriceL_tb
-            // 
-            this.PriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceL_tb.Location = new System.Drawing.Point(446, 83);
-            this.PriceL_tb.Name = "PriceL_tb";
-            this.PriceL_tb.Size = new System.Drawing.Size(180, 16);
-            this.PriceL_tb.TabIndex = 26;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Gray;
-            this.label19.Location = new System.Drawing.Point(357, 83);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 17);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Price size L:";
-            // 
-            // EditPriceL_tb
-            // 
-            this.EditPriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.EditPriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditPriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceL_tb.Location = new System.Drawing.Point(423, 89);
-            this.EditPriceL_tb.Name = "EditPriceL_tb";
-            this.EditPriceL_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditPriceL_tb.TabIndex = 28;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Gray;
-            this.label20.Location = new System.Drawing.Point(334, 89);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(85, 17);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "Price size L:";
-            // 
-            // EditPriceM_tb
-            // 
-            this.EditPriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.EditPriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditPriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceM_tb.Location = new System.Drawing.Point(131, 126);
-            this.EditPriceM_tb.Name = "EditPriceM_tb";
-            this.EditPriceM_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditPriceM_tb.TabIndex = 28;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Gray;
-            this.label21.Location = new System.Drawing.Point(14, 126);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(88, 17);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Price size M:";
-            // 
             // AdminManageProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1037,7 +1145,7 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.TextBox Des_Tb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox Quantity_tb;
+        private System.Windows.Forms.TextBox QuantitySizeS_tb;
         private System.Windows.Forms.Button AddImg_btn;
         private System.Windows.Forms.Panel AddImg_panel;
         private System.Windows.Forms.Button loadImage;
@@ -1070,7 +1178,7 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Button EditSubmitImg_btn;
         private System.Windows.Forms.Panel panelCtnUpdateInfor;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox EditQuantity_tb;
+        private System.Windows.Forms.TextBox EditQuantitysizeS_tb;
         private System.Windows.Forms.TextBox EditDes_tb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button UpdateInfo_btn;
@@ -1094,5 +1202,13 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox EditPriceL_tb;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox QuantitySizeL_tb;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox QuantitySizeM_tb;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox EditQuantitysizeL_tb;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox EditQuantitysizeM_tb;
     }
 }

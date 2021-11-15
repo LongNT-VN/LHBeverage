@@ -139,7 +139,9 @@ namespace LHBeverage.UserControls
                     product.PriceM = Convert.ToInt32(PriceM_tb.Text);
                     product.PriceL = Convert.ToInt32(PriceL_tb.Text);
                     product.Description = Des_Tb.Text;
-                    product.Quantity = Convert.ToInt32(Quantity_tb.Text);
+                    product.QuantitysizeS = Convert.ToInt32(QuantitySizeS_tb.Text);
+                    product.QuantitysizeM = Convert.ToInt32(QuantitySizeM_tb.Text);
+                    product.QuantitysizeL = Convert.ToInt32(QuantitySizeL_tb.Text);
                     product.Type = "Normal";
 
                     ProductConnect.CreateProduct(product);
@@ -147,10 +149,13 @@ namespace LHBeverage.UserControls
 
                     NamePro_tb.Text = "";
                     Des_Tb.Text = "";
-                    Quantity_tb.Text = "";
+                    QuantitySizeS_tb.Text = "";
+                    QuantitySizeM_tb.Text = "";
+                    QuantitySizeL_tb.Text = "";
                     PriceS_tb.Text = "";
                     PriceM_tb.Text = "";
                     PriceL_tb.Text = "";
+                    
                     AddPro_panel.Visible = false;
                     AddImg_panel.Visible = true;
 
@@ -179,8 +184,11 @@ namespace LHBeverage.UserControls
                 EditPriceS_tb.Text = product.PriceS.ToString();
                 EditPriceM_tb.Text = product.PriceM.ToString();
                 EditPriceL_tb.Text = product.PriceL.ToString();
+                EditQuantitysizeS_tb.Text = product.QuantitysizeS.ToString();
+                EditQuantitysizeM_tb.Text = product.QuantitysizeM.ToString();
+                EditQuantitysizeL_tb.Text = product.QuantitysizeL.ToString();
                 EditDes_tb.Text = product.Description;
-                EditQuantity_tb.Text = product.Quantity.ToString();
+               // EditQuantity_tb.Text = product.Quantity.ToString();
                 // set selecteditem in category of product edit and selected product in upload image
                 try
                 {
@@ -330,7 +338,9 @@ namespace LHBeverage.UserControls
             NamePro_tb.Text = "";
             PriceS_tb.Text = "";
             Des_Tb.Text = "";
-            Quantity_tb.Text = "";
+            QuantitySizeS_tb.Text = "";
+            QuantitySizeM_tb.Text = "";
+            QuantitySizeL_tb.Text = "";
         }
 
         private void btn_Toggle_AddInfor_Click(object sender, EventArgs e)
@@ -400,7 +410,9 @@ namespace LHBeverage.UserControls
             EditProduct.PriceM = Convert.ToInt32(EditPriceM_tb.Text);
             EditProduct.PriceL = Convert.ToInt32(EditPriceL_tb.Text);
             EditProduct.Description = EditDes_tb.Text;
-            EditProduct.Quantity = Convert.ToInt32(EditQuantity_tb.Text);
+            EditProduct.QuantitysizeS = Convert.ToInt32(EditQuantitysizeS_tb.Text);
+            EditProduct.QuantitysizeM = Convert.ToInt32(EditQuantitysizeM_tb.Text);
+            EditProduct.QuantitysizeL = Convert.ToInt32(EditQuantitysizeL_tb.Text);
             EditProduct.IDCate = Convert.ToInt32(((KeyValuePair<string, string>)cbEditCategory.SelectedItem).Key);
             // update editproduct to database:
             try

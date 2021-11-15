@@ -188,7 +188,7 @@ namespace LHBeverage.UserControls
             this.ImgItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
             this.ImgItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ImgItem.ErrorImage = null;
-            this.ImgItem.Location = new System.Drawing.Point(700, 60);
+            this.ImgItem.Location = new System.Drawing.Point(700, 57);
             this.ImgItem.Name = "ImgItem";
             this.ImgItem.Size = new System.Drawing.Size(300, 300);
             this.ImgItem.TabIndex = 7;
@@ -322,7 +322,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1222, 583);
+            this.Size = new System.Drawing.Size(1205, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

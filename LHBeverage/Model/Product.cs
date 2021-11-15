@@ -15,7 +15,9 @@ namespace LHBeverage.Model
         public int PriceS { get; set; }
         public int PriceM { get; set; }
         public int PriceL { get; set; }
-        public int Quantity { get; set; }
+        public int QuantitysizeS { get; set; }
+        public int QuantitysizeM { get; set; }
+        public int QuantitysizeL { get; set; }
         public string Description { get; set; }
         public string Type { get; set; }
     }

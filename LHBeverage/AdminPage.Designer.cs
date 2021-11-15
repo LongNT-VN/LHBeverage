@@ -31,13 +31,13 @@ namespace LHBeverage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.SideBarPanel = new System.Windows.Forms.Panel();
+            this.ToppingsNav_Btn = new System.Windows.Forms.Button();
             this.EmployeesNav_btn = new System.Windows.Forms.Button();
             this.CategoryNav_Btn = new System.Windows.Forms.Button();
             this.OrdersNav_Btn = new System.Windows.Forms.Button();
             this.ProductsNav_Btn = new System.Windows.Forms.Button();
             this.DashBoardNav_Btn = new System.Windows.Forms.Button();
             this.LogoPic = new System.Windows.Forms.PictureBox();
-            this.panelRoot = new System.Windows.Forms.Panel();
             this.panelTopBar = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
@@ -45,7 +45,6 @@ namespace LHBeverage
             this.label1 = new System.Windows.Forms.Label();
             this.searchIcon_btn = new System.Windows.Forms.Button();
             this.search_tb = new System.Windows.Forms.TextBox();
-            this.ToppingsNav_Btn = new System.Windows.Forms.Button();
             this.SideBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).BeginInit();
             this.panelTopBar.SuspendLayout();
@@ -69,6 +68,22 @@ namespace LHBeverage
             this.SideBarPanel.Size = new System.Drawing.Size(250, 681);
             this.SideBarPanel.TabIndex = 0;
             // 
+            // ToppingsNav_Btn
+            // 
+            this.ToppingsNav_Btn.FlatAppearance.BorderSize = 0;
+            this.ToppingsNav_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToppingsNav_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToppingsNav_Btn.ForeColor = System.Drawing.Color.OrangeRed;
+            this.ToppingsNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("ToppingsNav_Btn.Image")));
+            this.ToppingsNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToppingsNav_Btn.Location = new System.Drawing.Point(20, 320);
+            this.ToppingsNav_Btn.Name = "ToppingsNav_Btn";
+            this.ToppingsNav_Btn.Size = new System.Drawing.Size(230, 80);
+            this.ToppingsNav_Btn.TabIndex = 14;
+            this.ToppingsNav_Btn.Text = "   Manage Toppings";
+            this.ToppingsNav_Btn.UseVisualStyleBackColor = true;
+            this.ToppingsNav_Btn.Click += new System.EventHandler(this.ToppingsNav_Btn_Click);
+            // 
             // EmployeesNav_btn
             // 
             this.EmployeesNav_btn.FlatAppearance.BorderSize = 0;
@@ -77,7 +92,7 @@ namespace LHBeverage
             this.EmployeesNav_btn.ForeColor = System.Drawing.Color.DeepPink;
             this.EmployeesNav_btn.Image = ((System.Drawing.Image)(resources.GetObject("EmployeesNav_btn.Image")));
             this.EmployeesNav_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmployeesNav_btn.Location = new System.Drawing.Point(20, 500);
+            this.EmployeesNav_btn.Location = new System.Drawing.Point(20, 480);
             this.EmployeesNav_btn.Name = "EmployeesNav_btn";
             this.EmployeesNav_btn.Size = new System.Drawing.Size(230, 80);
             this.EmployeesNav_btn.TabIndex = 13;
@@ -93,7 +108,7 @@ namespace LHBeverage
             this.CategoryNav_Btn.ForeColor = System.Drawing.Color.DarkMagenta;
             this.CategoryNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("CategoryNav_Btn.Image")));
             this.CategoryNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CategoryNav_Btn.Location = new System.Drawing.Point(20, 260);
+            this.CategoryNav_Btn.Location = new System.Drawing.Point(20, 240);
             this.CategoryNav_Btn.Name = "CategoryNav_Btn";
             this.CategoryNav_Btn.Size = new System.Drawing.Size(230, 80);
             this.CategoryNav_Btn.TabIndex = 12;
@@ -109,7 +124,7 @@ namespace LHBeverage
             this.OrdersNav_Btn.ForeColor = System.Drawing.Color.DarkOrange;
             this.OrdersNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("OrdersNav_Btn.Image")));
             this.OrdersNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OrdersNav_Btn.Location = new System.Drawing.Point(20, 420);
+            this.OrdersNav_Btn.Location = new System.Drawing.Point(20, 400);
             this.OrdersNav_Btn.Name = "OrdersNav_Btn";
             this.OrdersNav_Btn.Size = new System.Drawing.Size(230, 80);
             this.OrdersNav_Btn.TabIndex = 11;
@@ -125,7 +140,7 @@ namespace LHBeverage
             this.ProductsNav_Btn.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.ProductsNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("ProductsNav_Btn.Image")));
             this.ProductsNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ProductsNav_Btn.Location = new System.Drawing.Point(20, 180);
+            this.ProductsNav_Btn.Location = new System.Drawing.Point(20, 160);
             this.ProductsNav_Btn.Name = "ProductsNav_Btn";
             this.ProductsNav_Btn.Size = new System.Drawing.Size(230, 80);
             this.ProductsNav_Btn.TabIndex = 10;
@@ -142,7 +157,7 @@ namespace LHBeverage
             this.DashBoardNav_Btn.ForeColor = System.Drawing.Color.MidnightBlue;
             this.DashBoardNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("DashBoardNav_Btn.Image")));
             this.DashBoardNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DashBoardNav_Btn.Location = new System.Drawing.Point(20, 100);
+            this.DashBoardNav_Btn.Location = new System.Drawing.Point(20, 80);
             this.DashBoardNav_Btn.Name = "DashBoardNav_Btn";
             this.DashBoardNav_Btn.Size = new System.Drawing.Size(230, 80);
             this.DashBoardNav_Btn.TabIndex = 9;
@@ -160,17 +175,6 @@ namespace LHBeverage
             this.LogoPic.TabIndex = 8;
             this.LogoPic.TabStop = false;
             // 
-            // panelRoot
-            // 
-            this.panelRoot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
-            this.panelRoot.Location = new System.Drawing.Point(250, 80);
-            this.panelRoot.Name = "panelRoot";
-            this.panelRoot.Size = new System.Drawing.Size(1014, 600);
-            this.panelRoot.TabIndex = 1;
-            // 
             // panelTopBar
             // 
             this.panelTopBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -182,16 +186,16 @@ namespace LHBeverage
             this.panelTopBar.Controls.Add(this.label1);
             this.panelTopBar.Controls.Add(this.searchIcon_btn);
             this.panelTopBar.Controls.Add(this.search_tb);
-            this.panelTopBar.Location = new System.Drawing.Point(295, 0);
+            this.panelTopBar.Location = new System.Drawing.Point(246, 0);
             this.panelTopBar.Name = "panelTopBar";
-            this.panelTopBar.Size = new System.Drawing.Size(969, 80);
+            this.panelTopBar.Size = new System.Drawing.Size(1018, 80);
             this.panelTopBar.TabIndex = 2;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(719, 20);
+            this.pictureBox6.Location = new System.Drawing.Point(768, 20);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 40);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,7 +206,7 @@ namespace LHBeverage
             // 
             this.Avatar_picturebox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Avatar_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_picturebox.Image")));
-            this.Avatar_picturebox.Location = new System.Drawing.Point(880, 20);
+            this.Avatar_picturebox.Location = new System.Drawing.Point(929, 20);
             this.Avatar_picturebox.Name = "Avatar_picturebox";
             this.Avatar_picturebox.Size = new System.Drawing.Size(40, 40);
             this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -214,7 +218,7 @@ namespace LHBeverage
             this.AccountName_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AccountName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountName_lbl.ForeColor = System.Drawing.Color.Gray;
-            this.AccountName_lbl.Location = new System.Drawing.Point(662, 20);
+            this.AccountName_lbl.Location = new System.Drawing.Point(711, 20);
             this.AccountName_lbl.Name = "AccountName_lbl";
             this.AccountName_lbl.Size = new System.Drawing.Size(212, 40);
             this.AccountName_lbl.TabIndex = 6;
@@ -257,22 +261,6 @@ namespace LHBeverage
             this.search_tb.TabIndex = 2;
             this.search_tb.Text = "Search";
             // 
-            // ToppingsNav_Btn
-            // 
-            this.ToppingsNav_Btn.FlatAppearance.BorderSize = 0;
-            this.ToppingsNav_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToppingsNav_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToppingsNav_Btn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.ToppingsNav_Btn.Image = ((System.Drawing.Image)(resources.GetObject("ToppingsNav_Btn.Image")));
-            this.ToppingsNav_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ToppingsNav_Btn.Location = new System.Drawing.Point(20, 340);
-            this.ToppingsNav_Btn.Name = "ToppingsNav_Btn";
-            this.ToppingsNav_Btn.Size = new System.Drawing.Size(230, 80);
-            this.ToppingsNav_Btn.TabIndex = 14;
-            this.ToppingsNav_Btn.Text = "   Manage Toppings";
-            this.ToppingsNav_Btn.UseVisualStyleBackColor = true;
-            this.ToppingsNav_Btn.Click += new System.EventHandler(this.ToppingsNav_Btn_Click);
-            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,7 +268,6 @@ namespace LHBeverage
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panelTopBar);
-            this.Controls.Add(this.panelRoot);
             this.Controls.Add(this.SideBarPanel);
             this.Name = "AdminPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -303,7 +290,6 @@ namespace LHBeverage
         private System.Windows.Forms.PictureBox LogoPic;
         private System.Windows.Forms.Button OrdersNav_Btn;
         private System.Windows.Forms.Button ProductsNav_Btn;
-        private System.Windows.Forms.Panel panelRoot;
         private System.Windows.Forms.Button CategoryNav_Btn;
         private System.Windows.Forms.Button EmployeesNav_btn;
         private System.Windows.Forms.Panel panelTopBar;
