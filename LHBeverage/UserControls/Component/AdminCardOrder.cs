@@ -23,12 +23,11 @@ namespace LHBeverage.UserControls.Component
             InitializeComponent();
             initCardOrder(order);
             orderTmp = order;
-
-
         }
         void initCardOrder(Order order)
         {
-            if(order.Status == "Cancelled")
+            panelCtn.BackColor = Color.Orange;
+            if (order.Status == "Cancelled")
             {
                 ProccessingPayment_bar.BackColor = Color.DarkGray;
                 ProccessingReceived_bar.BackColor = Color.DarkGray;
@@ -38,13 +37,14 @@ namespace LHBeverage.UserControls.Component
             if(order.Status == "Delivered")
             {
                 ProccessingPayment_bar.BackColor = Color.Lime;
-                panelCtn.BackColor = Color.Red;
+                panelCtn.BackColor = Color.Orange;
                 done_lbl.Visible = false;
             }
             if (order.Status == "Received")
             {
                 ProccessingPayment_bar.BackColor = Color.Lime;
                 ProccessingReceived_bar.BackColor = Color.Lime;
+                panelCtn.BackColor = Color.Lime;
                 done_lbl.Visible = true;
             }
             Customer customer = CustomerConnect.CustomerInfo(order.IDCus);

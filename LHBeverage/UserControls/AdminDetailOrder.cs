@@ -41,6 +41,7 @@ namespace LHBeverage.UserControls
                 Bar_paymented.BackColor = Color.DarkGray;
                 BarDelivered.BackColor = Color.DarkGray;
                 BarReceived.BackColor = Color.DarkGray;
+                Btn_cancel.BackColor = Color.DimGray;
             }
                 var t = new[] {"", "Delivered", "Received" };
                 StatusOrder_cb.DataSource = t;
@@ -65,6 +66,8 @@ namespace LHBeverage.UserControls
                     t = new[] { "" };
                     StatusOrder_cb.DataSource = t;
                     Btn_cancel.Enabled = false;
+                    Btn_cancel.BackColor = Color.DimGray;
+                    StatusOrder_cb.Enabled = false;
                 }
                 StatusOrder_cb.SelectedText = order.Status;
             }
@@ -128,6 +131,8 @@ namespace LHBeverage.UserControls
                     done_lbl.Visible = true;
                     OrderConnect.ModifyOrder(orderTmp, "Received");
                     Btn_cancel.Enabled = false;
+                    Btn_cancel.BackColor = Color.DimGray;
+                    StatusOrder_cb.Enabled = false;
                 }
                 catch(Exception ex)
                 {
