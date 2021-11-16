@@ -59,17 +59,42 @@ namespace LHBeverage.UserControls.Component
                 size = detailcart.Size;
                 if (size == "S")
                 {
-                    SizeSBtn.BackColor = Color.SandyBrown;
+                    if(detailcartinfo.Size == "S")
+                    {
+                        SizeSBtn.BackColor = Color.SandyBrown;
+                    }
+                    if(detailcartinfo.Size != "S" && product.QuantitysizeS == 0)
+                    {
+                        SizeSBtn.BackColor = Color.DimGray;
+                        SizeSBtn.Enabled = false;
+                    }
                     PriceProduct = product.PriceS;
                 }
                 else if (size == "M")
                 {
-                    SizeMBtn.BackColor = Color.SandyBrown;
+                    if (detailcartinfo.Size == "M")
+                    {
+                        SizeMBtn.BackColor = Color.SandyBrown;
+                    }
+                    else if(detailcartinfo.Size!="M")
+                    {
+                        SizeMBtn.BackColor = Color.DimGray;
+                        SizeMBtn.Enabled = false;
+                    }
                     PriceProduct = product.PriceM;
                 }
                 else if (size == "L")
                 {
-                    SizeLBtn.BackColor = Color.SandyBrown;
+                    if (detailcartinfo.Size == "L")
+                    {
+
+                        SizeLBtn.BackColor = Color.SandyBrown;
+                    }
+                    else if(detailcartinfo.Size != "L")
+                    {
+                        SizeLBtn.BackColor = Color.DimGray;
+                        SizeLBtn.Enabled = false;
+                    }
                     PriceProduct = product.PriceL;
                 }
                 NameItem.Text = product.Name;
@@ -79,46 +104,142 @@ namespace LHBeverage.UserControls.Component
                 Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
                 ImageItem.BackgroundImage = img;
             }
-            QuantityItem.Text = detailcart.Quantity.ToString();
-            
-            
-            
+            QuantityItem.Text = detailcart.Quantity.ToString();      
         }
 
         private void SizeSBtn_Click(object sender, EventArgs e)
         {
-            size = "S";
-            SizeSBtn.BackColor = Color.SandyBrown;
-            SizeMBtn.BackColor = Color.AntiqueWhite;
-            SizeLBtn.BackColor = Color.AntiqueWhite;
-            PriceProduct = productinfo.PriceS;
-            TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
-            PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
-            DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+            if(size!="S")
+            {
+                ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
+                size = "S";
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+                SizeSBtn.BackColor = Color.SandyBrown;
+                if (SizeMBtn.Enabled)
+                {
+                    SizeMBtn.BackColor = Color.AntiqueWhite;
+                }
+                if (SizeLBtn.Enabled)
+                {
+                    SizeLBtn.BackColor = Color.AntiqueWhite;
+                }
+                if (productinfo.QuantitysizeS < Convert.ToInt32(QuantityItem.Text))
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, (Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeS));
+                    QuantityItem.Text = productinfo.QuantitysizeS.ToString();
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                }
+                else if (productinfo.QuantitysizeS == Convert.ToInt32(QuantityItem.Text))
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = false;
+                    QuantityUp.BackColor = Color.DimGray;
+                }
+                else
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = true;
+                    QuantityUp.BackColor = Color.WhiteSmoke;
+                }
+
+                PriceProduct = productinfo.PriceS;
+                TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
+                PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
+
+            }
+            
         }
 
         private void SizeMBtn_Click(object sender, EventArgs e)
         {
-            size = "M";
-            SizeMBtn.BackColor = Color.SandyBrown;
-            SizeSBtn.BackColor = Color.AntiqueWhite;
-            SizeLBtn.BackColor = Color.AntiqueWhite;
-            PriceProduct = productinfo.PriceM;
-            TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
-            PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
-            DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+            if(size!="M")
+            {
+                ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
+                size = "M";
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+                SizeMBtn.BackColor = Color.SandyBrown;
+                if (SizeLBtn.Enabled)
+                {
+                    SizeLBtn.BackColor = Color.AntiqueWhite;
+                }
+                if (SizeSBtn.Enabled)
+                {
+                    SizeSBtn.BackColor = Color.AntiqueWhite;
+                }
+
+                if (productinfo.QuantitysizeM < Convert.ToInt32(QuantityItem.Text))
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, (Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeM));
+                    QuantityItem.Text = productinfo.QuantitysizeM.ToString();
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                }
+                else if (productinfo.QuantitysizeM == Convert.ToInt32(QuantityItem.Text))
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = false;
+                    QuantityUp.BackColor = Color.DimGray;
+                }
+                else
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = true;
+                    QuantityUp.BackColor = Color.WhiteSmoke;
+                }
+                PriceProduct = productinfo.PriceM;
+                TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
+                PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
+            }
         }
 
         private void SizeLBtn_Click(object sender, EventArgs e)
         {
-            size = "L";
-            SizeLBtn.BackColor = Color.SandyBrown;
-            SizeSBtn.BackColor = Color.AntiqueWhite;
-            SizeMBtn.BackColor = Color.AntiqueWhite;
-            PriceProduct = productinfo.PriceL;
-            TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
-            PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
-            DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+            if(size!="L")
+            {
+                ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
+                size = "L";
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+                SizeLBtn.BackColor = Color.SandyBrown;
+                if (SizeSBtn.Enabled)
+                {
+                    SizeSBtn.BackColor = Color.AntiqueWhite;
+                }
+                if (SizeMBtn.Enabled)
+                {
+                    SizeMBtn.BackColor = Color.AntiqueWhite;
+                }
+
+                if (productinfo.QuantitysizeL < Convert.ToInt32(QuantityItem.Text))
+                {
+                    Cart cart = CartConnect.GetCartByID(detailcartinfo.IDCart);
+                    List<DetailCart> detailCarts = DetailCartConnect.LoadDetailCart(cart);
+                    foreach(DetailCart detailcart in detailCarts)
+                    {
+                        if (productinfo.IDPro == detailcartinfo.IDPro)
+                        {
+                            ProductConnect.UpdateProductQuantity(productinfo, size, -(Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeL));
+                            break;
+                        }
+                    }
+                    ProductConnect.UpdateProductQuantity(productinfo, size, (Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeL));
+                    QuantityItem.Text = productinfo.QuantitysizeL.ToString();
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                }
+                else if (productinfo.QuantitysizeL == Convert.ToInt32(QuantityItem.Text))
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = false;
+                    QuantityUp.BackColor = Color.DimGray;
+                }
+                else
+                {
+                    ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
+                    QuantityUp.Enabled = true;
+                    QuantityUp.BackColor = Color.WhiteSmoke;
+                }
+                PriceProduct = productinfo.PriceL;
+                TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
+                PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
+            }
         }
 
         private void QuantityDown_Click(object sender, EventArgs e)
@@ -128,10 +249,6 @@ namespace LHBeverage.UserControls.Component
             {
                 number--;
             }
-            else
-            {
-                QuantityDown.Enabled = false;
-            }
             QuantityItem.Text = number.ToString();
         }
 
@@ -139,18 +256,43 @@ namespace LHBeverage.UserControls.Component
         {
             int number = Convert.ToInt32(QuantityItem.Text);
             number++;
-            if(number>1)
+            QuantityItem.Text = number.ToString();
+            if (number > 1)
             {
                 QuantityDown.Enabled = true;
+                QuantityDown.BackColor = Color.WhiteSmoke;
             }
-            QuantityItem.Text = number.ToString();
         }
 
         private void QuantityItem_TextChanged(object sender, EventArgs e)
         {
             quantity = Convert.ToInt32(QuantityItem.Text);
             TotalPrice = (PriceProduct + PriceTopping) * quantity;
+            int currentquantity = detailcartinfo.Quantity;
+            int quantityupdatetoProduct = quantity - currentquantity;
+            if(Convert.ToInt32(QuantityItem.Text)==1)
+            {
+                QuantityDown.Enabled = false;
+                QuantityDown.BackColor = Color.DimGray;
+            }
+            if (size == "S" && 0 == productinfo.QuantitysizeS)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else if (size == "M" && productinfo.QuantitysizeM == 0)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else if (size == "L" && 0 == productinfo.QuantitysizeL)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            ProductConnect.UpdateProductQuantity(productinfo, size, quantityupdatetoProduct);
             DetailCartConnect.ModifyItemCartQuantity(quantity, TotalPrice, detailcartinfo);
+            LHBeverage.instance.init();
         }
         public new event EventHandler Click
         {
@@ -177,7 +319,8 @@ namespace LHBeverage.UserControls.Component
 
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
-            //Thêm form Are you sure about that ?
+            int quantity = -detailcartinfo.Quantity;
+            ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
             DetailCartConnect.DeleteDetailCart(detailcartinfo);
             LHBeverage.instance.init();
         }

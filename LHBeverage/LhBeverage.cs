@@ -113,7 +113,6 @@ namespace LHBeverage
             }
 
         }
-
         private void NavigationBtnSwitch(object sender, EventArgs e)
         {
             Button btn = sender as Button;

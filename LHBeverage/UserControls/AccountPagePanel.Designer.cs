@@ -68,13 +68,15 @@ namespace LHBeverage.UserControls
             this.ChooseCancelBtn = new System.Windows.Forms.Button();
             this.MyOrder_panel = new System.Windows.Forms.Panel();
             this.DetailOrderPanel = new System.Windows.Forms.Panel();
+            this.ListProductOrder = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CodeOrder_lbl = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_CancelOrder = new System.Windows.Forms.Button();
             this.TotalPrice = new System.Windows.Forms.Label();
             this.LhCoin_lbl = new System.Windows.Forms.Label();
             this.Discount_lbl = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.DateOrder_lbl = new System.Windows.Forms.Label();
             this.DeliveryMethod_lbl = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -83,12 +85,11 @@ namespace LHBeverage.UserControls
             this.PricePayment_lbl = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.btn_CancelOrder = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ListProductOrder = new System.Windows.Forms.FlowLayoutPanel();
-            this.CodeOrder_lbl = new System.Windows.Forms.Label();
+            this.ReasonLabel = new System.Windows.Forms.Label();
             this.Account_MyDetail_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pb)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -543,6 +544,7 @@ namespace LHBeverage.UserControls
             // DetailOrderPanel
             // 
             this.DetailOrderPanel.BackColor = System.Drawing.Color.White;
+            this.DetailOrderPanel.Controls.Add(this.ReasonLabel);
             this.DetailOrderPanel.Controls.Add(this.ListProductOrder);
             this.DetailOrderPanel.Controls.Add(this.panel4);
             this.DetailOrderPanel.Controls.Add(this.CodeOrder_lbl);
@@ -553,6 +555,44 @@ namespace LHBeverage.UserControls
             this.DetailOrderPanel.Size = new System.Drawing.Size(900, 500);
             this.DetailOrderPanel.TabIndex = 7;
             this.DetailOrderPanel.Visible = false;
+            // 
+            // ListProductOrder
+            // 
+            this.ListProductOrder.AutoScroll = true;
+            this.ListProductOrder.Location = new System.Drawing.Point(5, 102);
+            this.ListProductOrder.Name = "ListProductOrder";
+            this.ListProductOrder.Size = new System.Drawing.Size(892, 272);
+            this.ListProductOrder.TabIndex = 29;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.Location = new System.Drawing.Point(75, 68);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(750, 4);
+            this.panel4.TabIndex = 27;
+            // 
+            // CodeOrder_lbl
+            // 
+            this.CodeOrder_lbl.AutoSize = true;
+            this.CodeOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CodeOrder_lbl.Location = new System.Drawing.Point(685, 22);
+            this.CodeOrder_lbl.Name = "CodeOrder_lbl";
+            this.CodeOrder_lbl.Size = new System.Drawing.Size(140, 31);
+            this.CodeOrder_lbl.TabIndex = 28;
+            this.CodeOrder_lbl.Text = "My Orders";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(70, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 31);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "My Orders";
             // 
             // panel3
             // 
@@ -572,6 +612,20 @@ namespace LHBeverage.UserControls
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(920, 120);
             this.panel3.TabIndex = 1;
+            // 
+            // btn_CancelOrder
+            // 
+            this.btn_CancelOrder.BackColor = System.Drawing.Color.Red;
+            this.btn_CancelOrder.FlatAppearance.BorderSize = 0;
+            this.btn_CancelOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CancelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CancelOrder.ForeColor = System.Drawing.Color.White;
+            this.btn_CancelOrder.Location = new System.Drawing.Point(783, 80);
+            this.btn_CancelOrder.Name = "btn_CancelOrder";
+            this.btn_CancelOrder.Size = new System.Drawing.Size(87, 31);
+            this.btn_CancelOrder.TabIndex = 24;
+            this.btn_CancelOrder.Text = "Hủy đơn";
+            this.btn_CancelOrder.UseVisualStyleBackColor = false;
             // 
             // TotalPrice
             // 
@@ -605,36 +659,6 @@ namespace LHBeverage.UserControls
             this.Discount_lbl.TabIndex = 21;
             this.Discount_lbl.Text = "0";
             this.Discount_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(424, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 17);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Discount";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(758, 8);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(112, 17);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Total Payment";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(610, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 17);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "LHCoin";
             // 
             // DateOrder_lbl
             // 
@@ -722,6 +746,36 @@ namespace LHBeverage.UserControls
             this.label17.TabIndex = 13;
             this.label17.Text = "Total";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(758, 8);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(112, 17);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Total Payment";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(424, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Discount";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(610, 8);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 17);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "LHCoin";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -732,57 +786,18 @@ namespace LHBeverage.UserControls
             this.label18.TabIndex = 12;
             this.label18.Text = "Status";
             // 
-            // btn_CancelOrder
+            // ReasonLabel
             // 
-            this.btn_CancelOrder.BackColor = System.Drawing.Color.Red;
-            this.btn_CancelOrder.FlatAppearance.BorderSize = 0;
-            this.btn_CancelOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CancelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CancelOrder.ForeColor = System.Drawing.Color.White;
-            this.btn_CancelOrder.Location = new System.Drawing.Point(783, 80);
-            this.btn_CancelOrder.Name = "btn_CancelOrder";
-            this.btn_CancelOrder.Size = new System.Drawing.Size(87, 31);
-            this.btn_CancelOrder.TabIndex = 24;
-            this.btn_CancelOrder.Text = "Hủy đơn";
-            this.btn_CancelOrder.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.DimGray;
-            this.panel4.Location = new System.Drawing.Point(75, 68);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(750, 4);
-            this.panel4.TabIndex = 27;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(70, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 31);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "My Orders";
-            // 
-            // ListProductOrder
-            // 
-            this.ListProductOrder.AutoScroll = true;
-            this.ListProductOrder.Location = new System.Drawing.Point(5, 102);
-            this.ListProductOrder.Name = "ListProductOrder";
-            this.ListProductOrder.Size = new System.Drawing.Size(892, 272);
-            this.ListProductOrder.TabIndex = 29;
-            // 
-            // CodeOrder_lbl
-            // 
-            this.CodeOrder_lbl.AutoSize = true;
-            this.CodeOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodeOrder_lbl.Location = new System.Drawing.Point(685, 22);
-            this.CodeOrder_lbl.Name = "CodeOrder_lbl";
-            this.CodeOrder_lbl.Size = new System.Drawing.Size(140, 31);
-            this.CodeOrder_lbl.TabIndex = 28;
-            this.CodeOrder_lbl.Text = "My Orders";
+            this.ReasonLabel.BackColor = System.Drawing.Color.Black;
+            this.ReasonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReasonLabel.ForeColor = System.Drawing.Color.White;
+            this.ReasonLabel.Location = new System.Drawing.Point(4, 75);
+            this.ReasonLabel.Name = "ReasonLabel";
+            this.ReasonLabel.Size = new System.Drawing.Size(893, 25);
+            this.ReasonLabel.TabIndex = 14;
+            this.ReasonLabel.Text = "Buồn quá hủy đơn";
+            this.ReasonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReasonLabel.Visible = false;
             // 
             // AccountPagePanel
             // 
@@ -878,5 +893,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.FlowLayoutPanel ListProductOrder;
         private System.Windows.Forms.Label CodeOrder_lbl;
+        private System.Windows.Forms.Label ReasonLabel;
     }
 }

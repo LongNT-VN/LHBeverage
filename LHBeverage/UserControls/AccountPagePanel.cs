@@ -76,7 +76,6 @@ namespace LHBeverage.UserControls
             btn_MyOrders.BackColor = globalColorActive;
             DetailOrderPanel.Visible = false;
             ChooseDeliveryBtn.PerformClick();
-            renderOrder("Đang vận chuyển");
            
         }
 
@@ -157,28 +156,28 @@ namespace LHBeverage.UserControls
         {
             clearchoosing();
             ChooseConfirmBtn.BackColor = Color.DarkOrange;
-            renderOrder("Đã xác nhận");
+            renderOrder("Confirm");
         }
 
         private void ChooseDeliveryBtn_Click(object sender, EventArgs e)
         {
             clearchoosing();
             ChooseDeliveryBtn.BackColor = Color.DarkOrange;
-            renderOrder("Đang vận chuyển");
+            renderOrder("Delivery");
         }
 
         private void ChooseSuccessBtn_Click(object sender, EventArgs e)
         {
             clearchoosing();
             ChooseSuccessBtn.BackColor = Color.DarkOrange;
-            renderOrder("Hoàn tất");
+            renderOrder("Received");
         }
 
         private void ChooseCancelBtn_Click(object sender, EventArgs e)
         {
             clearchoosing();
             ChooseCancelBtn.BackColor = Color.DarkOrange;
-            renderOrder("Đã hủy");
+            renderOrder("Cancelled");
         }
         private void clearchoosing()
         {
@@ -190,27 +189,51 @@ namespace LHBeverage.UserControls
         public void DetailOrder(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if(btn!=null)
+            if (btn != null && btn.Name == "DetailOrderBtn")
             {
+
                 ListProductOrder.Controls.Clear();
                 MyOrder_panel.Visible = false;
                 DetailOrderPanel.Visible = true;
                 DetailOrderPanel.BringToFront();
                 this.Controls.Add(DetailOrderPanel);
                 Order order = OrderConnect.GetOrderByID(Convert.ToInt32(btn.Tag));
-                List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(Convert.ToInt32(btn.Tag));
+                if (order.Status == "Cancelled")
+                {
+                    Status_lbl.ForeColor = Color.Red;
+                    btn_CancelOrder.Visible = false;
+                    ReasonLabel.Text = "Reason: " + order.Reason;
+                    ReasonLabel.Visible = true;
+                }
+                DeliveryMethod_lbl.Text = order.Deliverymethod;
+                Status_lbl.Text = order.Status;
                 CodeOrder_lbl.Text = order.IDOrder.ToString();
                 TotalPrice.Text = order.Total.ToString();
                 PricePayment_lbl.Text = order.Totalpayment.ToString();
                 Discount_lbl.Text = order.Discount.ToString();
                 LhCoin_lbl.Text = order.LHcoin.ToString();
+                List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(Convert.ToInt32(btn.Tag));
                 foreach (DetailOrder detail in detailOrders)
                 {
                     CardItemOrder cardItem = new CardItemOrder(detail);
                     ListProductOrder.Controls.Add(cardItem);
                 }
             }
+            else if(btn !=null && btn.Name== "btn_CancelOrder")
+            {
+                Order order = OrderConnect.GetOrderByID(Convert.ToInt32(btn.Tag));
+                List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(Convert.ToInt32(btn.Tag));
+                var AdminCancelOrder = new AdminCancelOrder(order);
+                AdminCancelOrder.ShowDialog();
+                foreach (DetailOrder detail in detailOrders)
+                {
+                    Product product = ProductConnect.SelectProductByIDPro(detail.IDPro);
+                    ProductConnect.UpdateProductQuantity(product,detail.Size,-detail.Quantity);
+                }
+                ChooseCancelBtn.PerformClick();
+            }
         }
+        
         public void orderclick()
         {
             btn_MyOrders.PerformClick();

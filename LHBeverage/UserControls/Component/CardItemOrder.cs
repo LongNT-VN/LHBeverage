@@ -40,7 +40,7 @@ namespace LHBeverage.UserControls.Component
                 if(toppingitem!="")
                 {
                     Topping topping = ToppingConnect.SelectToppingByID(Convert.ToInt32(toppingitem));
-                    toppinginfo += topping.ToppingName + " ";
+                    toppinginfo += topping.ToppingName + "\n";
                 }
             }
             Topping_lbl.Text = toppinginfo;

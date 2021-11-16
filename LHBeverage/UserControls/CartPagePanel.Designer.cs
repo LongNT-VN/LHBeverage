@@ -53,7 +53,14 @@ namespace LHBeverage.UserControls
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NoticeNoneCart = new System.Windows.Forms.Label();
             this.FormInfoPagePanel = new System.Windows.Forms.Panel();
+            this.WardPicker = new System.Windows.Forms.ComboBox();
+            this.DistrictPicker = new System.Windows.Forms.ComboBox();
+            this.CityPicker = new System.Windows.Forms.ComboBox();
+            this.MapBtn = new System.Windows.Forms.Button();
+            this.ErrorDiscountLabel = new System.Windows.Forms.Label();
+            this.TotalPaymentPrice = new System.Windows.Forms.Label();
             this.LHCoins = new System.Windows.Forms.NumericUpDown();
+            this.CouponDiscountLabel = new System.Windows.Forms.Label();
             this.ErrorPhoneLabel = new System.Windows.Forms.Label();
             this.BankingBtn = new System.Windows.Forms.RadioButton();
             this.CashBtn = new System.Windows.Forms.RadioButton();
@@ -66,25 +73,18 @@ namespace LHBeverage.UserControls
             this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.PriceShipping = new System.Windows.Forms.Label();
             this.MethodLabel = new System.Windows.Forms.Label();
+            this.FullAddress = new System.Windows.Forms.Label();
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.LHCoinLabel = new System.Windows.Forms.Label();
             this.CouponLabel = new System.Windows.Forms.Label();
             this.PhoneNumberLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
+            this.PromotionLabel = new System.Windows.Forms.Label();
             this.PaymentInformationLabel = new System.Windows.Forms.Label();
             this.ShippinginfomationLabel = new System.Windows.Forms.Label();
+            this.Totalpaymentlabel = new System.Windows.Forms.Label();
             this.ContactInfomationLabel = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
-            this.Totalpaymentlabel = new System.Windows.Forms.Label();
-            this.CouponDiscountLabel = new System.Windows.Forms.Label();
-            this.TotalPaymentPrice = new System.Windows.Forms.Label();
-            this.ErrorDiscountLabel = new System.Windows.Forms.Label();
-            this.MapBtn = new System.Windows.Forms.Button();
-            this.CityPicker = new System.Windows.Forms.ComboBox();
-            this.DistrictPicker = new System.Windows.Forms.ComboBox();
-            this.WardPicker = new System.Windows.Forms.ComboBox();
-            this.FullAddress = new System.Windows.Forms.Label();
-            this.PromotionLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.PaymentMethodPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Method4Pic)).BeginInit();
@@ -401,6 +401,88 @@ namespace LHBeverage.UserControls
             this.FormInfoPagePanel.TabIndex = 13;
             this.FormInfoPagePanel.Visible = false;
             // 
+            // WardPicker
+            // 
+            this.WardPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.WardPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WardPicker.FormattingEnabled = true;
+            this.WardPicker.Items.AddRange(new object[] {
+            "Fast shipping",
+            "Eco shipping",
+            "Super fast shipping"});
+            this.WardPicker.Location = new System.Drawing.Point(24, 150);
+            this.WardPicker.Name = "WardPicker";
+            this.WardPicker.Size = new System.Drawing.Size(162, 32);
+            this.WardPicker.TabIndex = 31;
+            this.WardPicker.SelectedIndexChanged += new System.EventHandler(this.WardPicker_SelectedIndexChanged);
+            // 
+            // DistrictPicker
+            // 
+            this.DistrictPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.DistrictPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistrictPicker.FormattingEnabled = true;
+            this.DistrictPicker.Items.AddRange(new object[] {
+            "Fast shipping",
+            "Eco shipping",
+            "Super fast shipping"});
+            this.DistrictPicker.Location = new System.Drawing.Point(197, 150);
+            this.DistrictPicker.Name = "DistrictPicker";
+            this.DistrictPicker.Size = new System.Drawing.Size(162, 32);
+            this.DistrictPicker.TabIndex = 31;
+            this.DistrictPicker.SelectedIndexChanged += new System.EventHandler(this.DistrictPicker_SelectedIndexChanged);
+            // 
+            // CityPicker
+            // 
+            this.CityPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.CityPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CityPicker.FormattingEnabled = true;
+            this.CityPicker.Items.AddRange(new object[] {
+            "Fast shipping",
+            "Eco shipping",
+            "Super fast shipping"});
+            this.CityPicker.Location = new System.Drawing.Point(370, 150);
+            this.CityPicker.Name = "CityPicker";
+            this.CityPicker.Size = new System.Drawing.Size(162, 32);
+            this.CityPicker.TabIndex = 31;
+            this.CityPicker.SelectedIndexChanged += new System.EventHandler(this.CityPicker_SelectedIndexChanged);
+            // 
+            // MapBtn
+            // 
+            this.MapBtn.BackColor = System.Drawing.Color.Lime;
+            this.MapBtn.FlatAppearance.BorderSize = 0;
+            this.MapBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MapBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MapBtn.Location = new System.Drawing.Point(457, 195);
+            this.MapBtn.Name = "MapBtn";
+            this.MapBtn.Size = new System.Drawing.Size(75, 30);
+            this.MapBtn.TabIndex = 30;
+            this.MapBtn.Text = "Map";
+            this.MapBtn.UseVisualStyleBackColor = false;
+            this.MapBtn.Click += new System.EventHandler(this.MapBtn_Click);
+            // 
+            // ErrorDiscountLabel
+            // 
+            this.ErrorDiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorDiscountLabel.ForeColor = System.Drawing.Color.Red;
+            this.ErrorDiscountLabel.Location = new System.Drawing.Point(586, 342);
+            this.ErrorDiscountLabel.Name = "ErrorDiscountLabel";
+            this.ErrorDiscountLabel.Size = new System.Drawing.Size(230, 23);
+            this.ErrorDiscountLabel.TabIndex = 29;
+            this.ErrorDiscountLabel.Text = "Your discount not found !";
+            this.ErrorDiscountLabel.Visible = false;
+            // 
+            // TotalPaymentPrice
+            // 
+            this.TotalPaymentPrice.BackColor = System.Drawing.SystemColors.Control;
+            this.TotalPaymentPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPaymentPrice.ForeColor = System.Drawing.Color.Maroon;
+            this.TotalPaymentPrice.Location = new System.Drawing.Point(820, 380);
+            this.TotalPaymentPrice.Name = "TotalPaymentPrice";
+            this.TotalPaymentPrice.Size = new System.Drawing.Size(284, 40);
+            this.TotalPaymentPrice.TabIndex = 28;
+            this.TotalPaymentPrice.Text = "1.030.000 VNĐ";
+            this.TotalPaymentPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LHCoins
             // 
             this.LHCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -419,6 +501,17 @@ namespace LHBeverage.UserControls
             this.LHCoins.Size = new System.Drawing.Size(240, 30);
             this.LHCoins.TabIndex = 27;
             this.LHCoins.ValueChanged += new System.EventHandler(this.LHCoins_ValueChanged);
+            // 
+            // CouponDiscountLabel
+            // 
+            this.CouponDiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CouponDiscountLabel.ForeColor = System.Drawing.Color.DarkGreen;
+            this.CouponDiscountLabel.Location = new System.Drawing.Point(586, 342);
+            this.CouponDiscountLabel.Name = "CouponDiscountLabel";
+            this.CouponDiscountLabel.Size = new System.Drawing.Size(230, 23);
+            this.CouponDiscountLabel.TabIndex = 14;
+            this.CouponDiscountLabel.Text = "Discount 30%";
+            this.CouponDiscountLabel.Visible = false;
             // 
             // ErrorPhoneLabel
             // 
@@ -568,6 +661,17 @@ namespace LHBeverage.UserControls
             this.MethodLabel.TabIndex = 16;
             this.MethodLabel.Text = "Method";
             // 
+            // FullAddress
+            // 
+            this.FullAddress.AllowDrop = true;
+            this.FullAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullAddress.ForeColor = System.Drawing.Color.DimGray;
+            this.FullAddress.Location = new System.Drawing.Point(24, 240);
+            this.FullAddress.Name = "FullAddress";
+            this.FullAddress.Size = new System.Drawing.Size(508, 40);
+            this.FullAddress.TabIndex = 16;
+            this.FullAddress.Text = "Address";
+            // 
             // FirstNameLabel
             // 
             this.FirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -613,6 +717,18 @@ namespace LHBeverage.UserControls
             this.EmailLabel.TabIndex = 18;
             this.EmailLabel.Text = "Email";
             // 
+            // PromotionLabel
+            // 
+            this.PromotionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PromotionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PromotionLabel.Location = new System.Drawing.Point(562, 240);
+            this.PromotionLabel.Name = "PromotionLabel";
+            this.PromotionLabel.Size = new System.Drawing.Size(562, 30);
+            this.PromotionLabel.TabIndex = 12;
+            this.PromotionLabel.Text = "Promotion";
+            this.PromotionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PaymentInformationLabel
             // 
             this.PaymentInformationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -636,6 +752,19 @@ namespace LHBeverage.UserControls
             this.ShippinginfomationLabel.TabIndex = 12;
             this.ShippinginfomationLabel.Text = "Shipping infomation";
             this.ShippinginfomationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Totalpaymentlabel
+            // 
+            this.Totalpaymentlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Totalpaymentlabel.BackColor = System.Drawing.SystemColors.Control;
+            this.Totalpaymentlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Totalpaymentlabel.Location = new System.Drawing.Point(20, 380);
+            this.Totalpaymentlabel.Name = "Totalpaymentlabel";
+            this.Totalpaymentlabel.Size = new System.Drawing.Size(800, 40);
+            this.Totalpaymentlabel.TabIndex = 12;
+            this.Totalpaymentlabel.Text = "Total payment:";
+            this.Totalpaymentlabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ContactInfomationLabel
             // 
@@ -664,134 +793,6 @@ namespace LHBeverage.UserControls
             this.ConfirmBtn.Text = "Confirm";
             this.ConfirmBtn.UseVisualStyleBackColor = false;
             this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
-            // 
-            // Totalpaymentlabel
-            // 
-            this.Totalpaymentlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Totalpaymentlabel.BackColor = System.Drawing.SystemColors.Control;
-            this.Totalpaymentlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Totalpaymentlabel.Location = new System.Drawing.Point(20, 380);
-            this.Totalpaymentlabel.Name = "Totalpaymentlabel";
-            this.Totalpaymentlabel.Size = new System.Drawing.Size(800, 40);
-            this.Totalpaymentlabel.TabIndex = 12;
-            this.Totalpaymentlabel.Text = "Total payment:";
-            this.Totalpaymentlabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CouponDiscountLabel
-            // 
-            this.CouponDiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CouponDiscountLabel.ForeColor = System.Drawing.Color.DarkGreen;
-            this.CouponDiscountLabel.Location = new System.Drawing.Point(586, 342);
-            this.CouponDiscountLabel.Name = "CouponDiscountLabel";
-            this.CouponDiscountLabel.Size = new System.Drawing.Size(230, 23);
-            this.CouponDiscountLabel.TabIndex = 14;
-            this.CouponDiscountLabel.Text = "Discount 30%";
-            this.CouponDiscountLabel.Visible = false;
-            // 
-            // TotalPaymentPrice
-            // 
-            this.TotalPaymentPrice.BackColor = System.Drawing.SystemColors.Control;
-            this.TotalPaymentPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPaymentPrice.ForeColor = System.Drawing.Color.Maroon;
-            this.TotalPaymentPrice.Location = new System.Drawing.Point(820, 380);
-            this.TotalPaymentPrice.Name = "TotalPaymentPrice";
-            this.TotalPaymentPrice.Size = new System.Drawing.Size(284, 40);
-            this.TotalPaymentPrice.TabIndex = 28;
-            this.TotalPaymentPrice.Text = "1.030.000 VNĐ";
-            this.TotalPaymentPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ErrorDiscountLabel
-            // 
-            this.ErrorDiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorDiscountLabel.ForeColor = System.Drawing.Color.Red;
-            this.ErrorDiscountLabel.Location = new System.Drawing.Point(586, 342);
-            this.ErrorDiscountLabel.Name = "ErrorDiscountLabel";
-            this.ErrorDiscountLabel.Size = new System.Drawing.Size(230, 23);
-            this.ErrorDiscountLabel.TabIndex = 29;
-            this.ErrorDiscountLabel.Text = "Your discount not found !";
-            this.ErrorDiscountLabel.Visible = false;
-            // 
-            // MapBtn
-            // 
-            this.MapBtn.BackColor = System.Drawing.Color.Lime;
-            this.MapBtn.FlatAppearance.BorderSize = 0;
-            this.MapBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MapBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MapBtn.Location = new System.Drawing.Point(457, 195);
-            this.MapBtn.Name = "MapBtn";
-            this.MapBtn.Size = new System.Drawing.Size(75, 30);
-            this.MapBtn.TabIndex = 30;
-            this.MapBtn.Text = "Map";
-            this.MapBtn.UseVisualStyleBackColor = false;
-            // 
-            // CityPicker
-            // 
-            this.CityPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.CityPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CityPicker.FormattingEnabled = true;
-            this.CityPicker.Items.AddRange(new object[] {
-            "Fast shipping",
-            "Eco shipping",
-            "Super fast shipping"});
-            this.CityPicker.Location = new System.Drawing.Point(370, 150);
-            this.CityPicker.Name = "CityPicker";
-            this.CityPicker.Size = new System.Drawing.Size(162, 32);
-            this.CityPicker.TabIndex = 31;
-            this.CityPicker.SelectedIndexChanged += new System.EventHandler(this.CityPicker_SelectedIndexChanged);
-            // 
-            // DistrictPicker
-            // 
-            this.DistrictPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.DistrictPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DistrictPicker.FormattingEnabled = true;
-            this.DistrictPicker.Items.AddRange(new object[] {
-            "Fast shipping",
-            "Eco shipping",
-            "Super fast shipping"});
-            this.DistrictPicker.Location = new System.Drawing.Point(197, 150);
-            this.DistrictPicker.Name = "DistrictPicker";
-            this.DistrictPicker.Size = new System.Drawing.Size(162, 32);
-            this.DistrictPicker.TabIndex = 31;
-            this.DistrictPicker.SelectedIndexChanged += new System.EventHandler(this.DistrictPicker_SelectedIndexChanged);
-            // 
-            // WardPicker
-            // 
-            this.WardPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.WardPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WardPicker.FormattingEnabled = true;
-            this.WardPicker.Items.AddRange(new object[] {
-            "Fast shipping",
-            "Eco shipping",
-            "Super fast shipping"});
-            this.WardPicker.Location = new System.Drawing.Point(24, 150);
-            this.WardPicker.Name = "WardPicker";
-            this.WardPicker.Size = new System.Drawing.Size(162, 32);
-            this.WardPicker.TabIndex = 31;
-            this.WardPicker.SelectedIndexChanged += new System.EventHandler(this.WardPicker_SelectedIndexChanged);
-            // 
-            // FullAddress
-            // 
-            this.FullAddress.AllowDrop = true;
-            this.FullAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FullAddress.ForeColor = System.Drawing.Color.DimGray;
-            this.FullAddress.Location = new System.Drawing.Point(24, 240);
-            this.FullAddress.Name = "FullAddress";
-            this.FullAddress.Size = new System.Drawing.Size(508, 40);
-            this.FullAddress.TabIndex = 16;
-            this.FullAddress.Text = "Address";
-            // 
-            // PromotionLabel
-            // 
-            this.PromotionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PromotionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PromotionLabel.Location = new System.Drawing.Point(562, 240);
-            this.PromotionLabel.Name = "PromotionLabel";
-            this.PromotionLabel.Size = new System.Drawing.Size(562, 30);
-            this.PromotionLabel.TabIndex = 12;
-            this.PromotionLabel.Text = "Promotion";
-            this.PromotionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CartPagePanel
             // 

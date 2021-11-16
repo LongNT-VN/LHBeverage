@@ -134,7 +134,7 @@ namespace LHBeverage.UserControls.Component
             // 
             // QuantityDown
             // 
-            this.QuantityDown.BackColor = System.Drawing.SystemColors.Control;
+            this.QuantityDown.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityDown.FlatAppearance.BorderSize = 0;
             this.QuantityDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuantityDown.Location = new System.Drawing.Point(265, 107);
@@ -147,7 +147,7 @@ namespace LHBeverage.UserControls.Component
             // 
             // QuantityUp
             // 
-            this.QuantityUp.BackColor = System.Drawing.SystemColors.Control;
+            this.QuantityUp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityUp.FlatAppearance.BorderSize = 0;
             this.QuantityUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QuantityUp.Location = new System.Drawing.Point(365, 108);

@@ -17,6 +17,7 @@ namespace LHBeverage.UserControls
         int ShippingPriceinfo = 0;
         int Discountinfo = 0;
         int LHCoininfo = 0;
+        string Deliverymethod = "";
         public CartPagePanel(Cart cart, Customer customer)
         {
             InitializeComponent();
@@ -71,7 +72,7 @@ namespace LHBeverage.UserControls
         }
         private void ConfirmBtn_Click(object sender, EventArgs e)
         {
-            OrderConnect.CreateOrder(cartinfo,ShippingPriceinfo,Discountinfo,LHCoininfo);    
+            OrderConnect.CreateOrder(cartinfo,ShippingPriceinfo,Discountinfo,LHCoininfo,Deliverymethod);    
             DetailCartConnect.ClearCart(cartinfo);
             ItemsCart.Controls.Clear();
             CreateCartItem(cartinfo);
@@ -122,7 +123,7 @@ namespace LHBeverage.UserControls
             if (AddressTextBox.Text != "")
             {
                 AddressTextBox.ForeColor = Color.Black;
-                FullAddress.Text = AddressTextBox.Text + ", " + WardPicker.Text + ", " + DistrictPicker.Text + ", " + CityPicker.Text;
+                FullAddress.Text = AddressTextBox.Text + " - " + WardPicker.Text + ", " + DistrictPicker.Text + ", " + CityPicker.Text;
             }
         }
 
@@ -282,7 +283,7 @@ namespace LHBeverage.UserControls
 
         private void WardPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FullAddress.Text = AddressTextBox.Text + ", " + WardPicker.Text + ", " + DistrictPicker.Text + ", " + CityPicker.Text ;
+            FullAddress.Text = AddressTextBox.Text + " - " + WardPicker.Text + ", " + DistrictPicker.Text + ", " + CityPicker.Text ;
         }
         private void initlocation()
         {
@@ -293,8 +294,11 @@ namespace LHBeverage.UserControls
             if (address.Length > 0)
             {
                 provinceinfo = address[address.Length - 1];
+                districtinfo = address[address.Length - 1];
+                wardinfo = address[address.Length - 1];
                 if (address.Length > 1)
                 {
+                    wardinfo = address[address.Length - 2];
                     districtinfo = address[address.Length - 2];
                     if (address.Length > 3)
                     {
@@ -343,6 +347,7 @@ namespace LHBeverage.UserControls
         private void MethodBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             AddingFee();
+            Deliverymethod = MethodBox.SelectedItem.ToString();
             caltotal(ShippingPriceinfo, Discountinfo, LHCoininfo);
         }
 
@@ -369,11 +374,23 @@ namespace LHBeverage.UserControls
             {
                 ShippingPriceinfo = 0;
             }
+            PriceShipping.Text = ShippingPriceinfo.ToString("#,###", cul.NumberFormat) + " VNĐ";
             if (CouponBox.Text == "LHBeverage")
             {
                 Discountinfo = 30;
             }
             LHCoininfo = Convert.ToInt32(LHCoins.Value);
+        }
+
+        private void MapBtn_Click(object sender, EventArgs e)
+        {
+           
+            Map map = new Map(FullAddress.Text);
+            map.ShowDialog();
+            if(map.returnaddress != "")
+            {
+                AddressTextBox.Text = map.returnaddress;
+            }
         }
     }
 }

@@ -16,10 +16,12 @@ namespace LHBeverage
     public partial class AdminCancelOrder : Form
     {
         Order tmp;
-        public AdminCancelOrder(Order order)
+        Boolean isadmin;
+        public AdminCancelOrder(Order order, Boolean isAdmin=false)
         {
             InitializeComponent();
             tmp = order;
+            isadmin = isAdmin;
         }
 
         private void Cancel_Click(object sender, EventArgs e)
@@ -41,8 +43,10 @@ namespace LHBeverage
                     tmp.Reason = Reason_tb.Text;
                     OrderConnect.UpdateReasonOrder(tmp, Reason_tb.Text, "Cancelled");
                    // AdminManageOrder.instance.initOrders();
-                    AdminDetailOrder.instance.initDetailOrder(tmp);
-                   
+                    if(isadmin)
+                    {
+                        AdminDetailOrder.instance.initDetailOrder(tmp);
+                    }
                     this.Close();
                 }
                 catch (Exception ex)

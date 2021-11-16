@@ -143,7 +143,7 @@ namespace LHBeverage.UserControls
 
         private void Btn_cancel_Click(object sender, EventArgs e)
         {
-            var AdminCancelOrder = new AdminCancelOrder(orderTmp);
+            var AdminCancelOrder = new AdminCancelOrder(orderTmp,true);
             AdminCancelOrder.ShowDialog();
         }
     }

@@ -14,12 +14,12 @@ namespace LHBeverage.ModelService
     class OrderConnect
     {
         //Lấy ra giỏ hàng thuộc khách hàng
-        public static void CreateOrder(Cart cart, int Shipping = 0, int Discount = 0, int LHCoin =0)
+        public static void CreateOrder(Cart cart, int Shipping = 0, int Discount = 0, int LHCoin =0, string Deliverymethod ="")
         {
             Order order = new Order();
             order.DateOrder = DateTime.Now.ToString();
             order.IDCus = cart.IDCus;
-            order.Status = "Đang vận chuyển";
+            order.Status = "Confirm";
             int total = 0;
             int Totalpayment = 0;
             //Lấy tất cả các detail carts để lấy tổng tiền.
@@ -36,10 +36,10 @@ namespace LHBeverage.ModelService
             order.Discount = Discount;
             order.LHcoin = LHCoin;
             order.Totalpayment = Totalpayment;
-            
+            order.Deliverymethod = Deliverymethod;
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into 'Order'(IDCus,DateOrder,Status,Total,Discount,LHcoin,Totalpayment) values (@IDCus,@DateOrder,@Status,@Total,@Discount,@LHcoin,@Totalpayment)", order);
+                connection.Execute("insert into 'Order'(IDCus,DateOrder,Status,Total,Discount,LHcoin,Totalpayment,Deliverymethod) values (@IDCus,@DateOrder,@Status,@Total,@Discount,@LHcoin,@Totalpayment,@Deliverymethod)", order);
                 var successorder = connection.Query<Order>($"select * from 'Order' where IDCus='{order.IDCus}' and DateOrder = '{order.DateOrder}'", new DynamicParameters()).First();
                 DetailOrderConnect.CreateDetailOrder(successorder, cart);
             }

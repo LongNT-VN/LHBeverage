@@ -58,6 +58,7 @@ namespace LHBeverage.UserControls.Component
             this.Flow_ItemOrder = new System.Windows.Forms.FlowLayoutPanel();
             this.NameCust_lbl = new System.Windows.Forms.Label();
             this.panel_CardOrder = new System.Windows.Forms.Panel();
+            this.ReasonLabel = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -248,7 +249,7 @@ namespace LHBeverage.UserControls.Component
             this.btn_CancelOrder.Name = "btn_CancelOrder";
             this.btn_CancelOrder.Size = new System.Drawing.Size(87, 31);
             this.btn_CancelOrder.TabIndex = 18;
-            this.btn_CancelOrder.Text = "Hủy đơn";
+            this.btn_CancelOrder.Text = "Cancel";
             this.btn_CancelOrder.UseVisualStyleBackColor = false;
             // 
             // label10
@@ -370,6 +371,7 @@ namespace LHBeverage.UserControls.Component
             // panel_CardOrder
             // 
             this.panel_CardOrder.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel_CardOrder.Controls.Add(this.ReasonLabel);
             this.panel_CardOrder.Controls.Add(this.NameUser);
             this.panel_CardOrder.Controls.Add(this.Flow_ItemOrder);
             this.panel_CardOrder.Controls.Add(this.CodeOrder_lbl);
@@ -381,6 +383,19 @@ namespace LHBeverage.UserControls.Component
             this.panel_CardOrder.Name = "panel_CardOrder";
             this.panel_CardOrder.Size = new System.Drawing.Size(900, 276);
             this.panel_CardOrder.TabIndex = 10;
+            // 
+            // ReasonLabel
+            // 
+            this.ReasonLabel.BackColor = System.Drawing.Color.Black;
+            this.ReasonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReasonLabel.ForeColor = System.Drawing.Color.White;
+            this.ReasonLabel.Location = new System.Drawing.Point(300, 0);
+            this.ReasonLabel.Name = "ReasonLabel";
+            this.ReasonLabel.Size = new System.Drawing.Size(300, 25);
+            this.ReasonLabel.TabIndex = 13;
+            this.ReasonLabel.Text = "Buồn quá hủy đơn";
+            this.ReasonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReasonLabel.Visible = false;
             // 
             // CardOrder
             // 
@@ -432,5 +447,6 @@ namespace LHBeverage.UserControls.Component
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button DetailOrderBtn;
+        private System.Windows.Forms.Label ReasonLabel;
     }
 }

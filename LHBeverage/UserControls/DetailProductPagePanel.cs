@@ -38,17 +38,37 @@ namespace LHBeverage.UserControls
             quantity = Convert.ToInt32(QuantityItem.Text);
             NameItem.Text = product.Name;
             DescriptionItem.Text = product.Description;
+            if(product.QuantitysizeS == 0)
+            {
+                SizeSBtn.BackColor = Color.DimGray;
+                SizeSBtn.Enabled = false;
+                size = "M";
+            }
+            else if(product.QuantitysizeM==0)
+            {
+                SizeMBtn.BackColor = Color.DimGray;
+                SizeMBtn.Enabled = false;
+            }
+            else if(product.QuantitysizeL==0)
+            {
+                SizeLBtn.BackColor = Color.DimGray;
+                SizeLBtn.Enabled = false;
+            }
+            if (product.QuantitysizeS == 0 && product.QuantitysizeM==0)
+            {
+                size = "L";
+            }
             if (size=="S")
             {
-                TempPriceProduct = product.PriceS;
+                SizeSBtn.PerformClick();
             }
             else if(size=="M")
             {
-                TempPriceProduct = product.PriceM;
+                SizeMBtn.PerformClick();
             }
             else if (size == "L")
             {
-                TempPriceProduct = product.PriceL;
+                SizeLBtn.PerformClick();
             }
             TempPrice = TempPriceProduct + TempPriceTopping;
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
@@ -121,10 +141,37 @@ namespace LHBeverage.UserControls
         {
             size = "S";
             SizeSBtn.BackColor = Color.SandyBrown;
-            SizeMBtn.BackColor = Color.AntiqueWhite;
-            SizeLBtn.BackColor = Color.AntiqueWhite;
+            QuantityProduct.ForeColor = Color.LimeGreen;
+            if (SizeMBtn.Enabled)
+            {
+                SizeMBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (SizeLBtn.Enabled)
+            {
+                SizeLBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (productinfo.QuantitysizeS <= 5)
+            {
+                QuantityProduct.ForeColor = Color.DarkOrange;
+            }
+            if (productinfo.QuantitysizeS < Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityItem.Text = productinfo.QuantitysizeS.ToString();
+
+            }
+            else if(productinfo.QuantitysizeS==Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else
+            {
+                QuantityUp.Enabled = true;
+                QuantityUp.BackColor = Color.WhiteSmoke;
+            }
             TempPriceProduct = productinfo.PriceS;
             TempPrice = TempPriceProduct + TempPriceTopping;
+            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeS.ToString() + " sản phẩm.";
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -132,10 +179,36 @@ namespace LHBeverage.UserControls
         {
             size = "M";
             SizeMBtn.BackColor = Color.SandyBrown;
-            SizeSBtn.BackColor = Color.AntiqueWhite;
-            SizeLBtn.BackColor = Color.AntiqueWhite;
+            QuantityProduct.ForeColor = Color.LimeGreen;
+            if (SizeSBtn.Enabled)
+            {
+                SizeSBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (SizeLBtn.Enabled)
+            {
+                SizeLBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (productinfo.QuantitysizeM <= 5)
+            {
+                QuantityProduct.ForeColor = Color.DarkOrange;
+            }
+            if (productinfo.QuantitysizeM < Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityItem.Text = productinfo.QuantitysizeM.ToString();
+            }
+            else if (productinfo.QuantitysizeM == Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else
+            {
+                QuantityUp.Enabled = true;
+                QuantityUp.BackColor = Color.WhiteSmoke;
+            }
             TempPriceProduct = productinfo.PriceM;
             TempPrice = TempPriceProduct + TempPriceTopping;
+            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeM.ToString() + " sản phẩm.";
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -143,10 +216,36 @@ namespace LHBeverage.UserControls
         {
             size = "L";
             SizeLBtn.BackColor = Color.SandyBrown;
-            SizeSBtn.BackColor = Color.AntiqueWhite;
-            SizeMBtn.BackColor = Color.AntiqueWhite;
+            QuantityProduct.ForeColor = Color.LimeGreen;
+            if (SizeSBtn.Enabled)
+            {
+                SizeSBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (SizeMBtn.Enabled)
+            {
+                SizeMBtn.BackColor = Color.AntiqueWhite;
+            }
+            if (productinfo.QuantitysizeL <= 5)
+            {
+                QuantityProduct.ForeColor = Color.DarkOrange;
+            }
+            if (productinfo.QuantitysizeL < Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityItem.Text = productinfo.QuantitysizeL.ToString();
+            }
+            else if (productinfo.QuantitysizeL == Convert.ToInt32(QuantityItem.Text))
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else
+            {
+                QuantityUp.Enabled = true;
+                QuantityUp.BackColor = Color.WhiteSmoke;
+            }
             TempPriceProduct = productinfo.PriceL;
             TempPrice = TempPriceProduct + TempPriceTopping;
+            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeL.ToString() + " sản phẩm.";
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -158,6 +257,8 @@ namespace LHBeverage.UserControls
             if(number!=1)
             {
                 number--;
+                QuantityUp.Enabled = true;
+                QuantityUp.BackColor = Color.WhiteSmoke;
             }
             QuantityItem.Text = number.ToString();
         }
@@ -166,12 +267,39 @@ namespace LHBeverage.UserControls
         {
             int number = Convert.ToInt32(QuantityItem.Text);
             number++;
+            if (number > 1)
+            {
+                QuantityDown.Enabled = true;
+                QuantityDown.BackColor = Color.WhiteSmoke;
+            }
             QuantityItem.Text = number.ToString();
         }
 
         private void QuantityItem_TextChanged(object sender, EventArgs e)
         {
             quantity = Convert.ToInt32(QuantityItem.Text);
+            QuantityUp.Enabled = true;
+            QuantityUp.BackColor = Color.WhiteSmoke;
+            if (Convert.ToInt32(QuantityItem.Text) == 1)
+            {
+                QuantityDown.Enabled = false;
+                QuantityDown.BackColor = Color.DimGray;
+            }
+            if (size == "S" && quantity == productinfo.QuantitysizeS)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else if (size == "M" && productinfo.QuantitysizeM == quantity)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            else if (size == "L" && quantity == productinfo.QuantitysizeL)
+            {
+                QuantityUp.Enabled = false;
+                QuantityUp.BackColor = Color.DimGray;
+            }
         }
 
         private void OrderItemBtn_Click(object sender, EventArgs e)
@@ -187,6 +315,7 @@ namespace LHBeverage.UserControls
             {
                 toppings += topping+",";
             }
+            ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
             DetailCartConnect.CreateDetailCart(cart, id, toppings, size, quantity, TempPrice);
             LHBeverage.instance.init();
         }
@@ -204,5 +333,6 @@ namespace LHBeverage.UserControls
                 OrderItemBtn.Click -= value;
             }
         }
+
     }
 }

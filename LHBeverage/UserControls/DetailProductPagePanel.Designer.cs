@@ -43,6 +43,7 @@ namespace LHBeverage.UserControls
             this.SizeLBtn = new System.Windows.Forms.Button();
             this.SizeMBtn = new System.Windows.Forms.Button();
             this.SizeSBtn = new System.Windows.Forms.Button();
+            this.QuantityProduct = new System.Windows.Forms.Label();
             this.PriceItem = new System.Windows.Forms.Label();
             this.OrderItemBtn = new System.Windows.Forms.Button();
             this.ToppingLabel = new System.Windows.Forms.Label();
@@ -79,6 +80,7 @@ namespace LHBeverage.UserControls
             this.DetailItemPanel.Controls.Add(this.SizeLBtn);
             this.DetailItemPanel.Controls.Add(this.SizeMBtn);
             this.DetailItemPanel.Controls.Add(this.SizeSBtn);
+            this.DetailItemPanel.Controls.Add(this.QuantityProduct);
             this.DetailItemPanel.Controls.Add(this.PriceItem);
             this.DetailItemPanel.Controls.Add(this.OrderItemBtn);
             this.DetailItemPanel.Controls.Add(this.ToppingLabel);
@@ -236,6 +238,17 @@ namespace LHBeverage.UserControls
             this.SizeSBtn.UseVisualStyleBackColor = false;
             this.SizeSBtn.Click += new System.EventHandler(this.SizeSBtn_Click);
             // 
+            // QuantityProduct
+            // 
+            this.QuantityProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityProduct.ForeColor = System.Drawing.Color.LimeGreen;
+            this.QuantityProduct.Location = new System.Drawing.Point(53, 317);
+            this.QuantityProduct.Name = "QuantityProduct";
+            this.QuantityProduct.Size = new System.Drawing.Size(237, 40);
+            this.QuantityProduct.TabIndex = 2;
+            this.QuantityProduct.Text = "Còn lại:  2 sản phẩm";
+            this.QuantityProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // PriceItem
             // 
             this.PriceItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,7 +335,7 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1205, 583);
+            this.Size = new System.Drawing.Size(1171, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -355,5 +368,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Button QuantityDown;
         private System.Windows.Forms.Label pricelabel;
         private System.Windows.Forms.FlowLayoutPanel ListToppings;
+        private System.Windows.Forms.Label QuantityProduct;
     }
 }

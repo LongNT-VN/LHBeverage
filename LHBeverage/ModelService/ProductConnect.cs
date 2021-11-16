@@ -21,6 +21,28 @@ namespace LHBeverage.ModelService
             }
         
         }
+        public static void UpdateProductQuantity(Product product,string size,int quantity)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                if(size=="S")
+                {
+                    Product productinfo = SelectProductByIDPro(product.IDPro);
+                    connection.Query<Product>($"Update Product set QuantitysizeS='{productinfo.QuantitysizeS-quantity}' where IDPro='{product.IDPro}'", new DynamicParameters());
+                }
+                else if(size=="M")
+                {
+                    Product productinfo = SelectProductByIDPro(product.IDPro);
+                    connection.Query<Product>($"Update Product set QuantitysizeM='{productinfo.QuantitysizeM - quantity}' where IDPro='{product.IDPro}'", new DynamicParameters());
+                }
+                else if(size == "L")
+                {
+                    Product productinfo = SelectProductByIDPro(product.IDPro);
+                    connection.Query<Product>($"Update Product set QuantitysizeL='{productinfo.QuantitysizeL - quantity}' where IDPro='{product.IDPro}'", new DynamicParameters());
+                }
+            }
+
+        }
         public static List<Product> LoadProduct()
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
