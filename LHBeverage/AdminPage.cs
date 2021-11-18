@@ -96,7 +96,9 @@ namespace LHBeverage
         {
             // set active button
             setBg_Color_Btn_SideBar();
-            EmployeesNav_btn.BackColor = activeColor;
+            StatisticalNav_btn.BackColor = activeColor;
+            AdminStatistical adminStatistical = new AdminStatistical();
+            AddNewPage.addUserControl(adminStatistical);
         }
 
         private void ToppingsNav_Btn_Click(object sender, EventArgs e)

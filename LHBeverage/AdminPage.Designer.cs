@@ -32,7 +32,7 @@ namespace LHBeverage
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.SideBarPanel = new System.Windows.Forms.Panel();
             this.ToppingsNav_Btn = new System.Windows.Forms.Button();
-            this.EmployeesNav_btn = new System.Windows.Forms.Button();
+            this.StatisticalNav_btn = new System.Windows.Forms.Button();
             this.CategoryNav_Btn = new System.Windows.Forms.Button();
             this.OrdersNav_Btn = new System.Windows.Forms.Button();
             this.ProductsNav_Btn = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@ namespace LHBeverage
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.Avatar_picturebox = new System.Windows.Forms.PictureBox();
             this.AccountName_lbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.searchIcon_btn = new System.Windows.Forms.Button();
             this.search_tb = new System.Windows.Forms.TextBox();
             this.SideBarPanel.SuspendLayout();
@@ -56,7 +55,7 @@ namespace LHBeverage
             // 
             this.SideBarPanel.BackColor = System.Drawing.Color.White;
             this.SideBarPanel.Controls.Add(this.ToppingsNav_Btn);
-            this.SideBarPanel.Controls.Add(this.EmployeesNav_btn);
+            this.SideBarPanel.Controls.Add(this.StatisticalNav_btn);
             this.SideBarPanel.Controls.Add(this.CategoryNav_Btn);
             this.SideBarPanel.Controls.Add(this.OrdersNav_Btn);
             this.SideBarPanel.Controls.Add(this.ProductsNav_Btn);
@@ -84,21 +83,21 @@ namespace LHBeverage
             this.ToppingsNav_Btn.UseVisualStyleBackColor = true;
             this.ToppingsNav_Btn.Click += new System.EventHandler(this.ToppingsNav_Btn_Click);
             // 
-            // EmployeesNav_btn
+            // StatisticalNav_btn
             // 
-            this.EmployeesNav_btn.FlatAppearance.BorderSize = 0;
-            this.EmployeesNav_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmployeesNav_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeesNav_btn.ForeColor = System.Drawing.Color.DeepPink;
-            this.EmployeesNav_btn.Image = ((System.Drawing.Image)(resources.GetObject("EmployeesNav_btn.Image")));
-            this.EmployeesNav_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmployeesNav_btn.Location = new System.Drawing.Point(20, 480);
-            this.EmployeesNav_btn.Name = "EmployeesNav_btn";
-            this.EmployeesNav_btn.Size = new System.Drawing.Size(230, 80);
-            this.EmployeesNav_btn.TabIndex = 13;
-            this.EmployeesNav_btn.Text = "      Manage employees";
-            this.EmployeesNav_btn.UseVisualStyleBackColor = true;
-            this.EmployeesNav_btn.Click += new System.EventHandler(this.EmployeesNav_btn_Click);
+            this.StatisticalNav_btn.FlatAppearance.BorderSize = 0;
+            this.StatisticalNav_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatisticalNav_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatisticalNav_btn.ForeColor = System.Drawing.Color.DeepPink;
+            this.StatisticalNav_btn.Image = ((System.Drawing.Image)(resources.GetObject("StatisticalNav_btn.Image")));
+            this.StatisticalNav_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StatisticalNav_btn.Location = new System.Drawing.Point(20, 480);
+            this.StatisticalNav_btn.Name = "StatisticalNav_btn";
+            this.StatisticalNav_btn.Size = new System.Drawing.Size(230, 80);
+            this.StatisticalNav_btn.TabIndex = 13;
+            this.StatisticalNav_btn.Text = "Statistical";
+            this.StatisticalNav_btn.UseVisualStyleBackColor = true;
+            this.StatisticalNav_btn.Click += new System.EventHandler(this.EmployeesNav_btn_Click);
             // 
             // CategoryNav_Btn
             // 
@@ -183,7 +182,6 @@ namespace LHBeverage
             this.panelTopBar.Controls.Add(this.pictureBox6);
             this.panelTopBar.Controls.Add(this.Avatar_picturebox);
             this.panelTopBar.Controls.Add(this.AccountName_lbl);
-            this.panelTopBar.Controls.Add(this.label1);
             this.panelTopBar.Controls.Add(this.searchIcon_btn);
             this.panelTopBar.Controls.Add(this.search_tb);
             this.panelTopBar.Location = new System.Drawing.Point(246, 0);
@@ -224,16 +222,6 @@ namespace LHBeverage
             this.AccountName_lbl.TabIndex = 6;
             this.AccountName_lbl.Text = "Huy To Quang";
             this.AccountName_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(381, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin dashboard LH Beverage";
             // 
             // searchIcon_btn
             // 
@@ -291,12 +279,11 @@ namespace LHBeverage
         private System.Windows.Forms.Button OrdersNav_Btn;
         private System.Windows.Forms.Button ProductsNav_Btn;
         private System.Windows.Forms.Button CategoryNav_Btn;
-        private System.Windows.Forms.Button EmployeesNav_btn;
+        private System.Windows.Forms.Button StatisticalNav_btn;
         private System.Windows.Forms.Panel panelTopBar;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox Avatar_picturebox;
         private System.Windows.Forms.Label AccountName_lbl;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button searchIcon_btn;
         private System.Windows.Forms.TextBox search_tb;
         private System.Windows.Forms.Button ToppingsNav_Btn;

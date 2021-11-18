@@ -120,19 +120,19 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ToppingsNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAOwAAADsAXkocb0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABtUlEQVRYR+2Uvy8DYRjHKxF/gUXsFhvaBK2qH0MxMLTV9qqRIMaqaEJID0sF3S0WEomK8BfYdCFh
-        EOkvurg0JFyvaqKP9zlvk+vpD6WD4f0k39zle8/z/ea9XE7DYDAYjH+LxdLaYDN3bFjNWsFm1j6QawC9
-        Uj5dqx0YTApAKfRK+XStJtTxE/oW14juUV1EvKdSPu7g7lfEL1niDE1+zhgmApTPZgDHsE6Wb9wge+V8
-        3mk8xwwaVz0kJJQPy8tr0YPX2g3r7j7Ynh0Cnust6/Oc8ZDGVY+fM2WU5ahlR08OFZgahDW3qaLPu0yZ
-        hAgDlUQrC9nfCb7y5ET5MNSi3SBL6ZXyV939cBzay8bTAJVEKwu5jCbDV/cpOD06gN2tFdj02GFmrCs3
-        PdpZUIRCD5/hDM7iznUyVbSsmGhlIXER2hNi7l01nI2+fAg3Qlq4uL0TUXiPHj5TzaJOEmlwFnvtStHK
-        75BlT5HQnygXl2CexvyNhASTJFBSFZSTiKem67Uh8gbNJDRIwp9VZUoJOBORoJGu1Z4zgHr528C3IsFC
-        LA1zpNQRE6ENAP7252MwGAyNRvMJlOlupAlTDHYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG1SURBVFhH7ZS/
+        LwNhGMcrEX+BRewWG9oEraofQzEwtNX2qpEgxqpoQkgPSwXdLRYSiYrwF9h0IWEQ6S+6uDQkXK9qoo/3
+        OW+T6+kPpYPh/STf3OV7z/P95r1cTsNgMBiMf4vF0tpgM3dsWM1awWbWPpBrAL1SPl2rHRhMCkAp9Er5
+        dK0m1PET+hbXiO5RXUS8p1I+7uDuV8QvWeIMTX7OGCYClM9mAMewTpZv3CB75XzeaTzHDBpXPSQklA/L
+        y2vRg9faDevuPtieHQKe6y3r85zxkMZVj58zZZTlqGVHTw4VmBqENbepos+7TJmECAOVRCsL2d8JvvLk
+        RPkw1KLdIEvplfJX3f1wHNrLxtMAlUQrC7mMJsNX9yk4PTqA3a0V2PTYYWasKzc92llQhEIPn+EMzuLO
+        dTJVtKyYaGUhcRHaE2LuXTWcjb58CDdCWri4vRNReI8ePlPNok4SaXAWe+1K0crvkGVPkdCfKBeXYJ7G
+        /I2EBJMkUFIVlJOIp6brtSHyBs0kNEjCn1VlSgk4E5Ggka7VnjOAevnbwLciwUIsDXOk1BEToQ0A/vbn
+        YzAYDI1G8wmU6W6kCVMMdgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="EmployeesNav_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="StatisticalNav_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOSSURBVFhH7dZf

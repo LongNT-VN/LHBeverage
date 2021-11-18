@@ -61,6 +61,7 @@ namespace LHBeverage.ModelService
                 return order.ToList();
             }
         }
+     
         public static List<Order> GetOrderByStatus(Customer customer,String status)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
