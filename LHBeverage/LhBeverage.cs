@@ -20,6 +20,8 @@ namespace LHBeverage
     {
         Customer customerinfo = new Customer();
         public static LHBeverage instance;
+        int TempIDSelectted=9999;
+        string TempCouponCode = "";
         public LHBeverage(Customer customer)
         {
             InitializeComponent();
@@ -41,6 +43,13 @@ namespace LHBeverage
             }
             QuantityLabel.Text = quantity.ToString();
             AccountName_lbl.Text = customerinfo.Email;
+            Avatar_picturebox.Image = ConvertBase64toImage.ConverImageFromBase64(customerinfo.Avatar);
+        }
+        public void useCoupon(string Coupon)
+        {
+            TempCouponCode = Coupon;
+            CartBtn.PerformClick();
+            CartPagePanel.instance.UseCoupon_Click();
         }
         //Function
         private void LHBeverage_Shown(object sender, EventArgs e)
@@ -49,25 +58,13 @@ namespace LHBeverage
         }
         private void GetCartInfo()
         {
-
             Cart cart = CartConnect.LoadCart(customerinfo);
             CartPanel.Controls.Clear();
-            CartPagePanel cartPagePanel = new CartPagePanel(cart,customerinfo);
+            CartPagePanel cartPagePanel = new CartPagePanel(cart,customerinfo,TempCouponCode);
             cartPagePanel.Click += CartComponentBtn;
             //Chổ này chưa nhận anchor
             cartPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
             CartPanel.Controls.Add(cartPagePanel);
-
-        }
-        private void ResizePaneltoSmall(Panel panel)
-        {
-            panel.Width = panel.Width - 220;
-            panel.Location = new Point(300, 80);
-        }
-        private void ResizePaneltoLarge(Panel panel)
-        {
-            panel.Width = panel.Width + 220;
-            panel.Location = new Point(80, 80);
         }
 
 
@@ -76,12 +73,16 @@ namespace LHBeverage
         {
             int n = btn.Location.Y;
             Switch.Location = new Point(0, n);
+        }
+        private void SwitchMenu(Button btn)
+        {
             HomePanel.Visible = false;
             ProductPanel.Visible = false;
             CartPanel.Visible = false;
             DetailProductPanel.Visible = false;
             AccountPanel.Visible = false;
-            if (btn == HomeBtn)
+            TempIDSelectted = 99999;
+            if (btn == HomeBtn || btn == HomeLargeBtn)
             {
                 HomePanel.Visible = true;
                 HomePanel.Controls.Clear();
@@ -90,20 +91,20 @@ namespace LHBeverage
                 //homePagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
                 HomePanel.Controls.Add(homePagePanel);
             }
-            else if(btn==CartBtn)
+            else if (btn == CartBtn || btn == CartLargeBtn)
             {
                 CartPanel.Visible = true;
-               
                 GetCartInfo();
             }
-            else if(btn == ProductBtn)
+            else if (btn == ProductBtn || btn == ProductLargeBtn)
             {
+                search_tb.Text = "Search";
                 CreateCategory();
                 CreateItemCard();
                 CreateBigCard();
                 ProductPanel.Visible = true;
             }
-            else if(btn == UserBtn)
+            else if (btn == UserBtn || btn == UserLargeBtn)
             {
                 AccountPanel.Controls.Clear();
                 AccountPanel.Visible = true;
@@ -111,13 +112,13 @@ namespace LHBeverage
                 accountPagePanel.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
                 AccountPanel.Controls.Add(accountPagePanel);
             }
-
         }
         private void NavigationBtnSwitch(object sender, EventArgs e)
         {
             Button btn = sender as Button;
             SwitchLabelControl(btn, SwitchLabel);
             SwitchLabelControl(btn, SwitchLargeLabel);
+            SwitchMenu(btn);
         }
 
         private void MenuLarge_Click(object sender, EventArgs e)
@@ -127,11 +128,8 @@ namespace LHBeverage
             search_tb.Visible = false;
             searchIcon_btn.Visible = false;
             NavigationLargePanel.Location = new Point(0, 0);
-            ResizePaneltoSmall(ProductPanel);
             TopBarPanel.Width = TopBarPanel.Width - 220;
             TopBarPanel.Location = new Point(300, 0);
-            ResizePaneltoSmall(DetailProductPanel);
-            ResizePaneltoSmall(CartPanel);
         }
 
 
@@ -142,11 +140,8 @@ namespace LHBeverage
             NavigationLargePanel.Visible = false;
             search_tb.Visible = true;
             searchIcon_btn.Visible = true;
-            ResizePaneltoLarge(ProductPanel);
             TopBarPanel.Width = TopBarPanel.Width + 220;
             TopBarPanel.Location = new Point(80, 0);
-            ResizePaneltoLarge(DetailProductPanel);
-            ResizePaneltoLarge(CartPanel);
         }
 
         private void BtnSpecial_Hover(object sender, EventArgs e)
@@ -197,6 +192,12 @@ namespace LHBeverage
                     CategoryPanel.Controls.Add(categorycomponent);
                 }
             }
+            Category catagoryall = new Category();
+            catagoryall.Name = "All";
+            catagoryall.IDCate = 99999;
+            CategoryComponent categorycomponentall = new CategoryComponent(catagoryall);
+            categorycomponentall.Click += Filtercategory;
+            CategoryPanel.Controls.Add(categorycomponentall);
         }
         //Khởi tạo BigCard
         private void CreateBigCard()
@@ -256,11 +257,8 @@ namespace LHBeverage
             }
         }
         //Filter itemcard
-        private void CreateItemCardFilter(int idcategory)
+        private void CreateItemCardFilter(List<Product> products)
         {
-            BigCardPanel.Controls.Clear();
-            ItemcartsPanel.Controls.Clear();
-            List<Product> products = ProductConnect.SelectProductByCategory(idcategory);
             string productimagebase64 = "";
             Image productimage;
             foreach (Product product in products)
@@ -322,7 +320,7 @@ namespace LHBeverage
             }
 
         }
-        private void ItemClick(object sender, EventArgs e)
+        public void ItemClick(object sender, EventArgs e)
         {
             ItemcardComponent productcard = sender as ItemcardComponent;
             Button productbigcard = sender as Button;
@@ -394,7 +392,11 @@ namespace LHBeverage
             CategoryBtn.BackColor = Color.DarkOrange;
             if (CategoryBtn != null)
             {
-                CreateItemCardFilter(Convert.ToInt32(CategoryBtn.Name));
+                BigCardPanel.Controls.Clear();
+                ItemcartsPanel.Controls.Clear();
+                List<Product> products = ProductConnect.SelectProductByCategory(Convert.ToInt32(CategoryBtn.Name));
+                TempIDSelectted = Convert.ToInt32(CategoryBtn.Name);
+                CreateItemCardFilter(products);
             }
         }
 
@@ -416,5 +418,37 @@ namespace LHBeverage
             }
         }
 
+
+        private void search_tb_Click(object sender, EventArgs e)
+        {
+            if(search_tb.Text=="Search")
+            {
+                search_tb.Text = "";
+            }
+        }
+
+        private void search_tb_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                BigCardPanel.Controls.Clear();
+                ItemcartsPanel.Controls.Clear();
+                List<Product> products = ProductConnect.SelectProductBySearch(search_tb.Text, TempIDSelectted);
+                CreateItemCardFilter(products);
+            }
+        }
+
+        private void searchIcon_btn_Click(object sender, EventArgs e)
+        {
+            BigCardPanel.Controls.Clear();
+            ItemcartsPanel.Controls.Clear();
+            List<Product> products = ProductConnect.SelectProductBySearch(search_tb.Text, TempIDSelectted);
+            CreateItemCardFilter(products);
+        }
+
+        private void Avatar_picturebox_Click(object sender, EventArgs e)
+        {
+            UserBtn.PerformClick();
+        }
     }
 }

@@ -57,16 +57,27 @@ namespace LHBeverage.UserControls.Component
                 SizeMBtn.BackColor = Color.AntiqueWhite;
                 SizeLBtn.BackColor = Color.AntiqueWhite;
                 size = detailcart.Size;
+                if (product.QuantitysizeS == 0)
+                {
+                    SizeSBtn.BackColor = Color.DimGray;
+                    SizeSBtn.Enabled = false;
+                }
+                else if (product.QuantitysizeM == 0)
+                {
+                    SizeMBtn.BackColor = Color.DimGray;
+                    SizeMBtn.Enabled = false;
+                }
+                else if (product.QuantitysizeL == 0)
+                {
+                    SizeLBtn.BackColor = Color.DimGray;
+                    SizeLBtn.Enabled = false;
+                }
                 if (size == "S")
                 {
                     if(detailcartinfo.Size == "S")
                     {
                         SizeSBtn.BackColor = Color.SandyBrown;
-                    }
-                    if(detailcartinfo.Size != "S" && product.QuantitysizeS == 0)
-                    {
-                        SizeSBtn.BackColor = Color.DimGray;
-                        SizeSBtn.Enabled = false;
+                        SizeSBtn.Enabled = true;
                     }
                     PriceProduct = product.PriceS;
                 }
@@ -75,26 +86,19 @@ namespace LHBeverage.UserControls.Component
                     if (detailcartinfo.Size == "M")
                     {
                         SizeMBtn.BackColor = Color.SandyBrown;
+                        SizeMBtn.Enabled = true;
                     }
-                    else if(detailcartinfo.Size!="M")
-                    {
-                        SizeMBtn.BackColor = Color.DimGray;
-                        SizeMBtn.Enabled = false;
-                    }
+                    
                     PriceProduct = product.PriceM;
                 }
                 else if (size == "L")
                 {
                     if (detailcartinfo.Size == "L")
                     {
-
                         SizeLBtn.BackColor = Color.SandyBrown;
+                        SizeLBtn.Enabled = true;
                     }
-                    else if(detailcartinfo.Size != "L")
-                    {
-                        SizeLBtn.BackColor = Color.DimGray;
-                        SizeLBtn.Enabled = false;
-                    }
+                   
                     PriceProduct = product.PriceL;
                 }
                 NameItem.Text = product.Name;

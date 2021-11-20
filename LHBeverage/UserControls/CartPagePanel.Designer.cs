@@ -50,7 +50,7 @@ namespace LHBeverage.UserControls
             this.Title = new System.Windows.Forms.Label();
             this.NoneCartPanel = new System.Windows.Forms.Panel();
             this.ChooseBeverageBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.NoneCartPic = new System.Windows.Forms.PictureBox();
             this.NoticeNoneCart = new System.Windows.Forms.Label();
             this.FormInfoPagePanel = new System.Windows.Forms.Panel();
             this.WardPicker = new System.Windows.Forms.ComboBox();
@@ -85,6 +85,8 @@ namespace LHBeverage.UserControls
             this.Totalpaymentlabel = new System.Windows.Forms.Label();
             this.ContactInfomationLabel = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
+            this.BackCartBtn = new System.Windows.Forms.Button();
+            this.LHCoinshaveLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.PaymentMethodPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Method4Pic)).BeginInit();
@@ -93,7 +95,7 @@ namespace LHBeverage.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.Method1Pic)).BeginInit();
             this.TotalPricePanel.SuspendLayout();
             this.NoneCartPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoneCartPic)).BeginInit();
             this.FormInfoPagePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LHCoins)).BeginInit();
             this.SuspendLayout();
@@ -314,7 +316,7 @@ namespace LHBeverage.UserControls
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NoneCartPanel.Controls.Add(this.ChooseBeverageBtn);
-            this.NoneCartPanel.Controls.Add(this.pictureBox1);
+            this.NoneCartPanel.Controls.Add(this.NoneCartPic);
             this.NoneCartPanel.Controls.Add(this.NoticeNoneCart);
             this.NoneCartPanel.Location = new System.Drawing.Point(30, 100);
             this.NoneCartPanel.Name = "NoneCartPanel";
@@ -324,8 +326,7 @@ namespace LHBeverage.UserControls
             // 
             // ChooseBeverageBtn
             // 
-            this.ChooseBeverageBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChooseBeverageBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ChooseBeverageBtn.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ChooseBeverageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChooseBeverageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,21 +338,20 @@ namespace LHBeverage.UserControls
             this.ChooseBeverageBtn.Text = "Choose Beverage ?";
             this.ChooseBeverageBtn.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // NoneCartPic
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::LHBeverage.Properties.Resources.no_shopping_cart;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(496, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.NoneCartPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NoneCartPic.Image = global::LHBeverage.Properties.Resources.no_shopping_cart;
+            this.NoneCartPic.InitialImage = null;
+            this.NoneCartPic.Location = new System.Drawing.Point(496, 91);
+            this.NoneCartPic.Name = "NoneCartPic";
+            this.NoneCartPic.Size = new System.Drawing.Size(128, 128);
+            this.NoneCartPic.TabIndex = 1;
+            this.NoneCartPic.TabStop = false;
             // 
             // NoticeNoneCart
             // 
-            this.NoticeNoneCart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NoticeNoneCart.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NoticeNoneCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NoticeNoneCart.Location = new System.Drawing.Point(412, 229);
             this.NoticeNoneCart.Name = "NoticeNoneCart";
@@ -363,10 +363,12 @@ namespace LHBeverage.UserControls
             // FormInfoPagePanel
             // 
             this.FormInfoPagePanel.BackColor = System.Drawing.Color.White;
+            this.FormInfoPagePanel.Controls.Add(this.BackCartBtn);
             this.FormInfoPagePanel.Controls.Add(this.WardPicker);
             this.FormInfoPagePanel.Controls.Add(this.DistrictPicker);
             this.FormInfoPagePanel.Controls.Add(this.CityPicker);
             this.FormInfoPagePanel.Controls.Add(this.MapBtn);
+            this.FormInfoPagePanel.Controls.Add(this.LHCoinshaveLabel);
             this.FormInfoPagePanel.Controls.Add(this.ErrorDiscountLabel);
             this.FormInfoPagePanel.Controls.Add(this.TotalPaymentPrice);
             this.FormInfoPagePanel.Controls.Add(this.LHCoins);
@@ -794,6 +796,28 @@ namespace LHBeverage.UserControls
             this.ConfirmBtn.UseVisualStyleBackColor = false;
             this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
+            // BackCartBtn
+            // 
+            this.BackCartBtn.FlatAppearance.BorderSize = 0;
+            this.BackCartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackCartBtn.Image = global::LHBeverage.Properties.Resources.arrow;
+            this.BackCartBtn.Location = new System.Drawing.Point(0, 0);
+            this.BackCartBtn.Name = "BackCartBtn";
+            this.BackCartBtn.Size = new System.Drawing.Size(50, 30);
+            this.BackCartBtn.TabIndex = 32;
+            this.BackCartBtn.UseVisualStyleBackColor = true;
+            this.BackCartBtn.Click += new System.EventHandler(this.BackCartBtn_Click);
+            // 
+            // LHCoinshaveLabel
+            // 
+            this.LHCoinshaveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LHCoinshaveLabel.ForeColor = System.Drawing.Color.LimeGreen;
+            this.LHCoinshaveLabel.Location = new System.Drawing.Point(860, 342);
+            this.LHCoinshaveLabel.Name = "LHCoinshaveLabel";
+            this.LHCoinshaveLabel.Size = new System.Drawing.Size(230, 23);
+            this.LHCoinshaveLabel.TabIndex = 29;
+            this.LHCoinshaveLabel.Text = "You have 0 LHCoins";
+            // 
             // CartPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,7 +840,7 @@ namespace LHBeverage.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.Method1Pic)).EndInit();
             this.TotalPricePanel.ResumeLayout(false);
             this.NoneCartPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoneCartPic)).EndInit();
             this.FormInfoPagePanel.ResumeLayout(false);
             this.FormInfoPagePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LHCoins)).EndInit();
@@ -847,7 +871,7 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Panel NoneCartPanel;
         private System.Windows.Forms.Label NoticeNoneCart;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox NoneCartPic;
         private System.Windows.Forms.Button ChooseBeverageBtn;
         private System.Windows.Forms.Panel FormInfoPagePanel;
         private System.Windows.Forms.Button ConfirmBtn;
@@ -882,5 +906,7 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.ComboBox DistrictPicker;
         private System.Windows.Forms.Label FullAddress;
         private System.Windows.Forms.Label PromotionLabel;
+        private System.Windows.Forms.Button BackCartBtn;
+        private System.Windows.Forms.Label LHCoinshaveLabel;
     }
 }

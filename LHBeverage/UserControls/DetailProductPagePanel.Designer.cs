@@ -51,6 +51,7 @@ namespace LHBeverage.UserControls
             this.pricelabel = new System.Windows.Forms.Label();
             this.NameItem = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.DetailItemPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddCartBtn)).BeginInit();
@@ -59,10 +60,12 @@ namespace LHBeverage.UserControls
             // 
             // RelationItemPanel
             // 
-            this.RelationItemPanel.BackColor = System.Drawing.Color.White;
-            this.RelationItemPanel.Location = new System.Drawing.Point(60, 550);
+            this.RelationItemPanel.AutoScroll = true;
+            this.RelationItemPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.RelationItemPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.RelationItemPanel.Location = new System.Drawing.Point(60, 580);
             this.RelationItemPanel.Name = "RelationItemPanel";
-            this.RelationItemPanel.Size = new System.Drawing.Size(1050, 300);
+            this.RelationItemPanel.Size = new System.Drawing.Size(1050, 310);
             this.RelationItemPanel.TabIndex = 0;
             // 
             // DetailItemPanel
@@ -144,7 +147,7 @@ namespace LHBeverage.UserControls
             this.ListImagePanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ListImagePanel.Location = new System.Drawing.Point(700, 375);
             this.ListImagePanel.Name = "ListImagePanel";
-            this.ListImagePanel.Size = new System.Drawing.Size(300, 80);
+            this.ListImagePanel.Size = new System.Drawing.Size(300, 87);
             this.ListImagePanel.TabIndex = 10;
             // 
             // DescriptionItem
@@ -320,10 +323,21 @@ namespace LHBeverage.UserControls
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(287, 850);
+            this.panel1.Location = new System.Drawing.Point(60, 860);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 30);
+            this.panel1.Size = new System.Drawing.Size(1050, 30);
             this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(60, 530);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1052, 40);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Relation Beverage";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DetailProductPagePanel
             // 
@@ -331,11 +345,12 @@ namespace LHBeverage.UserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1171, 583);
+            this.Size = new System.Drawing.Size(1237, 583);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -369,5 +384,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label pricelabel;
         private System.Windows.Forms.FlowLayoutPanel ListToppings;
         private System.Windows.Forms.Label QuantityProduct;
+        private System.Windows.Forms.Label label1;
     }
 }

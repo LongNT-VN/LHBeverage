@@ -26,7 +26,7 @@ namespace LHBeverage.ModelService
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 var categories = connection.Query<Category>($"select * from Category where IDCate ='{idCate}'", new DynamicParameters());
-                return categories.First();
+                return categories.Count() !=0 ?categories.First() : null;
             }
         }
         public static void CreateCategory(Category category)
@@ -50,6 +50,16 @@ namespace LHBeverage.ModelService
                 connection.Execute($"Delete From Category where IDCate='{category.IDCate}'", category);
             }
         }
+
+        public static List<Category> Searchcategory(string searchkey)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                var categories = connection.Query<Category>($"Select * From Category where Name LIKE '%{searchkey}%'", new DynamicParameters());
+                return categories.ToList();
+            }
+        }
+
         private static string LoadConnectionString(string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

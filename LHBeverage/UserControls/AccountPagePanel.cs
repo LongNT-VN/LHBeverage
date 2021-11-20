@@ -51,7 +51,14 @@ namespace LHBeverage.UserControls
 
                 //Gender_cb.SelectedValue = customer.Gender;
             }
-
+            List<Coupon> coupons = new List<Coupon>();
+            coupons = CouponConnect.GetAllCoupon();
+            foreach (Coupon coupon in coupons)
+            {
+                {
+                    ListCopon.Controls.Add(new Couponitem(coupon));
+                }
+            }
             PhoneNb_tb.Text = customer.PhoneNumber;
             Address_tb.Text = customer.Address;
             Email_tb.Text = customer.Email;
@@ -60,21 +67,25 @@ namespace LHBeverage.UserControls
        
         private void btn_Mydetail_Click(object sender, EventArgs e)
         {
+            DetailOrderPanel.Visible = false;
+            CouponPanel.Visible = false;
+            MyOrder_panel.Visible = false;
             Account_MyDetail_panel.Visible = true;
             Account_MyDetail_panel.BringToFront();
             btn_Mydetail.BackColor = globalColorActive;
             btn_MyOrders.BackColor = Color.White;
-            DetailOrderPanel.Visible = false;
+
         }
 
         private void btn_MyOrders_Click(object sender, EventArgs e)
         {
             Account_MyDetail_panel.Visible = false;
+            DetailOrderPanel.Visible = false;
+            CouponPanel.Visible = false;
             MyOrder_panel.Visible = true;
             MyOrder_panel.BringToFront();
             btn_Mydetail.BackColor = Color.White;
             btn_MyOrders.BackColor = globalColorActive;
-            DetailOrderPanel.Visible = false;
             ChooseDeliveryBtn.PerformClick();
            
         }
@@ -239,5 +250,17 @@ namespace LHBeverage.UserControls
             btn_MyOrders.PerformClick();
         }
 
+        private void btn_Coupon_Click(object sender, EventArgs e)
+        {
+            Account_MyDetail_panel.Visible = false;
+            MyOrder_panel.Visible = false;
+            DetailOrderPanel.Visible = false;
+            CouponPanel.Visible = true;
+            CouponPanel.BringToFront();
+            btn_Mydetail.BackColor = Color.White;
+            btn_MyOrders.BackColor = Color.White;
+            btn_Coupon.BackColor = globalColorActive;
+
+        }
     }
 }

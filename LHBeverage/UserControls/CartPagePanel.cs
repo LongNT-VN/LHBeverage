@@ -13,17 +13,35 @@ namespace LHBeverage.UserControls
     public partial class CartPagePanel : UserControl
     {
         Cart cartinfo;
+        Customer customerinfo;
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         int ShippingPriceinfo = 0;
         int Discountinfo = 0;
         int LHCoininfo = 0;
+        int Total = 0;
         string Deliverymethod = "";
-        public CartPagePanel(Cart cart, Customer customer)
+        public static CartPagePanel instance;
+        public CartPagePanel(Cart cart, Customer customer, string CouponCode ="")
         {
             InitializeComponent();
+            customerinfo = customer;
             CreateLocationData();
             CreateCartItem(cart);
-            init(customer);
+            init(customer, CouponCode);
+            instance = this;
+            this.Invalidate(true);
+        }
+        public void UseCoupon_Click()
+        {
+            if (NoneCartPanel.Visible)
+            {
+                MessageBox.Show("Bạn có sản phẩm nào. Vui lòng thêm sản phẩm để sử dụng mã!");
+                ChooseBeverageBtn.PerformClick();
+            }
+            else
+            {
+                ProceedBtn.PerformClick();
+            }
         }
         private void CreateCartItem(Cart cart)
         {
@@ -66,14 +84,16 @@ namespace LHBeverage.UserControls
 
         private void ProceedBtn_Click(object sender, EventArgs e)
         {
-
             FormInfoPagePanel.Visible = true;
             MethodBox.SelectedIndex = 0;
         }
         private void ConfirmBtn_Click(object sender, EventArgs e)
         {
+            customerinfo.LHCoins -= LHCoininfo;
+            customerinfo.LHCoins += Total/10;
             OrderConnect.CreateOrder(cartinfo,ShippingPriceinfo,Discountinfo,LHCoininfo,Deliverymethod);    
             DetailCartConnect.ClearCart(cartinfo);
+            CustomerConnect.UpdateCustomerLHCoins(customerinfo);
             ItemsCart.Controls.Clear();
             CreateCartItem(cartinfo);
         }
@@ -83,23 +103,27 @@ namespace LHBeverage.UserControls
             List<DetailCart> itemcarts = DetailCartConnect.LoadDetailCart(cartinfo);
             foreach (DetailCart itemcart in itemcarts)
             {
-                string[] idingredients = itemcart.ListIDIngredient.Split(',');
-                ItemCart itemCart = new ItemCart(itemcart);
-                itemCart.Click += Redisplay;
-                ItemsCart.Controls.Add(itemCart);
                 total += itemcart.Price;
             }
-            LHCoins.Maximum = total;
-            int Totalpayment= total - LHCoin - (total - LHCoin) * Discount / 100 + ShippingPrice;
-            if(Totalpayment!=0)
+            Total = total - LHCoin - (total - LHCoin) * Discount / 100 + ShippingPrice;
+            if(Total != 0)
             {
-                TotalPaymentPrice.Text = Totalpayment.ToString("#,###", cul.NumberFormat) + " VNĐ";
+                TotalPaymentPrice.Text = Total.ToString("#,###", cul.NumberFormat) + " VNĐ";
             }
             else
             {
                 TotalPaymentPrice.Text = "Miễn phí";
             }
-            
+
+            if (Total < customerinfo.LHCoins)
+            {
+                LHCoins.Maximum = Total;
+            }
+            else
+            {
+                LHCoins.Maximum = customerinfo.LHCoins;
+            }
+
         }
 
         public new event EventHandler Click
@@ -225,9 +249,12 @@ namespace LHBeverage.UserControls
         private void CouponBox_Leave(object sender, EventArgs e)
         {
             TextBox CouponTextBox = sender as TextBox;
-            if (CouponTextBox.Text != "LHBeverage")
+            Coupon coupon = CouponConnect.GetCouponbyCode(CouponTextBox.Text);
+            if(coupon==null)
             {
+                Discountinfo = 0;
                 ErrorDiscountLabel.Visible = true;
+                caltotal(ShippingPriceinfo, Discountinfo, LHCoininfo);
             }
         }
 
@@ -235,8 +262,10 @@ namespace LHBeverage.UserControls
         {
             TextBox CouponTextBox = sender as TextBox;
             ErrorDiscountLabel.Visible = false;
-            if (CouponTextBox.Text == "LHBeverage")
+            Coupon coupon = CouponConnect.GetCouponbyCode(CouponTextBox.Text);
+            if(coupon!=null)
             {
+                Discountinfo = coupon.Discountpercent;
                 AddingFee();
                 caltotal(ShippingPriceinfo, Discountinfo, LHCoininfo);
                 CouponDiscountLabel.Visible = true;
@@ -335,12 +364,17 @@ namespace LHBeverage.UserControls
                 }
             }
         }
-        private void init(Customer customer)
+        private void init(Customer customer, string CouponCode)
         {
+            LHCoinshaveLabel.Text = "You have " + customer.LHCoins + " LHCoins";
             AddressTextBox.Text = customer.Address;
             PhoneNumberTextBox.Text = customer.PhoneNumber;
             FirstNameTextBox.Text = customer.Name;
             EmailTextBox.Text = customer.Email;
+            if(CouponCode!="")
+            {
+                CouponBox.Text = CouponCode;
+            }
             initlocation();
         }
 
@@ -375,10 +409,6 @@ namespace LHBeverage.UserControls
                 ShippingPriceinfo = 0;
             }
             PriceShipping.Text = ShippingPriceinfo.ToString("#,###", cul.NumberFormat) + " VNĐ";
-            if (CouponBox.Text == "LHBeverage")
-            {
-                Discountinfo = 30;
-            }
             LHCoininfo = Convert.ToInt32(LHCoins.Value);
         }
 
@@ -391,6 +421,13 @@ namespace LHBeverage.UserControls
             {
                 AddressTextBox.Text = map.returnaddress;
             }
+        }
+
+        private void BackCartBtn_Click(object sender, EventArgs e)
+        {
+            FormInfoPagePanel.Visible = false;
+            ItemsCart.Visible = true;
+
         }
     }
 }

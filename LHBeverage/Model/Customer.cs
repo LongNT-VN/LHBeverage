@@ -18,5 +18,6 @@ namespace LHBeverage.Model
         public string PhoneNumber { get; set; }
         public string Authorized { get; set; }
         public string Avatar { get; set; }
+        public int LHCoins { get; set; }
     }
 }

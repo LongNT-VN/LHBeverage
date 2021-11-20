@@ -124,6 +124,7 @@
       <DependentUpon>Map.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelService\CartConnect.cs" />
+    <Compile Include="ModelService\CouponConnect.cs" />
     <Compile Include="ModelService\DetailCartConnect.cs" />
     <Compile Include="ModelService\CategoryConnect.cs" />
     <Compile Include="ModelService\CustomerConnect.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="ModelService\ToppingConnect.cs" />
     <Compile Include="Model\Cart.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Coupon.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\DetailCart.cs" />
     <Compile Include="Model\DetailImage.cs" />
@@ -256,6 +258,12 @@
     </Compile>
     <Compile Include="UserControls\Component\AdminCardCategory.Designer.cs">
       <DependentUpon>AdminCardCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Component\Couponitem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Component\Couponitem.Designer.cs">
+      <DependentUpon>Couponitem.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Component\ItemCardcs.cs">
       <SubType>UserControl</SubType>
@@ -416,6 +424,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Component\Couponitem.resx">
+      <DependentUpon>Couponitem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Component\ItemCart.resx">
       <DependentUpon>ItemCart.cs</DependentUpon>

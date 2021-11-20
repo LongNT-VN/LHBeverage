@@ -331,6 +331,7 @@ namespace LHBeverage
             this.Avatar_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Avatar_picturebox.TabIndex = 6;
             this.Avatar_picturebox.TabStop = false;
+            this.Avatar_picturebox.Click += new System.EventHandler(this.Avatar_picturebox_Click);
             // 
             // AccountName_lbl
             // 
@@ -357,6 +358,7 @@ namespace LHBeverage
             this.searchIcon_btn.Size = new System.Drawing.Size(16, 16);
             this.searchIcon_btn.TabIndex = 1;
             this.searchIcon_btn.UseVisualStyleBackColor = false;
+            this.searchIcon_btn.Click += new System.EventHandler(this.searchIcon_btn_Click);
             // 
             // search_tb
             // 
@@ -368,6 +370,8 @@ namespace LHBeverage
             this.search_tb.Size = new System.Drawing.Size(220, 20);
             this.search_tb.TabIndex = 0;
             this.search_tb.Text = "Search";
+            this.search_tb.Click += new System.EventHandler(this.search_tb_Click);
+            this.search_tb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_tb_KeyDown);
             // 
             // NavigationLargePanel
             // 
@@ -436,6 +440,7 @@ namespace LHBeverage
             this.UserLargeBtn.TabIndex = 9;
             this.UserLargeBtn.Text = "User";
             this.UserLargeBtn.UseVisualStyleBackColor = false;
+            this.UserLargeBtn.Click += new System.EventHandler(this.NavigationBtnSwitch);
             // 
             // CartMoreOptionBtn
             // 
@@ -582,14 +587,15 @@ namespace LHBeverage
             // 
             // BackHomeBtn
             // 
+            this.BackHomeBtn.BackColor = System.Drawing.SystemColors.Control;
             this.BackHomeBtn.FlatAppearance.BorderSize = 0;
             this.BackHomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackHomeBtn.Image = global::LHBeverage.Properties.Resources.arrow;
-            this.BackHomeBtn.Location = new System.Drawing.Point(0, 0);
+            this.BackHomeBtn.Location = new System.Drawing.Point(10, 20);
             this.BackHomeBtn.Name = "BackHomeBtn";
             this.BackHomeBtn.Size = new System.Drawing.Size(50, 30);
             this.BackHomeBtn.TabIndex = 0;
-            this.BackHomeBtn.UseVisualStyleBackColor = true;
+            this.BackHomeBtn.UseVisualStyleBackColor = false;
             this.BackHomeBtn.Click += new System.EventHandler(this.BackHomeBtn_Click);
             // 
             // CartPanel

@@ -100,6 +100,7 @@ namespace LHBeverage
             customer.Gender = "";
             customer.Password = PasswordTextBox.Text;
             customer.Authorized = "Member";
+            customer.LHCoins = 0;
             CustomerConnect.CreateCustomer(customer);
             Customer customer1 = CustomerConnect.GetCustomerByEmail(customer.Email);
             CartConnect.CreateCart(customer1);

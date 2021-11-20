@@ -1,5 +1,7 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
+using LHBeverage.UserControls.Component;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -101,6 +103,30 @@ namespace LHBeverage.UserControls
                 toppingitem.Name = topping.IDTopping.ToString();
                 toppingitem.CheckedChanged += CheckTopping_Click;
                 ListToppings.Controls.Add(toppingitem);
+            }
+            List<Product> products = new List<Product>();
+            products = ProductConnect.SelectProductByCategory(product.IDCate);
+            string productimagebase64 = "";
+            foreach (Product product1 in products)
+            {
+                if (product1 != null)
+                {
+                    //truyền vào product để chọn select tất cả các hình có trùng IDPRO
+                    List<DetailImage> imagesrelations = DetailImageConnect.LoadImage(product1.IDPro);
+                    foreach (DetailImage image in imagesrelations)
+                    {
+                        if (image != null)
+                        {
+                            //Lấy hình đầu tiên ra làm hình đại diện sản phẩm
+                            productimagebase64 = image.ImageData;
+                            break;
+                        }
+                    }
+                    Image productimage = ConvertBase64toImage.ConverImageFromBase64(productimagebase64);
+                    ItemcardComponent itemcart = new ItemcardComponent(product1, productimage);
+                    itemcart.Click += LHBeverage.instance.ItemClick;
+                    RelationItemPanel.Controls.Add(itemcart);
+                }
             }
         }
         private void CheckTopping_Click(object sender, EventArgs e)

@@ -40,7 +40,7 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Customer (Name, Email, Password, Age, Gender, Address, PhoneNumber, Authorized) values (@Name, @Email, @Password, @Age, @Gender, @Address, @PhoneNumber, @Authorized)", customer);
+                connection.Execute("insert into Customer (Name, Email, Password, Age, Gender, Address, PhoneNumber, Authorized,LHCoins) values (@Name, @Email, @Password, @Age, @Gender, @Address, @PhoneNumber, @Authorized,@LHCoins)", customer);
             }
         }
         public static int CheckLogin(string email, string password)
@@ -79,6 +79,13 @@ namespace LHBeverage.ModelService
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 connection.Query<Customer>($"Update Customer set Email ='{customer.Email}',Password='{customer.Password}',Age='{customer.Age}',Gender='{customer.Gender}',Address='{customer.Address}', PhoneNumber = '{customer.PhoneNumber}',Authorized='{customer.Authorized}',Name='{customer.Name}',Avatar='{customer.Avatar}' where IDCus='{customer.IDCus}'", new DynamicParameters());
+            }
+        }
+        public static void UpdateCustomerLHCoins(Customer customer)
+        {
+            using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
+            {
+                connection.Query<Customer>($"Update Customer set LHCoins ='{customer.LHCoins}' where IDCus='{customer.IDCus}'", new DynamicParameters());
             }
 
         }

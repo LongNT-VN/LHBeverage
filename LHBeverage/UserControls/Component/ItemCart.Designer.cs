@@ -165,11 +165,11 @@ namespace LHBeverage.UserControls.Component
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveBtn.ForeColor = System.Drawing.Color.White;
-            this.RemoveBtn.Location = new System.Drawing.Point(747, 0);
+            this.RemoveBtn.Location = new System.Drawing.Point(692, 160);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(23, 190);
+            this.RemoveBtn.Size = new System.Drawing.Size(78, 30);
             this.RemoveBtn.TabIndex = 2;
-            this.RemoveBtn.Text = "x";
+            this.RemoveBtn.Text = "Delete";
             this.RemoveBtn.UseVisualStyleBackColor = false;
             this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
