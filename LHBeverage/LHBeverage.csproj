@@ -105,6 +105,7 @@
     <Compile Include="Helper\AddNewPage.cs" />
     <Compile Include="Helper\ConvertBase64toImage.cs" />
     <Compile Include="Helper\ConvertImageToBase64.cs" />
+    <Compile Include="Helper\SetMode.cs" />
     <Compile Include="LhBeverage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,12 +266,6 @@
     <Compile Include="UserControls\Component\Couponitem.Designer.cs">
       <DependentUpon>Couponitem.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Component\ItemCardcs.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Component\ItemCardcs.Designer.cs">
-      <DependentUpon>ItemCardcs.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\AdminDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -336,12 +331,6 @@
     </Compile>
     <Compile Include="UserControls\HomePagePanel.Designer.cs">
       <DependentUpon>HomePagePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\ProductPagePanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ProductPagePanel.Designer.cs">
-      <DependentUpon>ProductPagePanel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminCancelOrder.resx">
       <DependentUpon>AdminCancelOrder.cs</DependentUpon>
@@ -457,9 +446,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomePagePanel.resx">
       <DependentUpon>HomePagePanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ProductPagePanel.resx">
-      <DependentUpon>ProductPagePanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LHBeveragedb.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

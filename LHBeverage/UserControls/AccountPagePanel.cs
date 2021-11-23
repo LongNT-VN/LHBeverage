@@ -23,14 +23,14 @@ namespace LHBeverage.UserControls
         public AccountPagePanel(Customer cust )
         {
             InitializeComponent();
-            globalColorActive = Color.Azure;
+            globalColorActive = Color.DarkGoldenrod;
             initDataAccountPage(cust);
             customerTmp = cust;
             instance = this;
-
         }
         void initDataAccountPage(Customer customer)
         {
+            setmode();
             AvatarTmp = new Bitmap(Avatar_Pb.Image);
             if (customer.Avatar != null)
             {
@@ -62,29 +62,51 @@ namespace LHBeverage.UserControls
             PhoneNb_tb.Text = customer.PhoneNumber;
             Address_tb.Text = customer.Address;
             Email_tb.Text = customer.Email;
+            LHCoinsLabel.Text = customer.LHCoins + " LHCoins";
+            LHCoinsUse.Maximum = customer.LHCoins;
+            if (LHCoinsUse.Value == 0 || customer.LHCoins == 0)
+            {
+                BuyLotteryBtn.Enabled = false;
+                BuyLotteryBtn.BackColor = Color.DimGray;
+            }
+            else
+            {
+                BuyLotteryBtn.Enabled = true;
+                BuyLotteryBtn.BackColor = Color.DarkGoldenrod;
+            }
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                btn_Mode.Text = "Light Mode";
+            }
+            else
+            {
+                btn_Mode.Text = "Dark Mode";
+            }
         }
 
        
         private void btn_Mydetail_Click(object sender, EventArgs e)
         {
+            clearchoosingbtn();
             DetailOrderPanel.Visible = false;
             CouponPanel.Visible = false;
             MyOrder_panel.Visible = false;
+            LHCoinsPanel.Visible = false;
             Account_MyDetail_panel.Visible = true;
             Account_MyDetail_panel.BringToFront();
             btn_Mydetail.BackColor = globalColorActive;
-            btn_MyOrders.BackColor = Color.White;
 
         }
 
         private void btn_MyOrders_Click(object sender, EventArgs e)
         {
+            clearchoosingbtn();
             Account_MyDetail_panel.Visible = false;
             DetailOrderPanel.Visible = false;
             CouponPanel.Visible = false;
+            LHCoinsPanel.Visible = false;
             MyOrder_panel.Visible = true;
             MyOrder_panel.BringToFront();
-            btn_Mydetail.BackColor = Color.White;
             btn_MyOrders.BackColor = globalColorActive;
             ChooseDeliveryBtn.PerformClick();
            
@@ -196,6 +218,10 @@ namespace LHBeverage.UserControls
             ChooseCancelBtn.BackColor = Color.White;
             ChooseDeliveryBtn.BackColor = Color.White;
             ChooseSuccessBtn.BackColor = Color.White;
+            ChooseConfirmBtn.ForeColor = Color.Black;
+            ChooseCancelBtn.ForeColor = Color.Black;
+            ChooseDeliveryBtn.ForeColor = Color.Black;
+            ChooseSuccessBtn.ForeColor = Color.Black;
         }
         public void DetailOrder(object sender, EventArgs e)
         {
@@ -223,6 +249,7 @@ namespace LHBeverage.UserControls
                 PricePayment_lbl.Text = order.Totalpayment.ToString();
                 Discount_lbl.Text = order.Discount.ToString();
                 LhCoin_lbl.Text = order.LHcoin.ToString();
+                DateOrder.Text = order.DateOrder.ToString();
                 List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(Convert.ToInt32(btn.Tag));
                 foreach (DetailOrder detail in detailOrders)
                 {
@@ -249,18 +276,172 @@ namespace LHBeverage.UserControls
         {
             btn_MyOrders.PerformClick();
         }
-
+        private void clearchoosingbtn()
+        {
+            if (LHBeverage.instance.CurrentMode == 0)
+            {
+                btn_Mydetail.BackColor = Color.White;
+                btn_MyOrders.BackColor = Color.White;
+                btn_LHCoins.BackColor = Color.White;
+                btn_Coupon.BackColor = Color.White;
+                btn_Mode.BackColor = Color.White;
+            }
+            else
+            {
+                btn_Mydetail.BackColor = Color.Black;
+                btn_MyOrders.BackColor = Color.Black;
+                btn_LHCoins.BackColor = Color.Black;
+                btn_Coupon.BackColor = Color.Black;
+                btn_Mode.BackColor = Color.Black;
+            }
+        }
         private void btn_Coupon_Click(object sender, EventArgs e)
         {
+            clearchoosingbtn();
             Account_MyDetail_panel.Visible = false;
             MyOrder_panel.Visible = false;
             DetailOrderPanel.Visible = false;
+            LHCoinsPanel.Visible = false;
             CouponPanel.Visible = true;
             CouponPanel.BringToFront();
-            btn_Mydetail.BackColor = Color.White;
-            btn_MyOrders.BackColor = Color.White;
             btn_Coupon.BackColor = globalColorActive;
 
+        }
+        
+        private void btn_LHCoins_Click(object sender, EventArgs e)
+        {
+            clearchoosingbtn();
+            Account_MyDetail_panel.Visible = false;
+            MyOrder_panel.Visible = false;
+            DetailOrderPanel.Visible = false;
+            LHCoinsPanel.Visible = true;
+            CouponPanel.Visible = false;
+            CouponPanel.BringToFront();
+            btn_LHCoins.BackColor = globalColorActive;
+        }
+
+        private void BuyLotteryBtn_Click(object sender, EventArgs e)
+        {
+            customerTmp.LHCoins -= Convert.ToInt32(LHCoinsUse.Value);
+            CustomerConnect.UpdateCustomerLHCoins(customerTmp);
+            LHCoinsLabel.Text = customerTmp.LHCoins.ToString() + " LHCoins";
+            Random random = new Random();
+            int luckynumber = random.Next(0, 999999);
+            int customernumber = Convert.ToInt32(Number1.Text) * 100000 + Convert.ToInt32(Number2.Text) * 10000 + Convert.ToInt32(Number3.Text) * 1000 + Convert.ToInt32(Number4.Text) * 100 + Convert.ToInt32(Number5.Text) * 10 + Convert.ToInt32(Number6.Text);
+            LuckyNumberLabel.Text = luckynumber.ToString();
+            if (luckynumber > 10000 && luckynumber <= 100000)
+            {
+                LuckyNumberLabel.Text = "0" + luckynumber.ToString();
+            }
+            else if (luckynumber > 1000 && luckynumber <= 10000)
+            {
+                LuckyNumberLabel.Text = "00" + luckynumber.ToString();
+            }
+            else if (luckynumber > 100 && luckynumber <= 1000)
+            {
+                LuckyNumberLabel.Text = "000" + luckynumber.ToString();
+            }
+            else if (luckynumber > 10 && luckynumber <= 100)
+            {
+                LuckyNumberLabel.Text = "0000" + luckynumber.ToString();
+            }
+            else if (luckynumber <= 10)
+            {
+                LuckyNumberLabel.Text = "00000" + luckynumber.ToString();
+            }
+
+            if (luckynumber == customernumber)
+            {
+                ResultLabel.Text = "Binggo!!!! You are win the special prize" + Convert.ToInt32(LHCoinsUse.Value) * 1000 +" LHCoins";
+                customerTmp.LHCoins += Convert.ToInt32(LHCoinsUse.Value) * 1000;
+                CustomerConnect.UpdateCustomerLHCoins(customerTmp);
+                LHCoinsLabel.Text = customerTmp.LHCoins.ToString()+ " LHCoins";
+            }
+            else if (luckynumber%100== customernumber%100)
+            {
+                ResultLabel.Text = "Binggo!!!! You are win the consolation prize " + Convert.ToInt32(LHCoinsUse.Value) * 10 + " LHCoins";
+                customerTmp.LHCoins += Convert.ToInt32(LHCoinsUse.Value) * 10;
+                CustomerConnect.UpdateCustomerLHCoins(customerTmp);
+                LHCoinsLabel.Text = customerTmp.LHCoins.ToString() + " LHCoins";
+            }
+            else
+            {
+                ResultLabel.Text = "Wish you luck next time!";
+            }
+            LHCoinsUse.Maximum = customerTmp.LHCoins;
+            if(LHCoinsUse.Maximum < LHCoinsUse.Value)
+            {
+                LHCoinsUse.Value = LHCoinsUse.Maximum;
+            }
+        }
+
+        private void LHCoinsUse_ValueChanged(object sender, EventArgs e)
+        {
+            if (LHCoinsUse.Value == 0 || customerTmp.LHCoins == 0)
+            {
+                BuyLotteryBtn.Enabled = false;
+                BuyLotteryBtn.BackColor = Color.DimGray;
+            }
+            else
+            {
+                BuyLotteryBtn.Enabled = true;
+                BuyLotteryBtn.BackColor = Color.DarkGoldenrod;
+            }
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            LHBeverage.instance.Logout();
+        }
+
+        private void btn_Mode_Click(object sender, EventArgs e)
+        {
+            LHBeverage.instance.UpdateMode();
+            LHBeverage.instance.LHBeverageCurrentMode(LHBeverage.instance.CurrentMode);
+            setmode();
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                btn_Mode.Text = "Light Mode";
+            }
+            else
+            {
+                btn_Mode.Text = "Dark Mode";
+            }
+        }
+        private void Number3_Click(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            textbox.Text = "";
+        }
+
+        private void Number1_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            if (System.Text.RegularExpressions.Regex.IsMatch(textbox.Text, "[^0-9]"))
+            {
+                textbox.Text = "";
+            }
+        }
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.FromArgb(30, 30, 30));
+                MenuControlAccountPanel.BackColor = Color.FromArgb(30, 30, 30);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.Gainsboro);
+                MenuControlAccountPanel.BackColor = Color.Gainsboro;
+            }
+            Seperate.BackColor = Color.DimGray;
+            Seperate2.BackColor = Color.DimGray;
+            Seperate3.BackColor = Color.DimGray;
+            Seperate4.BackColor = Color.DimGray;
+            btn_Logout.BackColor = Color.Red;
+            clearchoosing();
+            clearchoosingbtn();
+            btn_Mydetail.BackColor = Color.DarkGoldenrod;
         }
     }
 }

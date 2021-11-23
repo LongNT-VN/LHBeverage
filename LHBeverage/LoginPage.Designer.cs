@@ -32,7 +32,6 @@ namespace LHBeverage
             this.LoginForm = new System.Windows.Forms.Panel();
             this.ErrorPasswordLabel = new System.Windows.Forms.Label();
             this.ErrorEmailLabel = new System.Windows.Forms.Label();
-            this.OtherLabel = new System.Windows.Forms.Label();
             this.RegisterBtn = new System.Windows.Forms.Button();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.PaswwordLabel = new System.Windows.Forms.Label();
@@ -50,7 +49,6 @@ namespace LHBeverage
             // 
             this.LoginForm.Controls.Add(this.ErrorPasswordLabel);
             this.LoginForm.Controls.Add(this.ErrorEmailLabel);
-            this.LoginForm.Controls.Add(this.OtherLabel);
             this.LoginForm.Controls.Add(this.RegisterBtn);
             this.LoginForm.Controls.Add(this.PasswordTextBox);
             this.LoginForm.Controls.Add(this.PaswwordLabel);
@@ -86,16 +84,6 @@ namespace LHBeverage
             this.ErrorEmailLabel.TabIndex = 10;
             this.ErrorEmailLabel.Text = "Please enter correct email !";
             this.ErrorEmailLabel.Visible = false;
-            // 
-            // OtherLabel
-            // 
-            this.OtherLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherLabel.Location = new System.Drawing.Point(100, 457);
-            this.OtherLabel.Name = "OtherLabel";
-            this.OtherLabel.Size = new System.Drawing.Size(514, 40);
-            this.OtherLabel.TabIndex = 9;
-            this.OtherLabel.Text = "Logo Google, Facebook nếu làm chức năng được";
-            this.OtherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RegisterBtn
             // 
@@ -209,6 +197,7 @@ namespace LHBeverage
             // 
             // LoginPage
             // 
+            this.AcceptButton = this.LoginBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
@@ -236,7 +225,6 @@ namespace LHBeverage
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.Button RegisterBtn;
-        private System.Windows.Forms.Label OtherLabel;
         private System.Windows.Forms.Label ErrorEmailLabel;
         private System.Windows.Forms.Label ErrorPasswordLabel;
     }

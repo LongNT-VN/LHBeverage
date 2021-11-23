@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using LHBeverage.UserControls.Component;
 using System;
@@ -24,12 +25,36 @@ namespace LHBeverage.UserControls
         public CartPagePanel(Cart cart, Customer customer, string CouponCode ="")
         {
             InitializeComponent();
+            setmode();
             customerinfo = customer;
             CreateLocationData();
             CreateCartItem(cart);
             init(customer, CouponCode);
             instance = this;
             this.Invalidate(true);
+            
+        }
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.FromArgb(30, 30, 30));
+                NoneCartPanel.BackColor = Color.FromArgb(30, 30, 30);
+                ItemsCart.BackColor = Color.FromArgb(30, 30, 30);
+
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.Gainsboro);
+                NoneCartPanel.BackColor = Color.Gainsboro;
+                ItemsCart.BackColor = Color.Gainsboro;
+            }
+            ErrorPhoneLabel.ForeColor = Color.Red;
+            ErrorDiscountLabel.ForeColor = Color.Red;
+            LHCoinshaveLabel.ForeColor = Color.DarkGoldenrod;
+            CouponDiscountLabel.ForeColor = Color.DarkGoldenrod;
+            NoneCartPic.BackColor = Color.Transparent;
+
         }
         public void UseCoupon_Click()
         {
@@ -96,6 +121,7 @@ namespace LHBeverage.UserControls
             CustomerConnect.UpdateCustomerLHCoins(customerinfo);
             ItemsCart.Controls.Clear();
             CreateCartItem(cartinfo);
+            LHBeverage.instance.init();
         }
         private void caltotal(int ShippingPrice,int Discount,int LHCoin)
         {
@@ -146,7 +172,6 @@ namespace LHBeverage.UserControls
             initlocation();
             if (AddressTextBox.Text != "")
             {
-                AddressTextBox.ForeColor = Color.Black;
                 FullAddress.Text = AddressTextBox.Text + " - " + WardPicker.Text + ", " + DistrictPicker.Text + ", " + CityPicker.Text;
             }
         }
@@ -157,7 +182,6 @@ namespace LHBeverage.UserControls
             if (CheckPhoneNumber(Numberphone.Text))
             {
                 ErrorPhoneLabel.Visible = false;
-                Numberphone.ForeColor = Color.Black;
             }
             else
             {
@@ -184,7 +208,7 @@ namespace LHBeverage.UserControls
         }
         private void Checkinfo()
         {
-            if (!CheckPhoneNumber(PhoneNumberTextBox.Text) && PhoneNumberTextBox.Text =="")
+            if (!CheckPhoneNumber(PhoneNumberTextBox.Text))
             {
                 ConfirmBtn.Enabled = false;
                 ConfirmBtn.BackColor = Color.DarkGray;
@@ -192,7 +216,7 @@ namespace LHBeverage.UserControls
             else
             {
                 ConfirmBtn.Enabled = true;
-                ConfirmBtn.BackColor = Color.DarkOrange;
+                ConfirmBtn.BackColor = Color.DarkGoldenrod;
             }
         }
 
@@ -202,7 +226,6 @@ namespace LHBeverage.UserControls
             if (FisrtNameBox.Text == "Your name")
             {
                 FisrtNameBox.Text = "";
-                FisrtNameBox.ForeColor = Color.Black;
             }
         }
 
@@ -212,7 +235,6 @@ namespace LHBeverage.UserControls
             if (AddressBox.Text == "Your address.")
             {
                 AddressBox.Text = "";
-                AddressBox.ForeColor = Color.Black;
             }
         }
 
@@ -222,7 +244,6 @@ namespace LHBeverage.UserControls
             if (emailBox.Text == "Your email.")
             {
                 emailBox.Text = "";
-                emailBox.ForeColor = Color.Black;
             }
         }
 
@@ -232,7 +253,6 @@ namespace LHBeverage.UserControls
             if (PhonenumberBox.Text == "Phone number.")
             {
                 PhonenumberBox.Text = "";
-                PhonenumberBox.ForeColor = Color.Black;
             }
         }
 
@@ -242,7 +262,6 @@ namespace LHBeverage.UserControls
             if (CouponTextBox.Text == "Your coupon.")
             {
                 CouponTextBox.Text = "";
-                CouponTextBox.ForeColor = Color.Black;
             }
         }
 
@@ -269,21 +288,6 @@ namespace LHBeverage.UserControls
                 AddingFee();
                 caltotal(ShippingPriceinfo, Discountinfo, LHCoininfo);
                 CouponDiscountLabel.Visible = true;
-                CouponTextBox.ForeColor = Color.Black;
-            }
-        }
-        private void FirstNameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (FirstNameTextBox.Text != "")
-            {
-                FirstNameTextBox.ForeColor = Color.Black;
-            }
-        }
-        private void EmailTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (EmailTextBox.Text != "")
-            {
-                EmailTextBox.ForeColor = Color.Black;
             }
         }
         private void CreateLocationData()

@@ -53,10 +53,12 @@ namespace LHBeverage.UserControls
             this.NoneCartPic = new System.Windows.Forms.PictureBox();
             this.NoticeNoneCart = new System.Windows.Forms.Label();
             this.FormInfoPagePanel = new System.Windows.Forms.Panel();
+            this.BackCartBtn = new System.Windows.Forms.Button();
             this.WardPicker = new System.Windows.Forms.ComboBox();
             this.DistrictPicker = new System.Windows.Forms.ComboBox();
             this.CityPicker = new System.Windows.Forms.ComboBox();
             this.MapBtn = new System.Windows.Forms.Button();
+            this.LHCoinshaveLabel = new System.Windows.Forms.Label();
             this.ErrorDiscountLabel = new System.Windows.Forms.Label();
             this.TotalPaymentPrice = new System.Windows.Forms.Label();
             this.LHCoins = new System.Windows.Forms.NumericUpDown();
@@ -85,8 +87,6 @@ namespace LHBeverage.UserControls
             this.Totalpaymentlabel = new System.Windows.Forms.Label();
             this.ContactInfomationLabel = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
-            this.BackCartBtn = new System.Windows.Forms.Button();
-            this.LHCoinshaveLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.PaymentMethodPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Method4Pic)).BeginInit();
@@ -302,6 +302,7 @@ namespace LHBeverage.UserControls
             // 
             this.Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Title.BackColor = System.Drawing.Color.Transparent;
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.Location = new System.Drawing.Point(0, 30);
             this.Title.Name = "Title";
@@ -315,6 +316,7 @@ namespace LHBeverage.UserControls
             this.NoneCartPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.NoneCartPanel.BackColor = System.Drawing.Color.White;
             this.NoneCartPanel.Controls.Add(this.ChooseBeverageBtn);
             this.NoneCartPanel.Controls.Add(this.NoneCartPic);
             this.NoneCartPanel.Controls.Add(this.NoticeNoneCart);
@@ -341,6 +343,7 @@ namespace LHBeverage.UserControls
             // NoneCartPic
             // 
             this.NoneCartPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NoneCartPic.BackColor = System.Drawing.Color.Transparent;
             this.NoneCartPic.Image = global::LHBeverage.Properties.Resources.no_shopping_cart;
             this.NoneCartPic.InitialImage = null;
             this.NoneCartPic.Location = new System.Drawing.Point(496, 91);
@@ -403,6 +406,19 @@ namespace LHBeverage.UserControls
             this.FormInfoPagePanel.TabIndex = 13;
             this.FormInfoPagePanel.Visible = false;
             // 
+            // BackCartBtn
+            // 
+            this.BackCartBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BackCartBtn.FlatAppearance.BorderSize = 0;
+            this.BackCartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackCartBtn.Image = global::LHBeverage.Properties.Resources.arrow;
+            this.BackCartBtn.Location = new System.Drawing.Point(0, 0);
+            this.BackCartBtn.Name = "BackCartBtn";
+            this.BackCartBtn.Size = new System.Drawing.Size(50, 30);
+            this.BackCartBtn.TabIndex = 32;
+            this.BackCartBtn.UseVisualStyleBackColor = false;
+            this.BackCartBtn.Click += new System.EventHandler(this.BackCartBtn_Click);
+            // 
             // WardPicker
             // 
             this.WardPicker.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
@@ -462,6 +478,16 @@ namespace LHBeverage.UserControls
             this.MapBtn.UseVisualStyleBackColor = false;
             this.MapBtn.Click += new System.EventHandler(this.MapBtn_Click);
             // 
+            // LHCoinshaveLabel
+            // 
+            this.LHCoinshaveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LHCoinshaveLabel.ForeColor = System.Drawing.Color.LimeGreen;
+            this.LHCoinshaveLabel.Location = new System.Drawing.Point(860, 342);
+            this.LHCoinshaveLabel.Name = "LHCoinshaveLabel";
+            this.LHCoinshaveLabel.Size = new System.Drawing.Size(230, 23);
+            this.LHCoinshaveLabel.TabIndex = 29;
+            this.LHCoinshaveLabel.Text = "You have 0 LHCoins";
+            // 
             // ErrorDiscountLabel
             // 
             this.ErrorDiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -475,7 +501,7 @@ namespace LHBeverage.UserControls
             // 
             // TotalPaymentPrice
             // 
-            this.TotalPaymentPrice.BackColor = System.Drawing.SystemColors.Control;
+            this.TotalPaymentPrice.BackColor = System.Drawing.Color.Transparent;
             this.TotalPaymentPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalPaymentPrice.ForeColor = System.Drawing.Color.Maroon;
             this.TotalPaymentPrice.Location = new System.Drawing.Point(820, 380);
@@ -585,7 +611,6 @@ namespace LHBeverage.UserControls
             this.FirstNameTextBox.Text = "Your name";
             this.FirstNameTextBox.WordWrap = false;
             this.FirstNameTextBox.Click += new System.EventHandler(this.FirstNameTextBox_Click);
-            this.FirstNameTextBox.TextChanged += new System.EventHandler(this.FirstNameTextBox_TextChanged);
             // 
             // AddressTextBox
             // 
@@ -603,13 +628,14 @@ namespace LHBeverage.UserControls
             // CouponBox
             // 
             this.CouponBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CouponBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CouponBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CouponBox.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.CouponBox.Location = new System.Drawing.Point(586, 310);
             this.CouponBox.Name = "CouponBox";
             this.CouponBox.Size = new System.Drawing.Size(230, 30);
             this.CouponBox.TabIndex = 20;
-            this.CouponBox.Text = "Your coupon.";
+            this.CouponBox.Text = "YOUR COUPON.";
             this.CouponBox.WordWrap = false;
             this.CouponBox.Click += new System.EventHandler(this.CouponBox_Click);
             this.CouponBox.TextChanged += new System.EventHandler(this.CouponBox_TextChanged);
@@ -627,7 +653,6 @@ namespace LHBeverage.UserControls
             this.EmailTextBox.Text = "Your email.";
             this.EmailTextBox.WordWrap = false;
             this.EmailTextBox.Click += new System.EventHandler(this.EmailTextBox_Click);
-            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // PhoneNumberTextBox
             // 
@@ -759,7 +784,7 @@ namespace LHBeverage.UserControls
             // 
             this.Totalpaymentlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Totalpaymentlabel.BackColor = System.Drawing.SystemColors.Control;
+            this.Totalpaymentlabel.BackColor = System.Drawing.Color.Transparent;
             this.Totalpaymentlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Totalpaymentlabel.Location = new System.Drawing.Point(20, 380);
             this.Totalpaymentlabel.Name = "Totalpaymentlabel";
@@ -796,40 +821,18 @@ namespace LHBeverage.UserControls
             this.ConfirmBtn.UseVisualStyleBackColor = false;
             this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
-            // BackCartBtn
-            // 
-            this.BackCartBtn.FlatAppearance.BorderSize = 0;
-            this.BackCartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackCartBtn.Image = global::LHBeverage.Properties.Resources.arrow;
-            this.BackCartBtn.Location = new System.Drawing.Point(0, 0);
-            this.BackCartBtn.Name = "BackCartBtn";
-            this.BackCartBtn.Size = new System.Drawing.Size(50, 30);
-            this.BackCartBtn.TabIndex = 32;
-            this.BackCartBtn.UseVisualStyleBackColor = true;
-            this.BackCartBtn.Click += new System.EventHandler(this.BackCartBtn_Click);
-            // 
-            // LHCoinshaveLabel
-            // 
-            this.LHCoinshaveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LHCoinshaveLabel.ForeColor = System.Drawing.Color.LimeGreen;
-            this.LHCoinshaveLabel.Location = new System.Drawing.Point(860, 342);
-            this.LHCoinshaveLabel.Name = "LHCoinshaveLabel";
-            this.LHCoinshaveLabel.Size = new System.Drawing.Size(230, 23);
-            this.LHCoinshaveLabel.TabIndex = 29;
-            this.LHCoinshaveLabel.Text = "You have 0 LHCoins";
-            // 
             // CartPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.FormInfoPagePanel);
-            this.Controls.Add(this.NoneCartPanel);
             this.Controls.Add(this.Title);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.PaymentMethodPanel);
-            this.Controls.Add(this.TotalPricePanel);
+            this.Controls.Add(this.NoneCartPanel);
             this.Controls.Add(this.ItemsCart);
+            this.Controls.Add(this.TotalPricePanel);
+            this.Controls.Add(this.PaymentMethodPanel);
+            this.Controls.Add(this.panel2);
             this.Name = "CartPagePanel";
             this.Size = new System.Drawing.Size(1184, 600);
             this.panel2.ResumeLayout(false);

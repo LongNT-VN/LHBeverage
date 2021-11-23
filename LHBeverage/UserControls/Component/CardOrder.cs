@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,12 @@ namespace LHBeverage.UserControls.Component
         public CardOrder(Order order, Customer customer)
         {
             InitializeComponent();
+            setmode();
             initOrder(order, customer);
         }
         void initOrder(Order order, Customer customer)
         {
-            if(order.Status=="Cancelled")
+            if (order.Status=="Cancelled")
             {
                 panel_CardOrder.BackColor = Color.Red;
                 Status_lbl.ForeColor = Color.Red;
@@ -31,11 +33,15 @@ namespace LHBeverage.UserControls.Component
             }
             else if(order.Status == "Delivered")
             {
-                panel_CardOrder.BackColor = Color.Orange;
+                panel_CardOrder.BackColor = Color.DarkGoldenrod;
+            }
+            else if (order.Status == "Confirm")
+            {
+                panel_CardOrder.BackColor = Color.DarkGoldenrod;
             }
             else if (order.Status == "Received")
             {
-                panel_CardOrder.BackColor = Color.Lime;
+                panel_CardOrder.BackColor = Color.LimeGreen;
             }
             Status_lbl.Text = order.Status;
             NameUser.Text = customer.Name;
@@ -50,13 +56,23 @@ namespace LHBeverage.UserControls.Component
             btn_CancelOrder.Tag = order.IDOrder;
             try
             {
-                Flow_ItemOrder.Controls.Clear();
-                List<DetailOrder> details = DetailOrderConnect.SelectItemOrderByIDOrder(order.IDOrder);
-                foreach(DetailOrder detailOrder in details)
+                int quantity=0;
+                List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(order.IDOrder);
+                foreach(DetailOrder detailOrder in detailOrders)
                 {
-
+                    if(detailOrder!=null)
+                    {
+                        quantity += detailOrder.Quantity;
+                    }
                 }
-            }catch(Exception ex)
+                QuantityOrder.Text = quantity.ToString();
+                DetailOrder detailOrderinfo = DetailOrderConnect.SelectOneItemOrderByIDOrder(order.IDOrder);
+                DetailImage img = DetailImageConnect.LoadOneImage(detailOrderinfo.IDPro);
+                string base64img = img.ImageData;
+                Image imageproduct = ConvertBase64toImage.ConverImageFromBase64(base64img);
+                ImageProduct.BackgroundImage = imageproduct;
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -76,6 +92,21 @@ namespace LHBeverage.UserControls.Component
                 btn_CancelOrder.Click -= value;
 
             }
+        }
+        public void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.Black);
+                
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.White);
+            }
+            SpecicalPanel1.BackColor = Color.DarkGray;
+            SpecicalPanel2.BackColor = Color.DarkGray;
+            btn_CancelOrder.BackColor = Color.Red;
         }
     }
 }

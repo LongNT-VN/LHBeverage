@@ -62,7 +62,6 @@ namespace LHBeverage.UserControls
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pb_Banner = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -102,7 +101,7 @@ namespace LHBeverage.UserControls
             this.lbl_TitleOfBanner.BackColor = System.Drawing.Color.Transparent;
             this.lbl_TitleOfBanner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_TitleOfBanner.Font = new System.Drawing.Font("Pristina", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TitleOfBanner.Location = new System.Drawing.Point(501, 1313);
+            this.lbl_TitleOfBanner.Location = new System.Drawing.Point(510, 1313);
             this.lbl_TitleOfBanner.Name = "lbl_TitleOfBanner";
             this.lbl_TitleOfBanner.Size = new System.Drawing.Size(226, 45);
             this.lbl_TitleOfBanner.TabIndex = 6;
@@ -143,7 +142,7 @@ namespace LHBeverage.UserControls
             this.panel1.Controls.Add(this.pb_Banner);
             this.panel1.Location = new System.Drawing.Point(3, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1208, 554);
+            this.panel1.Size = new System.Drawing.Size(1226, 554);
             this.panel1.TabIndex = 10;
             // 
             // label21
@@ -154,7 +153,7 @@ namespace LHBeverage.UserControls
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(108, 1075);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(939, 41);
+            this.label21.Size = new System.Drawing.Size(957, 41);
             this.label21.TabIndex = 15;
             this.label21.Text = "If you would like to work with us, stock our brands and products or join the Proo" +
     "f Drinks team then please contact us. Click here to find out more.";
@@ -168,7 +167,7 @@ namespace LHBeverage.UserControls
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(33, 969);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(1144, 92);
+            this.label20.Size = new System.Drawing.Size(1162, 92);
             this.label20.TabIndex = 14;
             this.label20.Text = "SPECIALISING IN THE IMPORTING, DISTRIBUTION, SALES AND MARKETING OF PREMIUM DRINK" +
     "S BRANDS SINCE 2010.";
@@ -201,7 +200,7 @@ namespace LHBeverage.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PopularProductFlowPanel.Location = new System.Drawing.Point(61, 568);
             this.PopularProductFlowPanel.Name = "PopularProductFlowPanel";
-            this.PopularProductFlowPanel.Size = new System.Drawing.Size(1118, 322);
+            this.PopularProductFlowPanel.Size = new System.Drawing.Size(1136, 322);
             this.PopularProductFlowPanel.TabIndex = 11;
             // 
             // label4
@@ -212,7 +211,7 @@ namespace LHBeverage.UserControls
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Purple;
-            this.label4.Location = new System.Drawing.Point(522, 1255);
+            this.label4.Location = new System.Drawing.Point(531, 1255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 41);
             this.label4.TabIndex = 8;
@@ -241,7 +240,7 @@ namespace LHBeverage.UserControls
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1379);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1191, 200);
+            this.panel2.Size = new System.Drawing.Size(1209, 200);
             this.panel2.TabIndex = 10;
             // 
             // pictureBox6
@@ -424,7 +423,7 @@ namespace LHBeverage.UserControls
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(778, 205);
+            this.pictureBox4.Location = new System.Drawing.Point(787, 205);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(395, 243);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -448,25 +447,15 @@ namespace LHBeverage.UserControls
             this.pb_Banner.Image = ((System.Drawing.Image)(resources.GetObject("pb_Banner.Image")));
             this.pb_Banner.Location = new System.Drawing.Point(3, 1164);
             this.pb_Banner.Name = "pb_Banner";
-            this.pb_Banner.Size = new System.Drawing.Size(1188, 215);
+            this.pb_Banner.Size = new System.Drawing.Size(1206, 215);
             this.pb_Banner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Banner.TabIndex = 7;
             this.pb_Banner.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Location = new System.Drawing.Point(1182, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(18, 551);
-            this.panel3.TabIndex = 11;
             // 
             // HomePagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "HomePagePanel";
             this.Size = new System.Drawing.Size(1208, 554);
@@ -513,7 +502,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.FlowLayoutPanel PopularProductFlowPanel;
         private System.Windows.Forms.Label label20;

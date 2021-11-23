@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,8 @@ namespace LHBeverage.UserControls.Component
         {
             Categorybtn.Text = catagory.Name;
             Categorybtn.Name = catagory.IDCate.ToString();
-            Categorybtn.BackColor = Color.White;
+            Categorybtn.BackColor = Color.DarkGoldenrod;
+            Categorybtn.ForeColor = Color.Black;
         }
         public new event EventHandler Click
         {

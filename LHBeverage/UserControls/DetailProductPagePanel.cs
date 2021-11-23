@@ -34,8 +34,44 @@ namespace LHBeverage.UserControls
         public string size="S";
         public int id;
         public int quantity;
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.FromArgb(30, 30, 30));
+                RelationItemPanel.BackColor = Color.FromArgb(30, 30, 30);
+                TempPanel.BackColor = Color.FromArgb(30, 30, 30);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.Gainsboro);
+                RelationItemPanel.BackColor = Color.Gainsboro;
+                TempPanel.BackColor = Color.Gainsboro;
+            }
+            if (QuantityDown.Enabled)
+            {
+                QuantityDown.BackColor = Color.DarkGoldenrod;
+            }
+            else
+            {
+                QuantityDown.BackColor = Color.DimGray;
+            }
+            if (QuantityUp.Enabled)
+            {
+                QuantityUp.BackColor = Color.DarkGoldenrod;
+            }
+            else
+            {
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            QuantityDown.BackColor = Color.DimGray;
+            SizeMBtn.ForeColor = Color.Black;
+            SizeSBtn.ForeColor = Color.Black;
+            SizeLBtn.ForeColor = Color.Black;
+        }
         public void CreateDetail(Product product, List<Image> images)
         {
+            setmode();
             id = product.IDPro;
             quantity = Convert.ToInt32(QuantityItem.Text);
             NameItem.Text = product.Name;
@@ -193,7 +229,7 @@ namespace LHBeverage.UserControls
             else
             {
                 QuantityUp.Enabled = true;
-                QuantityUp.BackColor = Color.WhiteSmoke;
+                QuantityUp.BackColor = Color.LightGoldenrodYellow;
             }
             TempPriceProduct = productinfo.PriceS;
             TempPrice = TempPriceProduct + TempPriceTopping;
@@ -230,7 +266,7 @@ namespace LHBeverage.UserControls
             else
             {
                 QuantityUp.Enabled = true;
-                QuantityUp.BackColor = Color.WhiteSmoke;
+                QuantityUp.BackColor = Color.LightGoldenrodYellow;
             }
             TempPriceProduct = productinfo.PriceM;
             TempPrice = TempPriceProduct + TempPriceTopping;
@@ -267,7 +303,7 @@ namespace LHBeverage.UserControls
             else
             {
                 QuantityUp.Enabled = true;
-                QuantityUp.BackColor = Color.WhiteSmoke;
+                QuantityUp.BackColor = Color.LightGoldenrodYellow;
             }
             TempPriceProduct = productinfo.PriceL;
             TempPrice = TempPriceProduct + TempPriceTopping;
@@ -284,7 +320,7 @@ namespace LHBeverage.UserControls
             {
                 number--;
                 QuantityUp.Enabled = true;
-                QuantityUp.BackColor = Color.WhiteSmoke;
+                QuantityUp.BackColor = Color.LightGoldenrodYellow;
             }
             QuantityItem.Text = number.ToString();
         }
@@ -296,7 +332,7 @@ namespace LHBeverage.UserControls
             if (number > 1)
             {
                 QuantityDown.Enabled = true;
-                QuantityDown.BackColor = Color.WhiteSmoke;
+                QuantityDown.BackColor = Color.LightGoldenrodYellow;
             }
             QuantityItem.Text = number.ToString();
         }
@@ -305,7 +341,7 @@ namespace LHBeverage.UserControls
         {
             quantity = Convert.ToInt32(QuantityItem.Text);
             QuantityUp.Enabled = true;
-            QuantityUp.BackColor = Color.WhiteSmoke;
+            QuantityUp.BackColor = Color.LightGoldenrodYellow;
             if (Convert.ToInt32(QuantityItem.Text) == 1)
             {
                 QuantityDown.Enabled = false;

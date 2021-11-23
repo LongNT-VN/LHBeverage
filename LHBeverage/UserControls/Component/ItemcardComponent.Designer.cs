@@ -48,7 +48,6 @@ namespace LHBeverage.UserControls.Component
             // 
             // ProductNameLabel
             // 
-            this.ProductNameLabel.Enabled = false;
             this.ProductNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductNameLabel.Location = new System.Drawing.Point(10, 178);
             this.ProductNameLabel.Name = "ProductNameLabel";

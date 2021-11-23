@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace LHBeverage.UserControls.Component
         {
             InitializeComponent();
             CreateComponent(product, image);
+            setmode();
         }
         public int id;
         private void CreateComponent(Product product, Image image)
@@ -29,24 +31,17 @@ namespace LHBeverage.UserControls.Component
             ProductNameLabel.Text = product.Name;
             ProductPriceLabel.Text = product.PriceS.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
-        //public new event EventHandler Click
-        //{
-        //    add
-        //    {
-        //        base.Click += value;
-        //        foreach (Control control in Controls)
-        //        {
-        //            control.Click += value;
-        //        }
-        //    }
-        //    remove
-        //    {
-        //        base.Click -= value;
-        //        foreach (Control control in Controls)
-        //        {
-        //            control.Click -= value;
-        //        }
-        //    }
-        //}
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.Black);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.White);
+            }
+            ProductPriceLabel.ForeColor = Color.DarkGoldenrod;
+        }
     }
 }

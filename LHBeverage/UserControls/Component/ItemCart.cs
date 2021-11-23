@@ -21,23 +21,24 @@ namespace LHBeverage.UserControls.Component
         DetailCart detailcartinfo;
         Product productinfo;
         int quantity;
-        int PriceTopping=0;
+        int PriceTopping = 0;
         int PriceProduct = 0;
         int TotalPrice = 0;
         public ItemCart(DetailCart detailcart)
         {
             InitializeComponent();
+            setmode();
             CreateDetailCat(detailcart);
         }
-        
+
         public void CreateDetailCat(DetailCart detailcart)
         {
             detailcartinfo = detailcart;
             Product product = ProductConnect.SelectProductByIDPro(detailcart.IDPro);
             string[] listtop = detailcart.ListIDIngredient.Split(',');
-            foreach(string idtopping in listtop)
+            foreach (string idtopping in listtop)
             {
-                if(idtopping!="")
+                if (idtopping != "")
                 {
                     Topping topping = ToppingConnect.SelectToppingByID(Convert.ToInt32(idtopping));
                     if (topping != null)
@@ -74,7 +75,7 @@ namespace LHBeverage.UserControls.Component
                 }
                 if (size == "S")
                 {
-                    if(detailcartinfo.Size == "S")
+                    if (detailcartinfo.Size == "S")
                     {
                         SizeSBtn.BackColor = Color.SandyBrown;
                         SizeSBtn.Enabled = true;
@@ -88,7 +89,7 @@ namespace LHBeverage.UserControls.Component
                         SizeMBtn.BackColor = Color.SandyBrown;
                         SizeMBtn.Enabled = true;
                     }
-                    
+
                     PriceProduct = product.PriceM;
                 }
                 else if (size == "L")
@@ -98,7 +99,7 @@ namespace LHBeverage.UserControls.Component
                         SizeLBtn.BackColor = Color.SandyBrown;
                         SizeLBtn.Enabled = true;
                     }
-                   
+
                     PriceProduct = product.PriceL;
                 }
                 NameItem.Text = product.Name;
@@ -108,9 +109,39 @@ namespace LHBeverage.UserControls.Component
                 Image img = ConvertBase64toImage.ConverImageFromBase64(image.ImageData);
                 ImageItem.BackgroundImage = img;
             }
-            QuantityItem.Text = detailcart.Quantity.ToString();      
+            QuantityItem.Text = detailcart.Quantity.ToString();
         }
-
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.Black);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.White);
+            }
+            if(QuantityDown.Enabled)
+            {
+                QuantityDown.BackColor = Color.DarkGoldenrod;
+            }
+            else
+            {
+                QuantityDown.BackColor = Color.DimGray;
+            }
+            if (QuantityUp.Enabled)
+            {
+                QuantityUp.BackColor = Color.DarkGoldenrod;
+            }
+            else
+            {
+                QuantityUp.BackColor = Color.DimGray;
+            }
+            RemoveBtn.BackColor = Color.Red;
+            SizeMBtn.BackColor = Color.Black;
+            SizeSBtn.BackColor = Color.Black;
+            SizeLBtn.BackColor = Color.Black;
+        }
         private void SizeSBtn_Click(object sender, EventArgs e)
         {
             if(size!="S")

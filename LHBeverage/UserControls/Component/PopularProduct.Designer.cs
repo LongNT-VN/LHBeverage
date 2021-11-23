@@ -40,7 +40,7 @@ namespace LHBeverage.UserControls.Component
             // NamePro
             // 
             this.NamePro.BackColor = System.Drawing.Color.Transparent;
-            this.NamePro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NamePro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NamePro.Location = new System.Drawing.Point(-3, 194);
             this.NamePro.Name = "NamePro";
             this.NamePro.Size = new System.Drawing.Size(206, 56);
@@ -50,9 +50,9 @@ namespace LHBeverage.UserControls.Component
             // 
             // Price
             // 
-            this.Price.BackColor = System.Drawing.Color.Red;
+            this.Price.BackColor = System.Drawing.Color.Transparent;
             this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.ForeColor = System.Drawing.Color.White;
+            this.Price.ForeColor = System.Drawing.Color.Black;
             this.Price.Location = new System.Drawing.Point(41, 161);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(134, 33);

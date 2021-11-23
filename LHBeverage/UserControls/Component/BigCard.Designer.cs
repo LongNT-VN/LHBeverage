@@ -77,7 +77,7 @@ namespace LHBeverage.UserControls.Component
             // HotSaleBC_lbl
             // 
             this.HotSaleBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HotSaleBC_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(176)))), ((int)(((byte)(149)))));
+            this.HotSaleBC_lbl.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.HotSaleBC_lbl.Location = new System.Drawing.Point(210, 5);
             this.HotSaleBC_lbl.Name = "HotSaleBC_lbl";
             this.HotSaleBC_lbl.Size = new System.Drawing.Size(264, 20);
@@ -87,7 +87,7 @@ namespace LHBeverage.UserControls.Component
             // nameDrinkBC_lbl
             // 
             this.nameDrinkBC_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameDrinkBC_lbl.ForeColor = System.Drawing.Color.White;
+            this.nameDrinkBC_lbl.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.nameDrinkBC_lbl.Location = new System.Drawing.Point(210, 30);
             this.nameDrinkBC_lbl.Name = "nameDrinkBC_lbl";
             this.nameDrinkBC_lbl.Size = new System.Drawing.Size(261, 60);

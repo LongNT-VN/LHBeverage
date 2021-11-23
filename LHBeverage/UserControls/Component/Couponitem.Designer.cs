@@ -48,7 +48,7 @@ namespace LHBeverage.UserControls.Component
             // CouponCode
             // 
             this.CouponCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CouponCode.ForeColor = System.Drawing.Color.Olive;
+            this.CouponCode.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.CouponCode.Location = new System.Drawing.Point(91, 10);
             this.CouponCode.Name = "CouponCode";
             this.CouponCode.Size = new System.Drawing.Size(166, 40);
@@ -70,7 +70,7 @@ namespace LHBeverage.UserControls.Component
             // DiscountLabel
             // 
             this.DiscountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DiscountLabel.ForeColor = System.Drawing.Color.LimeGreen;
+            this.DiscountLabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.DiscountLabel.Location = new System.Drawing.Point(263, 10);
             this.DiscountLabel.Name = "DiscountLabel";
             this.DiscountLabel.Size = new System.Drawing.Size(165, 40);

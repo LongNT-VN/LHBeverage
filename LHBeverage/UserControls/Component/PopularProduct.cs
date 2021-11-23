@@ -23,6 +23,7 @@ namespace LHBeverage.UserControls.Component
             InitializeComponent();
             initialPro(product);
             protmp = product;
+            setmode();
 
         }
         void initialPro(Product product)
@@ -36,6 +37,18 @@ namespace LHBeverage.UserControls.Component
         private void Viewmore_btn_Click(object sender, EventArgs e)
         {
             LHBeverage.instance.NavProductFromHomeToDetail(protmp);
+        }
+        private void setmode()
+        {
+            if (LHBeverage.instance.CurrentMode == 1)
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.Black);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.White);
+            }
+            Price.ForeColor = Color.DarkGoldenrod;
         }
     }
 }

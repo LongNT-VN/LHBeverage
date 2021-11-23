@@ -50,8 +50,8 @@ namespace LHBeverage.UserControls
             this.SizeLabel = new System.Windows.Forms.Label();
             this.pricelabel = new System.Windows.Forms.Label();
             this.NameItem = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.TempPanel = new System.Windows.Forms.Panel();
             this.DetailItemPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddCartBtn)).BeginInit();
@@ -65,7 +65,7 @@ namespace LHBeverage.UserControls
             this.RelationItemPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.RelationItemPanel.Location = new System.Drawing.Point(60, 580);
             this.RelationItemPanel.Name = "RelationItemPanel";
-            this.RelationItemPanel.Size = new System.Drawing.Size(1050, 310);
+            this.RelationItemPanel.Size = new System.Drawing.Size(1050, 300);
             this.RelationItemPanel.TabIndex = 0;
             // 
             // DetailItemPanel
@@ -97,6 +97,7 @@ namespace LHBeverage.UserControls
             // 
             // ListToppings
             // 
+            this.ListToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListToppings.Location = new System.Drawing.Point(372, 270);
             this.ListToppings.Name = "ListToppings";
             this.ListToppings.Size = new System.Drawing.Size(308, 87);
@@ -104,7 +105,7 @@ namespace LHBeverage.UserControls
             // 
             // QuantityItem
             // 
-            this.QuantityItem.BackColor = System.Drawing.Color.White;
+            this.QuantityItem.BackColor = System.Drawing.Color.Transparent;
             this.QuantityItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QuantityItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantityItem.Location = new System.Drawing.Point(417, 186);
@@ -144,6 +145,7 @@ namespace LHBeverage.UserControls
             // ListImagePanel
             // 
             this.ListImagePanel.AutoScroll = true;
+            this.ListImagePanel.BackColor = System.Drawing.Color.Transparent;
             this.ListImagePanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ListImagePanel.Location = new System.Drawing.Point(700, 375);
             this.ListImagePanel.Name = "ListImagePanel";
@@ -169,6 +171,7 @@ namespace LHBeverage.UserControls
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::LHBeverage.Properties.Resources.favourite;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(310, 385);
@@ -179,6 +182,7 @@ namespace LHBeverage.UserControls
             // 
             // AddCartBtn
             // 
+            this.AddCartBtn.BackColor = System.Drawing.Color.Transparent;
             this.AddCartBtn.BackgroundImage = global::LHBeverage.Properties.Resources.Cart_normal1;
             this.AddCartBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.AddCartBtn.Location = new System.Drawing.Point(370, 385);
@@ -243,6 +247,7 @@ namespace LHBeverage.UserControls
             // 
             // QuantityProduct
             // 
+            this.QuantityProduct.BackColor = System.Drawing.Color.Transparent;
             this.QuantityProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantityProduct.ForeColor = System.Drawing.Color.LimeGreen;
             this.QuantityProduct.Location = new System.Drawing.Point(53, 317);
@@ -254,6 +259,7 @@ namespace LHBeverage.UserControls
             // 
             // PriceItem
             // 
+            this.PriceItem.BackColor = System.Drawing.Color.Transparent;
             this.PriceItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PriceItem.Location = new System.Drawing.Point(140, 180);
@@ -279,6 +285,7 @@ namespace LHBeverage.UserControls
             // 
             // ToppingLabel
             // 
+            this.ToppingLabel.BackColor = System.Drawing.Color.Transparent;
             this.ToppingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToppingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ToppingLabel.Location = new System.Drawing.Point(366, 230);
@@ -290,6 +297,7 @@ namespace LHBeverage.UserControls
             // 
             // SizeLabel
             // 
+            this.SizeLabel.BackColor = System.Drawing.Color.Transparent;
             this.SizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SizeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SizeLabel.Location = new System.Drawing.Point(50, 230);
@@ -301,6 +309,7 @@ namespace LHBeverage.UserControls
             // 
             // pricelabel
             // 
+            this.pricelabel.BackColor = System.Drawing.Color.Transparent;
             this.pricelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pricelabel.Location = new System.Drawing.Point(50, 180);
@@ -312,6 +321,7 @@ namespace LHBeverage.UserControls
             // 
             // NameItem
             // 
+            this.NameItem.BackColor = System.Drawing.Color.Transparent;
             this.NameItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.NameItem.Location = new System.Drawing.Point(50, 50);
@@ -321,15 +331,9 @@ namespace LHBeverage.UserControls
             this.NameItem.Text = "Trà sữa trân châu đường đen";
             this.NameItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(60, 860);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1050, 30);
-            this.panel1.TabIndex = 2;
-            // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(60, 530);
@@ -339,6 +343,13 @@ namespace LHBeverage.UserControls
             this.label1.Text = "Relation Beverage";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // TempPanel
+            // 
+            this.TempPanel.Location = new System.Drawing.Point(60, 858);
+            this.TempPanel.Name = "TempPanel";
+            this.TempPanel.Size = new System.Drawing.Size(1050, 27);
+            this.TempPanel.TabIndex = 2;
+            // 
             // DetailProductPagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,11 +357,11 @@ namespace LHBeverage.UserControls
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.TempPanel);
             this.Controls.Add(this.DetailItemPanel);
             this.Controls.Add(this.RelationItemPanel);
             this.Name = "DetailProductPagePanel";
-            this.Size = new System.Drawing.Size(1237, 583);
+            this.Size = new System.Drawing.Size(1186, 600);
             this.DetailItemPanel.ResumeLayout(false);
             this.DetailItemPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -377,7 +388,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox DescriptionItem;
         private System.Windows.Forms.FlowLayoutPanel ListImagePanel;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label QuantityItem;
         private System.Windows.Forms.Button QuantityUp;
         private System.Windows.Forms.Button QuantityDown;
@@ -385,5 +395,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.FlowLayoutPanel ListToppings;
         private System.Windows.Forms.Label QuantityProduct;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel TempPanel;
     }
 }

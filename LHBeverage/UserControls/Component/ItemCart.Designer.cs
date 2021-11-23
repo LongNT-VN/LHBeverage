@@ -45,9 +45,10 @@ namespace LHBeverage.UserControls.Component
             // 
             // NameItem
             // 
+            this.NameItem.BackColor = System.Drawing.Color.Transparent;
             this.NameItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameItem.ForeColor = System.Drawing.Color.DimGray;
-            this.NameItem.Location = new System.Drawing.Point(250, 5);
+            this.NameItem.Location = new System.Drawing.Point(250, 7);
             this.NameItem.Name = "NameItem";
             this.NameItem.Size = new System.Drawing.Size(415, 40);
             this.NameItem.TabIndex = 1;
@@ -56,9 +57,10 @@ namespace LHBeverage.UserControls.Component
             // 
             // PriceItem
             // 
+            this.PriceItem.BackColor = System.Drawing.Color.Transparent;
             this.PriceItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.PriceItem.Location = new System.Drawing.Point(250, 139);
+            this.PriceItem.Location = new System.Drawing.Point(250, 141);
             this.PriceItem.Name = "PriceItem";
             this.PriceItem.Size = new System.Drawing.Size(184, 40);
             this.PriceItem.TabIndex = 1;
@@ -71,7 +73,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeSBtn.FlatAppearance.BorderSize = 0;
             this.SizeSBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SizeSBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeSBtn.Location = new System.Drawing.Point(250, 55);
+            this.SizeSBtn.Location = new System.Drawing.Point(250, 57);
             this.SizeSBtn.Name = "SizeSBtn";
             this.SizeSBtn.Size = new System.Drawing.Size(40, 40);
             this.SizeSBtn.TabIndex = 2;
@@ -85,7 +87,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeMBtn.FlatAppearance.BorderSize = 0;
             this.SizeMBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SizeMBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeMBtn.Location = new System.Drawing.Point(310, 55);
+            this.SizeMBtn.Location = new System.Drawing.Point(310, 57);
             this.SizeMBtn.Name = "SizeMBtn";
             this.SizeMBtn.Size = new System.Drawing.Size(40, 40);
             this.SizeMBtn.TabIndex = 2;
@@ -99,7 +101,7 @@ namespace LHBeverage.UserControls.Component
             this.SizeLBtn.FlatAppearance.BorderSize = 0;
             this.SizeLBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SizeLBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeLBtn.Location = new System.Drawing.Point(370, 55);
+            this.SizeLBtn.Location = new System.Drawing.Point(370, 57);
             this.SizeLBtn.Name = "SizeLBtn";
             this.SizeLBtn.Size = new System.Drawing.Size(40, 40);
             this.SizeLBtn.TabIndex = 2;
@@ -109,10 +111,10 @@ namespace LHBeverage.UserControls.Component
             // 
             // QuantityItem
             // 
-            this.QuantityItem.BackColor = System.Drawing.Color.White;
+            this.QuantityItem.BackColor = System.Drawing.Color.Transparent;
             this.QuantityItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QuantityItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityItem.Location = new System.Drawing.Point(310, 107);
+            this.QuantityItem.Location = new System.Drawing.Point(310, 109);
             this.QuantityItem.Name = "QuantityItem";
             this.QuantityItem.Size = new System.Drawing.Size(40, 30);
             this.QuantityItem.TabIndex = 3;
@@ -126,7 +128,7 @@ namespace LHBeverage.UserControls.Component
             this.ImageItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
             this.ImageItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ImageItem.InitialImage = null;
-            this.ImageItem.Location = new System.Drawing.Point(50, 10);
+            this.ImageItem.Location = new System.Drawing.Point(50, 12);
             this.ImageItem.Name = "ImageItem";
             this.ImageItem.Size = new System.Drawing.Size(170, 170);
             this.ImageItem.TabIndex = 0;
@@ -137,7 +139,7 @@ namespace LHBeverage.UserControls.Component
             this.QuantityDown.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityDown.FlatAppearance.BorderSize = 0;
             this.QuantityDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuantityDown.Location = new System.Drawing.Point(265, 107);
+            this.QuantityDown.Location = new System.Drawing.Point(265, 109);
             this.QuantityDown.Name = "QuantityDown";
             this.QuantityDown.Size = new System.Drawing.Size(30, 30);
             this.QuantityDown.TabIndex = 2;
@@ -150,7 +152,7 @@ namespace LHBeverage.UserControls.Component
             this.QuantityUp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityUp.FlatAppearance.BorderSize = 0;
             this.QuantityUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuantityUp.Location = new System.Drawing.Point(365, 108);
+            this.QuantityUp.Location = new System.Drawing.Point(365, 110);
             this.QuantityUp.Name = "QuantityUp";
             this.QuantityUp.Size = new System.Drawing.Size(30, 30);
             this.QuantityUp.TabIndex = 2;
@@ -165,7 +167,7 @@ namespace LHBeverage.UserControls.Component
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveBtn.ForeColor = System.Drawing.Color.White;
-            this.RemoveBtn.Location = new System.Drawing.Point(692, 160);
+            this.RemoveBtn.Location = new System.Drawing.Point(692, 164);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(78, 30);
             this.RemoveBtn.TabIndex = 2;
@@ -175,8 +177,9 @@ namespace LHBeverage.UserControls.Component
             // 
             // Topping
             // 
+            this.Topping.BackColor = System.Drawing.Color.Transparent;
             this.Topping.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Topping.Location = new System.Drawing.Point(440, 55);
+            this.Topping.Location = new System.Drawing.Point(440, 57);
             this.Topping.Name = "Topping";
             this.Topping.Size = new System.Drawing.Size(222, 100);
             this.Topping.TabIndex = 4;
@@ -198,7 +201,7 @@ namespace LHBeverage.UserControls.Component
             this.Controls.Add(this.NameItem);
             this.Controls.Add(this.ImageItem);
             this.Name = "ItemCart";
-            this.Size = new System.Drawing.Size(770, 190);
+            this.Size = new System.Drawing.Size(770, 194);
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).EndInit();
             this.ResumeLayout(false);
 
