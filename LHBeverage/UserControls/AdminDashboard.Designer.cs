@@ -30,8 +30,7 @@ namespace LHBeverage.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            this.panelRoot = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.welcome_lbl = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -57,7 +56,11 @@ namespace LHBeverage.UserControls
             this.label3 = new System.Windows.Forms.Label();
             this.NumberCustomer_lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panelRoot.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
@@ -68,47 +71,36 @@ namespace LHBeverage.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelRoot
+            // welcome_lbl
             // 
-            this.panelRoot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
-            this.panelRoot.Controls.Add(this.label1);
-            this.panelRoot.Controls.Add(this.panel6);
-            this.panelRoot.Controls.Add(this.panel5);
-            this.panelRoot.Controls.Add(this.panel3);
-            this.panelRoot.Controls.Add(this.panel2);
-            this.panelRoot.Controls.Add(this.panel1);
-            this.panelRoot.Location = new System.Drawing.Point(8, 8);
-            this.panelRoot.Name = "panelRoot";
-            this.panelRoot.Size = new System.Drawing.Size(1014, 600);
-            this.panelRoot.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 22);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Welcome to dashboard";
+            this.welcome_lbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.welcome_lbl.AutoSize = true;
+            this.welcome_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcome_lbl.Location = new System.Drawing.Point(396, 20);
+            this.welcome_lbl.Name = "welcome_lbl";
+            this.welcome_lbl.Size = new System.Drawing.Size(214, 22);
+            this.welcome_lbl.TabIndex = 27;
+            this.welcome_lbl.Text = "Welcome to dashboard";
             // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label15);
-            this.panel6.Location = new System.Drawing.Point(549, 313);
+            this.panel6.Location = new System.Drawing.Point(549, 367);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(270, 170);
-            this.panel6.TabIndex = 20;
+            this.panel6.TabIndex = 26;
             // 
             // pictureBox5
             // 
@@ -125,7 +117,7 @@ namespace LHBeverage.UserControls
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DeepPink;
-            this.label13.Location = new System.Drawing.Point(30, 20);
+            this.label13.Location = new System.Drawing.Point(-1, 2);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 22);
             this.label13.TabIndex = 16;
@@ -156,14 +148,14 @@ namespace LHBeverage.UserControls
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label11);
-            this.panel5.Location = new System.Drawing.Point(231, 313);
+            this.panel5.Location = new System.Drawing.Point(231, 367);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(270, 170);
-            this.panel5.TabIndex = 6;
+            this.panel5.TabIndex = 25;
             // 
             // pictureBox4
             // 
@@ -180,7 +172,7 @@ namespace LHBeverage.UserControls
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label10.Location = new System.Drawing.Point(30, 20);
+            this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 22);
             this.label10.TabIndex = 16;
@@ -211,14 +203,14 @@ namespace LHBeverage.UserControls
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(700, 45);
+            this.panel3.Location = new System.Drawing.Point(700, 99);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(270, 170);
-            this.panel3.TabIndex = 4;
+            this.panel3.TabIndex = 24;
             // 
             // pictureBox3
             // 
@@ -235,7 +227,7 @@ namespace LHBeverage.UserControls
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label9.Location = new System.Drawing.Point(30, 20);
+            this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 22);
             this.label9.TabIndex = 12;
@@ -266,14 +258,14 @@ namespace LHBeverage.UserControls
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.QuantityProduct_lbl);
-            this.panel2.Location = new System.Drawing.Point(370, 45);
+            this.panel2.Location = new System.Drawing.Point(370, 99);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 170);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 23;
             // 
             // pictureBox2
             // 
@@ -289,8 +281,8 @@ namespace LHBeverage.UserControls
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label6.Location = new System.Drawing.Point(30, 20);
+            this.label6.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label6.Location = new System.Drawing.Point(-1, 1);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 22);
             this.label6.TabIndex = 8;
@@ -320,14 +312,14 @@ namespace LHBeverage.UserControls
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.NumberCustomer_lbl);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(45, 45);
+            this.panel1.Location = new System.Drawing.Point(45, 99);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 170);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 22;
             // 
             // pictureBox1
             // 
@@ -365,21 +357,65 @@ namespace LHBeverage.UserControls
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(30, 20);
+            this.label2.Location = new System.Drawing.Point(3, 1);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Customers";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(34, 20);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(211, 24);
+            this.panel4.TabIndex = 8;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Location = new System.Drawing.Point(37, 20);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(211, 24);
+            this.panel7.TabIndex = 9;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.label9);
+            this.panel8.Location = new System.Drawing.Point(32, 21);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(211, 24);
+            this.panel8.TabIndex = 10;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Location = new System.Drawing.Point(37, 20);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(211, 24);
+            this.panel9.TabIndex = 11;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label13);
+            this.panel10.Location = new System.Drawing.Point(37, 20);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(211, 24);
+            this.panel10.TabIndex = 17;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelRoot);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
+            this.Controls.Add(this.welcome_lbl);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "AdminDashboard";
             this.Size = new System.Drawing.Size(1014, 600);
-            this.panelRoot.ResumeLayout(false);
-            this.panelRoot.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -395,13 +431,24 @@ namespace LHBeverage.UserControls
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelRoot;
+        private System.Windows.Forms.Label welcome_lbl;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label13;
@@ -427,6 +474,10 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label NumberCustomer_lbl;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
     }
 }

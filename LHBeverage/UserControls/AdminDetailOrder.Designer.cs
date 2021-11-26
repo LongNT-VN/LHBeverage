@@ -30,7 +30,7 @@ namespace LHBeverage.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDetailOrder));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelUserInfo = new System.Windows.Forms.Panel();
             this.GenderCus = new System.Windows.Forms.Label();
             this.AgeCus = new System.Windows.Forms.Label();
             this.panelStatus2 = new System.Windows.Forms.Panel();
@@ -83,7 +83,7 @@ namespace LHBeverage.UserControls
             this.label27 = new System.Windows.Forms.Label();
             this.nameOrder = new System.Windows.Forms.Label();
             this.ImageItem = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.panelCtnDetail = new System.Windows.Forms.Panel();
             this.Reason = new System.Windows.Forms.Label();
             this.done_lbl = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -93,7 +93,7 @@ namespace LHBeverage.UserControls
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panelStatus = new System.Windows.Forms.Panel();
             this.StatusOrder_lbl = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panelUserInfo.SuspendLayout();
             this.panelStatus2.SuspendLayout();
             this.FlowPanel_ItemOrder.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -102,7 +102,7 @@ namespace LHBeverage.UserControls
             this.panel11.SuspendLayout();
             this.panelTopping.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).BeginInit();
-            this.panel10.SuspendLayout();
+            this.panelCtnDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -110,27 +110,27 @@ namespace LHBeverage.UserControls
             this.panelStatus.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelUserInfo
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.GenderCus);
-            this.panel1.Controls.Add(this.AgeCus);
-            this.panel1.Controls.Add(this.panelStatus2);
-            this.panel1.Controls.Add(this.AddressCus);
-            this.panel1.Controls.Add(this.PhoneCus);
-            this.panel1.Controls.Add(this.EmailCus);
-            this.panel1.Controls.Add(this.NameCus);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(14, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 430);
-            this.panel1.TabIndex = 8;
+            this.panelUserInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelUserInfo.BackColor = System.Drawing.Color.White;
+            this.panelUserInfo.Controls.Add(this.GenderCus);
+            this.panelUserInfo.Controls.Add(this.AgeCus);
+            this.panelUserInfo.Controls.Add(this.panelStatus2);
+            this.panelUserInfo.Controls.Add(this.AddressCus);
+            this.panelUserInfo.Controls.Add(this.PhoneCus);
+            this.panelUserInfo.Controls.Add(this.EmailCus);
+            this.panelUserInfo.Controls.Add(this.NameCus);
+            this.panelUserInfo.Controls.Add(this.label13);
+            this.panelUserInfo.Controls.Add(this.label12);
+            this.panelUserInfo.Controls.Add(this.label7);
+            this.panelUserInfo.Controls.Add(this.label5);
+            this.panelUserInfo.Controls.Add(this.label3);
+            this.panelUserInfo.Controls.Add(this.label2);
+            this.panelUserInfo.Location = new System.Drawing.Point(14, 43);
+            this.panelUserInfo.Name = "panelUserInfo";
+            this.panelUserInfo.Size = new System.Drawing.Size(283, 430);
+            this.panelUserInfo.TabIndex = 8;
             // 
             // GenderCus
             // 
@@ -220,6 +220,7 @@ namespace LHBeverage.UserControls
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(7, 273);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(62, 17);
@@ -230,6 +231,7 @@ namespace LHBeverage.UserControls
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(7, 220);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(36, 17);
@@ -240,6 +242,7 @@ namespace LHBeverage.UserControls
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(7, 321);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 17);
@@ -250,6 +253,7 @@ namespace LHBeverage.UserControls
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(7, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 17);
@@ -260,6 +264,7 @@ namespace LHBeverage.UserControls
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(7, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 17);
@@ -270,6 +275,7 @@ namespace LHBeverage.UserControls
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(7, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 17);
@@ -281,6 +287,7 @@ namespace LHBeverage.UserControls
             this.CodeOrder.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CodeOrder.AutoSize = true;
             this.CodeOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CodeOrder.ForeColor = System.Drawing.Color.Black;
             this.CodeOrder.Location = new System.Drawing.Point(377, 13);
             this.CodeOrder.Name = "CodeOrder";
             this.CodeOrder.Size = new System.Drawing.Size(45, 20);
@@ -292,6 +299,7 @@ namespace LHBeverage.UserControls
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(320, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 20);
@@ -319,7 +327,7 @@ namespace LHBeverage.UserControls
             this.DatePayment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DatePayment.AutoSize = true;
             this.DatePayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatePayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.DatePayment.ForeColor = System.Drawing.Color.Black;
             this.DatePayment.Location = new System.Drawing.Point(751, 13);
             this.DatePayment.Name = "DatePayment";
             this.DatePayment.Size = new System.Drawing.Size(89, 20);
@@ -331,6 +339,7 @@ namespace LHBeverage.UserControls
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(632, 13);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(113, 18);
@@ -370,6 +379,7 @@ namespace LHBeverage.UserControls
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Black;
             this.label36.Location = new System.Drawing.Point(474, 69);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(143, 20);
@@ -408,6 +418,7 @@ namespace LHBeverage.UserControls
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Black;
             this.label38.Location = new System.Drawing.Point(490, 164);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(122, 20);
@@ -417,6 +428,7 @@ namespace LHBeverage.UserControls
             // label44
             // 
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Black;
             this.label44.Location = new System.Drawing.Point(543, 453);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(74, 44);
@@ -427,6 +439,7 @@ namespace LHBeverage.UserControls
             // label45
             // 
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Black;
             this.label45.Location = new System.Drawing.Point(350, 453);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(145, 44);
@@ -437,6 +450,7 @@ namespace LHBeverage.UserControls
             // label46
             // 
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
             this.label46.Location = new System.Drawing.Point(162, 453);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(145, 44);
@@ -448,6 +462,7 @@ namespace LHBeverage.UserControls
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
             this.label47.Location = new System.Drawing.Point(25, 459);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(61, 17);
@@ -685,40 +700,41 @@ namespace LHBeverage.UserControls
             this.ImageItem.TabIndex = 0;
             this.ImageItem.TabStop = false;
             // 
-            // panel10
+            // panelCtnDetail
             // 
-            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.Reason);
-            this.panel10.Controls.Add(this.done_lbl);
-            this.panel10.Controls.Add(this.panel17);
-            this.panel10.Controls.Add(this.StatusOrder_cb);
-            this.panel10.Controls.Add(this.pictureBox9);
-            this.panel10.Controls.Add(this.Btn_cancel);
-            this.panel10.Controls.Add(this.label35);
-            this.panel10.Controls.Add(this.label36);
-            this.panel10.Controls.Add(this.pictureBox7);
-            this.panel10.Controls.Add(this.TotalPayment);
-            this.panel10.Controls.Add(this.label44);
-            this.panel10.Controls.Add(this.label38);
-            this.panel10.Controls.Add(this.label45);
-            this.panel10.Controls.Add(this.FlowPanel_ItemOrder);
-            this.panel10.Controls.Add(this.label46);
-            this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Controls.Add(this.label47);
-            this.panel10.Controls.Add(this.Bar_paymented);
-            this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Controls.Add(this.BarReceived);
-            this.panel10.Controls.Add(this.BarDelivered);
-            this.panel10.Controls.Add(this.panelStatus);
-            this.panel10.Location = new System.Drawing.Point(324, 43);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(667, 507);
-            this.panel10.TabIndex = 64;
+            this.panelCtnDetail.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelCtnDetail.BackColor = System.Drawing.Color.White;
+            this.panelCtnDetail.Controls.Add(this.Reason);
+            this.panelCtnDetail.Controls.Add(this.done_lbl);
+            this.panelCtnDetail.Controls.Add(this.panel17);
+            this.panelCtnDetail.Controls.Add(this.StatusOrder_cb);
+            this.panelCtnDetail.Controls.Add(this.pictureBox9);
+            this.panelCtnDetail.Controls.Add(this.Btn_cancel);
+            this.panelCtnDetail.Controls.Add(this.label35);
+            this.panelCtnDetail.Controls.Add(this.label36);
+            this.panelCtnDetail.Controls.Add(this.pictureBox7);
+            this.panelCtnDetail.Controls.Add(this.TotalPayment);
+            this.panelCtnDetail.Controls.Add(this.label44);
+            this.panelCtnDetail.Controls.Add(this.label38);
+            this.panelCtnDetail.Controls.Add(this.label45);
+            this.panelCtnDetail.Controls.Add(this.FlowPanel_ItemOrder);
+            this.panelCtnDetail.Controls.Add(this.label46);
+            this.panelCtnDetail.Controls.Add(this.pictureBox10);
+            this.panelCtnDetail.Controls.Add(this.label47);
+            this.panelCtnDetail.Controls.Add(this.Bar_paymented);
+            this.panelCtnDetail.Controls.Add(this.pictureBox8);
+            this.panelCtnDetail.Controls.Add(this.BarReceived);
+            this.panelCtnDetail.Controls.Add(this.BarDelivered);
+            this.panelCtnDetail.Controls.Add(this.panelStatus);
+            this.panelCtnDetail.Location = new System.Drawing.Point(324, 43);
+            this.panelCtnDetail.Name = "panelCtnDetail";
+            this.panelCtnDetail.Size = new System.Drawing.Size(667, 507);
+            this.panelCtnDetail.TabIndex = 64;
             // 
             // Reason
             // 
             this.Reason.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reason.ForeColor = System.Drawing.Color.Black;
             this.Reason.Location = new System.Drawing.Point(297, 324);
             this.Reason.Name = "Reason";
             this.Reason.Size = new System.Drawing.Size(367, 46);
@@ -728,7 +744,7 @@ namespace LHBeverage.UserControls
             // 
             this.done_lbl.AutoSize = true;
             this.done_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.done_lbl.ForeColor = System.Drawing.Color.Green;
+            this.done_lbl.ForeColor = System.Drawing.Color.Lime;
             this.done_lbl.Location = new System.Drawing.Point(549, 370);
             this.done_lbl.Name = "done_lbl";
             this.done_lbl.Size = new System.Drawing.Size(50, 17);
@@ -738,9 +754,9 @@ namespace LHBeverage.UserControls
             // 
             // panel17
             // 
-            this.panel17.Location = new System.Drawing.Point(417, 49);
+            this.panel17.Location = new System.Drawing.Point(417, 48);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(22, 247);
+            this.panel17.Size = new System.Drawing.Size(22, 253);
             this.panel17.TabIndex = 64;
             // 
             // pictureBox9
@@ -811,17 +827,18 @@ namespace LHBeverage.UserControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
             this.Controls.Add(this.DatePayment);
             this.Controls.Add(this.BackManageOrder);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.CodeOrder);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panelUserInfo);
+            this.Controls.Add(this.panelCtnDetail);
             this.Name = "AdminDetailOrder";
             this.Size = new System.Drawing.Size(1014, 600);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelUserInfo.ResumeLayout(false);
+            this.panelUserInfo.PerformLayout();
             this.panelStatus2.ResumeLayout(false);
             this.panelStatus2.PerformLayout();
             this.FlowPanel_ItemOrder.ResumeLayout(false);
@@ -835,8 +852,8 @@ namespace LHBeverage.UserControls
             this.panelTopping.ResumeLayout(false);
             this.panelTopping.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.panelCtnDetail.ResumeLayout(false);
+            this.panelCtnDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -849,7 +866,7 @@ namespace LHBeverage.UserControls
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelUserInfo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label GenderCus;
@@ -890,7 +907,7 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Panel Bar_paymented;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.FlowLayoutPanel FlowPanel_ItemOrder;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panelCtnDetail;
         private System.Windows.Forms.Panel panelStatus;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;

@@ -12,5 +12,7 @@ namespace LHBeverage
     {
         public static Panel panelRoot { get; set; } = new Panel();
         public static DataTable dataTableImgPro { get; set; } = new DataTable();
+        public static bool ligthMode { get; set; } = true;
+        public static int indexNav { get; set; } = 1;
     }
 }

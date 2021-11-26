@@ -16,6 +16,7 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class AdminProductCard : UserControl
     {
+        public static AdminProductCard instance;
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Product tmpPro = new Product();
         public AdminProductCard(Bitmap bmp,Product product)
@@ -31,8 +32,40 @@ namespace LHBeverage.UserControls.Component
             QuantitysizeL_lbl.Text = product.QuantitysizeL.ToString();
             //CategoryPro_lbl.Text = product.IDCate
             tmpPro = product;
+            instance = this;
+            setMode();
         }
-     
+        public void setMode()
+        {
+            if(PublicParam.ligthMode == true)
+            {
+                lbl_namePro.ForeColor = Color.Black;
+                NameProduct_lbl.ForeColor = Color.Black;
+                panelCtn.BackColor = Color.WhiteSmoke;
+                panelCtn_2.BackColor = Color.Gainsboro;
+                foreach (Control control in panelCtn_2.Controls)
+                {
+                    if (control.Tag != null)
+                    {
+                        control.ForeColor = Color.Black;
+                    }
+                }
+            }
+            else
+            {
+                lbl_namePro.ForeColor = Color.White;
+                NameProduct_lbl.ForeColor = Color.White;
+                panelCtn.BackColor = Color.FromArgb(61, 59, 59);
+                panelCtn_2.BackColor = Color.FromArgb(20, 19, 19);
+                foreach(Control control in panelCtn_2.Controls)
+                {
+                    if(control.Tag != null)
+                    {
+                        control.ForeColor = Color.White;
+                    }
+                }
+            }
+        }
 
         private void EditPro_btn_Click(object sender, EventArgs e)
         {

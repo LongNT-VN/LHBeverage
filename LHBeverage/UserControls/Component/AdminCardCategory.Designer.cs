@@ -34,8 +34,10 @@ namespace LHBeverage.UserControls.Component
             this.panel4 = new System.Windows.Forms.Panel();
             this.delete_btn = new System.Windows.Forms.Button();
             this.Edit_btn = new System.Windows.Forms.Button();
+            this.CateImage = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CateImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -43,6 +45,7 @@ namespace LHBeverage.UserControls.Component
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.CateImage);
             this.panel3.Controls.Add(this.nameCategory_lbl);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -54,9 +57,9 @@ namespace LHBeverage.UserControls.Component
             // 
             this.nameCategory_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameCategory_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nameCategory_lbl.Location = new System.Drawing.Point(3, 14);
+            this.nameCategory_lbl.Location = new System.Drawing.Point(84, 14);
             this.nameCategory_lbl.Name = "nameCategory_lbl";
-            this.nameCategory_lbl.Size = new System.Drawing.Size(305, 28);
+            this.nameCategory_lbl.Size = new System.Drawing.Size(224, 28);
             this.nameCategory_lbl.TabIndex = 17;
             this.nameCategory_lbl.Text = "Name Category";
             this.nameCategory_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -100,6 +103,15 @@ namespace LHBeverage.UserControls.Component
             this.Edit_btn.UseVisualStyleBackColor = false;
             this.Edit_btn.Click += new System.EventHandler(this.Edit_btn_Click);
             // 
+            // CateImage
+            // 
+            this.CateImage.Location = new System.Drawing.Point(7, 3);
+            this.CateImage.Name = "CateImage";
+            this.CateImage.Size = new System.Drawing.Size(75, 53);
+            this.CateImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CateImage.TabIndex = 18;
+            this.CateImage.TabStop = false;
+            // 
             // AdminCardCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +122,7 @@ namespace LHBeverage.UserControls.Component
             this.Size = new System.Drawing.Size(490, 59);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CateImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,5 +134,6 @@ namespace LHBeverage.UserControls.Component
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button delete_btn;
         private System.Windows.Forms.Button Edit_btn;
+        private System.Windows.Forms.PictureBox CateImage;
     }
 }

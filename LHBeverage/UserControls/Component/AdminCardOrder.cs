@@ -23,7 +23,49 @@ namespace LHBeverage.UserControls.Component
             InitializeComponent();
             initCardOrder(order);
             orderTmp = order;
+            SetMode();
         }
+        void SetMode()
+        {
+            foreach (Control control in panelCtn.Controls)
+            {
+                if (control is Panel)
+                {
+                    if (PublicParam.ligthMode == true)
+                    {
+                        control.BackColor = Color.White;
+                        foreach (Control itemcontrol in control.Controls)
+                        {
+                            if (itemcontrol is Label)
+                            {
+                                if (itemcontrol.ForeColor == Color.Aqua)
+                                {
+                                    itemcontrol.ForeColor = Color.Black;
+                                }
+                            }
+
+                        }
+                    }
+                    else
+                    {
+                        control.BackColor = Color.FromArgb(30, 30, 30);
+                        foreach (Control itemcontrol in control.Controls)
+                        {
+                            if (itemcontrol is Label)
+                            {
+                                if (itemcontrol.ForeColor == Color.Black)
+                                {
+                                    itemcontrol.ForeColor = Color.Aqua;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+      
         void initCardOrder(Order order)
         {
             panelCtn.BackColor = Color.Orange;
@@ -32,7 +74,7 @@ namespace LHBeverage.UserControls.Component
                 ProccessingPayment_bar.BackColor = Color.DarkGray;
                 ProccessingReceived_bar.BackColor = Color.DarkGray;
                 ProccessingOrdered_bar.BackColor = Color.DarkGray;
-                panelCtn.BackColor = Color.Red;
+                panelCtn.BackColor = Color.FromArgb(245, 64, 51);
             }
             if(order.Status == "Delivered")
             {
@@ -44,7 +86,7 @@ namespace LHBeverage.UserControls.Component
             {
                 ProccessingPayment_bar.BackColor = Color.Lime;
                 ProccessingReceived_bar.BackColor = Color.Lime;
-                panelCtn.BackColor = Color.Lime;
+                panelCtn.BackColor = Color.SpringGreen;
                 done_lbl.Visible = true;
             }
             Customer customer = CustomerConnect.CustomerInfo(order.IDCus);
@@ -52,17 +94,15 @@ namespace LHBeverage.UserControls.Component
             CustomerName.Text = customer.Name;
             DatePayment.Text = order.DateOrder;
             statusOrder_lbl.Text = order.Status;
-            //Address.Text = order.a
             TotalPayment.Text = order.Totalpayment.ToString("#,###", cul.NumberFormat) + " VNĐ";
             List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(order.IDOrder);
             AmountItem.Text = detailOrders.Count().ToString();
-
         }
 
         private void ViewDetailOrder_btn_Click(object sender, EventArgs e)
         {
             AdminDetailOrder adminDetailOrder = new AdminDetailOrder(orderTmp);
-        
+            //AdminDetailOrder.instance.SetMode();
             AddNewPage.addUserControl(adminDetailOrder);
         }
     }

@@ -33,14 +33,14 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("insert into Category (Name) values (@Name)", category);
+                connection.Execute("insert into Category (Name,CateImage) values (@Name,@CateImage)", category);
             }
         }
         public static void UpdateCategory(Category category)
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute($"update Category set Name='{category.Name}' where IDCate='{category.IDCate}'", category);
+                connection.Execute($"update Category set Name='{category.Name}',CateImage='{category.CateImage}' where IDCate='{category.IDCate}'", category);
             }
         }
         public static void DeleteCategory(Category category)

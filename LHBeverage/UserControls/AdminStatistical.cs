@@ -17,10 +17,62 @@ namespace LHBeverage.UserControls
     {
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         List<Order> orders;
+        public static AdminStatistical instance;
         public AdminStatistical()
         {
             InitializeComponent();
             initData();
+            setMode();
+            instance = this;
+        }
+        public void setMode()
+        {
+            if(PublicParam.ligthMode == true)
+            {
+                panelCtn_Root.BackColor = Color.White;
+            }
+            else
+            {
+                panelCtn_Root.BackColor = Color.FromArgb(30,30,30);
+            }
+            foreach (Control control in panelCtn_Root.Controls)
+            {
+                if (control is Panel)
+                {
+                    //control.BackColor = Color.WhiteSmoke;
+                    if (PublicParam.ligthMode == true)
+                    {
+                        control.BackColor = Color.White;
+                        foreach (Control itemcontrol in control.Controls)
+                        {
+                            if (itemcontrol is Label)
+                            {
+                                if (itemcontrol.ForeColor == Color.Aqua)
+                                {
+                                    itemcontrol.ForeColor = Color.Black;
+                                }
+                            }
+
+                        }
+                    }
+                    else
+                    {
+                        control.BackColor = Color.FromArgb(30, 30, 30);
+                        foreach (Control itemcontrol in control.Controls)
+                        {
+                            if (itemcontrol is Label)
+                            {
+                                if (itemcontrol.ForeColor == Color.Black)
+                                {
+                                    itemcontrol.ForeColor = Color.Aqua;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
         }
         void initData()
         {

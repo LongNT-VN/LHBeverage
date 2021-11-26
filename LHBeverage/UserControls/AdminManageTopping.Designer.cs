@@ -29,13 +29,13 @@ namespace LHBeverage.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelManageCategory = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.ListTopping_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelAddTopping = new System.Windows.Forms.Panel();
+            this.toppingPrice_lbl = new System.Windows.Forms.Label();
+            this.PriceTopping_tb = new System.Windows.Forms.TextBox();
             this.Category_cb = new System.Windows.Forms.ComboBox();
             this.NameToppings_lbl = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -43,63 +43,35 @@ namespace LHBeverage.UserControls
             this.AddCate_btn = new System.Windows.Forms.Button();
             this.NameTopping_tb = new System.Windows.Forms.TextBox();
             this.lbl_categortName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PriceTopping_tb = new System.Windows.Forms.TextBox();
-            this.panelManageCategory.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelAddTopping.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelManageCategory
-            // 
-            this.panelManageCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelManageCategory.AutoScroll = true;
-            this.panelManageCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
-            this.panelManageCategory.Controls.Add(this.panel3);
-            this.panelManageCategory.Location = new System.Drawing.Point(0, 0);
-            this.panelManageCategory.Name = "panelManageCategory";
-            this.panelManageCategory.Size = new System.Drawing.Size(1014, 600);
-            this.panelManageCategory.TabIndex = 5;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.ListTopping_flowpanel);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Location = new System.Drawing.Point(96, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(851, 551);
-            this.panel3.TabIndex = 25;
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Location = new System.Drawing.Point(832, 0);
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Location = new System.Drawing.Point(930, 95);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(53, 409);
-            this.panel5.TabIndex = 26;
+            this.panel5.Size = new System.Drawing.Size(53, 417);
+            this.panel5.TabIndex = 34;
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(329, 9);
+            this.panel1.Location = new System.Drawing.Point(427, 104);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(522, 31);
-            this.panel1.TabIndex = 24;
+            this.panel1.TabIndex = 33;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(-4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(519, 31);
             this.label2.TabIndex = 14;
@@ -111,27 +83,49 @@ namespace LHBeverage.UserControls
             this.ListTopping_flowpanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ListTopping_flowpanel.AutoScroll = true;
             this.ListTopping_flowpanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ListTopping_flowpanel.Location = new System.Drawing.Point(329, 39);
+            this.ListTopping_flowpanel.Location = new System.Drawing.Point(427, 134);
             this.ListTopping_flowpanel.Name = "ListTopping_flowpanel";
             this.ListTopping_flowpanel.Size = new System.Drawing.Size(522, 371);
-            this.ListTopping_flowpanel.TabIndex = 23;
+            this.ListTopping_flowpanel.TabIndex = 32;
             // 
-            // panel2
+            // panelAddTopping
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.PriceTopping_tb);
-            this.panel2.Controls.Add(this.Category_cb);
-            this.panel2.Controls.Add(this.NameToppings_lbl);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.UpdateCate_btn);
-            this.panel2.Controls.Add(this.AddCate_btn);
-            this.panel2.Controls.Add(this.NameTopping_tb);
-            this.panel2.Controls.Add(this.lbl_categortName);
-            this.panel2.Location = new System.Drawing.Point(4, 9);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 400);
-            this.panel2.TabIndex = 3;
+            this.panelAddTopping.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelAddTopping.BackColor = System.Drawing.Color.White;
+            this.panelAddTopping.Controls.Add(this.toppingPrice_lbl);
+            this.panelAddTopping.Controls.Add(this.PriceTopping_tb);
+            this.panelAddTopping.Controls.Add(this.Category_cb);
+            this.panelAddTopping.Controls.Add(this.NameToppings_lbl);
+            this.panelAddTopping.Controls.Add(this.panel4);
+            this.panelAddTopping.Controls.Add(this.UpdateCate_btn);
+            this.panelAddTopping.Controls.Add(this.AddCate_btn);
+            this.panelAddTopping.Controls.Add(this.NameTopping_tb);
+            this.panelAddTopping.Controls.Add(this.lbl_categortName);
+            this.panelAddTopping.Location = new System.Drawing.Point(102, 104);
+            this.panelAddTopping.Name = "panelAddTopping";
+            this.panelAddTopping.Size = new System.Drawing.Size(320, 400);
+            this.panelAddTopping.TabIndex = 31;
+            // 
+            // toppingPrice_lbl
+            // 
+            this.toppingPrice_lbl.AutoSize = true;
+            this.toppingPrice_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toppingPrice_lbl.ForeColor = System.Drawing.Color.Black;
+            this.toppingPrice_lbl.Location = new System.Drawing.Point(44, 223);
+            this.toppingPrice_lbl.Name = "toppingPrice_lbl";
+            this.toppingPrice_lbl.Size = new System.Drawing.Size(115, 18);
+            this.toppingPrice_lbl.TabIndex = 29;
+            this.toppingPrice_lbl.Text = "Topping price:";
+            // 
+            // PriceTopping_tb
+            // 
+            this.PriceTopping_tb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PriceTopping_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PriceTopping_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTopping_tb.Location = new System.Drawing.Point(47, 263);
+            this.PriceTopping_tb.Name = "PriceTopping_tb";
+            this.PriceTopping_tb.Size = new System.Drawing.Size(223, 20);
+            this.PriceTopping_tb.TabIndex = 28;
             // 
             // Category_cb
             // 
@@ -158,6 +152,7 @@ namespace LHBeverage.UserControls
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.Red;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -215,61 +210,39 @@ namespace LHBeverage.UserControls
             this.lbl_categortName.TabIndex = 11;
             this.lbl_categortName.Text = "Category:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(44, 223);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 18);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Topping price:";
-            // 
-            // PriceTopping_tb
-            // 
-            this.PriceTopping_tb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PriceTopping_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceTopping_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceTopping_tb.Location = new System.Drawing.Point(47, 263);
-            this.PriceTopping_tb.Name = "PriceTopping_tb";
-            this.PriceTopping_tb.Size = new System.Drawing.Size(223, 20);
-            this.PriceTopping_tb.TabIndex = 28;
-            // 
             // AdminManageTopping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.panelManageCategory);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ListTopping_flowpanel);
+            this.Controls.Add(this.panelAddTopping);
             this.Name = "AdminManageTopping";
             this.Size = new System.Drawing.Size(1014, 600);
-            this.panelManageCategory.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelAddTopping.ResumeLayout(false);
+            this.panelAddTopping.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelManageCategory;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel ListTopping_flowpanel;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelAddTopping;
+        private System.Windows.Forms.Label toppingPrice_lbl;
+        private System.Windows.Forms.TextBox PriceTopping_tb;
+        private System.Windows.Forms.ComboBox Category_cb;
+        private System.Windows.Forms.Label NameToppings_lbl;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button UpdateCate_btn;
         private System.Windows.Forms.Button AddCate_btn;
         private System.Windows.Forms.TextBox NameTopping_tb;
         private System.Windows.Forms.Label lbl_categortName;
-        private System.Windows.Forms.Label NameToppings_lbl;
-        private System.Windows.Forms.ComboBox Category_cb;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PriceTopping_tb;
     }
 }

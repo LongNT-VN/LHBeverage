@@ -30,6 +30,7 @@ namespace LHBeverage.UserControls.Component
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.amount = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@ namespace LHBeverage.UserControls.Component
             this.label27 = new System.Windows.Forms.Label();
             this.nameOrder = new System.Windows.Forms.Label();
             this.ImageItem = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -67,6 +67,14 @@ namespace LHBeverage.UserControls.Component
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(400, 146);
             this.panel5.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(382, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(18, 143);
+            this.panel1.TabIndex = 40;
             // 
             // flowLayoutPanel5
             // 
@@ -158,7 +166,6 @@ namespace LHBeverage.UserControls.Component
             this.toppingLbl.Size = new System.Drawing.Size(244, 124);
             this.toppingLbl.TabIndex = 34;
             this.toppingLbl.Text = "0";
-            this.toppingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
@@ -197,7 +204,7 @@ namespace LHBeverage.UserControls.Component
             this.nameOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameOrder.Location = new System.Drawing.Point(5, 5);
             this.nameOrder.Name = "nameOrder";
-            this.nameOrder.Size = new System.Drawing.Size(96, 17);
+            this.nameOrder.Size = new System.Drawing.Size(371, 22);
             this.nameOrder.TabIndex = 34;
             this.nameOrder.Text = "Name Order";
             // 
@@ -209,14 +216,6 @@ namespace LHBeverage.UserControls.Component
             this.ImageItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageItem.TabIndex = 0;
             this.ImageItem.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(382, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(18, 143);
-            this.panel1.TabIndex = 40;
             // 
             // AdminItemCardOrder
             // 

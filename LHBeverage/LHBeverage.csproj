@@ -164,6 +164,12 @@
     <Compile Include="UserControls\AccountPagePanel.Designer.cs">
       <DependentUpon>AccountPagePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\AdminAccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminAccountPage.Designer.cs">
+      <DependentUpon>AdminAccountPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\AdminDetailOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -363,6 +369,9 @@
     <EmbeddedResource Include="UserControls\AccountPagePanel.resx">
       <DependentUpon>AccountPagePanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminAccountPage.resx">
+      <DependentUpon>AdminAccountPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AdminDetailOrder.resx">
       <DependentUpon>AdminDetailOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -524,6 +533,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-upload-a30f385a928e44e199a62210d578375a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

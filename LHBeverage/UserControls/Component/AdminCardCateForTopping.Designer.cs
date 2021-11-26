@@ -46,8 +46,9 @@ namespace LHBeverage.UserControls.Component
             // 
             // categoryname_lbl
             // 
+            this.categoryname_lbl.BackColor = System.Drawing.Color.Transparent;
             this.categoryname_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryname_lbl.ForeColor = System.Drawing.Color.Gold;
+            this.categoryname_lbl.ForeColor = System.Drawing.Color.Yellow;
             this.categoryname_lbl.Location = new System.Drawing.Point(280, 0);
             this.categoryname_lbl.Name = "categoryname_lbl";
             this.categoryname_lbl.Size = new System.Drawing.Size(207, 31);
@@ -59,7 +60,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.categoryname_lbl);
             this.Controls.Add(this.label1);
             this.Name = "AdminCardCateForTopping";

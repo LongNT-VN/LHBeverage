@@ -17,10 +17,48 @@ namespace LHBeverage.UserControls
     public partial class AdminDetailProduct : UserControl
     {
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
+        public static AdminDetailProduct instance;
         public AdminDetailProduct(Product product)
         {
             InitializeComponent();
             CreateDetail(product);
+            SetMode();
+            instance = this;
+        }
+        public void SetMode()
+        {
+            if(PublicParam.ligthMode == true)
+            {
+                this.BackColor = Color.FromArgb(209, 218, 235);
+                panel_CtnDetailPro.BackColor = Color.White;
+                foreach (Control control in panel_CtnDetailPro.Controls)
+                {
+                    if(control.Tag != null)
+                    {
+                        if (control.Tag.ToString() == "panelChange")
+                        {
+                            control.BackColor = Color.White;
+                        }
+                        control.ForeColor = Color.Black;
+                    }
+                }
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(30,30,30);
+                panel_CtnDetailPro.BackColor = Color.Black;
+                foreach (Control control in panel_CtnDetailPro.Controls)
+                {
+                    if (control.Tag != null)
+                    {
+                        if(control.Tag.ToString() == "panelChange")
+                        {
+                            control.BackColor = Color.Black;
+                        }
+                        control.ForeColor = Color.White;
+                    }
+                }
+            }
         }
         public void CreateDetail(Product product)
         {

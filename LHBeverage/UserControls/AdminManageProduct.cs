@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using LHBeverage.UserControls.Component;
 using System;
@@ -30,6 +31,7 @@ namespace LHBeverage.UserControls
         {
             InitializeComponent();
             loadCategoryInComboBox();
+            setMode();
             loadData();
             instance = this;
             cust = customer;
@@ -40,7 +42,100 @@ namespace LHBeverage.UserControls
 
             //  Allow the user to select multiple images.
             this.openFileDialog_Img.Multiselect = true;
+        }
+        public void setMode()
+        {
+            if (PublicParam.ligthMode == true)
+            {
+                SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.Blue, Color.Black, Color.FromArgb(209, 218, 235));
+                panelManageProduct.BackColor = Color.FromArgb(209, 218, 235);
+                this.BackColor = Color.FromArgb(209, 218, 235);
+                btnOpenpanelAddPro.BackColor = Color.Blue;
+                lbl_chooseCate.ForeColor = Color.Purple;
+                // EditImage_FlowPanel.BackColor = Color.FromArgb(209, 218, 235);
+                setModeForPanelEditAndAdd(true, panelEditCtn);
+                setModeForPanelEditAndAdd(true, panelCtnAddPro);
+            }
+            else
+            {
+                SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.FromArgb(30, 30, 30));
+                panelManageProduct.BackColor = Color.FromArgb(30, 30, 30);
+                this.BackColor = Color.FromArgb(30, 30, 30);
+                lbl_chooseCate.ForeColor = Color.Aqua;
+                // EditImage_FlowPanel.BackColor = Color.FromArgb(30, 30, 30);
+                setModeForPanelEditAndAdd(false,panelEditCtn);
+                setModeForPanelEditAndAdd(false, panelCtnAddPro);
+                //btnOpenpanelAddPro.BackColor = Color.Blue;
+            }
+           
+            btnOpenpanelAddPro.ForeColor = Color.White;
+            loadData();
+            //AdminProductCard.instance.setMode();
+        }
+        void setModeForPanelEditAndAdd(bool mode , Panel panel)
+        {
+            if(mode == true)
+            {
+                foreach (Control control in panel.Controls)
+                {
+                    if (control is Button)
+                    {
+                        control.BackColor = Color.OrangeRed;
+                        control.ForeColor = Color.White;
 
+                    }
+                    if (control is Panel)
+                    {
+                        control.BackColor = Color.White;
+                        foreach (Control itemControl in control.Controls)
+                        {
+                            if (!(itemControl is TextBox))
+                            {
+                                if (itemControl is Label)
+                                {
+                                    itemControl.ForeColor = Color.Black;
+                                }
+                                else if (itemControl is Panel)
+                                {
+                                    itemControl.BackColor = Color.White;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                foreach (Control control in panel.Controls)
+                {
+                    if (control is Button)
+                    {
+                        control.BackColor = Color.OrangeRed;
+                        control.ForeColor = Color.White;
+                    }
+                    if (control is Panel)
+                    {
+                        control.BackColor = Color.FromArgb(30, 30, 30);
+                        foreach (Control itemControl in control.Controls)
+                        {
+                            if (!(itemControl is TextBox))
+                            {
+                                if (itemControl is Label)
+                                {
+                                    itemControl.ForeColor = Color.White;
+                                }
+                                else if (itemControl is Panel)
+                                {
+                                    itemControl.BackColor = Color.FromArgb(30, 30, 30);
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        
         }
         private void loadCategoryInComboBox()
         {
@@ -67,6 +162,7 @@ namespace LHBeverage.UserControls
         }
         public void loadData()
         {
+
             int i = 0;
             int categoryManage = Convert.ToInt32(((KeyValuePair<string, string>)CategoryManage_Cb.SelectedItem).Key);
             if (categoryManage == 0)
@@ -101,6 +197,13 @@ namespace LHBeverage.UserControls
             }          
         }
 
+        bool checkNumber(string text)
+        {
+            int outValue = 0;
+            bool isNumber = false;
+            isNumber = int.TryParse(text,out outValue);
+            return isNumber;
+        }
         // Function convert image:
         public static string convertBitmapToBase64(Bitmap bmp)
         {
@@ -134,6 +237,20 @@ namespace LHBeverage.UserControls
                     Product product = new Product();
                     product.IDCate = key;
                     product.IDCust = cust.IDCus;
+
+                if (NamePro_tb.Text == "" || PriceS_tb.Text==""|| PriceM_tb.Text==""||
+                    PriceL_tb.Text=="" || QuantitySizeS_tb.Text=="" || QuantitySizeM_tb.Text=="" || QuantitySizeL_tb.Text ==""
+                    )
+                {
+                    MessageBox.Show("Please enter Product infor fully");
+                }
+                else if (!checkNumber(PriceS_tb.Text) || !checkNumber(PriceM_tb.Text)|| !checkNumber(PriceL_tb.Text) || 
+                    !checkNumber(QuantitySizeS_tb.Text) || !checkNumber(QuantitySizeM_tb.Text) || !checkNumber(QuantitySizeL_tb.Text))
+                {
+                    MessageBox.Show("Please enter Product infor correct format");
+                }
+                else
+                {
                     product.Name = NamePro_tb.Text;
                     product.PriceS = Convert.ToInt32(PriceS_tb.Text);
                     product.PriceM = Convert.ToInt32(PriceM_tb.Text);
@@ -155,7 +272,7 @@ namespace LHBeverage.UserControls
                     PriceS_tb.Text = "";
                     PriceM_tb.Text = "";
                     PriceL_tb.Text = "";
-                    
+
                     AddPro_panel.Visible = false;
                     AddImg_panel.Visible = true;
 
@@ -163,6 +280,8 @@ namespace LHBeverage.UserControls
                     CategoryManage_Cb.SelectedValue = product.IDCate.ToString();
                     renderListProduct();
                     loadData();
+                }
+                   
                 }
                 catch (Exception ex)
                 {
@@ -252,22 +371,18 @@ namespace LHBeverage.UserControls
         {
             if(openFileDialog_Img.ShowDialog() == DialogResult.OK)
             {
-               
                     foreach (String file in openFileDialog_Img.FileNames)
                     {
                         try
                         {
                             bmp = new Bitmap(file);
                             base64Img = convertBitmapToBase64(bmp);
-
                             int idimg = setIdImageByDatatable();
                             int IdPro = Convert.ToInt32(((KeyValuePair<string, string>)ProductList_cb.SelectedItem).Key);
                             PublicParam.dataTableImgPro.Rows.Add(IdPro, idimg, base64Img);
-                          
                         }
                         catch (SecurityException ex)
                         {
-                            // The user lacks appropriate permissions to read files, discover paths, etc.
                             MessageBox.Show("Security error.\n\n" +
                                 "Error message: " + ex.Message + "\n\n" +
                                 "Details (send to Support):\n\n" + ex.StackTrace
@@ -275,20 +390,16 @@ namespace LHBeverage.UserControls
                         }
                         catch (Exception ex)
                         {
-                            // Could not load the image - probably related to Windows file system permissions.
                             MessageBox.Show("Cannot display the image: " + file.Substring(file.LastIndexOf('\\'))
                                 + ". You may not have permission to read the file, or " +
                                 "it may be corrupt.\n\nReported error: " + ex.Message);
                         }
-                       
                     }     
-             renderImgProByTable();           
+                    renderImgProByTable();           
             }
         }
-        // save image to data when add new product
         private void AddImage_Click(object sender, EventArgs e)
         {
-          
             int IdPro = Convert.ToInt32(((KeyValuePair<string, string>)ProductList_cb.SelectedItem).Key);
             DetailImageConnect.DeleteImageOfPro(IdPro);
             DataRow[] dr = PublicParam.dataTableImgPro.Select();
@@ -342,14 +453,12 @@ namespace LHBeverage.UserControls
             QuantitySizeM_tb.Text = "";
             QuantitySizeL_tb.Text = "";
         }
-
         private void btn_Toggle_AddInfor_Click(object sender, EventArgs e)
         {
             AddPro_panel.BringToFront();
             AddPro_panel.Visible = true;
             AddImg_panel.Visible = false;
         }
-
         private void close_panelCtnEdit_Click(object sender, EventArgs e)
         {
             panelEditCtn.Visible = false;
@@ -405,27 +514,42 @@ namespace LHBeverage.UserControls
         private void UpdateInfo_btn_Click(object sender, EventArgs e)
         {
             // update edit product with infor
-            EditProduct.Name = EditProductName_tb.Text;
-            EditProduct.PriceS = Convert.ToInt32(EditPriceS_tb.Text);
-            EditProduct.PriceM = Convert.ToInt32(EditPriceM_tb.Text);
-            EditProduct.PriceL = Convert.ToInt32(EditPriceL_tb.Text);
-            EditProduct.Description = EditDes_tb.Text;
-            EditProduct.QuantitysizeS = Convert.ToInt32(EditQuantitysizeS_tb.Text);
-            EditProduct.QuantitysizeM = Convert.ToInt32(EditQuantitysizeM_tb.Text);
-            EditProduct.QuantitysizeL = Convert.ToInt32(EditQuantitysizeL_tb.Text);
-            EditProduct.IDCate = Convert.ToInt32(((KeyValuePair<string, string>)cbEditCategory.SelectedItem).Key);
-            // update editproduct to database:
-            try
+            if (NamePro_tb.Text == "" || EditPriceS_tb.Text == "" || EditPriceM_tb.Text == "" ||
+                    EditPriceL_tb.Text == "" || EditQuantitysizeS_tb.Text == "" || EditQuantitysizeM_tb.Text == "" || EditQuantitysizeL_tb.Text == ""
+                    )
             {
-                ProductConnect.UpdateProduct(EditProduct);
-                MessageBox.Show("Update Information of product successfull");
-                CategoryManage_Cb.SelectedValue = EditProduct.IDCate.ToString();
-                loadData();
+                MessageBox.Show("Please enter Product infor fully");
             }
-            catch(Exception ex)
+            else if (!checkNumber(EditPriceS_tb.Text) || !checkNumber(EditPriceM_tb.Text) || !checkNumber(EditPriceL_tb.Text) ||
+                   !checkNumber(EditQuantitysizeS_tb.Text) || !checkNumber(EditQuantitysizeM_tb.Text) || !checkNumber(EditQuantitysizeL_tb.Text))
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Please enter Product infor correct format");
             }
+            else
+            {
+                EditProduct.Name = EditProductName_tb.Text;
+                EditProduct.PriceS = Convert.ToInt32(EditPriceS_tb.Text);
+                EditProduct.PriceM = Convert.ToInt32(EditPriceM_tb.Text);
+                EditProduct.PriceL = Convert.ToInt32(EditPriceL_tb.Text);
+                EditProduct.Description = EditDes_tb.Text;
+                EditProduct.QuantitysizeS = Convert.ToInt32(EditQuantitysizeS_tb.Text);
+                EditProduct.QuantitysizeM = Convert.ToInt32(EditQuantitysizeM_tb.Text);
+                EditProduct.QuantitysizeL = Convert.ToInt32(EditQuantitysizeL_tb.Text);
+                EditProduct.IDCate = Convert.ToInt32(((KeyValuePair<string, string>)cbEditCategory.SelectedItem).Key);
+                // update editproduct to database:
+                try
+                {
+                    ProductConnect.UpdateProduct(EditProduct);
+                    MessageBox.Show("Update Information of product successfull");
+                    CategoryManage_Cb.SelectedValue = EditProduct.IDCate.ToString();
+                    loadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+           
         }
 
         private void loadImgFromLocal_Btn_Click(object sender, EventArgs e)
@@ -508,7 +632,6 @@ namespace LHBeverage.UserControls
                 flowPanel_AddImagePro.Controls.Add(adminImageCard);
             }
         }
-
         private void CategoryManage_Cb_SelectedIndexChanged(object sender, EventArgs e)
         {
          

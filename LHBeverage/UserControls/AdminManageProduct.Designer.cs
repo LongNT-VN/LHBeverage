@@ -30,19 +30,29 @@ namespace LHBeverage.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminManageProduct));
+            this.openFileDialog_Img = new System.Windows.Forms.OpenFileDialog();
             this.panelManageProduct = new System.Windows.Forms.Panel();
             this.CategoryManage_Cb = new System.Windows.Forms.ComboBox();
             this.panelEditCtn = new System.Windows.Forms.Panel();
             this.Btn_Nav_EditInfor = new System.Windows.Forms.Button();
             this.Btn_Nav_UpdateImg = new System.Windows.Forms.Button();
             this.panelCtnUpdateImg = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.EditProductName_lbl = new System.Windows.Forms.Label();
             this.EditImage_FlowPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
             this.loadImgFromLocal_Btn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.EditSubmitImg_btn = new System.Windows.Forms.Button();
             this.panelCtnUpdateInfor = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_chooseCate = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.EditPriceM_tb = new System.Windows.Forms.TextBox();
             this.EditQuantitysizeL_tb = new System.Windows.Forms.TextBox();
@@ -54,15 +64,11 @@ namespace LHBeverage.UserControls
             this.label20 = new System.Windows.Forms.Label();
             this.EditQuantitysizeS_tb = new System.Windows.Forms.TextBox();
             this.EditDes_tb = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.UpdateInfo_btn = new System.Windows.Forms.Button();
             this.cbEditCategory = new System.Windows.Forms.ComboBox();
             this.EditPriceS_tb = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.EditProductName_tb = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.close_panelCtnEdit = new System.Windows.Forms.Button();
             this.panelCtnAddPro = new System.Windows.Forms.Panel();
             this.btn_Toggle_AddInfor = new System.Windows.Forms.Button();
@@ -75,6 +81,12 @@ namespace LHBeverage.UserControls
             this.ProductList_cb = new System.Windows.Forms.ComboBox();
             this.AddImage = new System.Windows.Forms.Button();
             this.AddPro_panel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_Title_panelPro = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lbl_categortName = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.QuantitySizeL_tb = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -86,15 +98,11 @@ namespace LHBeverage.UserControls
             this.label6 = new System.Windows.Forms.Label();
             this.QuantitySizeS_tb = new System.Windows.Forms.TextBox();
             this.Des_Tb = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.AddPro_btn = new System.Windows.Forms.Button();
             this.category_Cb = new System.Windows.Forms.ComboBox();
             this.PriceS_tb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.NamePro_tb = new System.Windows.Forms.TextBox();
-            this.lbl_categortName = new System.Windows.Forms.Label();
-            this.lbl_Title_panelPro = new System.Windows.Forms.Label();
             this.ImageBack_btn = new System.Windows.Forms.Button();
             this.btnOpenpanelAddPro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -109,18 +117,28 @@ namespace LHBeverage.UserControls
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.openFileDialog_Img = new System.Windows.Forms.OpenFileDialog();
             this.panelManageProduct.SuspendLayout();
             this.panelEditCtn.SuspendLayout();
             this.panelCtnUpdateImg.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panelCtnUpdateInfor.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panelCtnAddPro.SuspendLayout();
             this.AddImg_panel.SuspendLayout();
             this.AddPro_panel.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.ListPro_flowpanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Pro)).BeginInit();
             this.SuspendLayout();
+            // 
+            // openFileDialog_Img
+            // 
+            this.openFileDialog_Img.FileName = "openFileDialog1";
             // 
             // panelManageProduct
             // 
@@ -155,12 +173,13 @@ namespace LHBeverage.UserControls
             // panelEditCtn
             // 
             this.panelEditCtn.BackColor = System.Drawing.Color.White;
+            this.panelEditCtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEditCtn.Controls.Add(this.Btn_Nav_EditInfor);
             this.panelEditCtn.Controls.Add(this.Btn_Nav_UpdateImg);
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateImg);
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateInfor);
             this.panelEditCtn.Controls.Add(this.close_panelCtnEdit);
-            this.panelEditCtn.Location = new System.Drawing.Point(82, 89);
+            this.panelEditCtn.Location = new System.Drawing.Point(82, 91);
             this.panelEditCtn.Name = "panelEditCtn";
             this.panelEditCtn.Size = new System.Drawing.Size(897, 435);
             this.panelEditCtn.TabIndex = 26;
@@ -199,9 +218,9 @@ namespace LHBeverage.UserControls
             // panelCtnUpdateImg
             // 
             this.panelCtnUpdateImg.BackColor = System.Drawing.Color.White;
+            this.panelCtnUpdateImg.Controls.Add(this.panel6);
             this.panelCtnUpdateImg.Controls.Add(this.EditProductName_lbl);
             this.panelCtnUpdateImg.Controls.Add(this.EditImage_FlowPanel);
-            this.panelCtnUpdateImg.Controls.Add(this.label8);
             this.panelCtnUpdateImg.Controls.Add(this.loadImgFromLocal_Btn);
             this.panelCtnUpdateImg.Controls.Add(this.label12);
             this.panelCtnUpdateImg.Controls.Add(this.EditSubmitImg_btn);
@@ -210,6 +229,25 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateImg.Size = new System.Drawing.Size(680, 397);
             this.panelCtnUpdateImg.TabIndex = 24;
             this.panelCtnUpdateImg.Visible = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Location = new System.Drawing.Point(89, 8);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(180, 34);
+            this.panel6.TabIndex = 37;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(3, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(143, 22);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Update Images";
             // 
             // EditProductName_lbl
             // 
@@ -225,21 +263,11 @@ namespace LHBeverage.UserControls
             // 
             this.EditImage_FlowPanel.AutoScroll = true;
             this.EditImage_FlowPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.EditImage_FlowPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EditImage_FlowPanel.Location = new System.Drawing.Point(89, 79);
             this.EditImage_FlowPanel.Name = "EditImage_FlowPanel";
             this.EditImage_FlowPanel.Size = new System.Drawing.Size(507, 256);
             this.EditImage_FlowPanel.TabIndex = 28;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(288, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 22);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Update Images";
             // 
             // loadImgFromLocal_Btn
             // 
@@ -286,6 +314,10 @@ namespace LHBeverage.UserControls
             // panelCtnUpdateInfor
             // 
             this.panelCtnUpdateInfor.BackColor = System.Drawing.Color.White;
+            this.panelCtnUpdateInfor.Controls.Add(this.panel5);
+            this.panelCtnUpdateInfor.Controls.Add(this.panel4);
+            this.panelCtnUpdateInfor.Controls.Add(this.panel3);
+            this.panelCtnUpdateInfor.Controls.Add(this.panel2);
             this.panelCtnUpdateInfor.Controls.Add(this.label24);
             this.panelCtnUpdateInfor.Controls.Add(this.EditPriceM_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.EditQuantitysizeL_tb);
@@ -297,25 +329,97 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateInfor.Controls.Add(this.label20);
             this.panelCtnUpdateInfor.Controls.Add(this.EditQuantitysizeS_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.EditDes_tb);
-            this.panelCtnUpdateInfor.Controls.Add(this.label14);
             this.panelCtnUpdateInfor.Controls.Add(this.UpdateInfo_btn);
             this.panelCtnUpdateInfor.Controls.Add(this.cbEditCategory);
             this.panelCtnUpdateInfor.Controls.Add(this.EditPriceS_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.label15);
-            this.panelCtnUpdateInfor.Controls.Add(this.label16);
             this.panelCtnUpdateInfor.Controls.Add(this.EditProductName_tb);
-            this.panelCtnUpdateInfor.Controls.Add(this.label17);
-            this.panelCtnUpdateInfor.Controls.Add(this.label18);
             this.panelCtnUpdateInfor.Location = new System.Drawing.Point(150, 12);
             this.panelCtnUpdateInfor.Name = "panelCtnUpdateInfor";
             this.panelCtnUpdateInfor.Size = new System.Drawing.Size(680, 397);
             this.panelCtnUpdateInfor.TabIndex = 3;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Location = new System.Drawing.Point(13, 199);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(114, 24);
+            this.panel5.TabIndex = 37;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Navy;
+            this.label14.Location = new System.Drawing.Point(2, 2);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 17);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Description:";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbl_chooseCate);
+            this.panel4.Location = new System.Drawing.Point(332, 40);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(147, 32);
+            this.panel4.TabIndex = 36;
+            // 
+            // lbl_chooseCate
+            // 
+            this.lbl_chooseCate.AutoSize = true;
+            this.lbl_chooseCate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_chooseCate.ForeColor = System.Drawing.Color.Purple;
+            this.lbl_chooseCate.Location = new System.Drawing.Point(3, 9);
+            this.lbl_chooseCate.Name = "lbl_chooseCate";
+            this.lbl_chooseCate.Size = new System.Drawing.Size(135, 17);
+            this.lbl_chooseCate.TabIndex = 14;
+            this.lbl_chooseCate.Text = "Choose category:";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Location = new System.Drawing.Point(12, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(180, 24);
+            this.panel3.TabIndex = 36;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(1, 2);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(120, 22);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "Edit Product";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Location = new System.Drawing.Point(13, 48);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(113, 24);
+            this.panel2.TabIndex = 35;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Orange;
+            this.label17.Location = new System.Drawing.Point(3, 3);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(113, 17);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Product name:";
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Gray;
+            this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Location = new System.Drawing.Point(344, 164);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(122, 17);
@@ -327,7 +431,8 @@ namespace LHBeverage.UserControls
             this.EditPriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EditPriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceM_tb.Location = new System.Drawing.Point(131, 126);
+            this.EditPriceM_tb.ForeColor = System.Drawing.Color.Purple;
+            this.EditPriceM_tb.Location = new System.Drawing.Point(135, 126);
             this.EditPriceM_tb.Name = "EditPriceM_tb";
             this.EditPriceM_tb.Size = new System.Drawing.Size(180, 16);
             this.EditPriceM_tb.TabIndex = 28;
@@ -347,7 +452,7 @@ namespace LHBeverage.UserControls
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Gray;
+            this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(14, 126);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(101, 17);
@@ -358,7 +463,7 @@ namespace LHBeverage.UserControls
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Gray;
+            this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Location = new System.Drawing.Point(344, 126);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(125, 17);
@@ -381,7 +486,8 @@ namespace LHBeverage.UserControls
             this.EditPriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EditPriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceL_tb.Location = new System.Drawing.Point(133, 161);
+            this.EditPriceL_tb.ForeColor = System.Drawing.Color.DarkCyan;
+            this.EditPriceL_tb.Location = new System.Drawing.Point(137, 161);
             this.EditPriceL_tb.Name = "EditPriceL_tb";
             this.EditPriceL_tb.Size = new System.Drawing.Size(180, 16);
             this.EditPriceL_tb.TabIndex = 28;
@@ -390,7 +496,7 @@ namespace LHBeverage.UserControls
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Gray;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(344, 91);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 17);
@@ -401,7 +507,7 @@ namespace LHBeverage.UserControls
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Gray;
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(15, 160);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(98, 17);
@@ -428,17 +534,6 @@ namespace LHBeverage.UserControls
             this.EditDes_tb.Name = "EditDes_tb";
             this.EditDes_tb.Size = new System.Drawing.Size(496, 122);
             this.EditDes_tb.TabIndex = 20;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Navy;
-            this.label14.Location = new System.Drawing.Point(14, 216);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 17);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "Description:";
             // 
             // UpdateInfo_btn
             // 
@@ -472,7 +567,7 @@ namespace LHBeverage.UserControls
             this.EditPriceS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EditPriceS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceS_tb.Location = new System.Drawing.Point(131, 91);
+            this.EditPriceS_tb.Location = new System.Drawing.Point(135, 91);
             this.EditPriceS_tb.Name = "EditPriceS_tb";
             this.EditPriceS_tb.Size = new System.Drawing.Size(180, 16);
             this.EditPriceS_tb.TabIndex = 17;
@@ -481,55 +576,22 @@ namespace LHBeverage.UserControls
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Gray;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(14, 91);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 17);
             this.label15.TabIndex = 16;
             this.label15.Text = "Price size S:";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Purple;
-            this.label16.Location = new System.Drawing.Point(344, 51);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(135, 17);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Choose category:";
-            // 
             // EditProductName_tb
             // 
             this.EditProductName_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditProductName_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EditProductName_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProductName_tb.Location = new System.Drawing.Point(131, 52);
+            this.EditProductName_tb.Location = new System.Drawing.Point(135, 52);
             this.EditProductName_tb.Name = "EditProductName_tb";
             this.EditProductName_tb.Size = new System.Drawing.Size(180, 16);
             this.EditProductName_tb.TabIndex = 12;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(14, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 17);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Product name:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(13, 10);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 22);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "Edit Product";
             // 
             // close_panelCtnEdit
             // 
@@ -549,20 +611,21 @@ namespace LHBeverage.UserControls
             // panelCtnAddPro
             // 
             this.panelCtnAddPro.BackColor = System.Drawing.Color.White;
+            this.panelCtnAddPro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCtnAddPro.Controls.Add(this.btn_Toggle_AddInfor);
             this.panelCtnAddPro.Controls.Add(this.AddImg_btn);
             this.panelCtnAddPro.Controls.Add(this.AddImg_panel);
             this.panelCtnAddPro.Controls.Add(this.AddPro_panel);
             this.panelCtnAddPro.Controls.Add(this.ImageBack_btn);
-            this.panelCtnAddPro.Location = new System.Drawing.Point(82, 90);
+            this.panelCtnAddPro.Location = new System.Drawing.Point(82, 91);
             this.panelCtnAddPro.Name = "panelCtnAddPro";
-            this.panelCtnAddPro.Size = new System.Drawing.Size(897, 432);
+            this.panelCtnAddPro.Size = new System.Drawing.Size(897, 435);
             this.panelCtnAddPro.TabIndex = 25;
             this.panelCtnAddPro.Visible = false;
             // 
             // btn_Toggle_AddInfor
             // 
-            this.btn_Toggle_AddInfor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_Toggle_AddInfor.BackColor = System.Drawing.Color.Blue;
             this.btn_Toggle_AddInfor.FlatAppearance.BorderSize = 0;
             this.btn_Toggle_AddInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Toggle_AddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -577,7 +640,7 @@ namespace LHBeverage.UserControls
             // 
             // AddImg_btn
             // 
-            this.AddImg_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.AddImg_btn.BackColor = System.Drawing.Color.Blue;
             this.AddImg_btn.FlatAppearance.BorderSize = 0;
             this.AddImg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -593,13 +656,14 @@ namespace LHBeverage.UserControls
             // AddImg_panel
             // 
             this.AddImg_panel.BackColor = System.Drawing.Color.White;
+            this.AddImg_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddImg_panel.Controls.Add(this.flowPanel_AddImagePro);
             this.AddImg_panel.Controls.Add(this.lbl_Title_panelImg);
             this.AddImg_panel.Controls.Add(this.loadImage);
             this.AddImg_panel.Controls.Add(this.label7);
             this.AddImg_panel.Controls.Add(this.ProductList_cb);
             this.AddImg_panel.Controls.Add(this.AddImage);
-            this.AddImg_panel.Location = new System.Drawing.Point(167, 9);
+            this.AddImg_panel.Location = new System.Drawing.Point(167, 10);
             this.AddImg_panel.Name = "AddImg_panel";
             this.AddImg_panel.Size = new System.Drawing.Size(680, 397);
             this.AddImg_panel.TabIndex = 24;
@@ -609,6 +673,7 @@ namespace LHBeverage.UserControls
             // 
             this.flowPanel_AddImagePro.AutoScroll = true;
             this.flowPanel_AddImagePro.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowPanel_AddImagePro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowPanel_AddImagePro.Location = new System.Drawing.Point(81, 75);
             this.flowPanel_AddImagePro.Name = "flowPanel_AddImagePro";
             this.flowPanel_AddImagePro.Size = new System.Drawing.Size(507, 256);
@@ -616,10 +681,11 @@ namespace LHBeverage.UserControls
             // 
             // lbl_Title_panelImg
             // 
+            this.lbl_Title_panelImg.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_Title_panelImg.AutoSize = true;
             this.lbl_Title_panelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title_panelImg.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Title_panelImg.Location = new System.Drawing.Point(281, 9);
+            this.lbl_Title_panelImg.Location = new System.Drawing.Point(77, 8);
             this.lbl_Title_panelImg.Name = "lbl_Title_panelImg";
             this.lbl_Title_panelImg.Size = new System.Drawing.Size(104, 22);
             this.lbl_Title_panelImg.TabIndex = 24;
@@ -644,7 +710,7 @@ namespace LHBeverage.UserControls
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(79, 48);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 17);
@@ -665,7 +731,7 @@ namespace LHBeverage.UserControls
             // 
             // AddImage
             // 
-            this.AddImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.AddImage.BackColor = System.Drawing.Color.Blue;
             this.AddImage.FlatAppearance.BorderSize = 0;
             this.AddImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -681,6 +747,10 @@ namespace LHBeverage.UserControls
             // AddPro_panel
             // 
             this.AddPro_panel.BackColor = System.Drawing.Color.White;
+            this.AddPro_panel.Controls.Add(this.label3);
+            this.AddPro_panel.Controls.Add(this.lbl_Title_panelPro);
+            this.AddPro_panel.Controls.Add(this.panel10);
+            this.AddPro_panel.Controls.Add(this.panel8);
             this.AddPro_panel.Controls.Add(this.label23);
             this.AddPro_panel.Controls.Add(this.QuantitySizeL_tb);
             this.AddPro_panel.Controls.Add(this.label22);
@@ -692,19 +762,75 @@ namespace LHBeverage.UserControls
             this.AddPro_panel.Controls.Add(this.label6);
             this.AddPro_panel.Controls.Add(this.QuantitySizeS_tb);
             this.AddPro_panel.Controls.Add(this.Des_Tb);
-            this.AddPro_panel.Controls.Add(this.label5);
             this.AddPro_panel.Controls.Add(this.AddPro_btn);
             this.AddPro_panel.Controls.Add(this.category_Cb);
             this.AddPro_panel.Controls.Add(this.PriceS_tb);
             this.AddPro_panel.Controls.Add(this.label4);
-            this.AddPro_panel.Controls.Add(this.label3);
             this.AddPro_panel.Controls.Add(this.NamePro_tb);
-            this.AddPro_panel.Controls.Add(this.lbl_categortName);
-            this.AddPro_panel.Controls.Add(this.lbl_Title_panelPro);
-            this.AddPro_panel.Location = new System.Drawing.Point(167, 9);
+            this.AddPro_panel.Location = new System.Drawing.Point(167, 10);
             this.AddPro_panel.Name = "AddPro_panel";
             this.AddPro_panel.Size = new System.Drawing.Size(680, 397);
             this.AddPro_panel.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Purple;
+            this.label3.Location = new System.Drawing.Point(354, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 17);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Choose category:";
+            // 
+            // lbl_Title_panelPro
+            // 
+            this.lbl_Title_panelPro.AutoSize = true;
+            this.lbl_Title_panelPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title_panelPro.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbl_Title_panelPro.Location = new System.Drawing.Point(18, 10);
+            this.lbl_Title_panelPro.Name = "lbl_Title_panelPro";
+            this.lbl_Title_panelPro.Size = new System.Drawing.Size(120, 22);
+            this.lbl_Title_panelPro.TabIndex = 8;
+            this.lbl_Title_panelPro.Text = "Add Product";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label5);
+            this.panel10.Location = new System.Drawing.Point(22, 202);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(132, 28);
+            this.panel10.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Orange;
+            this.label5.Location = new System.Drawing.Point(3, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 17);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Description:";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.lbl_categortName);
+            this.panel8.Location = new System.Drawing.Point(16, 40);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(132, 28);
+            this.panel8.TabIndex = 32;
+            // 
+            // lbl_categortName
+            // 
+            this.lbl_categortName.AutoSize = true;
+            this.lbl_categortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_categortName.ForeColor = System.Drawing.Color.Red;
+            this.lbl_categortName.Location = new System.Drawing.Point(3, 5);
+            this.lbl_categortName.Name = "lbl_categortName";
+            this.lbl_categortName.Size = new System.Drawing.Size(113, 17);
+            this.lbl_categortName.TabIndex = 11;
+            this.lbl_categortName.Text = "Product name:";
             // 
             // label23
             // 
@@ -827,17 +953,6 @@ namespace LHBeverage.UserControls
             this.Des_Tb.Size = new System.Drawing.Size(472, 122);
             this.Des_Tb.TabIndex = 20;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(39, 202);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Description:";
-            // 
             // AddPro_btn
             // 
             this.AddPro_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -886,17 +1001,6 @@ namespace LHBeverage.UserControls
             this.label4.TabIndex = 16;
             this.label4.Text = "Price size S:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Purple;
-            this.label3.Location = new System.Drawing.Point(357, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 17);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Choose category:";
-            // 
             // NamePro_tb
             // 
             this.NamePro_tb.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -907,28 +1011,6 @@ namespace LHBeverage.UserControls
             this.NamePro_tb.Size = new System.Drawing.Size(180, 16);
             this.NamePro_tb.TabIndex = 12;
             // 
-            // lbl_categortName
-            // 
-            this.lbl_categortName.AutoSize = true;
-            this.lbl_categortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_categortName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_categortName.Location = new System.Drawing.Point(37, 46);
-            this.lbl_categortName.Name = "lbl_categortName";
-            this.lbl_categortName.Size = new System.Drawing.Size(113, 17);
-            this.lbl_categortName.TabIndex = 11;
-            this.lbl_categortName.Text = "Product name:";
-            // 
-            // lbl_Title_panelPro
-            // 
-            this.lbl_Title_panelPro.AutoSize = true;
-            this.lbl_Title_panelPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title_panelPro.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Title_panelPro.Location = new System.Drawing.Point(37, 9);
-            this.lbl_Title_panelPro.Name = "lbl_Title_panelPro";
-            this.lbl_Title_panelPro.Size = new System.Drawing.Size(138, 22);
-            this.lbl_Title_panelPro.TabIndex = 8;
-            this.lbl_Title_panelPro.Text = "+ Add Product";
-            // 
             // ImageBack_btn
             // 
             this.ImageBack_btn.BackColor = System.Drawing.Color.Red;
@@ -936,7 +1018,7 @@ namespace LHBeverage.UserControls
             this.ImageBack_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ImageBack_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImageBack_btn.ForeColor = System.Drawing.Color.White;
-            this.ImageBack_btn.Location = new System.Drawing.Point(851, -2);
+            this.ImageBack_btn.Location = new System.Drawing.Point(852, -2);
             this.ImageBack_btn.Name = "ImageBack_btn";
             this.ImageBack_btn.Size = new System.Drawing.Size(43, 33);
             this.ImageBack_btn.TabIndex = 24;
@@ -964,7 +1046,7 @@ namespace LHBeverage.UserControls
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(459, 48);
+            this.label2.Location = new System.Drawing.Point(446, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 14;
@@ -976,7 +1058,7 @@ namespace LHBeverage.UserControls
             this.ListPro_flowpanel.AutoScroll = true;
             this.ListPro_flowpanel.BackColor = System.Drawing.Color.White;
             this.ListPro_flowpanel.Controls.Add(this.panel1);
-            this.ListPro_flowpanel.Location = new System.Drawing.Point(91, 89);
+            this.ListPro_flowpanel.Location = new System.Drawing.Point(91, 91);
             this.ListPro_flowpanel.Name = "ListPro_flowpanel";
             this.ListPro_flowpanel.Size = new System.Drawing.Size(888, 435);
             this.ListPro_flowpanel.TabIndex = 23;
@@ -1097,10 +1179,6 @@ namespace LHBeverage.UserControls
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // openFileDialog_Img
-            // 
-            this.openFileDialog_Img.FileName = "openFileDialog1";
-            // 
             // AdminManageProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1113,13 +1191,27 @@ namespace LHBeverage.UserControls
             this.panelEditCtn.ResumeLayout(false);
             this.panelCtnUpdateImg.ResumeLayout(false);
             this.panelCtnUpdateImg.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panelCtnUpdateInfor.ResumeLayout(false);
             this.panelCtnUpdateInfor.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panelCtnAddPro.ResumeLayout(false);
             this.AddImg_panel.ResumeLayout(false);
             this.AddImg_panel.PerformLayout();
             this.AddPro_panel.ResumeLayout(false);
             this.AddPro_panel.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ListPro_flowpanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1129,55 +1221,29 @@ namespace LHBeverage.UserControls
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelManageProduct;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel ListPro_flowpanel;
-        private System.Windows.Forms.Panel AddPro_panel;
-        private System.Windows.Forms.TextBox PriceS_tb;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button AddPro_btn;
-        private System.Windows.Forms.TextBox NamePro_tb;
-        private System.Windows.Forms.Label lbl_categortName;
-        private System.Windows.Forms.Label lbl_Title_panelPro;
-        private System.Windows.Forms.ComboBox category_Cb;
-        private System.Windows.Forms.TextBox Des_Tb;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox QuantitySizeS_tb;
-        private System.Windows.Forms.Button AddImg_btn;
-        private System.Windows.Forms.Panel AddImg_panel;
-        private System.Windows.Forms.Button loadImage;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox ProductList_cb;
-        private System.Windows.Forms.Button AddImage;
-        private System.Windows.Forms.Button ImageBack_btn;
-        private System.Windows.Forms.Label lbl_Title_panelImg;
         private System.Windows.Forms.OpenFileDialog openFileDialog_Img;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnOpenpanelAddPro;
-        private System.Windows.Forms.Label Quantity_lbl;
-        private System.Windows.Forms.Label PriceProduct_lbl;
-        private System.Windows.Forms.Label NameProduct_lbl;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox Picture_Pro;
-        private System.Windows.Forms.Panel panelCtnAddPro;
-        private System.Windows.Forms.Button btn_Toggle_AddInfor;
+        private System.Windows.Forms.Panel panelManageProduct;
+        private System.Windows.Forms.ComboBox CategoryManage_Cb;
         private System.Windows.Forms.Panel panelEditCtn;
         private System.Windows.Forms.Button Btn_Nav_EditInfor;
         private System.Windows.Forms.Button Btn_Nav_UpdateImg;
         private System.Windows.Forms.Panel panelCtnUpdateImg;
+        private System.Windows.Forms.Label EditProductName_lbl;
+        private System.Windows.Forms.FlowLayoutPanel EditImage_FlowPanel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button loadImgFromLocal_Btn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button EditSubmitImg_btn;
         private System.Windows.Forms.Panel panelCtnUpdateInfor;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox EditPriceM_tb;
+        private System.Windows.Forms.TextBox EditQuantitysizeL_tb;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox EditQuantitysizeM_tb;
+        private System.Windows.Forms.TextBox EditPriceL_tb;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox EditQuantitysizeS_tb;
         private System.Windows.Forms.TextBox EditDes_tb;
         private System.Windows.Forms.Label label14;
@@ -1185,30 +1251,62 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.ComboBox cbEditCategory;
         private System.Windows.Forms.TextBox EditPriceS_tb;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbl_chooseCate;
         private System.Windows.Forms.TextBox EditProductName_tb;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button close_panelCtnEdit;
-        private System.Windows.Forms.FlowLayoutPanel EditImage_FlowPanel;
-        private System.Windows.Forms.Label EditProductName_lbl;
+        private System.Windows.Forms.Panel panelCtnAddPro;
+        private System.Windows.Forms.Button btn_Toggle_AddInfor;
+        private System.Windows.Forms.Button AddImg_btn;
+        private System.Windows.Forms.Panel AddImg_panel;
         private System.Windows.Forms.FlowLayoutPanel flowPanel_AddImagePro;
-        private System.Windows.Forms.ComboBox CategoryManage_Cb;
-        private System.Windows.Forms.TextBox PriceM_tb;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PriceL_tb;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox EditPriceM_tb;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox EditPriceL_tb;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbl_Title_panelImg;
+        private System.Windows.Forms.Button loadImage;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox ProductList_cb;
+        private System.Windows.Forms.Button AddImage;
+        private System.Windows.Forms.Panel AddPro_panel;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox QuantitySizeL_tb;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox QuantitySizeM_tb;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox EditQuantitysizeL_tb;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox EditQuantitysizeM_tb;
+        private System.Windows.Forms.TextBox PriceL_tb;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox PriceM_tb;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox QuantitySizeS_tb;
+        private System.Windows.Forms.TextBox Des_Tb;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button AddPro_btn;
+        private System.Windows.Forms.ComboBox category_Cb;
+        private System.Windows.Forms.TextBox PriceS_tb;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox NamePro_tb;
+        private System.Windows.Forms.Label lbl_categortName;
+        private System.Windows.Forms.Label lbl_Title_panelPro;
+        private System.Windows.Forms.Button ImageBack_btn;
+        private System.Windows.Forms.Button btnOpenpanelAddPro;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FlowLayoutPanel ListPro_flowpanel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Quantity_lbl;
+        private System.Windows.Forms.Label PriceProduct_lbl;
+        private System.Windows.Forms.Label NameProduct_lbl;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox Picture_Pro;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel10;
     }
 }

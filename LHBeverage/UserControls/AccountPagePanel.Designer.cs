@@ -75,6 +75,7 @@ namespace LHBeverage.UserControls
             this.ListProductOrder = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.CodeOrder_lbl = new System.Windows.Forms.Label();
+            this.CodeOrderLabel = new System.Windows.Forms.Label();
             this.DateOrder = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_CancelOrder = new System.Windows.Forms.Button();
@@ -116,7 +117,6 @@ namespace LHBeverage.UserControls
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.btn_Logout = new System.Windows.Forms.Button();
-            this.CodeOrderLabel = new System.Windows.Forms.Label();
             this.Account_MyDetail_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pb)).BeginInit();
             this.MenuControlAccountPanel.SuspendLayout();
@@ -679,6 +679,16 @@ namespace LHBeverage.UserControls
             this.CodeOrder_lbl.Text = "My Orders";
             this.CodeOrder_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // CodeOrderLabel
+            // 
+            this.CodeOrderLabel.AutoSize = true;
+            this.CodeOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CodeOrderLabel.Location = new System.Drawing.Point(70, 23);
+            this.CodeOrderLabel.Name = "CodeOrderLabel";
+            this.CodeOrderLabel.Size = new System.Drawing.Size(155, 31);
+            this.CodeOrderLabel.TabIndex = 28;
+            this.CodeOrderLabel.Text = "Order Code";
+            // 
             // DateOrder
             // 
             this.DateOrder.AutoEllipsis = true;
@@ -1176,16 +1186,6 @@ namespace LHBeverage.UserControls
             this.btn_Logout.Text = "Log out";
             this.btn_Logout.UseVisualStyleBackColor = false;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
-            // 
-            // CodeOrderLabel
-            // 
-            this.CodeOrderLabel.AutoSize = true;
-            this.CodeOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodeOrderLabel.Location = new System.Drawing.Point(70, 23);
-            this.CodeOrderLabel.Name = "CodeOrderLabel";
-            this.CodeOrderLabel.Size = new System.Drawing.Size(155, 31);
-            this.CodeOrderLabel.TabIndex = 28;
-            this.CodeOrderLabel.Text = "Order Code";
             // 
             // AccountPagePanel
             // 

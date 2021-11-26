@@ -27,6 +27,35 @@ namespace LHBeverage.UserControls
             instance = this;
             int idCate = Convert.ToInt32(((KeyValuePair<string, string>)Category_cb.SelectedItem).Key);
             LoadToppingInListPanelByCate(idCate);
+            setMode();
+        }
+        public void setMode()
+        {
+            if(PublicParam.ligthMode == true)
+            {
+                this.BackColor = Color.FromArgb(209, 218, 235);
+                panelAddTopping.BackColor = Color.White;
+                ListTopping_flowpanel.BackColor = Color.WhiteSmoke;
+                toppingPrice_lbl.ForeColor = Color.Black;
+                lbl_categortName.ForeColor = Color.Black;
+                NameToppings_lbl.ForeColor = Color.Black;
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(30, 30, 30);
+                panelAddTopping.BackColor = Color.Black;
+                ListTopping_flowpanel.BackColor = Color.Black;
+                toppingPrice_lbl.ForeColor = Color.White;
+                lbl_categortName.ForeColor = Color.White;
+                NameToppings_lbl.ForeColor = Color.White;
+            }
+        }
+        bool checkNumber(string text)
+        {
+            int outValue = 0;
+            bool isNumber = false;
+            isNumber = int.TryParse(text, out outValue);
+            return isNumber;
         }
         // Load category từ CSDL đổ vào combobox:
         private void loadCategoryInComboBox()
@@ -100,9 +129,13 @@ namespace LHBeverage.UserControls
 
         private void AddCate_btn_Click(object sender, EventArgs e)
         {
-            if(NameTopping_tb.Text == "")
+            if (NameTopping_tb.Text == "" || PriceTopping_tb.Text == "")
             {
-                MessageBox.Show("Please enter topping name");
+                MessageBox.Show("Please enter topping infor fully");
+            }
+            else if (!checkNumber(PriceTopping_tb.Text))
+            {
+                MessageBox.Show("Please enter Topping infor correct format");
             }
             else
             {
@@ -144,13 +177,33 @@ namespace LHBeverage.UserControls
             {
                 try
                 {
-                    int key = Convert.ToInt32(((KeyValuePair<string, string>)Category_cb.SelectedItem).Key);
-                    toppingEditTmp.IDCate = key;
-                    toppingEditTmp.ToppingName = NameTopping_tb.Text;
-                    toppingEditTmp.Price = Convert.ToInt32(PriceTopping_tb.Text);
-                    ToppingConnect.UpdateTopping(toppingEditTmp);
-                    MessageBox.Show("Update successfull");
-                    LoadToppingInListPanelByCate(key);
+                    if(NameTopping_tb.Text == "" || PriceTopping_tb.Text=="")
+                    {
+                        MessageBox.Show("Please enter topping infor fully");
+                    }
+                    else if (!checkNumber(PriceTopping_tb.Text))
+                    {
+                        MessageBox.Show("Please enter Topping infor correct format");
+                    }
+                    else
+                    {
+                        int key = Convert.ToInt32(((KeyValuePair<string, string>)Category_cb.SelectedItem).Key);
+                        if (key == 0)
+                        {
+                            MessageBox.Show("Please choose category for topping");
+                        }
+                        else
+                        {
+                            toppingEditTmp.IDCate = key;
+                            toppingEditTmp.ToppingName = NameTopping_tb.Text;
+                            toppingEditTmp.Price = Convert.ToInt32(PriceTopping_tb.Text);
+                            ToppingConnect.UpdateTopping(toppingEditTmp);
+                            MessageBox.Show("Update successfull");
+                            LoadToppingInListPanelByCate(key);
+                        }
+                       
+                    }
+                    
                 }
                 catch(Exception ex)
                 {

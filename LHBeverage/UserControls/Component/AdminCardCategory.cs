@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,10 @@ namespace LHBeverage.UserControls.Component
         private void renderCategory(Category category)
         {
             nameCategory_lbl.Text = category.Name;
+            if(category.CateImage != null)
+            {
+                CateImage.Image = ConvertBase64toImage.ConverImageFromBase64(category.CateImage);
+            }     
         }
 
         private void Edit_btn_Click(object sender, EventArgs e)

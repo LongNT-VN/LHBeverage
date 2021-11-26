@@ -71,8 +71,16 @@ namespace LHBeverage.ModelService
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                var products = connection.Query<Product>($"select * from Product where IDPro = '{IDPro}'", new DynamicParameters());
-                return products.First();
+                try
+                {
+                    var products = connection.Query<Product>($"select * from Product where IDPro = '{IDPro}'", new DynamicParameters());
+                    return products.First();
+                }
+                catch(Exception ex)
+                {
+                    return null;
+                }
+               
             }
         }
         public static List<Product> SelectProductBySearch(string searchkey, int IDCate=999999)

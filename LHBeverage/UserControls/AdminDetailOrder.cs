@@ -25,7 +25,85 @@ namespace LHBeverage.UserControls
             InitializeComponent();
             orderTmp = order;
             initDetailOrder(order);
+            SetMode();
             instance = this;
+        }
+        public void SetMode()
+        {
+            if(PublicParam.ligthMode == true)
+            {
+                this.BackColor = Color.FromArgb(209, 218, 235);
+                panelUserInfo.BackColor = Color.White;
+                panelCtnDetail.BackColor = Color.White;
+                FlowPanel_ItemOrder.BackColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(30, 30, 30);
+                panelUserInfo.BackColor = Color.Black;
+                panelCtnDetail.BackColor = Color.Black;
+                FlowPanel_ItemOrder.BackColor = Color.FromArgb(40, 40, 40);
+            }
+            setColorInPanel(panelUserInfo,null);
+            setColorInPanel(panelCtnDetail,null);
+            setColorInPanel(null, this);
+        }
+
+        void setColorInPanel(Panel panel, UserControl userControl)
+        {
+           if(panel != null)
+            {
+                foreach (Control control in panel.Controls)
+                {
+                    if (PublicParam.ligthMode == true)
+                    {
+                        if (control is Label)
+                        {
+                            if (control.ForeColor == Color.Aqua)
+                            {
+                                control.ForeColor = Color.Black;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (control is Label)
+                        {
+                            if (control.ForeColor == Color.Black)
+                            {
+                                control.ForeColor = Color.Aqua;
+                            }
+                        }
+                    }
+                }
+            }
+           
+            if(userControl != null)
+            {
+                foreach (Control control in userControl.Controls)
+                {
+                    if (PublicParam.ligthMode == true)
+                    {
+                        if (control is Label)
+                        {
+                            if (control.ForeColor == Color.Aqua)
+                            {
+                                control.ForeColor = Color.Black;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (control is Label)
+                        {
+                            if (control.ForeColor == Color.Black)
+                            {
+                                control.ForeColor = Color.Aqua;
+                            }
+                        }
+                    }
+                }
+            }
         }
         public void initDetailOrder(Order order)
         {
@@ -54,8 +132,6 @@ namespace LHBeverage.UserControls
                      t = new[] { "", "Received" };
                     StatusOrder_cb.DataSource = t;
                     done_lbl.Visible = false;
-
-
                 }
 
                 if (order.Status == "Received")
@@ -94,7 +170,6 @@ namespace LHBeverage.UserControls
                 FlowPanel_ItemOrder.Controls.Add(adminItemCardOrder);
             }
             AmountItem.Text = detailOrders.Count().ToString();
-
         }
 
         private void BackManageOrder_Click(object sender, EventArgs e)

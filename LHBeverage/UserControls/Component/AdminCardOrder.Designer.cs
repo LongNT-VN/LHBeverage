@@ -32,6 +32,8 @@ namespace LHBeverage.UserControls.Component
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCardOrder));
             this.panelCtn = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.statusOrder_lbl = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.AmountItem = new System.Windows.Forms.Label();
             this.TotalPayment = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -57,8 +59,6 @@ namespace LHBeverage.UserControls.Component
             this.ProccessingReceived_bar = new System.Windows.Forms.Panel();
             this.CodeOrder = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.statusOrder_lbl = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelCtn.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -101,10 +101,33 @@ namespace LHBeverage.UserControls.Component
             this.panel1.Size = new System.Drawing.Size(331, 109);
             this.panel1.TabIndex = 11;
             // 
+            // statusOrder_lbl
+            // 
+            this.statusOrder_lbl.AutoSize = true;
+            this.statusOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusOrder_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.statusOrder_lbl.Location = new System.Drawing.Point(193, 84);
+            this.statusOrder_lbl.Name = "statusOrder_lbl";
+            this.statusOrder_lbl.Size = new System.Drawing.Size(88, 20);
+            this.statusOrder_lbl.TabIndex = 13;
+            this.statusOrder_lbl.Text = "Cancelled";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(10, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 18);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Status";
+            // 
             // AmountItem
             // 
             this.AmountItem.AutoSize = true;
             this.AmountItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountItem.ForeColor = System.Drawing.Color.Black;
             this.AmountItem.Location = new System.Drawing.Point(219, 55);
             this.AmountItem.Name = "AmountItem";
             this.AmountItem.Size = new System.Drawing.Size(17, 17);
@@ -126,6 +149,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(8, 55);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(97, 17);
@@ -136,6 +160,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(5, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 20);
@@ -156,6 +181,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(7, 4);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
@@ -166,6 +192,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.CustomerName.AutoSize = true;
             this.CustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerName.ForeColor = System.Drawing.Color.Black;
             this.CustomerName.Location = new System.Drawing.Point(200, 4);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(59, 20);
@@ -176,7 +203,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.DatePayment.AutoSize = true;
             this.DatePayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatePayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.DatePayment.ForeColor = System.Drawing.Color.White;
             this.DatePayment.Location = new System.Drawing.Point(461, 11);
             this.DatePayment.Name = "DatePayment";
             this.DatePayment.Size = new System.Drawing.Size(89, 20);
@@ -242,6 +269,7 @@ namespace LHBeverage.UserControls.Component
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(540, 84);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 44);
@@ -252,6 +280,7 @@ namespace LHBeverage.UserControls.Component
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(347, 84);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(145, 44);
@@ -262,6 +291,7 @@ namespace LHBeverage.UserControls.Component
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(159, 84);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 44);
@@ -273,6 +303,7 @@ namespace LHBeverage.UserControls.Component
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(22, 90);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 17);
@@ -349,7 +380,8 @@ namespace LHBeverage.UserControls.Component
             // 
             this.CodeOrder.AutoSize = true;
             this.CodeOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodeOrder.Location = new System.Drawing.Point(64, 7);
+            this.CodeOrder.ForeColor = System.Drawing.Color.White;
+            this.CodeOrder.Location = new System.Drawing.Point(64, 8);
             this.CodeOrder.Name = "CodeOrder";
             this.CodeOrder.Size = new System.Drawing.Size(45, 20);
             this.CodeOrder.TabIndex = 1;
@@ -365,28 +397,6 @@ namespace LHBeverage.UserControls.Component
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Code";
-            // 
-            // statusOrder_lbl
-            // 
-            this.statusOrder_lbl.AutoSize = true;
-            this.statusOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusOrder_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.statusOrder_lbl.Location = new System.Drawing.Point(199, 87);
-            this.statusOrder_lbl.Name = "statusOrder_lbl";
-            this.statusOrder_lbl.Size = new System.Drawing.Size(79, 20);
-            this.statusOrder_lbl.TabIndex = 13;
-            this.statusOrder_lbl.Text = "Cancelled";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 18);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Status";
             // 
             // AdminCardOrder
             // 

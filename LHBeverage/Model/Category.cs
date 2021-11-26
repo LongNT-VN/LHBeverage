@@ -10,5 +10,6 @@ namespace LHBeverage.Model
     {
        public int IDCate { get; set; }
        public string Name { get; set; }
+       public string CateImage { get; set; }
     }
 }

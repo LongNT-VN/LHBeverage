@@ -27,16 +27,35 @@ namespace LHBeverage.UserControls.Component
         {
             DetailImage detailImage = DetailImageConnect.LoadOneImage(detailOrder.IDPro);
             ImageItem.Image = ConvertBase64toImage.ConverImageFromBase64(detailImage.ImageData);
-            Product product = ProductConnect.SelectProductByIDPro(detailOrder.IDPro);
 
-            nameOrder.Text = product.Name;
+            Product product = ProductConnect.SelectProductByIDPro(detailOrder.IDPro);
+            if(product != null)
+            {
+                nameOrder.Text = product.Name;
+            }
+            else
+            {
+                nameOrder.Text = "Sản phẩm không còn kinh doanh";
+            }
+          
             amount.Text = detailOrder.Quantity.ToString();
             Price.Text = detailOrder.Price.ToString("#,###", cul.NumberFormat) + " VNĐ";
             size.Text = detailOrder.Size;
-            if(detailOrder.Topping != "")
+
+            if (detailOrder.Topping != "")
             {
+                string[] Toppings = detailOrder.Topping.Split(',');
+                string toppinginfo = "";
+                foreach (string toppingitem in Toppings)
+                {
+                    if (toppingitem != "")
+                    {
+                        Topping topping = ToppingConnect.SelectToppingByID(Convert.ToInt32(toppingitem));
+                        toppinginfo += topping.ToppingName + "\n";
+                    }
+                }
                 panelTopping.Visible = true;
-                toppingLbl.Text = detailOrder.Topping;
+                toppingLbl.Text = toppinginfo;
             }
         }
     }
