@@ -103,30 +103,31 @@ namespace LHBeverage.ModelService
                     {
                         int updateQuantity = detail.Quantity + detailCart.Quantity;
                         Product product = ProductConnect.SelectProductByIDPro(detailCart.IDPro);
-                        if(size=="S")
-                        {
-                            if (detailCart.Quantity > product.QuantitysizeS)
-                            {
-                                detailCart.Quantity = product.QuantitysizeS;
-                                updateQuantity = detail.Quantity + detailCart.Quantity;
-                            }
-                        }
-                        else if (size == "M")
-                        {
-                            if (updateQuantity > product.QuantitysizeM)
-                            {
-                                detailCart.Quantity = product.QuantitysizeM;
-                                updateQuantity = detail.Quantity + detailCart.Quantity;
-                            }
-                        }
-                        else if (size == "L")
-                        {
-                            if (updateQuantity > product.QuantitysizeL)
-                            {
-                                detailCart.Quantity = product.QuantitysizeL;
-                                updateQuantity = detail.Quantity + detailCart.Quantity;
-                            }
-                        }
+                        price = detail.Price + detailCart.Price;
+                        //if(size=="S")
+                        //{
+                        //    if (updateQuantity > product.QuantitysizeS)
+                        //    {
+                        //        detailCart.Quantity = product.QuantitysizeS;
+                        //        updateQuantity = detail.Quantity + detailCart.Quantity;
+                        //    }
+                        //}
+                        //else if (size == "M")
+                        //{
+                        //    if (updateQuantity > product.QuantitysizeM)
+                        //    {
+                        //        detailCart.Quantity = product.QuantitysizeM;
+                        //        updateQuantity = detail.Quantity + detailCart.Quantity;
+                        //    }
+                        //}
+                        //else if (size == "L")
+                        //{
+                        //    if (updateQuantity > product.QuantitysizeL)
+                        //    {
+                        //        detailCart.Quantity = product.QuantitysizeL;
+                        //        updateQuantity = detail.Quantity + detailCart.Quantity;
+                        //    }
+                        //}
                         using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
                         {
                             connection.Query<DetailCart>($"Update DetailCart set Quantity='{updateQuantity}', Size='{size}', Price = '{price}' where IDDetail = '{detail.IDDetail}'", new DynamicParameters());

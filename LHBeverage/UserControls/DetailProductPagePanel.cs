@@ -76,25 +76,29 @@ namespace LHBeverage.UserControls
             quantity = Convert.ToInt32(QuantityItem.Text);
             NameItem.Text = product.Name;
             DescriptionItem.Text = product.Description;
-            if(product.QuantitysizeS == 0)
+            if(product.QuantitysizeS <= 0)
             {
                 SizeSBtn.BackColor = Color.DimGray;
                 SizeSBtn.Enabled = false;
                 size = "M";
             }
-            else if(product.QuantitysizeM==0)
+            if(product.QuantitysizeM <=0)
             {
                 SizeMBtn.BackColor = Color.DimGray;
                 SizeMBtn.Enabled = false;
             }
-            else if(product.QuantitysizeL==0)
+            if(product.QuantitysizeL<=0)
             {
                 SizeLBtn.BackColor = Color.DimGray;
                 SizeLBtn.Enabled = false;
             }
-            if (product.QuantitysizeS == 0 && product.QuantitysizeM==0)
+            if (product.QuantitysizeS <= 0 && product.QuantitysizeM <=0)
             {
                 size = "L";
+            }
+            else if (product.QuantitysizeS <= 0 && product.QuantitysizeM <= 0 && product.QuantitysizeL <= 0)
+            {
+                OrderItemBtn.Enabled = false;
             }
             if (size=="S")
             {
@@ -352,12 +356,12 @@ namespace LHBeverage.UserControls
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
             }
-            else if (size == "M" && productinfo.QuantitysizeM == quantity)
+            if (size == "M" && productinfo.QuantitysizeM == quantity)
             {
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
             }
-            else if (size == "L" && quantity == productinfo.QuantitysizeL)
+            if (size == "L" && quantity == productinfo.QuantitysizeL)
             {
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
@@ -378,7 +382,7 @@ namespace LHBeverage.UserControls
                 toppings += topping+",";
             }
             ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
-            DetailCartConnect.CreateDetailCart(cart, id, toppings, size, quantity, TempPrice);
+            DetailCartConnect.CreateDetailCart(cart, id, toppings, size, quantity, TempPrice*quantity);
             LHBeverage.instance.init();
         }
 

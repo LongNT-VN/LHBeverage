@@ -58,17 +58,17 @@ namespace LHBeverage.UserControls.Component
                 SizeMBtn.BackColor = Color.AntiqueWhite;
                 SizeLBtn.BackColor = Color.AntiqueWhite;
                 size = detailcart.Size;
-                if (product.QuantitysizeS == 0)
+                if (product.QuantitysizeS <= 0)
                 {
                     SizeSBtn.BackColor = Color.DimGray;
                     SizeSBtn.Enabled = false;
                 }
-                else if (product.QuantitysizeM == 0)
+                if (product.QuantitysizeM <= 0)
                 {
                     SizeMBtn.BackColor = Color.DimGray;
                     SizeMBtn.Enabled = false;
                 }
-                else if (product.QuantitysizeL == 0)
+                if (product.QuantitysizeL <= 0)
                 {
                     SizeLBtn.BackColor = Color.DimGray;
                     SizeLBtn.Enabled = false;
@@ -148,7 +148,7 @@ namespace LHBeverage.UserControls.Component
             {
                 ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
                 size = "S";
-                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+               
                 SizeSBtn.BackColor = Color.SandyBrown;
                 if (SizeMBtn.Enabled)
                 {
@@ -178,7 +178,8 @@ namespace LHBeverage.UserControls.Component
                 }
 
                 PriceProduct = productinfo.PriceS;
-                TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
+                TotalPrice = (PriceProduct + PriceTopping) * Convert.ToInt32(QuantityItem.Text);
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
                 PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
 
             }
@@ -191,7 +192,6 @@ namespace LHBeverage.UserControls.Component
             {
                 ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
                 size = "M";
-                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
                 SizeMBtn.BackColor = Color.SandyBrown;
                 if (SizeLBtn.Enabled)
                 {
@@ -223,6 +223,7 @@ namespace LHBeverage.UserControls.Component
                 PriceProduct = productinfo.PriceM;
                 TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
                 PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
             }
         }
 
@@ -232,7 +233,7 @@ namespace LHBeverage.UserControls.Component
             {
                 ProductConnect.UpdateProductQuantity(productinfo, size, -quantity);
                 size = "L";
-                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
+                
                 SizeLBtn.BackColor = Color.SandyBrown;
                 if (SizeSBtn.Enabled)
                 {
@@ -245,16 +246,6 @@ namespace LHBeverage.UserControls.Component
 
                 if (productinfo.QuantitysizeL < Convert.ToInt32(QuantityItem.Text))
                 {
-                    Cart cart = CartConnect.GetCartByID(detailcartinfo.IDCart);
-                    List<DetailCart> detailCarts = DetailCartConnect.LoadDetailCart(cart);
-                    foreach(DetailCart detailcart in detailCarts)
-                    {
-                        if (productinfo.IDPro == detailcartinfo.IDPro)
-                        {
-                            ProductConnect.UpdateProductQuantity(productinfo, size, -(Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeL));
-                            break;
-                        }
-                    }
                     ProductConnect.UpdateProductQuantity(productinfo, size, (Convert.ToInt32(QuantityItem.Text) - productinfo.QuantitysizeL));
                     QuantityItem.Text = productinfo.QuantitysizeL.ToString();
                     ProductConnect.UpdateProductQuantity(productinfo, size, quantity);
@@ -273,6 +264,7 @@ namespace LHBeverage.UserControls.Component
                 }
                 PriceProduct = productinfo.PriceL;
                 TotalPrice = (PriceProduct + PriceTopping) * detailcartinfo.Quantity;
+                DetailCartConnect.ModifyItemCartSize(size, TotalPrice, detailcartinfo);
                 PriceItem.Text = TotalPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
             }
         }
@@ -310,23 +302,25 @@ namespace LHBeverage.UserControls.Component
                 QuantityDown.Enabled = false;
                 QuantityDown.BackColor = Color.DimGray;
             }
-            if (size == "S" && 0 == productinfo.QuantitysizeS)
+            if (size == "S" && 0 >= productinfo.QuantitysizeS)
             {
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
             }
-            else if (size == "M" && productinfo.QuantitysizeM == 0)
+            else if (size == "M" && productinfo.QuantitysizeM <= 0)
             {
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
             }
-            else if (size == "L" && 0 == productinfo.QuantitysizeL)
+            else if (size == "L" && 0 >= productinfo.QuantitysizeL)
             {
                 QuantityUp.Enabled = false;
                 QuantityUp.BackColor = Color.DimGray;
             }
             ProductConnect.UpdateProductQuantity(productinfo, size, quantityupdatetoProduct);
             DetailCartConnect.ModifyItemCartQuantity(quantity, TotalPrice, detailcartinfo);
+            detailcartinfo.Price = TotalPrice;
+            detailcartinfo.Quantity = quantity;
             LHBeverage.instance.init();
         }
         public new event EventHandler Click
