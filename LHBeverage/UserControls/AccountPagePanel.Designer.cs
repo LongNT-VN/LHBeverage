@@ -99,6 +99,10 @@ namespace LHBeverage.UserControls
             this.Seperate3 = new System.Windows.Forms.Panel();
             this.MycouponLabel = new System.Windows.Forms.Label();
             this.LHCoinsPanel = new System.Windows.Forms.Panel();
+            this.Seperate4 = new System.Windows.Forms.Panel();
+            this.LHCoinsLabel = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.LotteryPanel = new System.Windows.Forms.Panel();
             this.Number6 = new System.Windows.Forms.TextBox();
             this.Number5 = new System.Windows.Forms.TextBox();
@@ -109,14 +113,14 @@ namespace LHBeverage.UserControls
             this.label20 = new System.Windows.Forms.Label();
             this.BuyLotteryBtn = new System.Windows.Forms.Button();
             this.LuckyNumberLabel = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.ResultLabel = new System.Windows.Forms.Label();
-            this.ChoosingNumberlabel = new System.Windows.Forms.Label();
             this.LHCoinsUse = new System.Windows.Forms.NumericUpDown();
-            this.Seperate4 = new System.Windows.Forms.Panel();
-            this.LHCoinsLabel = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.ChoosingNumberlabel = new System.Windows.Forms.Label();
             this.btn_Logout = new System.Windows.Forms.Button();
+            this.SwitchControlAccountPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.Languebtn = new System.Windows.Forms.Button();
             this.Account_MyDetail_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pb)).BeginInit();
             this.MenuControlAccountPanel.SuspendLayout();
@@ -131,23 +135,17 @@ namespace LHBeverage.UserControls
             this.LHCoinsPanel.SuspendLayout();
             this.LotteryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LHCoinsUse)).BeginInit();
+            this.SwitchControlAccountPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 11);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "My Account";
             // 
             // Account_MyDetail_panel
             // 
-            this.Account_MyDetail_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Account_MyDetail_panel, "Account_MyDetail_panel");
             this.Account_MyDetail_panel.BackColor = System.Drawing.Color.White;
             this.Account_MyDetail_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Account_MyDetail_panel.Controls.Add(this.checkBox_showPass);
@@ -170,20 +168,13 @@ namespace LHBeverage.UserControls
             this.Account_MyDetail_panel.Controls.Add(this.Seperate2);
             this.Account_MyDetail_panel.Controls.Add(this.label2);
             this.Account_MyDetail_panel.Controls.Add(this.Avatar_Pb);
-            this.Account_MyDetail_panel.Location = new System.Drawing.Point(250, 53);
             this.Account_MyDetail_panel.Name = "Account_MyDetail_panel";
-            this.Account_MyDetail_panel.Size = new System.Drawing.Size(920, 500);
-            this.Account_MyDetail_panel.TabIndex = 4;
             // 
             // checkBox_showPass
             // 
-            this.checkBox_showPass.AutoSize = true;
+            resources.ApplyResources(this.checkBox_showPass, "checkBox_showPass");
             this.checkBox_showPass.ForeColor = System.Drawing.Color.DimGray;
-            this.checkBox_showPass.Location = new System.Drawing.Point(304, 248);
             this.checkBox_showPass.Name = "checkBox_showPass";
-            this.checkBox_showPass.Size = new System.Drawing.Size(101, 17);
-            this.checkBox_showPass.TabIndex = 25;
-            this.checkBox_showPass.Text = "Show password";
             this.checkBox_showPass.UseVisualStyleBackColor = true;
             this.checkBox_showPass.CheckedChanged += new System.EventHandler(this.checkBox_showPass_CheckedChanged);
             // 
@@ -191,211 +182,123 @@ namespace LHBeverage.UserControls
             // 
             this.SaveAccount_btn.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.SaveAccount_btn.FlatAppearance.BorderSize = 0;
-            this.SaveAccount_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveAccount_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.SaveAccount_btn, "SaveAccount_btn");
             this.SaveAccount_btn.ForeColor = System.Drawing.Color.White;
-            this.SaveAccount_btn.Location = new System.Drawing.Point(485, 418);
             this.SaveAccount_btn.Name = "SaveAccount_btn";
-            this.SaveAccount_btn.Size = new System.Drawing.Size(64, 32);
-            this.SaveAccount_btn.TabIndex = 24;
-            this.SaveAccount_btn.Text = "Save";
             this.SaveAccount_btn.UseVisualStyleBackColor = false;
             this.SaveAccount_btn.Click += new System.EventHandler(this.SaveAccount_btn_Click);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(301, 276);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 17);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Email";
             // 
             // Email_tb
             // 
             this.Email_tb.BackColor = System.Drawing.Color.White;
             this.Email_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Email_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email_tb.Location = new System.Drawing.Point(304, 306);
+            resources.ApplyResources(this.Email_tb, "Email_tb");
             this.Email_tb.Name = "Email_tb";
-            this.Email_tb.Size = new System.Drawing.Size(202, 26);
-            this.Email_tb.TabIndex = 22;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(560, 276);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 17);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Phone number";
             // 
             // PhoneNb_tb
             // 
-            this.PhoneNb_tb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.PhoneNb_tb, "PhoneNb_tb");
             this.PhoneNb_tb.BackColor = System.Drawing.Color.White;
             this.PhoneNb_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhoneNb_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNb_tb.Location = new System.Drawing.Point(563, 306);
             this.PhoneNb_tb.Name = "PhoneNb_tb";
-            this.PhoneNb_tb.Size = new System.Drawing.Size(200, 26);
-            this.PhoneNb_tb.TabIndex = 20;
             // 
             // UploadAvatar_btn
             // 
             this.UploadAvatar_btn.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UploadAvatar_btn.FlatAppearance.BorderSize = 0;
-            this.UploadAvatar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UploadAvatar_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UploadAvatar_btn.Location = new System.Drawing.Point(126, 224);
+            resources.ApplyResources(this.UploadAvatar_btn, "UploadAvatar_btn");
             this.UploadAvatar_btn.Name = "UploadAvatar_btn";
-            this.UploadAvatar_btn.Size = new System.Drawing.Size(64, 32);
-            this.UploadAvatar_btn.TabIndex = 19;
-            this.UploadAvatar_btn.Text = "Change";
             this.UploadAvatar_btn.UseVisualStyleBackColor = false;
             this.UploadAvatar_btn.Click += new System.EventHandler(this.UploadAvatar_btn_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(301, 342);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 17);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Address";
             // 
             // Address_tb
             // 
-            this.Address_tb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Address_tb, "Address_tb");
             this.Address_tb.BackColor = System.Drawing.Color.White;
             this.Address_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Address_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address_tb.Location = new System.Drawing.Point(304, 372);
             this.Address_tb.Name = "Address_tb";
-            this.Address_tb.Size = new System.Drawing.Size(459, 26);
-            this.Address_tb.TabIndex = 17;
             // 
             // Gender_cb
             // 
-            this.Gender_cb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Gender_cb, "Gender_cb");
             this.Gender_cb.BackColor = System.Drawing.Color.White;
-            this.Gender_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Gender_cb.FormattingEnabled = true;
             this.Gender_cb.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.Gender_cb.Location = new System.Drawing.Point(563, 215);
+            resources.GetString("Gender_cb.Items"),
+            resources.GetString("Gender_cb.Items1")});
             this.Gender_cb.Name = "Gender_cb";
-            this.Gender_cb.Size = new System.Drawing.Size(200, 26);
-            this.Gender_cb.TabIndex = 16;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(560, 185);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 17);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Gender";
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(560, 113);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Age";
             // 
             // Age_tb
             // 
-            this.Age_tb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Age_tb, "Age_tb");
             this.Age_tb.BackColor = System.Drawing.Color.White;
             this.Age_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Age_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Age_tb.Location = new System.Drawing.Point(563, 143);
             this.Age_tb.Name = "Age_tb";
-            this.Age_tb.Size = new System.Drawing.Size(200, 26);
-            this.Age_tb.TabIndex = 12;
             // 
             // lbl_pw
             // 
-            this.lbl_pw.AutoSize = true;
-            this.lbl_pw.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pw.Location = new System.Drawing.Point(301, 185);
+            resources.ApplyResources(this.lbl_pw, "lbl_pw");
             this.lbl_pw.Name = "lbl_pw";
-            this.lbl_pw.Size = new System.Drawing.Size(77, 17);
-            this.lbl_pw.TabIndex = 11;
-            this.lbl_pw.Text = "Password";
             // 
             // Password_tb
             // 
             this.Password_tb.BackColor = System.Drawing.Color.White;
             this.Password_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Password_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_tb.Location = new System.Drawing.Point(304, 215);
+            resources.ApplyResources(this.Password_tb, "Password_tb");
             this.Password_tb.Name = "Password_tb";
-            this.Password_tb.PasswordChar = '*';
-            this.Password_tb.Size = new System.Drawing.Size(202, 26);
-            this.Password_tb.TabIndex = 10;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(302, 113);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Name";
             // 
             // Name_tb
             // 
             this.Name_tb.BackColor = System.Drawing.Color.White;
             this.Name_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Name_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name_tb.Location = new System.Drawing.Point(304, 143);
+            resources.ApplyResources(this.Name_tb, "Name_tb");
             this.Name_tb.Name = "Name_tb";
-            this.Name_tb.Size = new System.Drawing.Size(202, 26);
-            this.Name_tb.TabIndex = 8;
             // 
             // Seperate2
             // 
-            this.Seperate2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Seperate2, "Seperate2");
             this.Seperate2.BackColor = System.Drawing.Color.DimGray;
-            this.Seperate2.Location = new System.Drawing.Point(83, 68);
             this.Seperate2.Name = "Seperate2";
-            this.Seperate2.Size = new System.Drawing.Size(714, 4);
-            this.Seperate2.TabIndex = 7;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 22);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 31);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "My Details";
             // 
             // Avatar_Pb
             // 
-            this.Avatar_Pb.Image = ((System.Drawing.Image)(resources.GetObject("Avatar_Pb.Image")));
-            this.Avatar_Pb.Location = new System.Drawing.Point(88, 87);
+            resources.ApplyResources(this.Avatar_Pb, "Avatar_Pb");
             this.Avatar_Pb.Name = "Avatar_Pb";
-            this.Avatar_Pb.Size = new System.Drawing.Size(145, 131);
-            this.Avatar_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Avatar_Pb.TabIndex = 0;
             this.Avatar_Pb.TabStop = false;
             // 
             // MenuControlAccountPanel
@@ -406,85 +309,47 @@ namespace LHBeverage.UserControls
             this.MenuControlAccountPanel.Controls.Add(this.btn_MyOrders);
             this.MenuControlAccountPanel.Controls.Add(this.btn_Coupon);
             this.MenuControlAccountPanel.Controls.Add(this.btn_LHCoins);
-            this.MenuControlAccountPanel.Controls.Add(this.btn_Mode);
-            this.MenuControlAccountPanel.Location = new System.Drawing.Point(15, 53);
+            resources.ApplyResources(this.MenuControlAccountPanel, "MenuControlAccountPanel");
             this.MenuControlAccountPanel.Name = "MenuControlAccountPanel";
-            this.MenuControlAccountPanel.Size = new System.Drawing.Size(197, 233);
-            this.MenuControlAccountPanel.TabIndex = 5;
             // 
             // btn_Mydetail
             // 
             this.btn_Mydetail.BackColor = System.Drawing.Color.Azure;
             this.btn_Mydetail.FlatAppearance.BorderSize = 0;
-            this.btn_Mydetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Mydetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Mydetail.Image = ((System.Drawing.Image)(resources.GetObject("btn_Mydetail.Image")));
-            this.btn_Mydetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Mydetail.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.btn_Mydetail, "btn_Mydetail");
             this.btn_Mydetail.Name = "btn_Mydetail";
-            this.btn_Mydetail.Size = new System.Drawing.Size(191, 40);
-            this.btn_Mydetail.TabIndex = 1;
-            this.btn_Mydetail.Text = "My details";
             this.btn_Mydetail.UseVisualStyleBackColor = false;
             this.btn_Mydetail.Click += new System.EventHandler(this.btn_Mydetail_Click);
             // 
             // btn_MyOrders
             // 
             this.btn_MyOrders.FlatAppearance.BorderSize = 0;
-            this.btn_MyOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MyOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MyOrders.Image = ((System.Drawing.Image)(resources.GetObject("btn_MyOrders.Image")));
-            this.btn_MyOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MyOrders.Location = new System.Drawing.Point(3, 49);
+            resources.ApplyResources(this.btn_MyOrders, "btn_MyOrders");
             this.btn_MyOrders.Name = "btn_MyOrders";
-            this.btn_MyOrders.Size = new System.Drawing.Size(191, 40);
-            this.btn_MyOrders.TabIndex = 2;
-            this.btn_MyOrders.Text = "My orders";
             this.btn_MyOrders.UseVisualStyleBackColor = true;
             this.btn_MyOrders.Click += new System.EventHandler(this.btn_MyOrders_Click);
             // 
             // btn_Coupon
             // 
             this.btn_Coupon.FlatAppearance.BorderSize = 0;
-            this.btn_Coupon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Coupon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Coupon.Image = ((System.Drawing.Image)(resources.GetObject("btn_Coupon.Image")));
-            this.btn_Coupon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Coupon.Location = new System.Drawing.Point(3, 95);
+            resources.ApplyResources(this.btn_Coupon, "btn_Coupon");
             this.btn_Coupon.Name = "btn_Coupon";
-            this.btn_Coupon.Size = new System.Drawing.Size(191, 40);
-            this.btn_Coupon.TabIndex = 3;
-            this.btn_Coupon.Text = "My coupon";
             this.btn_Coupon.UseVisualStyleBackColor = true;
             this.btn_Coupon.Click += new System.EventHandler(this.btn_Coupon_Click);
             // 
             // btn_LHCoins
             // 
             this.btn_LHCoins.FlatAppearance.BorderSize = 0;
-            this.btn_LHCoins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LHCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_LHCoins.Image = ((System.Drawing.Image)(resources.GetObject("btn_LHCoins.Image")));
-            this.btn_LHCoins.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_LHCoins.Location = new System.Drawing.Point(3, 141);
+            resources.ApplyResources(this.btn_LHCoins, "btn_LHCoins");
             this.btn_LHCoins.Name = "btn_LHCoins";
-            this.btn_LHCoins.Size = new System.Drawing.Size(191, 40);
-            this.btn_LHCoins.TabIndex = 3;
-            this.btn_LHCoins.Text = "My LHCoins";
             this.btn_LHCoins.UseVisualStyleBackColor = true;
             this.btn_LHCoins.Click += new System.EventHandler(this.btn_LHCoins_Click);
             // 
             // btn_Mode
             // 
             this.btn_Mode.FlatAppearance.BorderSize = 0;
-            this.btn_Mode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Mode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Mode.Image = ((System.Drawing.Image)(resources.GetObject("btn_Mode.Image")));
-            this.btn_Mode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Mode.Location = new System.Drawing.Point(3, 187);
+            resources.ApplyResources(this.btn_Mode, "btn_Mode");
             this.btn_Mode.Name = "btn_Mode";
-            this.btn_Mode.Size = new System.Drawing.Size(191, 40);
-            this.btn_Mode.TabIndex = 3;
-            this.btn_Mode.Text = "Light Mode";
             this.btn_Mode.UseVisualStyleBackColor = true;
             this.btn_Mode.Click += new System.EventHandler(this.btn_Mode_Click);
             // 
@@ -494,119 +359,75 @@ namespace LHBeverage.UserControls
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(70, 22);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 31);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "My Orders";
             // 
             // Seperate
             // 
-            this.Seperate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Seperate, "Seperate");
             this.Seperate.BackColor = System.Drawing.Color.DimGray;
-            this.Seperate.Location = new System.Drawing.Point(75, 68);
             this.Seperate.Name = "Seperate";
-            this.Seperate.Size = new System.Drawing.Size(784, 4);
-            this.Seperate.TabIndex = 8;
             // 
             // Order_Flowpanel
             // 
-            this.Order_Flowpanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Order_Flowpanel.AutoScroll = true;
+            resources.ApplyResources(this.Order_Flowpanel, "Order_Flowpanel");
             this.Order_Flowpanel.Controls.Add(this.NonePanel);
-            this.Order_Flowpanel.Location = new System.Drawing.Point(8, 120);
             this.Order_Flowpanel.Name = "Order_Flowpanel";
-            this.Order_Flowpanel.Size = new System.Drawing.Size(916, 380);
-            this.Order_Flowpanel.TabIndex = 27;
             // 
             // NonePanel
             // 
             this.NonePanel.Controls.Add(this.pictureBox1);
             this.NonePanel.Controls.Add(this.NoneLabel);
-            this.NonePanel.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.NonePanel, "NonePanel");
             this.NonePanel.Name = "NonePanel";
-            this.NonePanel.Size = new System.Drawing.Size(894, 364);
-            this.NonePanel.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LHBeverage.Properties.Resources.inbox;
-            this.pictureBox1.Location = new System.Drawing.Point(373, 101);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // NoneLabel
             // 
-            this.NoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NoneLabel.Location = new System.Drawing.Point(242, 239);
+            resources.ApplyResources(this.NoneLabel, "NoneLabel");
             this.NoneLabel.Name = "NoneLabel";
-            this.NoneLabel.Size = new System.Drawing.Size(400, 40);
-            this.NoneLabel.TabIndex = 0;
-            this.NoneLabel.Text = "This type order is empty !";
-            this.NoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ChooseConfirmBtn
             // 
             this.ChooseConfirmBtn.FlatAppearance.BorderSize = 0;
-            this.ChooseConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChooseConfirmBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseConfirmBtn.Location = new System.Drawing.Point(23, 80);
+            resources.ApplyResources(this.ChooseConfirmBtn, "ChooseConfirmBtn");
             this.ChooseConfirmBtn.Name = "ChooseConfirmBtn";
-            this.ChooseConfirmBtn.Size = new System.Drawing.Size(218, 40);
-            this.ChooseConfirmBtn.TabIndex = 28;
-            this.ChooseConfirmBtn.Text = "Confirm";
             this.ChooseConfirmBtn.UseVisualStyleBackColor = true;
             this.ChooseConfirmBtn.Click += new System.EventHandler(this.ChooseConfirmBtn_Click);
             // 
             // ChooseDeliveryBtn
             // 
             this.ChooseDeliveryBtn.FlatAppearance.BorderSize = 0;
-            this.ChooseDeliveryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChooseDeliveryBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseDeliveryBtn.Location = new System.Drawing.Point(241, 80);
+            resources.ApplyResources(this.ChooseDeliveryBtn, "ChooseDeliveryBtn");
             this.ChooseDeliveryBtn.Name = "ChooseDeliveryBtn";
-            this.ChooseDeliveryBtn.Size = new System.Drawing.Size(218, 40);
-            this.ChooseDeliveryBtn.TabIndex = 28;
-            this.ChooseDeliveryBtn.Text = "Delivery";
             this.ChooseDeliveryBtn.UseVisualStyleBackColor = true;
             this.ChooseDeliveryBtn.Click += new System.EventHandler(this.ChooseDeliveryBtn_Click);
             // 
             // ChooseSuccessBtn
             // 
             this.ChooseSuccessBtn.FlatAppearance.BorderSize = 0;
-            this.ChooseSuccessBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChooseSuccessBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseSuccessBtn.Location = new System.Drawing.Point(459, 80);
+            resources.ApplyResources(this.ChooseSuccessBtn, "ChooseSuccessBtn");
             this.ChooseSuccessBtn.Name = "ChooseSuccessBtn";
-            this.ChooseSuccessBtn.Size = new System.Drawing.Size(218, 40);
-            this.ChooseSuccessBtn.TabIndex = 28;
-            this.ChooseSuccessBtn.Text = "Success";
             this.ChooseSuccessBtn.UseVisualStyleBackColor = true;
             this.ChooseSuccessBtn.Click += new System.EventHandler(this.ChooseSuccessBtn_Click);
             // 
             // ChooseCancelBtn
             // 
             this.ChooseCancelBtn.FlatAppearance.BorderSize = 0;
-            this.ChooseCancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChooseCancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChooseCancelBtn.Location = new System.Drawing.Point(677, 80);
+            resources.ApplyResources(this.ChooseCancelBtn, "ChooseCancelBtn");
             this.ChooseCancelBtn.Name = "ChooseCancelBtn";
-            this.ChooseCancelBtn.Size = new System.Drawing.Size(218, 40);
-            this.ChooseCancelBtn.TabIndex = 28;
-            this.ChooseCancelBtn.Text = "Cancel";
             this.ChooseCancelBtn.UseVisualStyleBackColor = true;
             this.ChooseCancelBtn.Click += new System.EventHandler(this.ChooseCancelBtn_Click);
             // 
             // MyOrder_panel
             // 
-            this.MyOrder_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.MyOrder_panel, "MyOrder_panel");
             this.MyOrder_panel.BackColor = System.Drawing.Color.White;
             this.MyOrder_panel.Controls.Add(this.ChooseCancelBtn);
             this.MyOrder_panel.Controls.Add(this.ChooseSuccessBtn);
@@ -615,11 +436,7 @@ namespace LHBeverage.UserControls
             this.MyOrder_panel.Controls.Add(this.Order_Flowpanel);
             this.MyOrder_panel.Controls.Add(this.Seperate);
             this.MyOrder_panel.Controls.Add(this.label9);
-            this.MyOrder_panel.Location = new System.Drawing.Point(250, 53);
             this.MyOrder_panel.Name = "MyOrder_panel";
-            this.MyOrder_panel.Size = new System.Drawing.Size(920, 483);
-            this.MyOrder_panel.TabIndex = 6;
-            this.MyOrder_panel.Visible = false;
             // 
             // DetailOrderPanel
             // 
@@ -631,74 +448,42 @@ namespace LHBeverage.UserControls
             this.DetailOrderPanel.Controls.Add(this.CodeOrderLabel);
             this.DetailOrderPanel.Controls.Add(this.DateOrder);
             this.DetailOrderPanel.Controls.Add(this.panel3);
-            this.DetailOrderPanel.Location = new System.Drawing.Point(250, 53);
+            resources.ApplyResources(this.DetailOrderPanel, "DetailOrderPanel");
             this.DetailOrderPanel.Name = "DetailOrderPanel";
-            this.DetailOrderPanel.Size = new System.Drawing.Size(900, 500);
-            this.DetailOrderPanel.TabIndex = 7;
-            this.DetailOrderPanel.Visible = false;
             // 
             // ReasonLabel
             // 
             this.ReasonLabel.BackColor = System.Drawing.Color.Black;
-            this.ReasonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.ReasonLabel, "ReasonLabel");
             this.ReasonLabel.ForeColor = System.Drawing.Color.White;
-            this.ReasonLabel.Location = new System.Drawing.Point(4, 75);
             this.ReasonLabel.Name = "ReasonLabel";
-            this.ReasonLabel.Size = new System.Drawing.Size(893, 25);
-            this.ReasonLabel.TabIndex = 14;
-            this.ReasonLabel.Text = "Buồn quá hủy đơn";
-            this.ReasonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ReasonLabel.Visible = false;
             // 
             // ListProductOrder
             // 
-            this.ListProductOrder.AutoScroll = true;
-            this.ListProductOrder.Location = new System.Drawing.Point(5, 102);
+            resources.ApplyResources(this.ListProductOrder, "ListProductOrder");
             this.ListProductOrder.Name = "ListProductOrder";
-            this.ListProductOrder.Size = new System.Drawing.Size(892, 272);
-            this.ListProductOrder.TabIndex = 29;
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.DimGray;
-            this.panel4.Location = new System.Drawing.Point(75, 68);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(750, 4);
-            this.panel4.TabIndex = 27;
             // 
             // CodeOrder_lbl
             // 
-            this.CodeOrder_lbl.AutoSize = true;
-            this.CodeOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodeOrder_lbl.Location = new System.Drawing.Point(229, 23);
+            resources.ApplyResources(this.CodeOrder_lbl, "CodeOrder_lbl");
             this.CodeOrder_lbl.Name = "CodeOrder_lbl";
-            this.CodeOrder_lbl.Size = new System.Drawing.Size(140, 31);
-            this.CodeOrder_lbl.TabIndex = 28;
-            this.CodeOrder_lbl.Text = "My Orders";
-            this.CodeOrder_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CodeOrderLabel
             // 
-            this.CodeOrderLabel.AutoSize = true;
-            this.CodeOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodeOrderLabel.Location = new System.Drawing.Point(70, 23);
+            resources.ApplyResources(this.CodeOrderLabel, "CodeOrderLabel");
             this.CodeOrderLabel.Name = "CodeOrderLabel";
-            this.CodeOrderLabel.Size = new System.Drawing.Size(155, 31);
-            this.CodeOrderLabel.TabIndex = 28;
-            this.CodeOrderLabel.Text = "Order Code";
             // 
             // DateOrder
             // 
             this.DateOrder.AutoEllipsis = true;
-            this.DateOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateOrder.Location = new System.Drawing.Point(583, 26);
+            resources.ApplyResources(this.DateOrder, "DateOrder");
             this.DateOrder.Name = "DateOrder";
-            this.DateOrder.Size = new System.Drawing.Size(242, 31);
-            this.DateOrder.TabIndex = 28;
-            this.DateOrder.Text = "DateOrder";
-            this.DateOrder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel3
             // 
@@ -714,120 +499,69 @@ namespace LHBeverage.UserControls
             this.panel3.Controls.Add(this.Status_lbl);
             this.panel3.Controls.Add(this.PricePayment_lbl);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Location = new System.Drawing.Point(0, 380);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(920, 120);
-            this.panel3.TabIndex = 1;
             // 
             // btn_CancelOrder
             // 
             this.btn_CancelOrder.BackColor = System.Drawing.Color.Red;
             this.btn_CancelOrder.FlatAppearance.BorderSize = 0;
-            this.btn_CancelOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CancelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btn_CancelOrder, "btn_CancelOrder");
             this.btn_CancelOrder.ForeColor = System.Drawing.Color.White;
-            this.btn_CancelOrder.Location = new System.Drawing.Point(783, 80);
             this.btn_CancelOrder.Name = "btn_CancelOrder";
-            this.btn_CancelOrder.Size = new System.Drawing.Size(87, 31);
-            this.btn_CancelOrder.TabIndex = 24;
-            this.btn_CancelOrder.Text = "Hủy đơn";
             this.btn_CancelOrder.UseVisualStyleBackColor = false;
             // 
             // TotalPrice
             // 
-            this.TotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.TotalPrice, "TotalPrice");
             this.TotalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.TotalPrice.Location = new System.Drawing.Point(2, 45);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(157, 18);
-            this.TotalPrice.TabIndex = 23;
-            this.TotalPrice.Text = "0";
-            this.TotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LhCoin_lbl
             // 
-            this.LhCoin_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LhCoin_lbl, "LhCoin_lbl");
             this.LhCoin_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LhCoin_lbl.Location = new System.Drawing.Point(565, 47);
             this.LhCoin_lbl.Name = "LhCoin_lbl";
-            this.LhCoin_lbl.Size = new System.Drawing.Size(157, 18);
-            this.LhCoin_lbl.TabIndex = 22;
-            this.LhCoin_lbl.Text = "0";
-            this.LhCoin_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Discount_lbl
             // 
-            this.Discount_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.Discount_lbl, "Discount_lbl");
             this.Discount_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Discount_lbl.Location = new System.Drawing.Point(381, 45);
             this.Discount_lbl.Name = "Discount_lbl";
-            this.Discount_lbl.Size = new System.Drawing.Size(157, 18);
-            this.Discount_lbl.TabIndex = 21;
-            this.Discount_lbl.Text = "0";
-            this.Discount_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DateOrder_lbl
             // 
-            this.DateOrder_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.DateOrder_lbl, "DateOrder_lbl");
             this.DateOrder_lbl.ForeColor = System.Drawing.Color.Black;
-            this.DateOrder_lbl.Location = new System.Drawing.Point(185, 94);
             this.DateOrder_lbl.Name = "DateOrder_lbl";
-            this.DateOrder_lbl.Size = new System.Drawing.Size(157, 18);
-            this.DateOrder_lbl.TabIndex = 20;
-            this.DateOrder_lbl.Text = "1001";
-            this.DateOrder_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DeliveryMethod_lbl
             // 
-            this.DeliveryMethod_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.DeliveryMethod_lbl, "DeliveryMethod_lbl");
             this.DeliveryMethod_lbl.ForeColor = System.Drawing.Color.Gray;
-            this.DeliveryMethod_lbl.Location = new System.Drawing.Point(29, 91);
             this.DeliveryMethod_lbl.Name = "DeliveryMethod_lbl";
-            this.DeliveryMethod_lbl.Size = new System.Drawing.Size(188, 21);
-            this.DeliveryMethod_lbl.TabIndex = 19;
-            this.DeliveryMethod_lbl.Text = "Nhận tại cửa hàng ";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(210, 74);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(108, 17);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Date payment";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(27, 74);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(125, 17);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Delivery method";
             // 
             // Status_lbl
             // 
-            this.Status_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.Status_lbl, "Status_lbl");
             this.Status_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Status_lbl.Location = new System.Drawing.Point(199, 45);
             this.Status_lbl.Name = "Status_lbl";
-            this.Status_lbl.Size = new System.Drawing.Size(132, 18);
-            this.Status_lbl.TabIndex = 15;
-            this.Status_lbl.Text = "Đã đặt hàng";
-            this.Status_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PricePayment_lbl
             // 
-            this.PricePayment_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.PricePayment_lbl, "PricePayment_lbl");
             this.PricePayment_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.PricePayment_lbl.Location = new System.Drawing.Point(728, 47);
             this.PricePayment_lbl.Name = "PricePayment_lbl";
-            this.PricePayment_lbl.Size = new System.Drawing.Size(157, 18);
-            this.PricePayment_lbl.TabIndex = 12;
-            this.PricePayment_lbl.Text = "0";
-            this.PricePayment_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -837,122 +571,93 @@ namespace LHBeverage.UserControls
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label18);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(920, 31);
-            this.panel5.TabIndex = 13;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(59, 8);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 17);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Total";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(758, 8);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(112, 17);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Total Payment";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(424, 8);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 17);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Discount";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(610, 8);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 17);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "LHCoin";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(234, 8);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 17);
-            this.label18.TabIndex = 12;
-            this.label18.Text = "Status";
             // 
             // CouponPanel
             // 
-            this.CouponPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.CouponPanel, "CouponPanel");
             this.CouponPanel.BackColor = System.Drawing.Color.White;
             this.CouponPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CouponPanel.Controls.Add(this.ListCopon);
             this.CouponPanel.Controls.Add(this.Seperate3);
             this.CouponPanel.Controls.Add(this.MycouponLabel);
-            this.CouponPanel.Location = new System.Drawing.Point(250, 53);
             this.CouponPanel.Name = "CouponPanel";
-            this.CouponPanel.Size = new System.Drawing.Size(916, 500);
-            this.CouponPanel.TabIndex = 30;
-            this.CouponPanel.Visible = false;
             // 
             // ListCopon
             // 
-            this.ListCopon.AutoScroll = true;
-            this.ListCopon.Location = new System.Drawing.Point(0, 102);
+            resources.ApplyResources(this.ListCopon, "ListCopon");
             this.ListCopon.Name = "ListCopon";
-            this.ListCopon.Size = new System.Drawing.Size(933, 390);
-            this.ListCopon.TabIndex = 29;
             // 
             // Seperate3
             // 
-            this.Seperate3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.Seperate3, "Seperate3");
             this.Seperate3.BackColor = System.Drawing.Color.DimGray;
-            this.Seperate3.Location = new System.Drawing.Point(75, 68);
             this.Seperate3.Name = "Seperate3";
-            this.Seperate3.Size = new System.Drawing.Size(764, 4);
-            this.Seperate3.TabIndex = 27;
             // 
             // MycouponLabel
             // 
-            this.MycouponLabel.AutoSize = true;
-            this.MycouponLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MycouponLabel.Location = new System.Drawing.Point(70, 22);
+            resources.ApplyResources(this.MycouponLabel, "MycouponLabel");
             this.MycouponLabel.Name = "MycouponLabel";
-            this.MycouponLabel.Size = new System.Drawing.Size(152, 31);
-            this.MycouponLabel.TabIndex = 28;
-            this.MycouponLabel.Text = "My Coupon";
             // 
             // LHCoinsPanel
             // 
-            this.LHCoinsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.LHCoinsPanel, "LHCoinsPanel");
             this.LHCoinsPanel.BackColor = System.Drawing.Color.White;
             this.LHCoinsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LHCoinsPanel.Controls.Add(this.LotteryPanel);
             this.LHCoinsPanel.Controls.Add(this.Seperate4);
             this.LHCoinsPanel.Controls.Add(this.LHCoinsLabel);
             this.LHCoinsPanel.Controls.Add(this.label19);
             this.LHCoinsPanel.Controls.Add(this.label16);
-            this.LHCoinsPanel.Location = new System.Drawing.Point(250, 53);
+            this.LHCoinsPanel.Controls.Add(this.LotteryPanel);
             this.LHCoinsPanel.Name = "LHCoinsPanel";
-            this.LHCoinsPanel.Size = new System.Drawing.Size(920, 500);
-            this.LHCoinsPanel.TabIndex = 31;
-            this.LHCoinsPanel.Visible = false;
+            // 
+            // Seperate4
+            // 
+            resources.ApplyResources(this.Seperate4, "Seperate4");
+            this.Seperate4.BackColor = System.Drawing.Color.DimGray;
+            this.Seperate4.Name = "Seperate4";
+            // 
+            // LHCoinsLabel
+            // 
+            resources.ApplyResources(this.LHCoinsLabel, "LHCoinsLabel");
+            this.LHCoinsLabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.LHCoinsLabel.Name = "LHCoinsLabel";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
             // 
             // LotteryPanel
             // 
@@ -966,243 +671,158 @@ namespace LHBeverage.UserControls
             this.LotteryPanel.Controls.Add(this.label20);
             this.LotteryPanel.Controls.Add(this.BuyLotteryBtn);
             this.LotteryPanel.Controls.Add(this.LuckyNumberLabel);
+            this.LotteryPanel.Controls.Add(this.label21);
+            this.LotteryPanel.Controls.Add(this.label10);
             this.LotteryPanel.Controls.Add(this.ResultLabel);
-            this.LotteryPanel.Controls.Add(this.ChoosingNumberlabel);
             this.LotteryPanel.Controls.Add(this.LHCoinsUse);
-            this.LotteryPanel.Location = new System.Drawing.Point(75, 95);
+            this.LotteryPanel.Controls.Add(this.ChoosingNumberlabel);
+            resources.ApplyResources(this.LotteryPanel, "LotteryPanel");
             this.LotteryPanel.Name = "LotteryPanel";
-            this.LotteryPanel.Size = new System.Drawing.Size(753, 373);
-            this.LotteryPanel.TabIndex = 29;
             // 
             // Number6
             // 
-            this.Number6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number6.Location = new System.Drawing.Point(507, 90);
-            this.Number6.MaxLength = 1;
+            resources.ApplyResources(this.Number6, "Number6");
             this.Number6.Name = "Number6";
-            this.Number6.Size = new System.Drawing.Size(40, 32);
-            this.Number6.TabIndex = 4;
-            this.Number6.Text = "0";
-            this.Number6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number6.Click += new System.EventHandler(this.Number3_Click);
             this.Number6.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // Number5
             // 
-            this.Number5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number5.Location = new System.Drawing.Point(447, 90);
-            this.Number5.MaxLength = 1;
+            resources.ApplyResources(this.Number5, "Number5");
             this.Number5.Name = "Number5";
-            this.Number5.Size = new System.Drawing.Size(40, 32);
-            this.Number5.TabIndex = 4;
-            this.Number5.Text = "0";
-            this.Number5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number5.Click += new System.EventHandler(this.Number3_Click);
             this.Number5.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // Number4
             // 
-            this.Number4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number4.Location = new System.Drawing.Point(387, 90);
-            this.Number4.MaxLength = 1;
+            resources.ApplyResources(this.Number4, "Number4");
             this.Number4.Name = "Number4";
-            this.Number4.Size = new System.Drawing.Size(40, 32);
-            this.Number4.TabIndex = 4;
-            this.Number4.Text = "0";
-            this.Number4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number4.Click += new System.EventHandler(this.Number3_Click);
             this.Number4.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // Number3
             // 
-            this.Number3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number3.Location = new System.Drawing.Point(327, 90);
-            this.Number3.MaxLength = 1;
+            resources.ApplyResources(this.Number3, "Number3");
             this.Number3.Name = "Number3";
-            this.Number3.Size = new System.Drawing.Size(40, 32);
-            this.Number3.TabIndex = 4;
-            this.Number3.Text = "0";
-            this.Number3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number3.Click += new System.EventHandler(this.Number3_Click);
             this.Number3.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // Number2
             // 
-            this.Number2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number2.Location = new System.Drawing.Point(267, 90);
-            this.Number2.MaxLength = 1;
+            resources.ApplyResources(this.Number2, "Number2");
             this.Number2.Name = "Number2";
-            this.Number2.Size = new System.Drawing.Size(40, 32);
-            this.Number2.TabIndex = 4;
-            this.Number2.Text = "0";
-            this.Number2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number2.Click += new System.EventHandler(this.Number3_Click);
             this.Number2.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // Number1
             // 
-            this.Number1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number1.Location = new System.Drawing.Point(207, 90);
-            this.Number1.MaxLength = 1;
+            resources.ApplyResources(this.Number1, "Number1");
             this.Number1.Name = "Number1";
-            this.Number1.Size = new System.Drawing.Size(40, 32);
-            this.Number1.TabIndex = 4;
-            this.Number1.Text = "0";
-            this.Number1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Number1.Click += new System.EventHandler(this.Number3_Click);
             this.Number1.TextChanged += new System.EventHandler(this.Number1_TextChanged);
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label20, "label20");
             this.label20.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label20.Location = new System.Drawing.Point(212, 153);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(160, 39);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "LHCoins:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BuyLotteryBtn
             // 
             this.BuyLotteryBtn.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.BuyLotteryBtn.FlatAppearance.BorderSize = 0;
-            this.BuyLotteryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BuyLotteryBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuyLotteryBtn.Location = new System.Drawing.Point(276, 225);
+            resources.ApplyResources(this.BuyLotteryBtn, "BuyLotteryBtn");
             this.BuyLotteryBtn.Name = "BuyLotteryBtn";
-            this.BuyLotteryBtn.Size = new System.Drawing.Size(200, 40);
-            this.BuyLotteryBtn.TabIndex = 2;
-            this.BuyLotteryBtn.Text = "Buy Lottery";
             this.BuyLotteryBtn.UseVisualStyleBackColor = false;
             this.BuyLotteryBtn.Click += new System.EventHandler(this.BuyLotteryBtn_Click);
             // 
             // LuckyNumberLabel
             // 
-            this.LuckyNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LuckyNumberLabel, "LuckyNumberLabel");
             this.LuckyNumberLabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.LuckyNumberLabel.Location = new System.Drawing.Point(0, 280);
             this.LuckyNumberLabel.Name = "LuckyNumberLabel";
-            this.LuckyNumberLabel.Size = new System.Drawing.Size(753, 40);
-            this.LuckyNumberLabel.TabIndex = 1;
-            this.LuckyNumberLabel.Text = "123456";
-            this.LuckyNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label21.Name = "label21";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label10.Name = "label10";
             // 
             // ResultLabel
             // 
-            this.ResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.ResultLabel, "ResultLabel");
             this.ResultLabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.ResultLabel.Location = new System.Drawing.Point(0, 316);
             this.ResultLabel.Name = "ResultLabel";
-            this.ResultLabel.Size = new System.Drawing.Size(753, 40);
-            this.ResultLabel.TabIndex = 1;
-            this.ResultLabel.Text = "Wish you luck next time!";
-            this.ResultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ChoosingNumberlabel
-            // 
-            this.ChoosingNumberlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChoosingNumberlabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.ChoosingNumberlabel.Location = new System.Drawing.Point(0, 20);
-            this.ChoosingNumberlabel.Name = "ChoosingNumberlabel";
-            this.ChoosingNumberlabel.Size = new System.Drawing.Size(753, 40);
-            this.ChoosingNumberlabel.TabIndex = 1;
-            this.ChoosingNumberlabel.Text = "Choose your lucky number";
-            this.ChoosingNumberlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LHCoinsUse
             // 
-            this.LHCoinsUse.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LHCoinsUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LHCoinsUse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.LHCoinsUse, "LHCoinsUse");
             this.LHCoinsUse.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
-            this.LHCoinsUse.Location = new System.Drawing.Point(392, 157);
             this.LHCoinsUse.Maximum = new decimal(new int[] {
             9,
             0,
             0,
             0});
             this.LHCoinsUse.Name = "LHCoinsUse";
-            this.LHCoinsUse.Size = new System.Drawing.Size(160, 34);
-            this.LHCoinsUse.TabIndex = 0;
             this.LHCoinsUse.ValueChanged += new System.EventHandler(this.LHCoinsUse_ValueChanged);
             // 
-            // Seperate4
+            // ChoosingNumberlabel
             // 
-            this.Seperate4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Seperate4.BackColor = System.Drawing.Color.DimGray;
-            this.Seperate4.Location = new System.Drawing.Point(75, 68);
-            this.Seperate4.Name = "Seperate4";
-            this.Seperate4.Size = new System.Drawing.Size(768, 4);
-            this.Seperate4.TabIndex = 27;
-            // 
-            // LHCoinsLabel
-            // 
-            this.LHCoinsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LHCoinsLabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.LHCoinsLabel.Location = new System.Drawing.Point(613, 28);
-            this.LHCoinsLabel.Name = "LHCoinsLabel";
-            this.LHCoinsLabel.Size = new System.Drawing.Size(215, 25);
-            this.LHCoinsLabel.TabIndex = 28;
-            this.LHCoinsLabel.Text = "3000000000 LHCoins";
-            this.LHCoinsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(480, 23);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(143, 31);
-            this.label19.TabIndex = 28;
-            this.label19.Text = "You have: ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(70, 22);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(162, 31);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "My LHCoins";
+            resources.ApplyResources(this.ChoosingNumberlabel, "ChoosingNumberlabel");
+            this.ChoosingNumberlabel.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.ChoosingNumberlabel.Name = "ChoosingNumberlabel";
             // 
             // btn_Logout
             // 
             this.btn_Logout.BackColor = System.Drawing.Color.Red;
             this.btn_Logout.FlatAppearance.BorderSize = 0;
-            this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
-            this.btn_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Logout.Location = new System.Drawing.Point(18, 513);
+            resources.ApplyResources(this.btn_Logout, "btn_Logout");
             this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(191, 40);
-            this.btn_Logout.TabIndex = 4;
-            this.btn_Logout.Text = "Log out";
             this.btn_Logout.UseVisualStyleBackColor = false;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
+            // SwitchControlAccountPanel
+            // 
+            this.SwitchControlAccountPanel.BackColor = System.Drawing.Color.White;
+            this.SwitchControlAccountPanel.Controls.Add(this.btn_Mode);
+            this.SwitchControlAccountPanel.Controls.Add(this.Languebtn);
+            resources.ApplyResources(this.SwitchControlAccountPanel, "SwitchControlAccountPanel");
+            this.SwitchControlAccountPanel.Name = "SwitchControlAccountPanel";
+            // 
+            // Languebtn
+            // 
+            this.Languebtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.Languebtn, "Languebtn");
+            this.Languebtn.Name = "Languebtn";
+            this.Languebtn.UseVisualStyleBackColor = true;
+            this.Languebtn.Click += new System.EventHandler(this.Languebtn_Click);
+            // 
             // AccountPagePanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.SwitchControlAccountPanel);
             this.Controls.Add(this.DetailOrderPanel);
             this.Controls.Add(this.MyOrder_panel);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.MenuControlAccountPanel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LHCoinsPanel);
             this.Controls.Add(this.CouponPanel);
             this.Controls.Add(this.Account_MyDetail_panel);
+            this.Controls.Add(this.LHCoinsPanel);
             this.Name = "AccountPagePanel";
-            this.Size = new System.Drawing.Size(1184, 600);
             this.Account_MyDetail_panel.ResumeLayout(false);
             this.Account_MyDetail_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pb)).EndInit();
@@ -1225,6 +845,7 @@ namespace LHBeverage.UserControls
             this.LotteryPanel.ResumeLayout(false);
             this.LotteryPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LHCoinsUse)).EndInit();
+            this.SwitchControlAccountPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1319,5 +940,9 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.TextBox Number3;
         private System.Windows.Forms.TextBox Number2;
         private System.Windows.Forms.Label CodeOrderLabel;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.FlowLayoutPanel SwitchControlAccountPanel;
+        private System.Windows.Forms.Button Languebtn;
     }
 }

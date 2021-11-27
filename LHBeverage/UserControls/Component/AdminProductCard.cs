@@ -16,6 +16,7 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class AdminProductCard : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public static AdminProductCard instance;
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Product tmpPro = new Product();
@@ -74,11 +75,23 @@ namespace LHBeverage.UserControls.Component
 
         private void DeletePro_btn_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Are you sure delete this product?","Notify",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if(changeLanguage.getLanguageMode()=="en")
             {
-                ProductConnect.DeleteProduct(tmpPro.IDPro);
-                AdminManageProduct.instance.loadData();
+                if (MessageBox.Show("Are you sure delete this product?", "Notify", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    ProductConnect.DeleteProduct(tmpPro.IDPro);
+                    AdminManageProduct.instance.loadData();
+                }
             }
+            else
+            {
+                if (MessageBox.Show("Bạn chắc chắn muốn xóa?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    ProductConnect.DeleteProduct(tmpPro.IDPro);
+                    AdminManageProduct.instance.loadData();
+                }
+            }
+
         }
 
         private void Picture_Pro_Click(object sender, EventArgs e)

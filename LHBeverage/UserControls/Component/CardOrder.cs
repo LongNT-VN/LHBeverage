@@ -108,5 +108,6 @@ namespace LHBeverage.UserControls.Component
             SpecicalPanel2.BackColor = Color.DarkGray;
             btn_CancelOrder.BackColor = Color.Red;
         }
+
     }
 }

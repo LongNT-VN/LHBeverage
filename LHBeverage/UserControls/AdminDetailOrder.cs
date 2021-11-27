@@ -17,6 +17,7 @@ namespace LHBeverage.UserControls
 {
     public partial class AdminDetailOrder : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Order orderTmp;
         public static AdminDetailOrder instance;
@@ -110,10 +111,24 @@ namespace LHBeverage.UserControls
            if(order.Status == "Cancelled")
             {
                 StatusOrder_cb.Enabled = false;
-                Reason.Text = "Reason: " + order.Reason;
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    Reason.Text = "Reason: " + order.Reason;
+                }
+                else
+                {
+                    Reason.Text = "Lý do: " + order.Reason;
+                }
                 Btn_cancel.Enabled = false;
                 StatusOrder_lbl.Visible = true;
-                StatusOrder_lbl.Text = "Cancelled";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    StatusOrder_lbl.Text = "Cancelled";
+                }
+                else
+                {
+                    StatusOrder_lbl.Text = "Đã hủy";
+                }
                 panelStatus.BackColor = Color.Red;
                 panelStatus2.BackColor = Color.Red;
                 Bar_paymented.BackColor = Color.DarkGray;
@@ -145,7 +160,26 @@ namespace LHBeverage.UserControls
                     Btn_cancel.BackColor = Color.DimGray;
                     StatusOrder_cb.Enabled = false;
                 }
-                StatusOrder_cb.SelectedText = order.Status;
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    StatusOrder_cb.SelectedText = order.Status;
+                }
+                else
+                {
+                    if(order.Status== "Cancelled")
+                    {
+                        StatusOrder_cb.SelectedText ="Đã hủy";
+                    }
+                    if (order.Status == "Delivered")
+                    {
+                        StatusOrder_cb.SelectedText = "Đang vận chuyển";
+                    }
+                    if (order.Status == "Received")
+                    {
+                        StatusOrder_cb.SelectedText ="Đã nhận";
+                    }
+                }
+               
             }
             //check status
           

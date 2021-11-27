@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace LHBeverage
 {
     public partial class RegisterPage : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public RegisterPage()
         {
             InitializeComponent();
@@ -140,7 +142,10 @@ namespace LHBeverage
             Checkinfo();
             if (CustomerConnect.IsCustomerExisted(emailBox.Text))
             {
-                ErrorEmailLabel.Text = "Existed Account !";
+                if (changeLanguage.getLanguageMode() == "en")
+                    ErrorEmailLabel.Text = "Existed Account !";
+                else
+                    ErrorEmailLabel.Text = "Tài khoản đã tồn tại !";
                 ErrorEmailLabel.Visible = true;
             }
         }

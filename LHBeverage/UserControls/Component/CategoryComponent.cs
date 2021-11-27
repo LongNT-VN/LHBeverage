@@ -26,6 +26,11 @@ namespace LHBeverage.UserControls.Component
             Categorybtn.Name = catagory.IDCate.ToString();
             Categorybtn.BackColor = Color.DarkGoldenrod;
             Categorybtn.ForeColor = Color.Black;
+            if(catagory.CateImage!=null)
+            {
+                Image CateImg = ConvertBase64toImage.ConverImageFromBase64(catagory.CateImage);
+                Categorybtn.Image = CateImg;
+            }
         }
         public new event EventHandler Click
         {

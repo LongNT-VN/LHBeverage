@@ -117,7 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Logout_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="Logout_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Logout_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="Logout_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 639</value>
+  </data>
+  <data name="Logout_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 42</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Logout_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="Logout_btn.Text" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="&gt;&gt;Logout_btn.Name" xml:space="preserve">
+    <value>Logout_btn</value>
+  </data>
+  <data name="&gt;&gt;Logout_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Logout_btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;Logout_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToppingsNav_Btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ToppingsNav_Btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="ToppingsNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -131,6 +172,39 @@
         /I2EBJMkUFIVlJOIp6brtSHyBs0kNEjCn1VlSgk4E5Ggka7VnjOAevnbwLciwUIsDXOk1BEToQ0A/vbn
         YzAYDI1G8wmU6W6kCVMMdgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="ToppingsNav_Btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ToppingsNav_Btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 320</value>
+  </data>
+  <data name="ToppingsNav_Btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="ToppingsNav_Btn.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ToppingsNav_Btn.Text" xml:space="preserve">
+    <value>   Manage Toppings</value>
+  </data>
+  <data name="&gt;&gt;ToppingsNav_Btn.Name" xml:space="preserve">
+    <value>ToppingsNav_Btn</value>
+  </data>
+  <data name="&gt;&gt;ToppingsNav_Btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToppingsNav_Btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;ToppingsNav_Btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="StatisticalNav_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="StatisticalNav_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="StatisticalNav_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -154,6 +228,39 @@
         9kMj/wDp/HusMjLiTAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="StatisticalNav_btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="StatisticalNav_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 480</value>
+  </data>
+  <data name="StatisticalNav_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="StatisticalNav_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="StatisticalNav_btn.Text" xml:space="preserve">
+    <value>Statistical</value>
+  </data>
+  <data name="&gt;&gt;StatisticalNav_btn.Name" xml:space="preserve">
+    <value>StatisticalNav_btn</value>
+  </data>
+  <data name="&gt;&gt;StatisticalNav_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatisticalNav_btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;StatisticalNav_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CategoryNav_Btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CategoryNav_Btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="CategoryNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -170,6 +277,39 @@
         37dc6YL/byDbQeP6t7hgerpotNqi4W3c2vbpa8v0ZhATLLcIH9zlpCRYXvYf+EXggaeaGxEAAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="CategoryNav_Btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CategoryNav_Btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 240</value>
+  </data>
+  <data name="CategoryNav_Btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="CategoryNav_Btn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="CategoryNav_Btn.Text" xml:space="preserve">
+    <value>   Manage category</value>
+  </data>
+  <data name="&gt;&gt;CategoryNav_Btn.Name" xml:space="preserve">
+    <value>CategoryNav_Btn</value>
+  </data>
+  <data name="&gt;&gt;CategoryNav_Btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CategoryNav_Btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;CategoryNav_Btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="OrdersNav_Btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="OrdersNav_Btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="OrdersNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -200,6 +340,39 @@
         SUVORK5CYII=
 </value>
   </data>
+  <data name="OrdersNav_Btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="OrdersNav_Btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 400</value>
+  </data>
+  <data name="OrdersNav_Btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="OrdersNav_Btn.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="OrdersNav_Btn.Text" xml:space="preserve">
+    <value>Manage orders</value>
+  </data>
+  <data name="&gt;&gt;OrdersNav_Btn.Name" xml:space="preserve">
+    <value>OrdersNav_Btn</value>
+  </data>
+  <data name="&gt;&gt;OrdersNav_Btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrdersNav_Btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;OrdersNav_Btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ProductsNav_Btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ProductsNav_Btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="ProductsNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
@@ -222,6 +395,39 @@
         MKYf/aVHuX6GYRK/A3aosd0CHl62AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="ProductsNav_Btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ProductsNav_Btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 160</value>
+  </data>
+  <data name="ProductsNav_Btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="ProductsNav_Btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ProductsNav_Btn.Text" xml:space="preserve">
+    <value>   Manage products</value>
+  </data>
+  <data name="&gt;&gt;ProductsNav_Btn.Name" xml:space="preserve">
+    <value>ProductsNav_Btn</value>
+  </data>
+  <data name="&gt;&gt;ProductsNav_Btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductsNav_Btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;ProductsNav_Btn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DashBoardNav_Btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="DashBoardNav_Btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="DashBoardNav_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -231,6 +437,114 @@
         BF0j8E0lguUVTe/TdVMsoYDfGkQrZmsOLN8/3mNTA1cwkQIlvmAiBUps+q+fIUykgN+3vTCRAn7fBslE
         Cvhv16BhqyiFjo/smUrE9TMkj1+aTaSFgFK58wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="DashBoardNav_Btn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="DashBoardNav_Btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 80</value>
+  </data>
+  <data name="DashBoardNav_Btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 80</value>
+  </data>
+  <data name="DashBoardNav_Btn.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="DashBoardNav_Btn.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;DashBoardNav_Btn.Name" xml:space="preserve">
+    <value>DashBoardNav_Btn</value>
+  </data>
+  <data name="&gt;&gt;DashBoardNav_Btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DashBoardNav_Btn.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;DashBoardNav_Btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LogoPic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="LogoPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 11</value>
+  </data>
+  <data name="LogoPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 50</value>
+  </data>
+  <data name="LogoPic.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LogoPic.Name" xml:space="preserve">
+    <value>LogoPic</value>
+  </data>
+  <data name="&gt;&gt;LogoPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LogoPic.Parent" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;LogoPic.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="SideBarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="SideBarPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="SideBarPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 681</value>
+  </data>
+  <data name="SideBarPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SideBarPanel.Name" xml:space="preserve">
+    <value>SideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;SideBarPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SideBarPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SideBarPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelTopBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="Light_Dark_PB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Light_Dark_PB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>965, 20</value>
+  </data>
+  <data name="Light_Dark_PB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 40</value>
+  </data>
+  <data name="Light_Dark_PB.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Light_Dark_PB.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Light_Dark_PB.Name" xml:space="preserve">
+    <value>Light_Dark_PB</value>
+  </data>
+  <data name="&gt;&gt;Light_Dark_PB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light_Dark_PB.Parent" xml:space="preserve">
+    <value>panelTopBar</value>
+  </data>
+  <data name="&gt;&gt;Light_Dark_PB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Avatar_picturebox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="Avatar_picturebox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -554,5 +868,104 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgZ3/d9/z/UQnNWHXqGbQAAAABJRU5E
         rkJggg==
 </value>
+  </data>
+  <data name="Avatar_picturebox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>877, 20</value>
+  </data>
+  <data name="Avatar_picturebox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="Avatar_picturebox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Avatar_picturebox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Avatar_picturebox.Name" xml:space="preserve">
+    <value>Avatar_picturebox</value>
+  </data>
+  <data name="&gt;&gt;Avatar_picturebox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Avatar_picturebox.Parent" xml:space="preserve">
+    <value>panelTopBar</value>
+  </data>
+  <data name="&gt;&gt;Avatar_picturebox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AccountName_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="AccountName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="AccountName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 20</value>
+  </data>
+  <data name="AccountName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 40</value>
+  </data>
+  <data name="AccountName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="AccountName_lbl.Text" xml:space="preserve">
+    <value>Huy To Quang</value>
+  </data>
+  <data name="AccountName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;AccountName_lbl.Name" xml:space="preserve">
+    <value>AccountName_lbl</value>
+  </data>
+  <data name="&gt;&gt;AccountName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AccountName_lbl.Parent" xml:space="preserve">
+    <value>panelTopBar</value>
+  </data>
+  <data name="&gt;&gt;AccountName_lbl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelTopBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 0</value>
+  </data>
+  <data name="panelTopBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 80</value>
+  </data>
+  <data name="panelTopBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelTopBar.Name" xml:space="preserve">
+    <value>panelTopBar</value>
+  </data>
+  <data name="&gt;&gt;panelTopBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTopBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTopBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 681</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AdminPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdminPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

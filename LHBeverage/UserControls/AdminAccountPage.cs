@@ -15,6 +15,7 @@ namespace LHBeverage.UserControls
 {
     public partial class AdminAccountPage : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         Bitmap AvatarTmp;
         Customer customerTmp = new Customer();
         public static AdminAccountPage instance;
@@ -138,7 +139,15 @@ namespace LHBeverage.UserControls
                 customerTmp.Authorized = "Admin";
                 CustomerConnect.UpdateCustomer(customerTmp);
                 AdminPage.instance.renderCust(customerTmp);
-                MessageBox.Show("Update information successfull");
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    MessageBox.Show("Update information successfull");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thông tin thành công");
+                }
+                
             }
             catch (Exception ex)
             {

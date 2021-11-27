@@ -117,4 +117,433 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="VIBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="VIBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="VIBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="VIBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 3</value>
+  </data>
+  <data name="VIBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="VIBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="VIBtn.Text" xml:space="preserve">
+    <value>Vi</value>
+  </data>
+  <data name="&gt;&gt;VIBtn.Name" xml:space="preserve">
+    <value>VIBtn</value>
+  </data>
+  <data name="&gt;&gt;VIBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VIBtn.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;VIBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EnBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="EnBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="EnBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="EnBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 30</value>
+  </data>
+  <data name="EnBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="EnBtn.Text" xml:space="preserve">
+    <value>En</value>
+  </data>
+  <data name="&gt;&gt;EnBtn.Name" xml:space="preserve">
+    <value>EnBtn</value>
+  </data>
+  <data name="&gt;&gt;EnBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EnBtn.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;EnBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ErrorPasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ErrorPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 435</value>
+  </data>
+  <data name="ErrorPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 30</value>
+  </data>
+  <data name="ErrorPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ErrorPasswordLabel.Text" xml:space="preserve">
+    <value>Please enter your password !</value>
+  </data>
+  <data name="ErrorPasswordLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Name" xml:space="preserve">
+    <value>ErrorPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ErrorEmailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ErrorEmailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 335</value>
+  </data>
+  <data name="ErrorEmailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 30</value>
+  </data>
+  <data name="ErrorEmailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ErrorEmailLabel.Text" xml:space="preserve">
+    <value>Please enter correct email !</value>
+  </data>
+  <data name="ErrorEmailLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Name" xml:space="preserve">
+    <value>ErrorEmailLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RegisterBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RegisterBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="RegisterBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 520</value>
+  </data>
+  <data name="RegisterBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="RegisterBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RegisterBtn.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Name" xml:space="preserve">
+    <value>RegisterBtn</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PasswordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 400</value>
+  </data>
+  <data name="PasswordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 30</value>
+  </data>
+  <data name="PasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Name" xml:space="preserve">
+    <value>PasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PaswwordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="PaswwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 360</value>
+  </data>
+  <data name="PaswwordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 40</value>
+  </data>
+  <data name="PaswwordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PaswwordLabel.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;PaswwordLabel.Name" xml:space="preserve">
+    <value>PaswwordLabel</value>
+  </data>
+  <data name="&gt;&gt;PaswwordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaswwordLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;PaswwordLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="EmailTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="EmailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 300</value>
+  </data>
+  <data name="EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 30</value>
+  </data>
+  <data name="EmailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="EmailTextBox.Text" xml:space="preserve">
+    <value>Please enter your email.</value>
+  </data>
+  <data name="EmailTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Name" xml:space="preserve">
+    <value>EmailTextBox</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LoginBtn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LoginBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="LoginBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="LoginBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 520</value>
+  </data>
+  <data name="LoginBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="LoginBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LoginBtn.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;LoginBtn.Name" xml:space="preserve">
+    <value>LoginBtn</value>
+  </data>
+  <data name="&gt;&gt;LoginBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginBtn.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;LoginBtn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="EmailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="EmailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 260</value>
+  </data>
+  <data name="EmailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 40</value>
+  </data>
+  <data name="EmailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="EmailLabel.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Name" xml:space="preserve">
+    <value>EmailLabel</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="WelcomLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="WelcomLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 180</value>
+  </data>
+  <data name="WelcomLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 40</value>
+  </data>
+  <data name="WelcomLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="WelcomLabel.Text" xml:space="preserve">
+    <value>Welcome to LH Beverage, please login to your account.</value>
+  </data>
+  <data name="&gt;&gt;WelcomLabel.Name" xml:space="preserve">
+    <value>WelcomLabel</value>
+  </data>
+  <data name="&gt;&gt;WelcomLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WelcomLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;WelcomLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LoginLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="LoginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 120</value>
+  </data>
+  <data name="LoginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>514, 40</value>
+  </data>
+  <data name="LoginLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LoginLabel.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;LoginLabel.Name" xml:space="preserve">
+    <value>LoginLabel</value>
+  </data>
+  <data name="&gt;&gt;LoginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginLabel.Parent" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;LoginLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LoginForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LoginForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 0</value>
+  </data>
+  <data name="LoginForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 681</value>
+  </data>
+  <data name="LoginForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LoginForm.Name" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;LoginForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LoginForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BannerPic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="BannerPic.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="BannerPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BannerPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 681</value>
+  </data>
+  <data name="BannerPic.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Name" xml:space="preserve">
+    <value>BannerPic</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 681</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoginPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

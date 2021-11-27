@@ -214,7 +214,5 @@ namespace LHBeverage
             PublicParam.ligthMode = !PublicParam.ligthMode;
             SetMode();
         }
-
-    
     }
 }

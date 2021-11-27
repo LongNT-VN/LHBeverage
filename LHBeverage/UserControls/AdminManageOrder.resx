@@ -117,4 +117,307 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Order_FlowPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Order_FlowPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Order_FlowPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 72</value>
+  </data>
+  <data name="Order_FlowPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 488</value>
+  </data>
+  <data name="Order_FlowPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Order_FlowPanel.Name" xml:space="preserve">
+    <value>Order_FlowPanel</value>
+  </data>
+  <data name="&gt;&gt;Order_FlowPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Order_FlowPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Order_FlowPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FilterMonth_Cb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="FilterMonth_Cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FilterMonth_Cb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="FilterMonth_Cb.Items" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FilterMonth_Cb.Items1" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="FilterMonth_Cb.Items2" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="FilterMonth_Cb.Items3" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="FilterMonth_Cb.Items4" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="FilterMonth_Cb.Items5" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="FilterMonth_Cb.Items6" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="FilterMonth_Cb.Items7" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="FilterMonth_Cb.Items8" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="FilterMonth_Cb.Items9" xml:space="preserve">
+    <value>Sep</value>
+  </data>
+  <data name="FilterMonth_Cb.Items10" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="FilterMonth_Cb.Items11" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="FilterMonth_Cb.Items12" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="FilterMonth_Cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 39</value>
+  </data>
+  <data name="FilterMonth_Cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 26</value>
+  </data>
+  <data name="FilterMonth_Cb.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;FilterMonth_Cb.Name" xml:space="preserve">
+    <value>FilterMonth_Cb</value>
+  </data>
+  <data name="&gt;&gt;FilterMonth_Cb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FilterMonth_Cb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FilterMonth_Cb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TodayFilter_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TodayFilter_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="TodayFilter_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="TodayFilter_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 39</value>
+  </data>
+  <data name="TodayFilter_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 27</value>
+  </data>
+  <data name="TodayFilter_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TodayFilter_btn.Text" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="&gt;&gt;TodayFilter_btn.Name" xml:space="preserve">
+    <value>TodayFilter_btn</value>
+  </data>
+  <data name="&gt;&gt;TodayFilter_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TodayFilter_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TodayFilter_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="orderEmpty_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="emptyOrder_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="emptyOrder_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 141</value>
+  </data>
+  <data name="emptyOrder_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1013, 31</value>
+  </data>
+  <data name="emptyOrder_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="emptyOrder_lbl.Text" xml:space="preserve">
+    <value>No orders</value>
+  </data>
+  <data name="emptyOrder_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;emptyOrder_lbl.Name" xml:space="preserve">
+    <value>emptyOrder_lbl</value>
+  </data>
+  <data name="&gt;&gt;emptyOrder_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emptyOrder_lbl.Parent" xml:space="preserve">
+    <value>orderEmpty_panel</value>
+  </data>
+  <data name="&gt;&gt;emptyOrder_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="orderEmpty_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 70</value>
+  </data>
+  <data name="orderEmpty_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 509</value>
+  </data>
+  <data name="orderEmpty_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="orderEmpty_panel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;orderEmpty_panel.Name" xml:space="preserve">
+    <value>orderEmpty_panel</value>
+  </data>
+  <data name="&gt;&gt;orderEmpty_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderEmpty_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;orderEmpty_panel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="OrderSuccessBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="OrderSuccessBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="OrderSuccessBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="OrderSuccessBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 4</value>
+  </data>
+  <data name="OrderSuccessBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="OrderSuccessBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="OrderSuccessBtn.Text" xml:space="preserve">
+    <value>Order Successfull</value>
+  </data>
+  <data name="&gt;&gt;OrderSuccessBtn.Name" xml:space="preserve">
+    <value>OrderSuccessBtn</value>
+  </data>
+  <data name="&gt;&gt;OrderSuccessBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrderSuccessBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OrderSuccessBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="OrderCancelBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="OrderCancelBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="OrderCancelBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="OrderCancelBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 4</value>
+  </data>
+  <data name="OrderCancelBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="OrderCancelBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="OrderCancelBtn.Text" xml:space="preserve">
+    <value>Order Cancelled</value>
+  </data>
+  <data name="&gt;&gt;OrderCancelBtn.Name" xml:space="preserve">
+    <value>OrderCancelBtn</value>
+  </data>
+  <data name="&gt;&gt;OrderCancelBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrderCancelBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OrderCancelBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AllOrderBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="AllOrderBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AllOrderBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="AllOrderBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 4</value>
+  </data>
+  <data name="AllOrderBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="AllOrderBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="AllOrderBtn.Text" xml:space="preserve">
+    <value>All Order </value>
+  </data>
+  <data name="&gt;&gt;AllOrderBtn.Name" xml:space="preserve">
+    <value>AllOrderBtn</value>
+  </data>
+  <data name="&gt;&gt;AllOrderBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AllOrderBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AllOrderBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 600</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdminManageOrder</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

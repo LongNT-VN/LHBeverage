@@ -15,6 +15,7 @@ namespace LHBeverage.UserControls
     {
         Cart cartinfo;
         Customer customerinfo;
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         int ShippingPriceinfo = 0;
         int Discountinfo = 0;
@@ -60,7 +61,15 @@ namespace LHBeverage.UserControls
         {
             if (NoneCartPanel.Visible)
             {
-                MessageBox.Show("Bạn có sản phẩm nào. Vui lòng thêm sản phẩm để sử dụng mã!");
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    MessageBox.Show("You not have product in cart. Please add product to use coupon!");
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa có sản phẩm nào. Vui lòng thêm sản phẩm để sử dụng mã!");
+                }
+                
                 ChooseBeverageBtn.PerformClick();
             }
             else
@@ -138,7 +147,15 @@ namespace LHBeverage.UserControls
             }
             else
             {
-                TotalPaymentPrice.Text = "Miễn phí";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    TotalPaymentPrice.Text = "Free";
+                }
+                else
+                {
+                    TotalPaymentPrice.Text = "Miễn phí";
+                }
+                
             }
 
             if (Total < customerinfo.LHCoins)
@@ -287,6 +304,14 @@ namespace LHBeverage.UserControls
                 Discountinfo = coupon.Discountpercent;
                 AddingFee();
                 caltotal(ShippingPriceinfo, Discountinfo, LHCoininfo);
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    CouponDiscountLabel.Text = "Discount" + coupon.Discountpercent + "%";
+                }
+                else
+                {
+                    CouponDiscountLabel.Text = "Giảm giá" + coupon.Discountpercent + "%";
+                }
                 CouponDiscountLabel.Visible = true;
             }
         }
@@ -431,7 +456,6 @@ namespace LHBeverage.UserControls
         {
             FormInfoPagePanel.Visible = false;
             ItemsCart.Visible = true;
-
         }
     }
 }

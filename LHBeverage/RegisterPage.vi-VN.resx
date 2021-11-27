@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RegisterPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Name" xml:space="preserve">
+    <value>AddressLabel</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Name" xml:space="preserve">
+    <value>AddressTextBox</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Name" xml:space="preserve">
+    <value>BannerPic</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Name" xml:space="preserve">
+    <value>ConfirmPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Name" xml:space="preserve">
+    <value>ConfirmPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Name" xml:space="preserve">
+    <value>EmailLabel</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Name" xml:space="preserve">
+    <value>EmailTextBox</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Name" xml:space="preserve">
+    <value>ErrorConfirmLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Name" xml:space="preserve">
+    <value>ErrorEmailLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Name" xml:space="preserve">
+    <value>ErrorFirstNameLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Name" xml:space="preserve">
+    <value>ErrorLastNameLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Name" xml:space="preserve">
+    <value>ErrorPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Name" xml:space="preserve">
+    <value>ErrorPhoneLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Name" xml:space="preserve">
+    <value>FirstNameLabel</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Name" xml:space="preserve">
+    <value>FirstNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Name" xml:space="preserve">
+    <value>HaveaccountLabel</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Name" xml:space="preserve">
+    <value>LastNameLabel</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Name" xml:space="preserve">
+    <value>LastNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Name" xml:space="preserve">
+    <value>LinkLabel</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Name" xml:space="preserve">
+    <value>PasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Name" xml:space="preserve">
+    <value>PasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Name" xml:space="preserve">
+    <value>PhoneNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Name" xml:space="preserve">
+    <value>PhoneNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Name" xml:space="preserve">
+    <value>RegisterBtn</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Name" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Name" xml:space="preserve">
+    <value>RegisterLabel</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="AddressLabel.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="AddressTextBox.Text" xml:space="preserve">
+    <value>Địa chỉ của bạn</value>
+  </data>
+  <data name="ConfirmPasswordLabel.Text" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="EmailLabel.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailTextBox.Text" xml:space="preserve">
+    <value>Vui lòng nhập email!</value>
+  </data>
+  <data name="ErrorConfirmLabel.Text" xml:space="preserve">
+    <value>Xác nhận mật khẩu không đúng!</value>
+  </data>
+  <data name="ErrorEmailLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập đúng email</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập họ!</value>
+  </data>
+  <data name="ErrorLastNameLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập tên!</value>
+  </data>
+  <data name="ErrorPasswordLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu!</value>
+  </data>
+  <data name="ErrorPhoneLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập đúng số điện thoại!</value>
+  </data>
+  <data name="FirstNameLabel.Text" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="FirstNameTextBox.Text" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="HaveaccountLabel.Text" xml:space="preserve">
+    <value>Bạn đã có tài khoản</value>
+  </data>
+  <data name="LastNameLabel.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="LastNameTextBox.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="LinkLabel.Text" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="PasswordLabel.Text" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="PhoneNumberLabel.Text" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="PhoneNumberTextBox.Text" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="RegisterBtn.Text" xml:space="preserve">
+    <value>Đăng kí</value>
+  </data>
+  <data name="RegisterLabel.Text" xml:space="preserve">
+    <value>Đăng kí</value>
+  </data>
+  <data name="RegisterLabel.Text1" xml:space="preserve">
+    <value>Đăng kí</value>
+  </data>
+</root>

@@ -1,0 +1,1105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ProceedBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PaymentMethodLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TotalPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TotalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Method4Pic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Method3Pic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Method2Pic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Method1Pic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ShippingPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ShippingLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="seperate1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SubtotalPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SubtotalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Title.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChooseBeverageBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NoneCartPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NoticeNoneCart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BackCartBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MapBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LHCoinshaveLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ErrorDiscountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TotalPaymentPrice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CouponDiscountLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ErrorPhoneLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BankingBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CashBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AddressLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PriceShipping.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MethodLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FullAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FirstNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LHCoinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CouponLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PhoneNumberLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EmailLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PromotionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PaymentInformationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ShippinginfomationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Totalpaymentlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ContactInfomationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ConfirmBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CartPagePanel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Name" xml:space="preserve">
+    <value>AddressLabel</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Name" xml:space="preserve">
+    <value>AddressTextBox</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;BackCartBtn.Name" xml:space="preserve">
+    <value>BackCartBtn</value>
+  </data>
+  <data name="&gt;&gt;BackCartBtn.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;BackCartBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackCartBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BankingBtn.Name" xml:space="preserve">
+    <value>BankingBtn</value>
+  </data>
+  <data name="&gt;&gt;BankingBtn.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;BankingBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BankingBtn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;CashBtn.Name" xml:space="preserve">
+    <value>CashBtn</value>
+  </data>
+  <data name="&gt;&gt;CashBtn.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;CashBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CashBtn.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ChooseBeverageBtn.Name" xml:space="preserve">
+    <value>ChooseBeverageBtn</value>
+  </data>
+  <data name="&gt;&gt;ChooseBeverageBtn.Parent" xml:space="preserve">
+    <value>NoneCartPanel</value>
+  </data>
+  <data name="&gt;&gt;ChooseBeverageBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChooseBeverageBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CityPicker.Name" xml:space="preserve">
+    <value>CityPicker</value>
+  </data>
+  <data name="&gt;&gt;CityPicker.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;CityPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CityPicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ConfirmBtn.Name" xml:space="preserve">
+    <value>ConfirmBtn</value>
+  </data>
+  <data name="&gt;&gt;ConfirmBtn.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;ConfirmBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConfirmBtn.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;ContactInfomationLabel.Name" xml:space="preserve">
+    <value>ContactInfomationLabel</value>
+  </data>
+  <data name="&gt;&gt;ContactInfomationLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;ContactInfomationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContactInfomationLabel.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;CouponBox.Name" xml:space="preserve">
+    <value>CouponBox</value>
+  </data>
+  <data name="&gt;&gt;CouponBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;CouponBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CouponBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;CouponDiscountLabel.Name" xml:space="preserve">
+    <value>CouponDiscountLabel</value>
+  </data>
+  <data name="&gt;&gt;CouponDiscountLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;CouponDiscountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CouponDiscountLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;CouponLabel.Name" xml:space="preserve">
+    <value>CouponLabel</value>
+  </data>
+  <data name="&gt;&gt;CouponLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;CouponLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CouponLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;DistrictPicker.Name" xml:space="preserve">
+    <value>DistrictPicker</value>
+  </data>
+  <data name="&gt;&gt;DistrictPicker.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;DistrictPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DistrictPicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Name" xml:space="preserve">
+    <value>EmailLabel</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Name" xml:space="preserve">
+    <value>EmailTextBox</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;ErrorDiscountLabel.Name" xml:space="preserve">
+    <value>ErrorDiscountLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorDiscountLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;ErrorDiscountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorDiscountLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Name" xml:space="preserve">
+    <value>ErrorPhoneLabel</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Name" xml:space="preserve">
+    <value>FirstNameLabel</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Name" xml:space="preserve">
+    <value>FirstNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;FormInfoPagePanel.Name" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;FormInfoPagePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FormInfoPagePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FormInfoPagePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FullAddress.Name" xml:space="preserve">
+    <value>FullAddress</value>
+  </data>
+  <data name="&gt;&gt;FullAddress.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;FullAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FullAddress.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ItemsCart.Name" xml:space="preserve">
+    <value>ItemsCart</value>
+  </data>
+  <data name="&gt;&gt;ItemsCart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ItemsCart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ItemsCart.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LHCoinLabel.Name" xml:space="preserve">
+    <value>LHCoinLabel</value>
+  </data>
+  <data name="&gt;&gt;LHCoinLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;LHCoinLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LHCoinLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;LHCoins.Name" xml:space="preserve">
+    <value>LHCoins</value>
+  </data>
+  <data name="&gt;&gt;LHCoins.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;LHCoins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LHCoins.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LHCoinshaveLabel.Name" xml:space="preserve">
+    <value>LHCoinshaveLabel</value>
+  </data>
+  <data name="&gt;&gt;LHCoinshaveLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;LHCoinshaveLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LHCoinshaveLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MapBtn.Name" xml:space="preserve">
+    <value>MapBtn</value>
+  </data>
+  <data name="&gt;&gt;MapBtn.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;MapBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MapBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Method1Pic.Name" xml:space="preserve">
+    <value>Method1Pic</value>
+  </data>
+  <data name="&gt;&gt;Method1Pic.Parent" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;Method1Pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Method1Pic.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Method2Pic.Name" xml:space="preserve">
+    <value>Method2Pic</value>
+  </data>
+  <data name="&gt;&gt;Method2Pic.Parent" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;Method2Pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Method2Pic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Method3Pic.Name" xml:space="preserve">
+    <value>Method3Pic</value>
+  </data>
+  <data name="&gt;&gt;Method3Pic.Parent" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;Method3Pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Method3Pic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Method4Pic.Name" xml:space="preserve">
+    <value>Method4Pic</value>
+  </data>
+  <data name="&gt;&gt;Method4Pic.Parent" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;Method4Pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Method4Pic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MethodBox.Name" xml:space="preserve">
+    <value>MethodBox</value>
+  </data>
+  <data name="&gt;&gt;MethodBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;MethodBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MethodBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;MethodLabel.Name" xml:space="preserve">
+    <value>MethodLabel</value>
+  </data>
+  <data name="&gt;&gt;MethodLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;MethodLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MethodLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPanel.Name" xml:space="preserve">
+    <value>NoneCartPanel</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPic.Name" xml:space="preserve">
+    <value>NoneCartPic</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPic.Parent" xml:space="preserve">
+    <value>NoneCartPanel</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NoneCartPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;NoticeNoneCart.Name" xml:space="preserve">
+    <value>NoticeNoneCart</value>
+  </data>
+  <data name="&gt;&gt;NoticeNoneCart.Parent" xml:space="preserve">
+    <value>NoneCartPanel</value>
+  </data>
+  <data name="&gt;&gt;NoticeNoneCart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NoticeNoneCart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PaymentInformationLabel.Name" xml:space="preserve">
+    <value>PaymentInformationLabel</value>
+  </data>
+  <data name="&gt;&gt;PaymentInformationLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;PaymentInformationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaymentInformationLabel.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodLabel.Name" xml:space="preserve">
+    <value>PaymentMethodLabel</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodLabel.Parent" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodPanel.Name" xml:space="preserve">
+    <value>PaymentMethodPanel</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaymentMethodPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Name" xml:space="preserve">
+    <value>PhoneNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Name" xml:space="preserve">
+    <value>PhoneNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;PriceShipping.Name" xml:space="preserve">
+    <value>PriceShipping</value>
+  </data>
+  <data name="&gt;&gt;PriceShipping.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;PriceShipping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PriceShipping.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ProceedBtn.Name" xml:space="preserve">
+    <value>ProceedBtn</value>
+  </data>
+  <data name="&gt;&gt;ProceedBtn.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;ProceedBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProceedBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PromotionLabel.Name" xml:space="preserve">
+    <value>PromotionLabel</value>
+  </data>
+  <data name="&gt;&gt;PromotionLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;PromotionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PromotionLabel.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;seperate1.Name" xml:space="preserve">
+    <value>seperate1</value>
+  </data>
+  <data name="&gt;&gt;seperate1.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;seperate1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seperate1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ShippinginfomationLabel.Name" xml:space="preserve">
+    <value>ShippinginfomationLabel</value>
+  </data>
+  <data name="&gt;&gt;ShippinginfomationLabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;ShippinginfomationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShippinginfomationLabel.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;ShippingLabel.Name" xml:space="preserve">
+    <value>ShippingLabel</value>
+  </data>
+  <data name="&gt;&gt;ShippingLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;ShippingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShippingLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ShippingPriceLabel.Name" xml:space="preserve">
+    <value>ShippingPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;ShippingPriceLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;ShippingPriceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShippingPriceLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SubtotalLabel.Name" xml:space="preserve">
+    <value>SubtotalLabel</value>
+  </data>
+  <data name="&gt;&gt;SubtotalLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;SubtotalLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubtotalLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SubtotalPriceLabel.Name" xml:space="preserve">
+    <value>SubtotalPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;SubtotalPriceLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;SubtotalPriceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubtotalPriceLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Title.Name" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="&gt;&gt;Title.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TotalLabel.Name" xml:space="preserve">
+    <value>TotalLabel</value>
+  </data>
+  <data name="&gt;&gt;TotalLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;TotalLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Totalpaymentlabel.Name" xml:space="preserve">
+    <value>Totalpaymentlabel</value>
+  </data>
+  <data name="&gt;&gt;Totalpaymentlabel.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;Totalpaymentlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Totalpaymentlabel.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;TotalPaymentPrice.Name" xml:space="preserve">
+    <value>TotalPaymentPrice</value>
+  </data>
+  <data name="&gt;&gt;TotalPaymentPrice.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;TotalPaymentPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalPaymentPrice.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TotalPriceLabel.Name" xml:space="preserve">
+    <value>TotalPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;TotalPriceLabel.Parent" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;TotalPriceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalPriceLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TotalPricePanel.Name" xml:space="preserve">
+    <value>TotalPricePanel</value>
+  </data>
+  <data name="&gt;&gt;TotalPricePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TotalPricePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalPricePanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;WardPicker.Name" xml:space="preserve">
+    <value>WardPicker</value>
+  </data>
+  <data name="&gt;&gt;WardPicker.Parent" xml:space="preserve">
+    <value>FormInfoPagePanel</value>
+  </data>
+  <data name="&gt;&gt;WardPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WardPicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AddressLabel.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="AddressTextBox.Text" xml:space="preserve">
+    <value>Địa chỉ của bạn</value>
+  </data>
+  <data name="BankingBtn.Text" xml:space="preserve">
+    <value>Chuyển khoản</value>
+  </data>
+  <data name="CashBtn.Text" xml:space="preserve">
+    <value>Tiền mặt</value>
+  </data>
+  <data name="ChooseBeverageBtn.Text" xml:space="preserve">
+    <value>Chọn đồ uống</value>
+  </data>
+  <data name="CityPicker.Items" xml:space="preserve">
+    <value>Fast shipping</value>
+  </data>
+  <data name="CityPicker.Items1" xml:space="preserve">
+    <value>Eco shipping</value>
+  </data>
+  <data name="CityPicker.Items2" xml:space="preserve">
+    <value>Super fast shipping</value>
+  </data>
+  <data name="ConfirmBtn.Text" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="ContactInfomationLabel.Text" xml:space="preserve">
+    <value>Thông tin liên hệ</value>
+  </data>
+  <data name="CouponBox.Text" xml:space="preserve">
+    <value>Mã giảm giá của bạn</value>
+  </data>
+  <data name="CouponDiscountLabel.Text" xml:space="preserve">
+    <value>Giảm giá 30%</value>
+  </data>
+  <data name="CouponLabel.Text" xml:space="preserve">
+    <value>Mã giảm giá</value>
+  </data>
+  <data name="DistrictPicker.Items" xml:space="preserve">
+    <value>Giao hàng nhanh</value>
+  </data>
+  <data name="DistrictPicker.Items1" xml:space="preserve">
+    <value>Giao hàng tiết kiệm</value>
+  </data>
+  <data name="DistrictPicker.Items2" xml:space="preserve">
+    <value>Giao hàng siêu tốc</value>
+  </data>
+  <data name="EmailLabel.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailTextBox.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ErrorDiscountLabel.Text" xml:space="preserve">
+    <value>Không tìm thấy mã giảm giá!</value>
+  </data>
+  <data name="ErrorPhoneLabel.Text" xml:space="preserve">
+    <value>Vui lòng nhập đúng số điện thoại!</value>
+  </data>
+  <data name="FirstNameLabel.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="FirstNameTextBox.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="FullAddress.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="LHCoinLabel.Text" xml:space="preserve">
+    <value>LHCoin</value>
+  </data>
+  <data name="LHCoinshaveLabel.Text" xml:space="preserve">
+    <value>Bạn có 0 LHCoins</value>
+  </data>
+  <data name="MapBtn.Text" xml:space="preserve">
+    <value>Bản đồ</value>
+  </data>
+  <data name="MethodBox.Items" xml:space="preserve">
+    <value>Giao hàng nhanh</value>
+  </data>
+  <data name="MethodBox.Items1" xml:space="preserve">
+    <value>Giao hàng tiết kiệm</value>
+  </data>
+  <data name="MethodBox.Items2" xml:space="preserve">
+    <value>Giao hàng siêu tốc</value>
+  </data>
+  <data name="MethodBox.Items3" xml:space="preserve">
+    <value>Tại của hàng</value>
+  </data>
+  <data name="MethodLabel.Text" xml:space="preserve">
+    <value>Phương thức</value>
+  </data>
+  <data name="NoticeNoneCart.Text" xml:space="preserve">
+    <value>Giỏ hàng trống!</value>
+  </data>
+  <data name="PaymentInformationLabel.Text" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+  </data>
+  <data name="PaymentMethodLabel.Text" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="PhoneNumberLabel.Text" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="PhoneNumberTextBox.Text" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="PriceShipping.Text" xml:space="preserve">
+    <value>30.000 VNĐ</value>
+  </data>
+  <data name="ProceedBtn.Text" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="PromotionLabel.Text" xml:space="preserve">
+    <value>Khuyến mãi</value>
+  </data>
+  <data name="ShippinginfomationLabel.Text" xml:space="preserve">
+    <value>Thông tin giao hàng</value>
+  </data>
+  <data name="ShippingLabel.Text" xml:space="preserve">
+    <value>Phí giao hàng:</value>
+  </data>
+  <data name="ShippingPriceLabel.Text" xml:space="preserve">
+    <value>30.000 VNĐ</value>
+  </data>
+  <data name="SubtotalLabel.Text" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="SubtotalPriceLabel.Text" xml:space="preserve">
+    <value>1.000.000 VNĐ</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="TotalLabel.Text" xml:space="preserve">
+    <value>Tổng cộng:</value>
+  </data>
+  <data name="Totalpaymentlabel.Text" xml:space="preserve">
+    <value>Total payment:</value>
+  </data>
+  <data name="TotalPaymentPrice.Text" xml:space="preserve">
+    <value>1.030.000 VNĐ</value>
+  </data>
+  <data name="TotalPriceLabel.Text" xml:space="preserve">
+    <value>1.030.000 VNĐ</value>
+  </data>
+  <data name="WardPicker.Items" xml:space="preserve">
+    <value>Giao hàng nhanh</value>
+  </data>
+  <data name="WardPicker.Items1" xml:space="preserve">
+    <value>Giao hàng tiết kiệm</value>
+  </data>
+  <data name="WardPicker.Items2" xml:space="preserve">
+    <value>Giao hàng siêu tốc</value>
+  </data>
+</root>

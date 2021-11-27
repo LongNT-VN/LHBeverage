@@ -29,164 +29,115 @@ namespace LHBeverage.UserControls.Component
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemCart));
             this.NameItem = new System.Windows.Forms.Label();
             this.PriceItem = new System.Windows.Forms.Label();
             this.SizeSBtn = new System.Windows.Forms.Button();
             this.SizeMBtn = new System.Windows.Forms.Button();
             this.SizeLBtn = new System.Windows.Forms.Button();
             this.QuantityItem = new System.Windows.Forms.Label();
-            this.ImageItem = new System.Windows.Forms.PictureBox();
             this.QuantityDown = new System.Windows.Forms.Button();
             this.QuantityUp = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.Topping = new System.Windows.Forms.FlowLayoutPanel();
+            this.ImageItem = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).BeginInit();
             this.SuspendLayout();
             // 
             // NameItem
             // 
+            resources.ApplyResources(this.NameItem, "NameItem");
             this.NameItem.BackColor = System.Drawing.Color.Transparent;
-            this.NameItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameItem.ForeColor = System.Drawing.Color.DimGray;
-            this.NameItem.Location = new System.Drawing.Point(250, 7);
             this.NameItem.Name = "NameItem";
-            this.NameItem.Size = new System.Drawing.Size(415, 40);
-            this.NameItem.TabIndex = 1;
-            this.NameItem.Text = "Trà sữa trân châu đường đen";
-            this.NameItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PriceItem
             // 
+            resources.ApplyResources(this.PriceItem, "PriceItem");
             this.PriceItem.BackColor = System.Drawing.Color.Transparent;
-            this.PriceItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.PriceItem.Location = new System.Drawing.Point(250, 141);
             this.PriceItem.Name = "PriceItem";
-            this.PriceItem.Size = new System.Drawing.Size(184, 40);
-            this.PriceItem.TabIndex = 1;
-            this.PriceItem.Text = "50.000 VNĐ";
-            this.PriceItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SizeSBtn
             // 
+            resources.ApplyResources(this.SizeSBtn, "SizeSBtn");
             this.SizeSBtn.BackColor = System.Drawing.Color.SandyBrown;
             this.SizeSBtn.FlatAppearance.BorderSize = 0;
-            this.SizeSBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SizeSBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeSBtn.Location = new System.Drawing.Point(250, 57);
             this.SizeSBtn.Name = "SizeSBtn";
-            this.SizeSBtn.Size = new System.Drawing.Size(40, 40);
-            this.SizeSBtn.TabIndex = 2;
-            this.SizeSBtn.Text = "S";
             this.SizeSBtn.UseVisualStyleBackColor = false;
             this.SizeSBtn.Click += new System.EventHandler(this.SizeSBtn_Click);
             // 
             // SizeMBtn
             // 
+            resources.ApplyResources(this.SizeMBtn, "SizeMBtn");
             this.SizeMBtn.BackColor = System.Drawing.Color.AntiqueWhite;
             this.SizeMBtn.FlatAppearance.BorderSize = 0;
-            this.SizeMBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SizeMBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeMBtn.Location = new System.Drawing.Point(310, 57);
             this.SizeMBtn.Name = "SizeMBtn";
-            this.SizeMBtn.Size = new System.Drawing.Size(40, 40);
-            this.SizeMBtn.TabIndex = 2;
-            this.SizeMBtn.Text = "M";
             this.SizeMBtn.UseVisualStyleBackColor = false;
             this.SizeMBtn.Click += new System.EventHandler(this.SizeMBtn_Click);
             // 
             // SizeLBtn
             // 
+            resources.ApplyResources(this.SizeLBtn, "SizeLBtn");
             this.SizeLBtn.BackColor = System.Drawing.Color.AntiqueWhite;
             this.SizeLBtn.FlatAppearance.BorderSize = 0;
-            this.SizeLBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SizeLBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeLBtn.Location = new System.Drawing.Point(370, 57);
             this.SizeLBtn.Name = "SizeLBtn";
-            this.SizeLBtn.Size = new System.Drawing.Size(40, 40);
-            this.SizeLBtn.TabIndex = 2;
-            this.SizeLBtn.Text = "L";
             this.SizeLBtn.UseVisualStyleBackColor = false;
             this.SizeLBtn.Click += new System.EventHandler(this.SizeLBtn_Click);
             // 
             // QuantityItem
             // 
+            resources.ApplyResources(this.QuantityItem, "QuantityItem");
             this.QuantityItem.BackColor = System.Drawing.Color.Transparent;
             this.QuantityItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.QuantityItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityItem.Location = new System.Drawing.Point(310, 109);
             this.QuantityItem.Name = "QuantityItem";
-            this.QuantityItem.Size = new System.Drawing.Size(40, 30);
-            this.QuantityItem.TabIndex = 3;
-            this.QuantityItem.Text = "11";
-            this.QuantityItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.QuantityItem.TextChanged += new System.EventHandler(this.QuantityItem_TextChanged);
-            // 
-            // ImageItem
-            // 
-            this.ImageItem.BackColor = System.Drawing.Color.White;
-            this.ImageItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
-            this.ImageItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ImageItem.InitialImage = null;
-            this.ImageItem.Location = new System.Drawing.Point(50, 12);
-            this.ImageItem.Name = "ImageItem";
-            this.ImageItem.Size = new System.Drawing.Size(170, 170);
-            this.ImageItem.TabIndex = 0;
-            this.ImageItem.TabStop = false;
             // 
             // QuantityDown
             // 
+            resources.ApplyResources(this.QuantityDown, "QuantityDown");
             this.QuantityDown.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityDown.FlatAppearance.BorderSize = 0;
-            this.QuantityDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuantityDown.Location = new System.Drawing.Point(265, 109);
             this.QuantityDown.Name = "QuantityDown";
-            this.QuantityDown.Size = new System.Drawing.Size(30, 30);
-            this.QuantityDown.TabIndex = 2;
-            this.QuantityDown.Text = "-";
             this.QuantityDown.UseVisualStyleBackColor = false;
             this.QuantityDown.Click += new System.EventHandler(this.QuantityDown_Click);
             // 
             // QuantityUp
             // 
+            resources.ApplyResources(this.QuantityUp, "QuantityUp");
             this.QuantityUp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantityUp.FlatAppearance.BorderSize = 0;
-            this.QuantityUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuantityUp.Location = new System.Drawing.Point(365, 110);
             this.QuantityUp.Name = "QuantityUp";
-            this.QuantityUp.Size = new System.Drawing.Size(30, 30);
-            this.QuantityUp.TabIndex = 2;
-            this.QuantityUp.Text = "+";
             this.QuantityUp.UseVisualStyleBackColor = false;
             this.QuantityUp.Click += new System.EventHandler(this.QuantityUp_Click);
             // 
             // RemoveBtn
             // 
+            resources.ApplyResources(this.RemoveBtn, "RemoveBtn");
             this.RemoveBtn.BackColor = System.Drawing.Color.Red;
             this.RemoveBtn.FlatAppearance.BorderSize = 0;
-            this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveBtn.ForeColor = System.Drawing.Color.White;
-            this.RemoveBtn.Location = new System.Drawing.Point(692, 164);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(78, 30);
-            this.RemoveBtn.TabIndex = 2;
-            this.RemoveBtn.Text = "Delete";
             this.RemoveBtn.UseVisualStyleBackColor = false;
             this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // Topping
             // 
+            resources.ApplyResources(this.Topping, "Topping");
             this.Topping.BackColor = System.Drawing.Color.Transparent;
-            this.Topping.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Topping.Location = new System.Drawing.Point(440, 57);
             this.Topping.Name = "Topping";
-            this.Topping.Size = new System.Drawing.Size(222, 100);
-            this.Topping.TabIndex = 4;
+            // 
+            // ImageItem
+            // 
+            resources.ApplyResources(this.ImageItem, "ImageItem");
+            this.ImageItem.BackColor = System.Drawing.Color.White;
+            this.ImageItem.BackgroundImage = global::LHBeverage.Properties.Resources.Banner;
+            this.ImageItem.Name = "ImageItem";
+            this.ImageItem.TabStop = false;
             // 
             // ItemCart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.Topping);
@@ -201,7 +152,6 @@ namespace LHBeverage.UserControls.Component
             this.Controls.Add(this.NameItem);
             this.Controls.Add(this.ImageItem);
             this.Name = "ItemCart";
-            this.Size = new System.Drawing.Size(770, 194);
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).EndInit();
             this.ResumeLayout(false);
 

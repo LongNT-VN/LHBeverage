@@ -117,4 +117,671 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;pricelabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="QuantityProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="DescriptionItem.Text" xml:space="preserve">
+    <value>Công thức siêu cấp từ bà ngoại.
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="QuantityDown.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Name" xml:space="preserve">
+    <value>QuantityUp</value>
+  </data>
+  <data name="ListImagePanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DetailItemPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="ImgItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 57</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="NameItem.Text" xml:space="preserve">
+    <value>Trà sữa trân châu đường đen</value>
+  </data>
+  <data name="pricelabel.Text" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="&gt;&gt;DetailItemPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RelationItemPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 580</value>
+  </data>
+  <data name="AddCartBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RelationItemPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="SizeMBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="AddCartBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ToppingLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SizeLabel.Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="&gt;&gt;NameItem.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="QuantityUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;ListImagePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityItem.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OrderItemBtn.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="&gt;&gt;RelationItemPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ImgItem.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SizeMBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 270</value>
+  </data>
+  <data name="SizeLBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 270</value>
+  </data>
+  <data name="SizeSBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="SizeLBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuantityProduct.Name" xml:space="preserve">
+    <value>QuantityProduct</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="ListImagePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SizeLabel.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="QuantityItem.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="QuantityItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 30</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="QuantityUp.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ImgItem.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ImgItem.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="ListImagePanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="QuantityProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 40</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImgItem.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Name" xml:space="preserve">
+    <value>SizeMBtn</value>
+  </data>
+  <data name="ToppingLabel.Text" xml:space="preserve">
+    <value>Topping:</value>
+  </data>
+  <data name="&gt;&gt;AddCartBtn.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;DetailItemPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="SizeLBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="AddCartBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 385</value>
+  </data>
+  <data name="&gt;&gt;pricelabel.Name" xml:space="preserve">
+    <value>pricelabel</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DetailItemPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DescriptionItem.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="pricelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="&gt;&gt;SizeLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Name" xml:space="preserve">
+    <value>PriceItem</value>
+  </data>
+  <data name="SizeSBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;ListToppings.Name" xml:space="preserve">
+    <value>ListToppings</value>
+  </data>
+  <data name="&gt;&gt;pricelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OrderItemBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 60</value>
+  </data>
+  <data name="&gt;&gt;DescriptionItem.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;RelationItemPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.Name" xml:space="preserve">
+    <value>QuantityItem</value>
+  </data>
+  <data name="&gt;&gt;ListImagePanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="QuantityProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;OrderItemBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityUp.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;AddCartBtn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DescriptionItem.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;ToppingLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ToppingLabel.Name" xml:space="preserve">
+    <value>ToppingLabel</value>
+  </data>
+  <data name="&gt;&gt;ToppingLabel.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="SizeLBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="&gt;&gt;DescriptionItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuantityProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ListImagePanel.Name" xml:space="preserve">
+    <value>ListImagePanel</value>
+  </data>
+  <data name="&gt;&gt;ImgItem.Name" xml:space="preserve">
+    <value>ImgItem</value>
+  </data>
+  <data name="ImgItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="QuantityDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 186</value>
+  </data>
+  <data name="QuantityDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="NameItem.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SizeLabel.Name" xml:space="preserve">
+    <value>SizeLabel</value>
+  </data>
+  <data name="DescriptionItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 110</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;pricelabel.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Name" xml:space="preserve">
+    <value>NameItem</value>
+  </data>
+  <data name="DetailItemPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;QuantityProduct.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="SizeMBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="RelationItemPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToppingLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SizeSBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ListToppings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="SizeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="RelationItemPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AddCartBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>630, 60</value>
+  </data>
+  <data name="DescriptionItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pricelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ListToppings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListImagePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 375</value>
+  </data>
+  <data name="NameItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="PriceItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PriceItem.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ListToppings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 87</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AddCartBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Name" xml:space="preserve">
+    <value>SizeLBtn</value>
+  </data>
+  <data name="PriceItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 180</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="QuantityDown.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ListToppings.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="DescriptionItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>623, 60</value>
+  </data>
+  <data name="QuantityUp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RelationItemPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 300</value>
+  </data>
+  <data name="pricelabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="SizeLBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="QuantityDown.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;DetailItemPanel.Name" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="ListToppings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="QuantityItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 186</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1169, 600</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Name" xml:space="preserve">
+    <value>SizeSBtn</value>
+  </data>
+  <data name="SizeMBtn.Text" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="NameItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DetailProductPagePanel</value>
+  </data>
+  <data name="QuantityUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>472, 187</value>
+  </data>
+  <data name="pricelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="QuantityProduct.Text" xml:space="preserve">
+    <value>In stock: 2 products</value>
+  </data>
+  <data name="NameItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="TempPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SizeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 230</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TempPanel.Name" xml:space="preserve">
+    <value>TempPanel</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;RelationItemPanel.Name" xml:space="preserve">
+    <value>RelationItemPanel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="OrderItemBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;ListImagePanel.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;QuantityProduct.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="PriceItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
+  </data>
+  <data name="ToppingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 230</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ListToppings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 270</value>
+  </data>
+  <data name="SizeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TempPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 27</value>
+  </data>
+  <data name="PriceItem.Text" xml:space="preserve">
+    <value>15.500.000 VNĐ</value>
+  </data>
+  <data name="SizeSBtn.Text" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="SizeLBtn.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="DescriptionItem.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="QuantityProduct.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ToppingLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;OrderItemBtn.Name" xml:space="preserve">
+    <value>OrderItemBtn</value>
+  </data>
+  <data name="SizeMBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;AddCartBtn.Name" xml:space="preserve">
+    <value>AddCartBtn</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Relation Beverage</value>
+  </data>
+  <data name="OrderItemBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DescriptionItem.Name" xml:space="preserve">
+    <value>DescriptionItem</value>
+  </data>
+  <data name="ToppingLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1052, 40</value>
+  </data>
+  <data name="DetailItemPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 490</value>
+  </data>
+  <data name="SizeMBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="ImgItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 300</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 385</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;SizeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TempPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pricelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 180</value>
+  </data>
+  <data name="&gt;&gt;OrderItemBtn.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="PriceItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="ToppingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="SizeSBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 270</value>
+  </data>
+  <data name="&gt;&gt;ImgItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SizeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ListToppings.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DescriptionItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="QuantityItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Parent" xml:space="preserve">
+    <value>DetailItemPanel</value>
+  </data>
+  <data name="SizeSBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="OrderItemBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="QuantityProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 317</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Name" xml:space="preserve">
+    <value>QuantityDown</value>
+  </data>
+  <data name="DescriptionItem.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OrderItemBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 370</value>
+  </data>
+  <data name="&gt;&gt;TempPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TempPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 530</value>
+  </data>
+  <data name="&gt;&gt;OrderItemBtn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="TempPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 858</value>
+  </data>
+  <data name="&gt;&gt;RelationItemPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ListImagePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 87</value>
+  </data>
+  <data name="SizeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
 </root>

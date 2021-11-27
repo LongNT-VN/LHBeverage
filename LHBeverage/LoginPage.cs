@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,20 @@ namespace LHBeverage
 {
     public partial class LoginPage : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public LoginPage()
         {
             InitializeComponent();
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                VIBtn.BackColor = Color.White;
+                EnBtn.BackColor = Color.DarkGoldenrod;
+            }
+            else
+            {
+                EnBtn.BackColor = Color.White;
+                VIBtn.BackColor = Color.DarkGoldenrod;
+            }
         }
         public bool IsValidEmailAddress(string email)
         {
@@ -34,7 +46,7 @@ namespace LHBeverage
         }
         private void Checkinfo()
         {
-            if (EmailTextBox.Text == "" || !IsValidEmailAddress(EmailTextBox.Text) || PasswordTextBox.Text == "" || PasswordTextBox.Text.Length <8)
+            if (EmailTextBox.Text == "" || !IsValidEmailAddress(EmailTextBox.Text) || PasswordTextBox.Text == "" || PasswordTextBox.Text.Length < 8)
             {
                 LoginBtn.Enabled = false;
             }
@@ -58,7 +70,7 @@ namespace LHBeverage
             if (IDCus != -1)
             {
                 Customer customer = CustomerConnect.CustomerInfo(IDCus);
-                if(customer.Authorized=="Admin")
+                if (customer.Authorized == "Admin")
                 {
                     var AdminPage = new AdminPage(customer);
                     this.Hide();
@@ -75,13 +87,20 @@ namespace LHBeverage
             }
             else
             {
-                MessageBox.Show("Thông tin tài khoản hoặc mật khẩu không đúng!");
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    MessageBox.Show("Wrong account or password!");
+                }
+                else
+                {
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
+                }
             }
         }
         private void EmailText_Leave(object sender, EventArgs e)
         {
             TextBox emailBox = sender as TextBox;
-            if(emailBox.Text == "" || !IsValidEmailAddress(emailBox.Text))
+            if (emailBox.Text == "" || !IsValidEmailAddress(emailBox.Text))
             {
                 ErrorEmailLabel.Visible = true;
             }
@@ -121,13 +140,23 @@ namespace LHBeverage
         private void EmailText_Click(object sender, EventArgs e)
         {
             TextBox emailBox = sender as TextBox;
-            if(emailBox.Text== "Please enter your email.")
+            if (emailBox.Text == "Please enter your email." || emailBox.Text == "Nhập email.")
             {
                 emailBox.Text = "";
                 emailBox.ForeColor = Color.Black;
             }
         }
 
+        private void EnBtn_Click(object sender, EventArgs e)
+        {
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
+        }
 
+        private void VIBtn_Click(object sender, EventArgs e)
+        {
+            changeLanguage.UpdateConfig("language", "vi-VN");
+            Application.Restart();
+        }
     }
 }

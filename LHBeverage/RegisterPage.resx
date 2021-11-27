@@ -117,4 +117,802 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ErrorFirstNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Name" xml:space="preserve">
+    <value>BannerPic</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Name" xml:space="preserve">
+    <value>HaveaccountLabel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="EmailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="LastNameTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ConfirmPasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ErrorLastNameLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RegisterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AddressLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="FirstNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ConfirmPasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="ErrorPasswordLabel.Text" xml:space="preserve">
+    <value>Please enter your password !</value>
+  </data>
+  <data name="ErrorPhoneLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 30</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Name" xml:space="preserve">
+    <value>FirstNameLabel</value>
+  </data>
+  <data name="AddressTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HaveaccountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 40</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ConfirmPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 440</value>
+  </data>
+  <data name="ErrorPhoneLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RegisterForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="FirstNameTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RegisterForm.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="EmailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="FirstNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 681</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegisterLabel.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ErrorConfirmLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="FirstNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Name" xml:space="preserve">
+    <value>EmailLabel</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Name" xml:space="preserve">
+    <value>LinkLabel</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ConfirmPasswordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="AddressLabel.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ErrorConfirmLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="RegisterBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;FirstNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ConfirmPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Name" xml:space="preserve">
+    <value>AddressTextBox</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Name" xml:space="preserve">
+    <value>ErrorLastNameLabel</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="LastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 180</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Name" xml:space="preserve">
+    <value>AddressLabel</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Name" xml:space="preserve">
+    <value>ErrorFirstNameLabel</value>
+  </data>
+  <data name="ErrorLastNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="EmailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 380</value>
+  </data>
+  <data name="PhoneNumberTextBox.Text" xml:space="preserve">
+    <value>Phone Number.</value>
+  </data>
+  <data name="LastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 140</value>
+  </data>
+  <data name="ErrorPhoneLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ErrorPhoneLabel.Text" xml:space="preserve">
+    <value>Please enter correct  phone number !</value>
+  </data>
+  <data name="ErrorEmailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Name" xml:space="preserve">
+    <value>ErrorConfirmLabel</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="LinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 40</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ConfirmPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 480</value>
+  </data>
+  <data name="ErrorPasswordLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ErrorConfirmLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Name" xml:space="preserve">
+    <value>ConfirmPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="PhoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="RegisterBtn.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ErrorEmailLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="RegisterForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 681</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Name" xml:space="preserve">
+    <value>PasswordTextBox</value>
+  </data>
+  <data name="ConfirmPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 315</value>
+  </data>
+  <data name="AddressLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 240</value>
+  </data>
+  <data name="ErrorConfirmLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LastNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RegisterPage</value>
+  </data>
+  <data name="PhoneNumberTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="BannerPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 681</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Name" xml:space="preserve">
+    <value>PasswordLabel</value>
+  </data>
+  <data name="HaveaccountLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PhoneNumberTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BannerPic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="RegisterBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="FirstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="ErrorLastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 30</value>
+  </data>
+  <data name="LastNameLabel.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PhoneNumberTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="AddressTextBox.Text" xml:space="preserve">
+    <value>Your Address.</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordLabel.Name" xml:space="preserve">
+    <value>ConfirmPasswordLabel</value>
+  </data>
+  <data name="PasswordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="LinkLabel.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="BannerPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 215</value>
+  </data>
+  <data name="PasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="HaveaccountLabel.Text" xml:space="preserve">
+    <value>Have a account?</value>
+  </data>
+  <data name="LastNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 480</value>
+  </data>
+  <data name="EmailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="AddressLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="ErrorPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LastNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RegisterBtn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FirstNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="RegisterBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ErrorPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 515</value>
+  </data>
+  <data name="AddressLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PhoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 380</value>
+  </data>
+  <data name="&gt;&gt;AddressTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="LastNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="PhoneNumberTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AddressTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 30</value>
+  </data>
+  <data name="RegisterLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 80</value>
+  </data>
+  <data name="ErrorEmailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LastNameTextBox.Text" xml:space="preserve">
+    <value>Last name.</value>
+  </data>
+  <data name="PasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="PasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 440</value>
+  </data>
+  <data name="RegisterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="&gt;&gt;AddressLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberLabel.Name" xml:space="preserve">
+    <value>PhoneNumberLabel</value>
+  </data>
+  <data name="ErrorLastNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ErrorLastNameLabel.Text" xml:space="preserve">
+    <value>Please enter your last name !</value>
+  </data>
+  <data name="ErrorPhoneLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FirstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 30</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="HaveaccountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 80</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Name" xml:space="preserve">
+    <value>PhoneNumberTextBox</value>
+  </data>
+  <data name="EmailTextBox.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.Name" xml:space="preserve">
+    <value>ErrorPhoneLabel</value>
+  </data>
+  <data name="ErrorConfirmLabel.Text" xml:space="preserve">
+    <value>Confirm password not match !</value>
+  </data>
+  <data name="&gt;&gt;BannerPic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegisterForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 0</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EmailLabel.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ConfirmPasswordLabel.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="EmailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ErrorFirstNameLabel.Text" xml:space="preserve">
+    <value>Please enter your first name !</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="AddressTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailTextBox.Name" xml:space="preserve">
+    <value>EmailTextBox</value>
+  </data>
+  <data name="LinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>530, 80</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PhoneNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 340</value>
+  </data>
+  <data name="PhoneNumberLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="ErrorEmailLabel.Text" xml:space="preserve">
+    <value>Please enter correct email !</value>
+  </data>
+  <data name="&gt;&gt;ErrorEmailLabel.Name" xml:space="preserve">
+    <value>ErrorEmailLabel</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;RegisterForm.Name" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ConfirmPasswordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EmailLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="RegisterLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="ErrorPasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="PhoneNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="LinkLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="FirstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 140</value>
+  </data>
+  <data name="RegisterBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="PasswordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="PasswordLabel.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ErrorFirstNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EmailTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="ConfirmPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ErrorLastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 215</value>
+  </data>
+  <data name="LastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 40</value>
+  </data>
+  <data name="ErrorEmailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="PhoneNumberLabel.Text" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="AddressTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 280</value>
+  </data>
+  <data name="&gt;&gt;HaveaccountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;RegisterBtn.Name" xml:space="preserve">
+    <value>RegisterBtn</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Name" xml:space="preserve">
+    <value>RegisterLabel</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;FirstNameTextBox.Name" xml:space="preserve">
+    <value>FirstNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;ConfirmPasswordTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BannerPic.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="BannerPic.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ErrorPhoneLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FirstNameTextBox.Text" xml:space="preserve">
+    <value>First name.</value>
+  </data>
+  <data name="ErrorPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="PhoneNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ErrorConfirmLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ErrorPhoneLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 415</value>
+  </data>
+  <data name="&gt;&gt;LastNameTextBox.Name" xml:space="preserve">
+    <value>LastNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="ErrorConfirmLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 515</value>
+  </data>
+  <data name="ErrorEmailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 415</value>
+  </data>
+  <data name="&gt;&gt;ErrorLastNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EmailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 340</value>
+  </data>
+  <data name="FirstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 180</value>
+  </data>
+  <data name="HaveaccountLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="LinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="RegisterBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 560</value>
+  </data>
+  <data name="RegisterLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="HaveaccountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.Name" xml:space="preserve">
+    <value>ErrorPasswordLabel</value>
+  </data>
+  <data name="PasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PhoneNumberTextBox.Parent" xml:space="preserve">
+    <value>RegisterForm</value>
+  </data>
+  <data name="&gt;&gt;ErrorPasswordLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LastNameLabel.Name" xml:space="preserve">
+    <value>LastNameLabel</value>
+  </data>
+  <data name="EmailTextBox.Text" xml:space="preserve">
+    <value>Please enter your email.</value>
+  </data>
+  <data name="FirstNameLabel.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;RegisterLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
 </root>

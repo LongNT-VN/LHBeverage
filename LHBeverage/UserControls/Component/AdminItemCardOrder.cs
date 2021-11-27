@@ -16,6 +16,7 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class AdminItemCardOrder : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         public AdminItemCardOrder(DetailOrder detailOrder)
         {
@@ -35,7 +36,15 @@ namespace LHBeverage.UserControls.Component
             }
             else
             {
-                nameOrder.Text = "Sản phẩm không còn kinh doanh";
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    nameOrder.Text = "The product is no longer in business";
+                }
+                else
+                {
+                    nameOrder.Text = "Sản phẩm không còn kinh doanh";
+                }
+               
             }
           
             amount.Text = detailOrder.Quantity.ToString();

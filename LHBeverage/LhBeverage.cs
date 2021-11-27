@@ -23,6 +23,7 @@ namespace LHBeverage
         int TempIDSelectted = 9999;
         string TempCouponCode = "";
         public int CurrentMode = 0;
+        public string language="vi";
         public LHBeverage(Customer customer)
         {
             InitializeComponent();

@@ -1,7 +1,9 @@
 ﻿using LHBeverage.Model;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,12 +17,11 @@ namespace LHBeverage
         [STAThread]
         static void Main()
         {
-            //Customer customer = new Customer();
-            //customer.Authorized = "Admin";
+            var language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new AdminPage(customer));
-            Application.Run(new LoginPage());
         }
     }
 }

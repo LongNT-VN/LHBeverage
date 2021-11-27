@@ -16,6 +16,7 @@ namespace LHBeverage.UserControls
 {
     public partial class AccountPagePanel : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         Color globalColorActive;
         Bitmap AvatarTmp;
         Customer customerTmp = new Customer();
@@ -76,11 +77,26 @@ namespace LHBeverage.UserControls
             }
             if (LHBeverage.instance.CurrentMode == 1)
             {
-                btn_Mode.Text = "Light Mode";
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    btn_Mode.Text = "Light Mode";
+                }
+               else
+                {
+                    btn_Mode.Text = "Chế độ sáng";
+                }
             }
             else
             {
-                btn_Mode.Text = "Dark Mode";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    btn_Mode.Text = "Dark Mode";
+                }
+                else
+                {
+                    btn_Mode.Text = "Chế độ tối";
+                }
+                
             }
         }
 
@@ -108,7 +124,7 @@ namespace LHBeverage.UserControls
             MyOrder_panel.Visible = true;
             MyOrder_panel.BringToFront();
             btn_MyOrders.BackColor = globalColorActive;
-            ChooseDeliveryBtn.PerformClick();
+            ChooseConfirmBtn.PerformClick();
            
         }
 
@@ -151,7 +167,15 @@ namespace LHBeverage.UserControls
                 customerTmp.Avatar = base64Avatar;
                 customerTmp.Authorized = "member";
                 CustomerConnect.UpdateCustomer(customerTmp);
-                MessageBox.Show("Update information successfull");
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    MessageBox.Show("Update information successfull");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thông tin thành công");
+                }
+                
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -285,6 +309,7 @@ namespace LHBeverage.UserControls
                 btn_LHCoins.BackColor = Color.White;
                 btn_Coupon.BackColor = Color.White;
                 btn_Mode.BackColor = Color.White;
+                Languebtn.BackColor = Color.White;
             }
             else
             {
@@ -293,6 +318,7 @@ namespace LHBeverage.UserControls
                 btn_LHCoins.BackColor = Color.Black;
                 btn_Coupon.BackColor = Color.Black;
                 btn_Mode.BackColor = Color.Black;
+                Languebtn.BackColor = Color.Black;
             }
         }
         private void btn_Coupon_Click(object sender, EventArgs e)
@@ -352,21 +378,45 @@ namespace LHBeverage.UserControls
 
             if (luckynumber == customernumber)
             {
-                ResultLabel.Text = "Binggo!!!! You are win the special prize" + Convert.ToInt32(LHCoinsUse.Value) * 1000 +" LHCoins";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    ResultLabel.Text = "Binggo!!!! You are win the special prize" + Convert.ToInt32(LHCoinsUse.Value) * 1000 + " LHCoins";
+                }
+                else
+                {
+                    ResultLabel.Text = "Binggo!!!! Bạn đã trúng giải đặc biệt" + Convert.ToInt32(LHCoinsUse.Value) * 1000 + " LHCoins";
+                }
+               
                 customerTmp.LHCoins += Convert.ToInt32(LHCoinsUse.Value) * 1000;
                 CustomerConnect.UpdateCustomerLHCoins(customerTmp);
                 LHCoinsLabel.Text = customerTmp.LHCoins.ToString()+ " LHCoins";
             }
             else if (luckynumber%100== customernumber%100)
             {
-                ResultLabel.Text = "Binggo!!!! You are win the consolation prize " + Convert.ToInt32(LHCoinsUse.Value) * 10 + " LHCoins";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    ResultLabel.Text = "Binggo!!!! You are win the consolation prize " + Convert.ToInt32(LHCoinsUse.Value) * 10 + " LHCoins";
+                }
+                else
+                {
+                    ResultLabel.Text = "Binggo!!!! Bạn đã trúng giải " + Convert.ToInt32(LHCoinsUse.Value) * 10 + " LHCoins";
+                }
+               
                 customerTmp.LHCoins += Convert.ToInt32(LHCoinsUse.Value) * 10;
                 CustomerConnect.UpdateCustomerLHCoins(customerTmp);
                 LHCoinsLabel.Text = customerTmp.LHCoins.ToString() + " LHCoins";
             }
             else
             {
-                ResultLabel.Text = "Wish you luck next time!";
+                
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    ResultLabel.Text = "Wish you luck next time!";
+                }
+                else
+                {
+                    ResultLabel.Text = "Chúc bạn may mắn lần sau!";
+                }
             }
             LHCoinsUse.Maximum = customerTmp.LHCoins;
             if(LHCoinsUse.Maximum < LHCoinsUse.Value)
@@ -401,11 +451,26 @@ namespace LHBeverage.UserControls
             setmode();
             if (LHBeverage.instance.CurrentMode == 1)
             {
-                btn_Mode.Text = "Light Mode";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    btn_Mode.Text = "Light Mode";
+                }
+                else
+                {
+                    btn_Mode.Text = "Chế độ sáng";
+                }
             }
             else
             {
-                btn_Mode.Text = "Dark Mode";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    btn_Mode.Text = "Dark Mode";
+                }
+                else
+                {
+                    btn_Mode.Text = "Chế độ tối";
+                }
+
             }
         }
         private void Number3_Click(object sender, EventArgs e)
@@ -428,11 +493,13 @@ namespace LHBeverage.UserControls
             {
                 SetMode.SetModeFunc(this, null, Color.Black, Color.White, Color.DarkGoldenrod, Color.White, Color.FromArgb(30, 30, 30));
                 MenuControlAccountPanel.BackColor = Color.FromArgb(30, 30, 30);
+                SwitchControlAccountPanel.BackColor = Color.FromArgb(30, 30, 30);
             }
             else
             {
                 SetMode.SetModeFunc(this, null, Color.White, Color.Black, Color.DarkGoldenrod, Color.Black, Color.Gainsboro);
                 MenuControlAccountPanel.BackColor = Color.Gainsboro;
+                SwitchControlAccountPanel.BackColor = Color.Gainsboro;
             }
             Seperate.BackColor = Color.DimGray;
             Seperate2.BackColor = Color.DimGray;
@@ -442,6 +509,24 @@ namespace LHBeverage.UserControls
             clearchoosing();
             clearchoosingbtn();
             btn_Mydetail.BackColor = Color.DarkGoldenrod;
+            LotteryPanel.BackColor = Color.DarkRed;
+        }
+
+        private void Languebtn_Click(object sender, EventArgs e)
+        {
+           if(changeLanguage.getLanguageMode()=="en")
+            {
+                changeLanguage.UpdateConfig("language", "vi-VN");
+                Application.Restart();
+            }
+           else
+            {
+                changeLanguage.UpdateConfig("language", "en");
+                Application.Restart();
+            }
+                
+           
+
         }
     }
 }

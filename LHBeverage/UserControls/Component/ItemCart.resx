@@ -117,4 +117,337 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;QuantityItem.Name" xml:space="preserve">
+    <value>QuantityItem</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SizeSBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="PriceItem.Text" xml:space="preserve">
+    <value>50.000 VNĐ</value>
+  </data>
+  <data name="SizeMBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NameItem.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Topping.Name" xml:space="preserve">
+    <value>Topping</value>
+  </data>
+  <data name="RemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 164</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityItem.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Topping.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ItemCart</value>
+  </data>
+  <data name="ImageItem.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="QuantityDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 109</value>
+  </data>
+  <data name="NameItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 7</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 30</value>
+  </data>
+  <data name="SizeMBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="RemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="NameItem.Text" xml:space="preserve">
+    <value>Trà sữa trân châu đường đen</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ImageItem.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PriceItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Name" xml:space="preserve">
+    <value>QuantityUp</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NameItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ImageItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 12</value>
+  </data>
+  <data name="Topping.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="RemoveBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ImageItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="QuantityUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 110</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="SizeLBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PriceItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 40</value>
+  </data>
+  <data name="Topping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 100</value>
+  </data>
+  <data name="QuantityUp.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuantityUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="QuantityDown.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="QuantityItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 30</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Name" xml:space="preserve">
+    <value>NameItem</value>
+  </data>
+  <data name="SizeLBtn.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="QuantityItem.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="QuantityDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;RemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Name" xml:space="preserve">
+    <value>QuantityDown</value>
+  </data>
+  <data name="SizeSBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 57</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Name" xml:space="preserve">
+    <value>SizeLBtn</value>
+  </data>
+  <data name="&gt;&gt;ImageItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Topping.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ImageItem.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="SizeLBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SizeMBtn.Text" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Name" xml:space="preserve">
+    <value>SizeSBtn</value>
+  </data>
+  <data name="SizeSBtn.Text" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="&gt;&gt;NameItem.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="QuantityUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.Name" xml:space="preserve">
+    <value>SizeMBtn</value>
+  </data>
+  <data name="QuantityDown.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="QuantityItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="QuantityItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 109</value>
+  </data>
+  <data name="SizeLBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ImageItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 170</value>
+  </data>
+  <data name="SizeMBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;QuantityItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Topping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityUp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 194</value>
+  </data>
+  <data name="&gt;&gt;QuantityDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="NameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 40</value>
+  </data>
+  <data name="QuantityDown.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="PriceItem.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="NameItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="SizeLBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="SizeSBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SizeMBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 57</value>
+  </data>
+  <data name="&gt;&gt;ImageItem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Topping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 57</value>
+  </data>
+  <data name="&gt;&gt;Topping.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PriceItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="SizeSBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="&gt;&gt;RemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuantityItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="QuantityUp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;RemoveBtn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PriceItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 141</value>
+  </data>
+  <data name="SizeMBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SizeSBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;SizeMBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SizeLBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveBtn.Name" xml:space="preserve">
+    <value>RemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PriceItem.Name" xml:space="preserve">
+    <value>PriceItem</value>
+  </data>
+  <data name="&gt;&gt;NameItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ImageItem.Name" xml:space="preserve">
+    <value>ImageItem</value>
+  </data>
+  <data name="&gt;&gt;SizeSBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SizeLBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 57</value>
+  </data>
+  <data name="RemoveBtn.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -139,13 +139,11 @@ namespace LHBeverage.UserControls
             // openFileDialog_Img
             // 
             this.openFileDialog_Img.FileName = "openFileDialog1";
+            resources.ApplyResources(this.openFileDialog_Img, "openFileDialog_Img");
             // 
             // panelManageProduct
             // 
-            this.panelManageProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelManageProduct.AutoScroll = true;
+            resources.ApplyResources(this.panelManageProduct, "panelManageProduct");
             this.panelManageProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
             this.panelManageProduct.Controls.Add(this.CategoryManage_Cb);
             this.panelManageProduct.Controls.Add(this.panelEditCtn);
@@ -153,25 +151,19 @@ namespace LHBeverage.UserControls
             this.panelManageProduct.Controls.Add(this.btnOpenpanelAddPro);
             this.panelManageProduct.Controls.Add(this.label2);
             this.panelManageProduct.Controls.Add(this.ListPro_flowpanel);
-            this.panelManageProduct.Location = new System.Drawing.Point(0, 0);
             this.panelManageProduct.Name = "panelManageProduct";
-            this.panelManageProduct.Size = new System.Drawing.Size(1014, 600);
-            this.panelManageProduct.TabIndex = 5;
             // 
             // CategoryManage_Cb
             // 
+            resources.ApplyResources(this.CategoryManage_Cb, "CategoryManage_Cb");
             this.CategoryManage_Cb.BackColor = System.Drawing.SystemColors.Control;
-            this.CategoryManage_Cb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CategoryManage_Cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoryManage_Cb.FormattingEnabled = true;
-            this.CategoryManage_Cb.Location = new System.Drawing.Point(786, 51);
             this.CategoryManage_Cb.Name = "CategoryManage_Cb";
-            this.CategoryManage_Cb.Size = new System.Drawing.Size(189, 26);
-            this.CategoryManage_Cb.TabIndex = 27;
             this.CategoryManage_Cb.SelectedIndexChanged += new System.EventHandler(this.CategoryManage_Cb_SelectedIndexChanged);
             // 
             // panelEditCtn
             // 
+            resources.ApplyResources(this.panelEditCtn, "panelEditCtn");
             this.panelEditCtn.BackColor = System.Drawing.Color.White;
             this.panelEditCtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEditCtn.Controls.Add(this.Btn_Nav_EditInfor);
@@ -179,44 +171,31 @@ namespace LHBeverage.UserControls
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateImg);
             this.panelEditCtn.Controls.Add(this.panelCtnUpdateInfor);
             this.panelEditCtn.Controls.Add(this.close_panelCtnEdit);
-            this.panelEditCtn.Location = new System.Drawing.Point(82, 91);
             this.panelEditCtn.Name = "panelEditCtn";
-            this.panelEditCtn.Size = new System.Drawing.Size(897, 435);
-            this.panelEditCtn.TabIndex = 26;
-            this.panelEditCtn.Visible = false;
             // 
             // Btn_Nav_EditInfor
             // 
+            resources.ApplyResources(this.Btn_Nav_EditInfor, "Btn_Nav_EditInfor");
             this.Btn_Nav_EditInfor.BackColor = System.Drawing.Color.OrangeRed;
             this.Btn_Nav_EditInfor.FlatAppearance.BorderSize = 0;
-            this.Btn_Nav_EditInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nav_EditInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nav_EditInfor.ForeColor = System.Drawing.Color.White;
-            this.Btn_Nav_EditInfor.Location = new System.Drawing.Point(8, 40);
             this.Btn_Nav_EditInfor.Name = "Btn_Nav_EditInfor";
-            this.Btn_Nav_EditInfor.Size = new System.Drawing.Size(136, 33);
-            this.Btn_Nav_EditInfor.TabIndex = 25;
-            this.Btn_Nav_EditInfor.Text = "Edit Info";
             this.Btn_Nav_EditInfor.UseVisualStyleBackColor = false;
             this.Btn_Nav_EditInfor.Click += new System.EventHandler(this.Btn_Nav_EditInfor_Click);
             // 
             // Btn_Nav_UpdateImg
             // 
+            resources.ApplyResources(this.Btn_Nav_UpdateImg, "Btn_Nav_UpdateImg");
             this.Btn_Nav_UpdateImg.BackColor = System.Drawing.Color.OrangeRed;
             this.Btn_Nav_UpdateImg.FlatAppearance.BorderSize = 0;
-            this.Btn_Nav_UpdateImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nav_UpdateImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nav_UpdateImg.ForeColor = System.Drawing.Color.White;
-            this.Btn_Nav_UpdateImg.Location = new System.Drawing.Point(8, 80);
             this.Btn_Nav_UpdateImg.Name = "Btn_Nav_UpdateImg";
-            this.Btn_Nav_UpdateImg.Size = new System.Drawing.Size(136, 33);
-            this.Btn_Nav_UpdateImg.TabIndex = 23;
-            this.Btn_Nav_UpdateImg.Text = "Edit  Images";
             this.Btn_Nav_UpdateImg.UseVisualStyleBackColor = false;
             this.Btn_Nav_UpdateImg.Click += new System.EventHandler(this.Btn_Nav_UpdateImg_Click);
             // 
             // panelCtnUpdateImg
             // 
+            resources.ApplyResources(this.panelCtnUpdateImg, "panelCtnUpdateImg");
             this.panelCtnUpdateImg.BackColor = System.Drawing.Color.White;
             this.panelCtnUpdateImg.Controls.Add(this.panel6);
             this.panelCtnUpdateImg.Controls.Add(this.EditProductName_lbl);
@@ -224,95 +203,61 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateImg.Controls.Add(this.loadImgFromLocal_Btn);
             this.panelCtnUpdateImg.Controls.Add(this.label12);
             this.panelCtnUpdateImg.Controls.Add(this.EditSubmitImg_btn);
-            this.panelCtnUpdateImg.Location = new System.Drawing.Point(150, 12);
             this.panelCtnUpdateImg.Name = "panelCtnUpdateImg";
-            this.panelCtnUpdateImg.Size = new System.Drawing.Size(680, 397);
-            this.panelCtnUpdateImg.TabIndex = 24;
-            this.panelCtnUpdateImg.Visible = false;
             // 
             // panel6
             // 
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Controls.Add(this.label8);
-            this.panel6.Location = new System.Drawing.Point(89, 8);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(180, 34);
-            this.panel6.TabIndex = 37;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label8, "label8");
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(3, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 22);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Update Images";
             // 
             // EditProductName_lbl
             // 
-            this.EditProductName_lbl.AutoSize = true;
-            this.EditProductName_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProductName_lbl.Location = new System.Drawing.Point(152, 45);
+            resources.ApplyResources(this.EditProductName_lbl, "EditProductName_lbl");
             this.EditProductName_lbl.Name = "EditProductName_lbl";
-            this.EditProductName_lbl.Size = new System.Drawing.Size(128, 17);
-            this.EditProductName_lbl.TabIndex = 29;
-            this.EditProductName_lbl.Text = "Name product edit ";
             // 
             // EditImage_FlowPanel
             // 
-            this.EditImage_FlowPanel.AutoScroll = true;
+            resources.ApplyResources(this.EditImage_FlowPanel, "EditImage_FlowPanel");
             this.EditImage_FlowPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditImage_FlowPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EditImage_FlowPanel.Location = new System.Drawing.Point(89, 79);
             this.EditImage_FlowPanel.Name = "EditImage_FlowPanel";
-            this.EditImage_FlowPanel.Size = new System.Drawing.Size(507, 256);
-            this.EditImage_FlowPanel.TabIndex = 28;
             // 
             // loadImgFromLocal_Btn
             // 
+            resources.ApplyResources(this.loadImgFromLocal_Btn, "loadImgFromLocal_Btn");
             this.loadImgFromLocal_Btn.BackColor = System.Drawing.Color.Transparent;
-            this.loadImgFromLocal_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("loadImgFromLocal_Btn.BackgroundImage")));
-            this.loadImgFromLocal_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.loadImgFromLocal_Btn.FlatAppearance.BorderSize = 0;
-            this.loadImgFromLocal_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadImgFromLocal_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadImgFromLocal_Btn.ForeColor = System.Drawing.Color.Black;
-            this.loadImgFromLocal_Btn.Location = new System.Drawing.Point(489, 20);
             this.loadImgFromLocal_Btn.Name = "loadImgFromLocal_Btn";
-            this.loadImgFromLocal_Btn.Size = new System.Drawing.Size(107, 52);
-            this.loadImgFromLocal_Btn.TabIndex = 27;
             this.loadImgFromLocal_Btn.UseVisualStyleBackColor = false;
             this.loadImgFromLocal_Btn.Click += new System.EventHandler(this.loadImgFromLocal_Btn_Click);
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label12, "label12");
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(85, 45);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 17);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Products:";
             // 
             // EditSubmitImg_btn
             // 
+            resources.ApplyResources(this.EditSubmitImg_btn, "EditSubmitImg_btn");
             this.EditSubmitImg_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.EditSubmitImg_btn.FlatAppearance.BorderSize = 0;
-            this.EditSubmitImg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditSubmitImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditSubmitImg_btn.ForeColor = System.Drawing.Color.White;
-            this.EditSubmitImg_btn.Location = new System.Drawing.Point(284, 351);
             this.EditSubmitImg_btn.Name = "EditSubmitImg_btn";
-            this.EditSubmitImg_btn.Size = new System.Drawing.Size(108, 33);
-            this.EditSubmitImg_btn.TabIndex = 25;
-            this.EditSubmitImg_btn.Text = "Update";
             this.EditSubmitImg_btn.UseVisualStyleBackColor = false;
             this.EditSubmitImg_btn.Click += new System.EventHandler(this.EditSubmitImg_btn_Click);
             // 
             // panelCtnUpdateInfor
             // 
+            resources.ApplyResources(this.panelCtnUpdateInfor, "panelCtnUpdateInfor");
             this.panelCtnUpdateInfor.BackColor = System.Drawing.Color.White;
             this.panelCtnUpdateInfor.Controls.Add(this.panel5);
             this.panelCtnUpdateInfor.Controls.Add(this.panel4);
@@ -334,282 +279,183 @@ namespace LHBeverage.UserControls
             this.panelCtnUpdateInfor.Controls.Add(this.EditPriceS_tb);
             this.panelCtnUpdateInfor.Controls.Add(this.label15);
             this.panelCtnUpdateInfor.Controls.Add(this.EditProductName_tb);
-            this.panelCtnUpdateInfor.Location = new System.Drawing.Point(150, 12);
             this.panelCtnUpdateInfor.Name = "panelCtnUpdateInfor";
-            this.panelCtnUpdateInfor.Size = new System.Drawing.Size(680, 397);
-            this.panelCtnUpdateInfor.TabIndex = 3;
             // 
             // panel5
             // 
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(13, 199);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(114, 24);
-            this.panel5.TabIndex = 37;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label14, "label14");
             this.label14.ForeColor = System.Drawing.Color.Navy;
-            this.label14.Location = new System.Drawing.Point(2, 2);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 17);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "Description:";
             // 
             // panel4
             // 
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Controls.Add(this.lbl_chooseCate);
-            this.panel4.Location = new System.Drawing.Point(332, 40);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(147, 32);
-            this.panel4.TabIndex = 36;
             // 
             // lbl_chooseCate
             // 
-            this.lbl_chooseCate.AutoSize = true;
-            this.lbl_chooseCate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbl_chooseCate, "lbl_chooseCate");
             this.lbl_chooseCate.ForeColor = System.Drawing.Color.Purple;
-            this.lbl_chooseCate.Location = new System.Drawing.Point(3, 9);
             this.lbl_chooseCate.Name = "lbl_chooseCate";
-            this.lbl_chooseCate.Size = new System.Drawing.Size(135, 17);
-            this.lbl_chooseCate.TabIndex = 14;
-            this.lbl_chooseCate.Text = "Choose category:";
             // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Location = new System.Drawing.Point(12, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 24);
-            this.panel3.TabIndex = 36;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label18, "label18");
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(1, 2);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 22);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "Edit Product";
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.label17);
-            this.panel2.Location = new System.Drawing.Point(13, 48);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(113, 24);
-            this.panel2.TabIndex = 35;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label17, "label17");
             this.label17.ForeColor = System.Drawing.Color.Orange;
-            this.label17.Location = new System.Drawing.Point(3, 3);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 17);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Product name:";
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label24, "label24");
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(344, 164);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(122, 17);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "Quantity size L:";
             // 
             // EditPriceM_tb
             // 
+            resources.ApplyResources(this.EditPriceM_tb, "EditPriceM_tb");
             this.EditPriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditPriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditPriceM_tb.ForeColor = System.Drawing.Color.Purple;
-            this.EditPriceM_tb.Location = new System.Drawing.Point(135, 126);
             this.EditPriceM_tb.Name = "EditPriceM_tb";
-            this.EditPriceM_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditPriceM_tb.TabIndex = 28;
             // 
             // EditQuantitysizeL_tb
             // 
+            resources.ApplyResources(this.EditQuantitysizeL_tb, "EditQuantitysizeL_tb");
             this.EditQuantitysizeL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditQuantitysizeL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditQuantitysizeL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditQuantitysizeL_tb.ForeColor = System.Drawing.Color.DarkCyan;
-            this.EditQuantitysizeL_tb.Location = new System.Drawing.Point(486, 165);
             this.EditQuantitysizeL_tb.Name = "EditQuantitysizeL_tb";
-            this.EditQuantitysizeL_tb.Size = new System.Drawing.Size(143, 16);
-            this.EditQuantitysizeL_tb.TabIndex = 33;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label21, "label21");
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(14, 126);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(101, 17);
-            this.label21.TabIndex = 27;
-            this.label21.Text = "Price size M:";
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label25, "label25");
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(344, 126);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(125, 17);
-            this.label25.TabIndex = 32;
-            this.label25.Text = "Quantity size M:";
             // 
             // EditQuantitysizeM_tb
             // 
+            resources.ApplyResources(this.EditQuantitysizeM_tb, "EditQuantitysizeM_tb");
             this.EditQuantitysizeM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditQuantitysizeM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditQuantitysizeM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditQuantitysizeM_tb.ForeColor = System.Drawing.Color.Purple;
-            this.EditQuantitysizeM_tb.Location = new System.Drawing.Point(485, 127);
             this.EditQuantitysizeM_tb.Name = "EditQuantitysizeM_tb";
-            this.EditQuantitysizeM_tb.Size = new System.Drawing.Size(143, 16);
-            this.EditQuantitysizeM_tb.TabIndex = 31;
             // 
             // EditPriceL_tb
             // 
+            resources.ApplyResources(this.EditPriceL_tb, "EditPriceL_tb");
             this.EditPriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditPriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditPriceL_tb.ForeColor = System.Drawing.Color.DarkCyan;
-            this.EditPriceL_tb.Location = new System.Drawing.Point(137, 161);
             this.EditPriceL_tb.Name = "EditPriceL_tb";
-            this.EditPriceL_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditPriceL_tb.TabIndex = 28;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label13, "label13");
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(344, 91);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 17);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Quantity size S";
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label20, "label20");
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(15, 160);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(98, 17);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "Price size L:";
             // 
             // EditQuantitysizeS_tb
             // 
+            resources.ApplyResources(this.EditQuantitysizeS_tb, "EditQuantitysizeS_tb");
             this.EditQuantitysizeS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditQuantitysizeS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditQuantitysizeS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditQuantitysizeS_tb.Location = new System.Drawing.Point(485, 92);
             this.EditQuantitysizeS_tb.Name = "EditQuantitysizeS_tb";
-            this.EditQuantitysizeS_tb.Size = new System.Drawing.Size(144, 16);
-            this.EditQuantitysizeS_tb.TabIndex = 21;
             // 
             // EditDes_tb
             // 
+            resources.ApplyResources(this.EditDes_tb, "EditDes_tb");
             this.EditDes_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditDes_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditDes_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditDes_tb.Location = new System.Drawing.Point(133, 193);
-            this.EditDes_tb.Multiline = true;
             this.EditDes_tb.Name = "EditDes_tb";
-            this.EditDes_tb.Size = new System.Drawing.Size(496, 122);
-            this.EditDes_tb.TabIndex = 20;
             // 
             // UpdateInfo_btn
             // 
+            resources.ApplyResources(this.UpdateInfo_btn, "UpdateInfo_btn");
             this.UpdateInfo_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.UpdateInfo_btn.FlatAppearance.BorderSize = 0;
-            this.UpdateInfo_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateInfo_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateInfo_btn.ForeColor = System.Drawing.Color.White;
-            this.UpdateInfo_btn.Location = new System.Drawing.Point(292, 351);
             this.UpdateInfo_btn.Name = "UpdateInfo_btn";
-            this.UpdateInfo_btn.Size = new System.Drawing.Size(127, 33);
-            this.UpdateInfo_btn.TabIndex = 13;
-            this.UpdateInfo_btn.Text = " Update Infor";
             this.UpdateInfo_btn.UseVisualStyleBackColor = false;
             this.UpdateInfo_btn.Click += new System.EventHandler(this.UpdateInfo_btn_Click);
             // 
             // cbEditCategory
             // 
+            resources.ApplyResources(this.cbEditCategory, "cbEditCategory");
             this.cbEditCategory.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbEditCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbEditCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEditCategory.ForeColor = System.Drawing.Color.Black;
             this.cbEditCategory.FormattingEnabled = true;
-            this.cbEditCategory.Location = new System.Drawing.Point(485, 48);
             this.cbEditCategory.Name = "cbEditCategory";
-            this.cbEditCategory.Size = new System.Drawing.Size(158, 24);
-            this.cbEditCategory.TabIndex = 18;
             // 
             // EditPriceS_tb
             // 
+            resources.ApplyResources(this.EditPriceS_tb, "EditPriceS_tb");
             this.EditPriceS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditPriceS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditPriceS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditPriceS_tb.Location = new System.Drawing.Point(135, 91);
             this.EditPriceS_tb.Name = "EditPriceS_tb";
-            this.EditPriceS_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditPriceS_tb.TabIndex = 17;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label15, "label15");
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(14, 91);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 17);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Price size S:";
             // 
             // EditProductName_tb
             // 
+            resources.ApplyResources(this.EditProductName_tb, "EditProductName_tb");
             this.EditProductName_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EditProductName_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EditProductName_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProductName_tb.Location = new System.Drawing.Point(135, 52);
             this.EditProductName_tb.Name = "EditProductName_tb";
-            this.EditProductName_tb.Size = new System.Drawing.Size(180, 16);
-            this.EditProductName_tb.TabIndex = 12;
             // 
             // close_panelCtnEdit
             // 
+            resources.ApplyResources(this.close_panelCtnEdit, "close_panelCtnEdit");
             this.close_panelCtnEdit.BackColor = System.Drawing.Color.Red;
             this.close_panelCtnEdit.FlatAppearance.BorderSize = 0;
-            this.close_panelCtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_panelCtnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.close_panelCtnEdit.ForeColor = System.Drawing.Color.White;
-            this.close_panelCtnEdit.Location = new System.Drawing.Point(851, -2);
             this.close_panelCtnEdit.Name = "close_panelCtnEdit";
-            this.close_panelCtnEdit.Size = new System.Drawing.Size(43, 33);
-            this.close_panelCtnEdit.TabIndex = 24;
-            this.close_panelCtnEdit.Text = "X";
             this.close_panelCtnEdit.UseVisualStyleBackColor = false;
             this.close_panelCtnEdit.Click += new System.EventHandler(this.close_panelCtnEdit_Click);
             // 
             // panelCtnAddPro
             // 
+            resources.ApplyResources(this.panelCtnAddPro, "panelCtnAddPro");
             this.panelCtnAddPro.BackColor = System.Drawing.Color.White;
             this.panelCtnAddPro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCtnAddPro.Controls.Add(this.btn_Toggle_AddInfor);
@@ -617,44 +463,31 @@ namespace LHBeverage.UserControls
             this.panelCtnAddPro.Controls.Add(this.AddImg_panel);
             this.panelCtnAddPro.Controls.Add(this.AddPro_panel);
             this.panelCtnAddPro.Controls.Add(this.ImageBack_btn);
-            this.panelCtnAddPro.Location = new System.Drawing.Point(82, 91);
             this.panelCtnAddPro.Name = "panelCtnAddPro";
-            this.panelCtnAddPro.Size = new System.Drawing.Size(897, 435);
-            this.panelCtnAddPro.TabIndex = 25;
-            this.panelCtnAddPro.Visible = false;
             // 
             // btn_Toggle_AddInfor
             // 
+            resources.ApplyResources(this.btn_Toggle_AddInfor, "btn_Toggle_AddInfor");
             this.btn_Toggle_AddInfor.BackColor = System.Drawing.Color.Blue;
             this.btn_Toggle_AddInfor.FlatAppearance.BorderSize = 0;
-            this.btn_Toggle_AddInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Toggle_AddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Toggle_AddInfor.ForeColor = System.Drawing.Color.White;
-            this.btn_Toggle_AddInfor.Location = new System.Drawing.Point(11, 30);
             this.btn_Toggle_AddInfor.Name = "btn_Toggle_AddInfor";
-            this.btn_Toggle_AddInfor.Size = new System.Drawing.Size(130, 33);
-            this.btn_Toggle_AddInfor.TabIndex = 25;
-            this.btn_Toggle_AddInfor.Text = "Add Infor";
             this.btn_Toggle_AddInfor.UseVisualStyleBackColor = false;
             this.btn_Toggle_AddInfor.Click += new System.EventHandler(this.btn_Toggle_AddInfor_Click);
             // 
             // AddImg_btn
             // 
+            resources.ApplyResources(this.AddImg_btn, "AddImg_btn");
             this.AddImg_btn.BackColor = System.Drawing.Color.Blue;
             this.AddImg_btn.FlatAppearance.BorderSize = 0;
-            this.AddImg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddImg_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddImg_btn.ForeColor = System.Drawing.Color.White;
-            this.AddImg_btn.Location = new System.Drawing.Point(11, 71);
             this.AddImg_btn.Name = "AddImg_btn";
-            this.AddImg_btn.Size = new System.Drawing.Size(130, 33);
-            this.AddImg_btn.TabIndex = 23;
-            this.AddImg_btn.Text = "Add  Images";
             this.AddImg_btn.UseVisualStyleBackColor = false;
             this.AddImg_btn.Click += new System.EventHandler(this.AddImg_btn_Click);
             // 
             // AddImg_panel
             // 
+            resources.ApplyResources(this.AddImg_panel, "AddImg_panel");
             this.AddImg_panel.BackColor = System.Drawing.Color.White;
             this.AddImg_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddImg_panel.Controls.Add(this.flowPanel_AddImagePro);
@@ -663,89 +496,58 @@ namespace LHBeverage.UserControls
             this.AddImg_panel.Controls.Add(this.label7);
             this.AddImg_panel.Controls.Add(this.ProductList_cb);
             this.AddImg_panel.Controls.Add(this.AddImage);
-            this.AddImg_panel.Location = new System.Drawing.Point(167, 10);
             this.AddImg_panel.Name = "AddImg_panel";
-            this.AddImg_panel.Size = new System.Drawing.Size(680, 397);
-            this.AddImg_panel.TabIndex = 24;
-            this.AddImg_panel.Visible = false;
             // 
             // flowPanel_AddImagePro
             // 
-            this.flowPanel_AddImagePro.AutoScroll = true;
+            resources.ApplyResources(this.flowPanel_AddImagePro, "flowPanel_AddImagePro");
             this.flowPanel_AddImagePro.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowPanel_AddImagePro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowPanel_AddImagePro.Location = new System.Drawing.Point(81, 75);
             this.flowPanel_AddImagePro.Name = "flowPanel_AddImagePro";
-            this.flowPanel_AddImagePro.Size = new System.Drawing.Size(507, 256);
-            this.flowPanel_AddImagePro.TabIndex = 29;
             // 
             // lbl_Title_panelImg
             // 
-            this.lbl_Title_panelImg.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_Title_panelImg.AutoSize = true;
-            this.lbl_Title_panelImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbl_Title_panelImg, "lbl_Title_panelImg");
             this.lbl_Title_panelImg.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Title_panelImg.Location = new System.Drawing.Point(77, 8);
             this.lbl_Title_panelImg.Name = "lbl_Title_panelImg";
-            this.lbl_Title_panelImg.Size = new System.Drawing.Size(104, 22);
-            this.lbl_Title_panelImg.TabIndex = 24;
-            this.lbl_Title_panelImg.Text = "Add Image";
             // 
             // loadImage
             // 
+            resources.ApplyResources(this.loadImage, "loadImage");
             this.loadImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.loadImage.FlatAppearance.BorderSize = 0;
-            this.loadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadImage.ForeColor = System.Drawing.Color.Black;
-            this.loadImage.Location = new System.Drawing.Point(493, 43);
             this.loadImage.Name = "loadImage";
-            this.loadImage.Size = new System.Drawing.Size(95, 26);
-            this.loadImage.TabIndex = 27;
-            this.loadImage.Text = "Load Image";
             this.loadImage.UseVisualStyleBackColor = false;
             this.loadImage.Click += new System.EventHandler(this.loadImage_Click);
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(79, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 17);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Choose product:";
             // 
             // ProductList_cb
             // 
+            resources.ApplyResources(this.ProductList_cb, "ProductList_cb");
             this.ProductList_cb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ProductList_cb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProductList_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductList_cb.FormattingEnabled = true;
-            this.ProductList_cb.Location = new System.Drawing.Point(193, 43);
             this.ProductList_cb.Name = "ProductList_cb";
-            this.ProductList_cb.Size = new System.Drawing.Size(284, 26);
-            this.ProductList_cb.TabIndex = 24;
             this.ProductList_cb.SelectedValueChanged += new System.EventHandler(this.ProductList_cb_SelectedValueChanged);
             // 
             // AddImage
             // 
+            resources.ApplyResources(this.AddImage, "AddImage");
             this.AddImage.BackColor = System.Drawing.Color.Blue;
             this.AddImage.FlatAppearance.BorderSize = 0;
-            this.AddImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddImage.ForeColor = System.Drawing.Color.White;
-            this.AddImage.Location = new System.Drawing.Point(273, 345);
             this.AddImage.Name = "AddImage";
-            this.AddImage.Size = new System.Drawing.Size(129, 33);
-            this.AddImage.TabIndex = 25;
-            this.AddImage.Text = "Submit Image";
             this.AddImage.UseVisualStyleBackColor = false;
             this.AddImage.Click += new System.EventHandler(this.AddImage_Click);
             // 
             // AddPro_panel
             // 
+            resources.ApplyResources(this.AddPro_panel, "AddPro_panel");
             this.AddPro_panel.BackColor = System.Drawing.Color.White;
             this.AddPro_panel.Controls.Add(this.label3);
             this.AddPro_panel.Controls.Add(this.lbl_Title_panelPro);
@@ -767,304 +569,195 @@ namespace LHBeverage.UserControls
             this.AddPro_panel.Controls.Add(this.PriceS_tb);
             this.AddPro_panel.Controls.Add(this.label4);
             this.AddPro_panel.Controls.Add(this.NamePro_tb);
-            this.AddPro_panel.Location = new System.Drawing.Point(167, 10);
             this.AddPro_panel.Name = "AddPro_panel";
-            this.AddPro_panel.Size = new System.Drawing.Size(680, 397);
-            this.AddPro_panel.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.Purple;
-            this.label3.Location = new System.Drawing.Point(354, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 17);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Choose category:";
             // 
             // lbl_Title_panelPro
             // 
-            this.lbl_Title_panelPro.AutoSize = true;
-            this.lbl_Title_panelPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbl_Title_panelPro, "lbl_Title_panelPro");
             this.lbl_Title_panelPro.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbl_Title_panelPro.Location = new System.Drawing.Point(18, 10);
             this.lbl_Title_panelPro.Name = "lbl_Title_panelPro";
-            this.lbl_Title_panelPro.Size = new System.Drawing.Size(120, 22);
-            this.lbl_Title_panelPro.TabIndex = 8;
-            this.lbl_Title_panelPro.Text = "Add Product";
             // 
             // panel10
             // 
+            resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Controls.Add(this.label5);
-            this.panel10.Location = new System.Drawing.Point(22, 202);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(132, 28);
-            this.panel10.TabIndex = 34;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.Orange;
-            this.label5.Location = new System.Drawing.Point(3, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Description:";
             // 
             // panel8
             // 
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Controls.Add(this.lbl_categortName);
-            this.panel8.Location = new System.Drawing.Point(16, 40);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(132, 28);
-            this.panel8.TabIndex = 32;
             // 
             // lbl_categortName
             // 
-            this.lbl_categortName.AutoSize = true;
-            this.lbl_categortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbl_categortName, "lbl_categortName");
             this.lbl_categortName.ForeColor = System.Drawing.Color.Red;
-            this.lbl_categortName.Location = new System.Drawing.Point(3, 5);
             this.lbl_categortName.Name = "lbl_categortName";
-            this.lbl_categortName.Size = new System.Drawing.Size(113, 17);
-            this.lbl_categortName.TabIndex = 11;
-            this.lbl_categortName.Text = "Product name:";
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label23, "label23");
             this.label23.ForeColor = System.Drawing.Color.Gray;
-            this.label23.Location = new System.Drawing.Point(357, 160);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(122, 17);
-            this.label23.TabIndex = 30;
-            this.label23.Text = "Quantity size L:";
             // 
             // QuantitySizeL_tb
             // 
+            resources.ApplyResources(this.QuantitySizeL_tb, "QuantitySizeL_tb");
             this.QuantitySizeL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantitySizeL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QuantitySizeL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantitySizeL_tb.ForeColor = System.Drawing.Color.DarkCyan;
-            this.QuantitySizeL_tb.Location = new System.Drawing.Point(483, 161);
             this.QuantitySizeL_tb.Name = "QuantitySizeL_tb";
-            this.QuantitySizeL_tb.Size = new System.Drawing.Size(143, 16);
-            this.QuantitySizeL_tb.TabIndex = 29;
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label22, "label22");
             this.label22.ForeColor = System.Drawing.Color.Gray;
-            this.label22.Location = new System.Drawing.Point(357, 122);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(125, 17);
-            this.label22.TabIndex = 28;
-            this.label22.Text = "Quantity size M:";
             // 
             // QuantitySizeM_tb
             // 
+            resources.ApplyResources(this.QuantitySizeM_tb, "QuantitySizeM_tb");
             this.QuantitySizeM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantitySizeM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QuantitySizeM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantitySizeM_tb.ForeColor = System.Drawing.Color.Purple;
-            this.QuantitySizeM_tb.Location = new System.Drawing.Point(483, 123);
             this.QuantitySizeM_tb.Name = "QuantitySizeM_tb";
-            this.QuantitySizeM_tb.Size = new System.Drawing.Size(143, 16);
-            this.QuantitySizeM_tb.TabIndex = 27;
             // 
             // PriceL_tb
             // 
+            resources.ApplyResources(this.PriceL_tb, "PriceL_tb");
             this.PriceL_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PriceL_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceL_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceL_tb.ForeColor = System.Drawing.Color.DarkCyan;
-            this.PriceL_tb.Location = new System.Drawing.Point(155, 160);
             this.PriceL_tb.Name = "PriceL_tb";
-            this.PriceL_tb.Size = new System.Drawing.Size(180, 16);
-            this.PriceL_tb.TabIndex = 26;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label19, "label19");
             this.label19.ForeColor = System.Drawing.Color.Gray;
-            this.label19.Location = new System.Drawing.Point(37, 160);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(98, 17);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Price size L:";
             // 
             // PriceM_tb
             // 
+            resources.ApplyResources(this.PriceM_tb, "PriceM_tb");
             this.PriceM_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PriceM_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceM_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceM_tb.ForeColor = System.Drawing.Color.Purple;
-            this.PriceM_tb.Location = new System.Drawing.Point(155, 123);
             this.PriceM_tb.Name = "PriceM_tb";
-            this.PriceM_tb.Size = new System.Drawing.Size(180, 16);
-            this.PriceM_tb.TabIndex = 24;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(37, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Price size M:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label6, "label6");
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(357, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 17);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Quantity size S:";
             // 
             // QuantitySizeS_tb
             // 
+            resources.ApplyResources(this.QuantitySizeS_tb, "QuantitySizeS_tb");
             this.QuantitySizeS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.QuantitySizeS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QuantitySizeS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantitySizeS_tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.QuantitySizeS_tb.Location = new System.Drawing.Point(483, 86);
             this.QuantitySizeS_tb.Name = "QuantitySizeS_tb";
-            this.QuantitySizeS_tb.Size = new System.Drawing.Size(143, 16);
-            this.QuantitySizeS_tb.TabIndex = 21;
             // 
             // Des_Tb
             // 
+            resources.ApplyResources(this.Des_Tb, "Des_Tb");
             this.Des_Tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Des_Tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Des_Tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Des_Tb.Location = new System.Drawing.Point(156, 202);
-            this.Des_Tb.Multiline = true;
             this.Des_Tb.Name = "Des_Tb";
-            this.Des_Tb.Size = new System.Drawing.Size(472, 122);
-            this.Des_Tb.TabIndex = 20;
             // 
             // AddPro_btn
             // 
+            resources.ApplyResources(this.AddPro_btn, "AddPro_btn");
             this.AddPro_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AddPro_btn.FlatAppearance.BorderSize = 0;
-            this.AddPro_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddPro_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddPro_btn.ForeColor = System.Drawing.Color.White;
-            this.AddPro_btn.Location = new System.Drawing.Point(285, 350);
             this.AddPro_btn.Name = "AddPro_btn";
-            this.AddPro_btn.Size = new System.Drawing.Size(127, 33);
-            this.AddPro_btn.TabIndex = 13;
-            this.AddPro_btn.Text = "Submit Infor";
             this.AddPro_btn.UseVisualStyleBackColor = false;
             this.AddPro_btn.Click += new System.EventHandler(this.AddPro_btn_Click);
             // 
             // category_Cb
             // 
+            resources.ApplyResources(this.category_Cb, "category_Cb");
             this.category_Cb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.category_Cb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.category_Cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category_Cb.FormattingEnabled = true;
-            this.category_Cb.Location = new System.Drawing.Point(505, 46);
             this.category_Cb.Name = "category_Cb";
-            this.category_Cb.Size = new System.Drawing.Size(121, 21);
-            this.category_Cb.TabIndex = 18;
             // 
             // PriceS_tb
             // 
+            resources.ApplyResources(this.PriceS_tb, "PriceS_tb");
             this.PriceS_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PriceS_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PriceS_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriceS_tb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.PriceS_tb.Location = new System.Drawing.Point(154, 86);
             this.PriceS_tb.Name = "PriceS_tb";
-            this.PriceS_tb.Size = new System.Drawing.Size(180, 16);
-            this.PriceS_tb.TabIndex = 17;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(37, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 17);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Price size S:";
             // 
             // NamePro_tb
             // 
+            resources.ApplyResources(this.NamePro_tb, "NamePro_tb");
             this.NamePro_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.NamePro_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NamePro_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NamePro_tb.Location = new System.Drawing.Point(154, 47);
             this.NamePro_tb.Name = "NamePro_tb";
-            this.NamePro_tb.Size = new System.Drawing.Size(180, 16);
-            this.NamePro_tb.TabIndex = 12;
             // 
             // ImageBack_btn
             // 
+            resources.ApplyResources(this.ImageBack_btn, "ImageBack_btn");
             this.ImageBack_btn.BackColor = System.Drawing.Color.Red;
             this.ImageBack_btn.FlatAppearance.BorderSize = 0;
-            this.ImageBack_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImageBack_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImageBack_btn.ForeColor = System.Drawing.Color.White;
-            this.ImageBack_btn.Location = new System.Drawing.Point(852, -2);
             this.ImageBack_btn.Name = "ImageBack_btn";
-            this.ImageBack_btn.Size = new System.Drawing.Size(43, 33);
-            this.ImageBack_btn.TabIndex = 24;
-            this.ImageBack_btn.Text = "X";
             this.ImageBack_btn.UseVisualStyleBackColor = false;
             this.ImageBack_btn.Click += new System.EventHandler(this.ImageBack_btn_Click);
             // 
             // btnOpenpanelAddPro
             // 
+            resources.ApplyResources(this.btnOpenpanelAddPro, "btnOpenpanelAddPro");
             this.btnOpenpanelAddPro.BackColor = System.Drawing.Color.Blue;
             this.btnOpenpanelAddPro.FlatAppearance.BorderSize = 0;
-            this.btnOpenpanelAddPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenpanelAddPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenpanelAddPro.ForeColor = System.Drawing.Color.White;
-            this.btnOpenpanelAddPro.Location = new System.Drawing.Point(86, 44);
             this.btnOpenpanelAddPro.Name = "btnOpenpanelAddPro";
-            this.btnOpenpanelAddPro.Size = new System.Drawing.Size(132, 33);
-            this.btnOpenpanelAddPro.TabIndex = 10;
-            this.btnOpenpanelAddPro.Text = "Add Product";
             this.btnOpenpanelAddPro.UseVisualStyleBackColor = false;
             this.btnOpenpanelAddPro.Click += new System.EventHandler(this.btnOpenpanelAddPro_Click);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(446, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 22);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "List products";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ListPro_flowpanel
             // 
-            this.ListPro_flowpanel.AutoScroll = true;
+            resources.ApplyResources(this.ListPro_flowpanel, "ListPro_flowpanel");
             this.ListPro_flowpanel.BackColor = System.Drawing.Color.White;
             this.ListPro_flowpanel.Controls.Add(this.panel1);
-            this.ListPro_flowpanel.Location = new System.Drawing.Point(91, 91);
             this.ListPro_flowpanel.Name = "ListPro_flowpanel";
-            this.ListPro_flowpanel.Size = new System.Drawing.Size(888, 435);
-            this.ListPro_flowpanel.TabIndex = 23;
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.Quantity_lbl);
             this.panel1.Controls.Add(this.PriceProduct_lbl);
             this.panel1.Controls.Add(this.NameProduct_lbl);
@@ -1074,118 +767,71 @@ namespace LHBeverage.UserControls
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(859, 100);
-            this.panel1.TabIndex = 0;
             // 
             // Quantity_lbl
             // 
-            this.Quantity_lbl.AutoSize = true;
-            this.Quantity_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.Quantity_lbl, "Quantity_lbl");
             this.Quantity_lbl.ForeColor = System.Drawing.Color.Red;
-            this.Quantity_lbl.Location = new System.Drawing.Point(560, 53);
             this.Quantity_lbl.Name = "Quantity_lbl";
-            this.Quantity_lbl.Size = new System.Drawing.Size(102, 18);
-            this.Quantity_lbl.TabIndex = 9;
-            this.Quantity_lbl.Text = "Tên sản phẩm";
             // 
             // PriceProduct_lbl
             // 
-            this.PriceProduct_lbl.AutoSize = true;
-            this.PriceProduct_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.PriceProduct_lbl, "PriceProduct_lbl");
             this.PriceProduct_lbl.ForeColor = System.Drawing.Color.Red;
-            this.PriceProduct_lbl.Location = new System.Drawing.Point(353, 53);
             this.PriceProduct_lbl.Name = "PriceProduct_lbl";
-            this.PriceProduct_lbl.Size = new System.Drawing.Size(102, 18);
-            this.PriceProduct_lbl.TabIndex = 8;
-            this.PriceProduct_lbl.Text = "Tên sản phẩm";
             // 
             // NameProduct_lbl
             // 
-            this.NameProduct_lbl.AutoSize = true;
-            this.NameProduct_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.NameProduct_lbl, "NameProduct_lbl");
             this.NameProduct_lbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.NameProduct_lbl.Location = new System.Drawing.Point(151, 53);
             this.NameProduct_lbl.Name = "NameProduct_lbl";
-            this.NameProduct_lbl.Size = new System.Drawing.Size(102, 18);
-            this.NameProduct_lbl.TabIndex = 7;
-            this.NameProduct_lbl.Text = "Tên sản phẩm";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(570, 11);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 18);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Số lượng";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(353, 11);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 18);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Giá sản phẩm";
             // 
             // Picture_Pro
             // 
-            this.Picture_Pro.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.Picture_Pro, "Picture_Pro");
             this.Picture_Pro.Name = "Picture_Pro";
-            this.Picture_Pro.Size = new System.Drawing.Size(124, 100);
-            this.Picture_Pro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_Pro.TabIndex = 4;
             this.Picture_Pro.TabStop = false;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(151, 11);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 18);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Tên sản phẩm";
             // 
             // button2
             // 
+            resources.ApplyResources(this.button2, "button2");
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(745, 62);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(745, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // AdminManageProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelManageProduct);
             this.Name = "AdminManageProduct";
-            this.Size = new System.Drawing.Size(1014, 600);
             this.panelManageProduct.ResumeLayout(false);
             this.panelManageProduct.PerformLayout();
             this.panelEditCtn.ResumeLayout(false);

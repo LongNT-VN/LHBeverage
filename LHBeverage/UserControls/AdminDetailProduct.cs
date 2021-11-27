@@ -16,6 +16,7 @@ namespace LHBeverage.UserControls
 {
     public partial class AdminDetailProduct : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         public static AdminDetailProduct instance;
         public AdminDetailProduct(Product product)
@@ -68,18 +69,32 @@ namespace LHBeverage.UserControls
             PriceM.Text = product.PriceM.ToString("#,###", cul.NumberFormat) + " VNĐ";
             PriceL.Text = product.PriceL.ToString("#,###", cul.NumberFormat) + " VNĐ";
 
-            if(product.QuantitysizeS <= 0)
+            if(product.QuantitysizeM <= 0)
             {
-                QuantitysizeM.Text = "Sold out";
+                if(changeLanguage.getLanguageMode()=="en")
+                {
+                    QuantitysizeM.Text = "Sold out";
+                }
+                else
+                {
+                    QuantitysizeM.Text = "Hết hàng";
+                }
                 QuantitysizeM.ForeColor = Color.Gray;
             }
             else
             {
                 QuantitysizeM.Text = product.QuantitysizeS.ToString();
             }
-            if (product.QuantitysizeM <= 0)
+            if (product.QuantitysizeS <= 0)
             {
-                QuantitysizeS.Text = "Sold out";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    QuantitysizeS.Text = "Sold out";
+                }
+                else
+                {
+                    QuantitysizeS.Text = "Hết hàng";
+                }
                 QuantitysizeS.ForeColor = Color.Gray;
             }
             else
@@ -88,7 +103,14 @@ namespace LHBeverage.UserControls
             }
             if (product.QuantitysizeL <= 0)
             {
-                QuantitysizeL.Text = "Sold out";
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    QuantitysizeL.Text = "Sold out";
+                }
+                else
+                {
+                    QuantitysizeL.Text = "Hết hàng";
+                }
                 QuantitysizeL.ForeColor = Color.Gray;
             }
             else

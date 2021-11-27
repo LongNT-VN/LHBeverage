@@ -17,6 +17,7 @@ namespace LHBeverage.UserControls
    
     public partial class AdminManageCategory : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         Bitmap CateImageTmp;
         Image ImageRoot;
         public static AdminManageCategory instance;
@@ -62,7 +63,14 @@ namespace LHBeverage.UserControls
                 Category category = new Category();
                 if(AddCate_tb.Text == "")
                 {
-                    MessageBox.Show("Please enter category name");
+                    if(changeLanguage.getLanguageMode()=="en")
+                    {
+                        MessageBox.Show("Please enter category name");
+                    }
+                   else
+                    {
+                        MessageBox.Show("Vui lòng nhập tên danh mục");
+                    }
                 }
                 else
                 {
@@ -73,7 +81,15 @@ namespace LHBeverage.UserControls
                     }
 
                     CategoryConnect.CreateCategory(category);
-                    MessageBox.Show("Add categorty successfull");
+                    if (changeLanguage.getLanguageMode() == "en")
+                    {
+                        MessageBox.Show("Add categorty successfull");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm danh mục thành công");
+                    }
+                    
                     initialListCate();
                     AddCate_tb.Text = "";
                     ImageCate_pictureBox.Image = ImageRoot;
@@ -105,7 +121,14 @@ namespace LHBeverage.UserControls
                 List<Product> products = ProductConnect.SelectProductByCategory(category.IDCate);
                 if (products.Count > 0)
                 {
-                    MessageBox.Show("Exist product of category. Cannot delete it");
+                    if (changeLanguage.getLanguageMode() == "en")
+                    {
+                        MessageBox.Show("Exist product of category. Cannot delete it");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tồn tại sản phẩm thuộc danh mục. Không thể xóa");
+                    }
                 }
                 else
                 {
@@ -126,7 +149,14 @@ namespace LHBeverage.UserControls
             {
                 if (AddCate_tb.Text == "")
                 {
-                    MessageBox.Show("Please enter category name");
+                    if(changeLanguage.getLanguageMode()=="en")
+                    {
+                        MessageBox.Show("Please enter category name");
+                    }
+                   else
+                    {
+                        MessageBox.Show("Vui lòng nhập tên danh mục");
+                    }
                 }
                 else
                 {
@@ -137,7 +167,15 @@ namespace LHBeverage.UserControls
                     }
                     CategoryConnect.UpdateCategory(categoryUpdate);
                     initialListCate();
-                    MessageBox.Show("Update successfull");
+                    if (changeLanguage.getLanguageMode() == "en")
+                    {
+                        MessageBox.Show("Update successfull");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật thành công");
+                    }
+                    
                     AddCate_tb.Text = "";
                     ImageCate_pictureBox.Image = ImageRoot;
                 }

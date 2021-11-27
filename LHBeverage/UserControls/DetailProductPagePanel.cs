@@ -17,6 +17,7 @@ namespace LHBeverage.UserControls
 {
     public partial class DetailProductPagePanel : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         Customer customerinfo = new Customer();
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Product productinfo = new Product();
@@ -96,8 +97,10 @@ namespace LHBeverage.UserControls
             {
                 size = "L";
             }
-            else if (product.QuantitysizeS <= 0 && product.QuantitysizeM <= 0 && product.QuantitysizeL <= 0)
+            if (product.QuantitysizeS <= 0 && product.QuantitysizeM <= 0 && product.QuantitysizeL <= 0)
             {
+                QuantityDown.Enabled = false;
+                QuantityUp.Enabled = false;
                 OrderItemBtn.Enabled = false;
             }
             if (size=="S")
@@ -237,7 +240,16 @@ namespace LHBeverage.UserControls
             }
             TempPriceProduct = productinfo.PriceS;
             TempPrice = TempPriceProduct + TempPriceTopping;
-            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeS.ToString() + " sản phẩm.";
+            
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                QuantityProduct.Text = "In Stock " + productinfo.QuantitysizeS.ToString() + " products.";
+            }
+            else
+            {
+                QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeS.ToString() + " sản phẩm.";
+            }
+            
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -274,7 +286,14 @@ namespace LHBeverage.UserControls
             }
             TempPriceProduct = productinfo.PriceM;
             TempPrice = TempPriceProduct + TempPriceTopping;
-            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeM.ToString() + " sản phẩm.";
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                QuantityProduct.Text = "In Stock " + productinfo.QuantitysizeM.ToString() + " products.";
+            }
+            else
+            {
+                QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeM.ToString() + " sản phẩm.";
+            }
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -311,7 +330,14 @@ namespace LHBeverage.UserControls
             }
             TempPriceProduct = productinfo.PriceL;
             TempPrice = TempPriceProduct + TempPriceTopping;
-            QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeL.ToString() + " sản phẩm.";
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                QuantityProduct.Text = "In Stock " + productinfo.QuantitysizeL.ToString() + " products.";
+            }
+            else
+            {
+                QuantityProduct.Text = "Còn lại " + productinfo.QuantitysizeL.ToString() + " sản phẩm.";
+            }
             PriceItem.Text = TempPrice.ToString("#,###", cul.NumberFormat) + " VNĐ";
         }
 
@@ -373,7 +399,15 @@ namespace LHBeverage.UserControls
             PictureBox pictureBox = sender as PictureBox;
             if(pictureBox!=null)
             {
-                MessageBox.Show("Thêm vào giỏ thành công");
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    MessageBox.Show("Add to cart successful");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm vào giỏ thành công");
+                }
+                
             }
             Cart cart = CartConnect.LoadCart(customerinfo);
             string toppings="";

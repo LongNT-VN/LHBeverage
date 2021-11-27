@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace LHBeverage.UserControls.Component
 {
     public partial class Couponitem : UserControl
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public Couponitem(Coupon coupon)
         {
             InitializeComponent();
@@ -22,8 +24,16 @@ namespace LHBeverage.UserControls.Component
         {
             UseBtn.Name = coupon.Code;
             CouponCode.Text = coupon.Code;
-            Discriptionlabel.Text = "Out of date at " + coupon.Date;
-            DiscountLabel.Text ="Discount "+ coupon.Discountpercent + " %";
+            if(changeLanguage.getLanguageMode()=="en")
+            {
+                Discriptionlabel.Text = "Out of date at " + coupon.Date;
+                DiscountLabel.Text = "Discount " + coupon.Discountpercent + " %";
+            }
+            else
+            {
+                Discriptionlabel.Text = "Hết hạn ngày " + coupon.Date;
+                DiscountLabel.Text = "Giảm giá " + coupon.Discountpercent + " %";
+            }
         }
 
         private void UseBtn_Click(object sender, EventArgs e)
