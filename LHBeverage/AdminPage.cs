@@ -52,7 +52,7 @@ namespace LHBeverage
             }
             if (PublicParam.ligthMode == true)
             {
-                Light_Dark_PB.Image = Properties.Resources.brightness;
+                Light_Dark_PB.Image = Properties.Resources.moon;
                 SideBarPanel.BackColor = Color.White;
                 panelTopBar.BackColor = Color.White;
                 AccountName_lbl.ForeColor = Color.Black;
@@ -62,7 +62,7 @@ namespace LHBeverage
             }
             else
             {
-                Light_Dark_PB.Image = Properties.Resources.moon;
+                Light_Dark_PB.Image = Properties.Resources.brightness;
                 SideBarPanel.BackColor = Color.Black;
                 panelTopBar.BackColor = Color.Black;
                 AccountName_lbl.ForeColor = Color.White;

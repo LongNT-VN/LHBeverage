@@ -47,6 +47,14 @@ namespace LHBeverage
             Avatar_picturebox.Image = ConvertBase64toImage.ConverImageFromBase64(customerinfo.Avatar);
             LHBeverageCurrentMode(CurrentMode);
         }
+        public void renderCust(Customer customer)
+        {
+            AccountName_lbl.Text = customer.Name;
+            if (customer.Avatar != null)
+            {
+                Avatar_picturebox.Image = ConvertBase64toImage.ConverImageFromBase64(customer.Avatar);
+            }
+        }
         public void useCoupon(string Coupon)
         {
             TempCouponCode = Coupon;

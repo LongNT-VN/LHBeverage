@@ -18,6 +18,7 @@ namespace LHBeverage.UserControls.Component
     {
         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         Order orderTmp;
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public AdminCardOrder(Order order)
         {
             InitializeComponent();
@@ -68,6 +69,25 @@ namespace LHBeverage.UserControls.Component
       
         void initCardOrder(Order order)
         {
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                statusOrder_lbl.Text = order.Status;
+            }
+            else
+            {
+                if (order.Status == "Cancelled")
+                {
+                    statusOrder_lbl.Text = "Đã hủy";
+                }
+                if (order.Status == "Delivered")
+                {
+                    statusOrder_lbl.Text = "Đang vận chuyển";
+                }
+                if (order.Status == "Received")
+                {
+                    statusOrder_lbl.Text = "Đã nhận";
+                }
+            }
             panelCtn.BackColor = Color.Orange;
             if (order.Status == "Cancelled")
             {
@@ -93,7 +113,8 @@ namespace LHBeverage.UserControls.Component
             CodeOrder.Text = order.IDOrder.ToString();
             CustomerName.Text = customer.Name;
             DatePayment.Text = order.DateOrder;
-            statusOrder_lbl.Text = order.Status;
+
+         
             TotalPayment.Text = order.Totalpayment.ToString("#,###", cul.NumberFormat) + " VNĐ";
             List<DetailOrder> detailOrders = DetailOrderConnect.SelectItemOrderByIDOrder(order.IDOrder);
             AmountItem.Text = detailOrders.Count().ToString();

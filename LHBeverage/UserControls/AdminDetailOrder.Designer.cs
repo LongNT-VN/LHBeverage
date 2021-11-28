@@ -82,17 +82,17 @@ namespace LHBeverage.UserControls
             this.size = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.nameOrder = new System.Windows.Forms.Label();
+            this.ImageItem = new System.Windows.Forms.PictureBox();
             this.panelCtnDetail = new System.Windows.Forms.Panel();
             this.Reason = new System.Windows.Forms.Label();
             this.done_lbl = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.panelStatus = new System.Windows.Forms.Panel();
-            this.StatusOrder_lbl = new System.Windows.Forms.Label();
-            this.ImageItem = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panelStatus = new System.Windows.Forms.Panel();
+            this.StatusOrder_lbl = new System.Windows.Forms.Label();
             this.panelUserInfo.SuspendLayout();
             this.panelStatus2.SuspendLayout();
             this.FlowPanel_ItemOrder.SuspendLayout();
@@ -101,13 +101,13 @@ namespace LHBeverage.UserControls
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panelTopping.SuspendLayout();
-            this.panelCtnDetail.SuspendLayout();
-            this.panelStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).BeginInit();
+            this.panelCtnDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panelStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelUserInfo
@@ -143,9 +143,9 @@ namespace LHBeverage.UserControls
             // 
             // panelStatus2
             // 
-            resources.ApplyResources(this.panelStatus2, "panelStatus2");
             this.panelStatus2.BackColor = System.Drawing.Color.SpringGreen;
             this.panelStatus2.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelStatus2, "panelStatus2");
             this.panelStatus2.Name = "panelStatus2";
             // 
             // label1
@@ -155,8 +155,8 @@ namespace LHBeverage.UserControls
             // 
             // AddressCus
             // 
-            resources.ApplyResources(this.AddressCus, "AddressCus");
             this.AddressCus.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.AddressCus, "AddressCus");
             this.AddressCus.Name = "AddressCus";
             // 
             // PhoneCus
@@ -249,9 +249,9 @@ namespace LHBeverage.UserControls
             // 
             // Btn_cancel
             // 
-            resources.ApplyResources(this.Btn_cancel, "Btn_cancel");
             this.Btn_cancel.BackColor = System.Drawing.Color.Red;
             this.Btn_cancel.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.Btn_cancel, "Btn_cancel");
             this.Btn_cancel.ForeColor = System.Drawing.Color.White;
             this.Btn_cancel.Name = "Btn_cancel";
             this.Btn_cancel.UseVisualStyleBackColor = false;
@@ -259,8 +259,8 @@ namespace LHBeverage.UserControls
             // 
             // label35
             // 
-            resources.ApplyResources(this.label35, "label35");
             this.label35.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label35, "label35");
             this.label35.ForeColor = System.Drawing.Color.Red;
             this.label35.Name = "label35";
             // 
@@ -273,8 +273,8 @@ namespace LHBeverage.UserControls
             // 
             // StatusOrder_cb
             // 
-            resources.ApplyResources(this.StatusOrder_cb, "StatusOrder_cb");
             this.StatusOrder_cb.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.StatusOrder_cb, "StatusOrder_cb");
             this.StatusOrder_cb.FormattingEnabled = true;
             this.StatusOrder_cb.Items.AddRange(new object[] {
             resources.GetString("StatusOrder_cb.Items"),
@@ -284,8 +284,8 @@ namespace LHBeverage.UserControls
             // 
             // TotalPayment
             // 
-            resources.ApplyResources(this.TotalPayment, "TotalPayment");
             this.TotalPayment.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.TotalPayment, "TotalPayment");
             this.TotalPayment.ForeColor = System.Drawing.Color.Red;
             this.TotalPayment.Name = "TotalPayment";
             // 
@@ -322,8 +322,8 @@ namespace LHBeverage.UserControls
             // 
             // BarDelivered
             // 
-            resources.ApplyResources(this.BarDelivered, "BarDelivered");
             this.BarDelivered.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BarDelivered, "BarDelivered");
             this.BarDelivered.Name = "BarDelivered";
             // 
             // AmountItem
@@ -333,8 +333,8 @@ namespace LHBeverage.UserControls
             // 
             // BarReceived
             // 
-            resources.ApplyResources(this.BarReceived, "BarReceived");
             this.BarReceived.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BarReceived, "BarReceived");
             this.BarReceived.Name = "BarReceived";
             // 
             // label49
@@ -344,8 +344,8 @@ namespace LHBeverage.UserControls
             // 
             // Bar_paymented
             // 
-            resources.ApplyResources(this.Bar_paymented, "Bar_paymented");
             this.Bar_paymented.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Bar_paymented, "Bar_paymented");
             this.Bar_paymented.Name = "Bar_paymented";
             // 
             // label50
@@ -387,9 +387,9 @@ namespace LHBeverage.UserControls
             // 
             // panel8
             // 
-            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Controls.Add(this.amount);
             this.panel8.Controls.Add(this.label18);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
             // amount
@@ -405,9 +405,9 @@ namespace LHBeverage.UserControls
             // 
             // panel11
             // 
-            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Controls.Add(this.label20);
             this.panel11.Controls.Add(this.Price);
+            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
             // 
             // label20
@@ -423,9 +423,9 @@ namespace LHBeverage.UserControls
             // 
             // panelTopping
             // 
-            resources.ApplyResources(this.panelTopping, "panelTopping");
             this.panelTopping.Controls.Add(this.toppingLbl);
             this.panelTopping.Controls.Add(this.label23);
+            resources.ApplyResources(this.panelTopping, "panelTopping");
             this.panelTopping.Name = "panelTopping";
             // 
             // toppingLbl
@@ -454,6 +454,12 @@ namespace LHBeverage.UserControls
             // 
             resources.ApplyResources(this.nameOrder, "nameOrder");
             this.nameOrder.Name = "nameOrder";
+            // 
+            // ImageItem
+            // 
+            resources.ApplyResources(this.ImageItem, "ImageItem");
+            this.ImageItem.Name = "ImageItem";
+            this.ImageItem.TabStop = false;
             // 
             // panelCtnDetail
             // 
@@ -500,28 +506,6 @@ namespace LHBeverage.UserControls
             resources.ApplyResources(this.panel17, "panel17");
             this.panel17.Name = "panel17";
             // 
-            // panelStatus
-            // 
-            resources.ApplyResources(this.panelStatus, "panelStatus");
-            this.panelStatus.BackColor = System.Drawing.Color.SpringGreen;
-            this.panelStatus.Controls.Add(this.StatusOrder_lbl);
-            this.panelStatus.Controls.Add(this.label50);
-            this.panelStatus.Controls.Add(this.label49);
-            this.panelStatus.Controls.Add(this.AmountItem);
-            this.panelStatus.Name = "panelStatus";
-            // 
-            // StatusOrder_lbl
-            // 
-            resources.ApplyResources(this.StatusOrder_lbl, "StatusOrder_lbl");
-            this.StatusOrder_lbl.ForeColor = System.Drawing.Color.White;
-            this.StatusOrder_lbl.Name = "StatusOrder_lbl";
-            // 
-            // ImageItem
-            // 
-            resources.ApplyResources(this.ImageItem, "ImageItem");
-            this.ImageItem.Name = "ImageItem";
-            this.ImageItem.TabStop = false;
-            // 
             // pictureBox9
             // 
             resources.ApplyResources(this.pictureBox9, "pictureBox9");
@@ -545,6 +529,22 @@ namespace LHBeverage.UserControls
             resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.TabStop = false;
+            // 
+            // panelStatus
+            // 
+            this.panelStatus.BackColor = System.Drawing.Color.SpringGreen;
+            this.panelStatus.Controls.Add(this.StatusOrder_lbl);
+            this.panelStatus.Controls.Add(this.label50);
+            this.panelStatus.Controls.Add(this.label49);
+            this.panelStatus.Controls.Add(this.AmountItem);
+            resources.ApplyResources(this.panelStatus, "panelStatus");
+            this.panelStatus.Name = "panelStatus";
+            // 
+            // StatusOrder_lbl
+            // 
+            resources.ApplyResources(this.StatusOrder_lbl, "StatusOrder_lbl");
+            this.StatusOrder_lbl.ForeColor = System.Drawing.Color.White;
+            this.StatusOrder_lbl.Name = "StatusOrder_lbl";
             // 
             // AdminDetailOrder
             // 
@@ -573,15 +573,15 @@ namespace LHBeverage.UserControls
             this.panel11.PerformLayout();
             this.panelTopping.ResumeLayout(false);
             this.panelTopping.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).EndInit();
             this.panelCtnDetail.ResumeLayout(false);
             this.panelCtnDetail.PerformLayout();
-            this.panelStatus.ResumeLayout(false);
-            this.panelStatus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImageItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panelStatus.ResumeLayout(false);
+            this.panelStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

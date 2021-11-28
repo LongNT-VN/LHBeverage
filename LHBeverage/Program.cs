@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,8 +21,10 @@ namespace LHBeverage
             var language = ConfigurationManager.AppSettings["language"];
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+            System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat = new CultureInfo("en").DateTimeFormat;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LoginPage());
         }
     }
 }

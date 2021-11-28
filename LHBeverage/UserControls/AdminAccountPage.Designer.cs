@@ -51,8 +51,9 @@ namespace LHBeverage.UserControls
             this.Name_tb = new System.Windows.Forms.TextBox();
             this.Seperate2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.openFileDialog_Avatar = new System.Windows.Forms.OpenFileDialog();
             this.Avatar_Pb = new System.Windows.Forms.PictureBox();
+            this.openFileDialog_Avatar = new System.Windows.Forms.OpenFileDialog();
+            this.changeLanguage_btn = new System.Windows.Forms.Button();
             this.Account_MyDetail_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Avatar_Pb)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@ namespace LHBeverage.UserControls
             resources.ApplyResources(this.Account_MyDetail_panel, "Account_MyDetail_panel");
             this.Account_MyDetail_panel.BackColor = System.Drawing.Color.White;
             this.Account_MyDetail_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Account_MyDetail_panel.Controls.Add(this.changeLanguage_btn);
             this.Account_MyDetail_panel.Controls.Add(this.Logout_btn);
             this.Account_MyDetail_panel.Controls.Add(this.checkBox_showPass);
             this.Account_MyDetail_panel.Controls.Add(this.SaveAccount_btn);
@@ -87,9 +89,9 @@ namespace LHBeverage.UserControls
             // 
             // Logout_btn
             // 
-            resources.ApplyResources(this.Logout_btn, "Logout_btn");
             this.Logout_btn.BackColor = System.Drawing.Color.Red;
             this.Logout_btn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.Logout_btn, "Logout_btn");
             this.Logout_btn.ForeColor = System.Drawing.Color.White;
             this.Logout_btn.Name = "Logout_btn";
             this.Logout_btn.UseVisualStyleBackColor = false;
@@ -121,9 +123,9 @@ namespace LHBeverage.UserControls
             // 
             // Email_tb
             // 
-            resources.ApplyResources(this.Email_tb, "Email_tb");
             this.Email_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Email_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.Email_tb, "Email_tb");
             this.Email_tb.Name = "Email_tb";
             // 
             // label7
@@ -141,9 +143,9 @@ namespace LHBeverage.UserControls
             // 
             // UploadAvatar_btn
             // 
-            resources.ApplyResources(this.UploadAvatar_btn, "UploadAvatar_btn");
             this.UploadAvatar_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.UploadAvatar_btn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.UploadAvatar_btn, "UploadAvatar_btn");
             this.UploadAvatar_btn.ForeColor = System.Drawing.Color.White;
             this.UploadAvatar_btn.Name = "UploadAvatar_btn";
             this.UploadAvatar_btn.UseVisualStyleBackColor = false;
@@ -199,9 +201,9 @@ namespace LHBeverage.UserControls
             // 
             // Password_tb
             // 
-            resources.ApplyResources(this.Password_tb, "Password_tb");
             this.Password_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Password_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.Password_tb, "Password_tb");
             this.Password_tb.Name = "Password_tb";
             // 
             // label3
@@ -212,9 +214,9 @@ namespace LHBeverage.UserControls
             // 
             // Name_tb
             // 
-            resources.ApplyResources(this.Name_tb, "Name_tb");
             this.Name_tb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Name_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.Name_tb, "Name_tb");
             this.Name_tb.Name = "Name_tb";
             // 
             // Seperate2
@@ -229,16 +231,25 @@ namespace LHBeverage.UserControls
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Name = "label2";
             // 
-            // openFileDialog_Avatar
-            // 
-            this.openFileDialog_Avatar.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialog_Avatar, "openFileDialog_Avatar");
-            // 
             // Avatar_Pb
             // 
             resources.ApplyResources(this.Avatar_Pb, "Avatar_Pb");
             this.Avatar_Pb.Name = "Avatar_Pb";
             this.Avatar_Pb.TabStop = false;
+            // 
+            // openFileDialog_Avatar
+            // 
+            this.openFileDialog_Avatar.FileName = "openFileDialog1";
+            // 
+            // changeLanguage_btn
+            // 
+            this.changeLanguage_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.changeLanguage_btn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.changeLanguage_btn, "changeLanguage_btn");
+            this.changeLanguage_btn.ForeColor = System.Drawing.Color.White;
+            this.changeLanguage_btn.Name = "changeLanguage_btn";
+            this.changeLanguage_btn.UseVisualStyleBackColor = false;
+            this.changeLanguage_btn.Click += new System.EventHandler(this.changeLanguage_btn_Click);
             // 
             // AdminAccountPage
             // 
@@ -278,5 +289,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.PictureBox Avatar_Pb;
         private System.Windows.Forms.OpenFileDialog openFileDialog_Avatar;
         private System.Windows.Forms.Button Logout_btn;
+        private System.Windows.Forms.Button changeLanguage_btn;
     }
 }

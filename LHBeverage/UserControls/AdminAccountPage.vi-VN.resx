@@ -802,4 +802,7 @@
   <data name="UploadAvatar_btn.Text" xml:space="preserve">
     <value>Thay đổi</value>
   </data>
+  <data name="changeLanguage_btn.Text" xml:space="preserve">
+    <value>Tiếng Anh</value>
+  </data>
 </root>

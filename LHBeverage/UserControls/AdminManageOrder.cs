@@ -1,4 +1,5 @@
-﻿using LHBeverage.Model;
+﻿using LHBeverage.Helper;
+using LHBeverage.Model;
 using LHBeverage.ModelService;
 using LHBeverage.UserControls.Component;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -217,6 +219,7 @@ namespace LHBeverage.UserControls
         {
             int check = 0;
             Order_FlowPanel.Controls.Clear();
+          
             if (AllOrderBtn.BackColor == Color.Orange)
             {
                 foreach (Order order in ListOrders)

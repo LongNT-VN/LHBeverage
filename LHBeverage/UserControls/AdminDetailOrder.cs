@@ -136,16 +136,29 @@ namespace LHBeverage.UserControls
                 BarReceived.BackColor = Color.DarkGray;
                 Btn_cancel.BackColor = Color.DimGray;
             }
-                var t = new[] {"", "Delivered", "Received" };
-                StatusOrder_cb.DataSource = t;
-           
+            string[] t = null;
+            string[] listdelivered = null;
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                 t = new[] { "", "Delivered", "Received" };
+                 listdelivered = new[] { "", "Received" };
+               
+            }
+            else
+            {
+                 t = new[] { "", "Đang vận chuyển", "Đã nhận" };
+                listdelivered = new[] { "", "Đã nhận" };
+              
+            }
+            StatusOrder_cb.DataSource = t;
+
             {
                 if (order.Status == "Delivered")
                 {
 
                     BarDelivered.BackColor = Color.Lime;
-                     t = new[] { "", "Received" };
-                    StatusOrder_cb.DataSource = t;
+                    // t = new[] { "", "Received" };
+                    StatusOrder_cb.DataSource = listdelivered;
                     done_lbl.Visible = false;
                 }
 
@@ -214,12 +227,20 @@ namespace LHBeverage.UserControls
 
         private void StatusOrder_cb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(StatusOrder_cb.SelectedItem.ToString() == "Delivered")
+            if(StatusOrder_cb.SelectedItem.ToString() == "Delivered" || StatusOrder_cb.SelectedItem.ToString() == "Đang vận chuyển")
             {
                 try
                 {
                     BarDelivered.BackColor = Color.Lime;
-                    var t = new[] { "", "Received" };
+                    if (changeLanguage.getLanguageMode() == "en")
+                    {
+                        var t = new[] { "", "Received" };
+                    }
+                    else
+                    {
+                        var t = new[] { "", "Đã nhận" };
+                    }
+                   
                     //StatusOrder_cb.DataSource = t;
                     OrderConnect.ModifyOrder(orderTmp, "Delivered");
                     //StatusOrder_cb.SelectedText = "Delivered";
@@ -231,7 +252,7 @@ namespace LHBeverage.UserControls
                     MessageBox.Show(ex.Message);
                 }
             }
-            if(StatusOrder_cb.SelectedItem.ToString() == "Received")
+            if(StatusOrder_cb.SelectedItem.ToString() == "Received" || StatusOrder_cb.SelectedItem.ToString() == "Đã nhận")
             { 
                 try
                 {

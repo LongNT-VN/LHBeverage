@@ -31,14 +31,14 @@ namespace LHBeverage.UserControls.Component
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCardCategory));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.CateImage = new System.Windows.Forms.PictureBox();
             this.nameCategory_lbl = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.delete_btn = new System.Windows.Forms.Button();
             this.Edit_btn = new System.Windows.Forms.Button();
-            this.CateImage = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CateImage)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -50,6 +50,12 @@ namespace LHBeverage.UserControls.Component
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Name = "panel3";
             // 
+            // CateImage
+            // 
+            resources.ApplyResources(this.CateImage, "CateImage");
+            this.CateImage.Name = "CateImage";
+            this.CateImage.TabStop = false;
+            // 
             // nameCategory_lbl
             // 
             resources.ApplyResources(this.nameCategory_lbl, "nameCategory_lbl");
@@ -58,16 +64,16 @@ namespace LHBeverage.UserControls.Component
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Controls.Add(this.delete_btn);
             this.panel4.Controls.Add(this.Edit_btn);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // delete_btn
             // 
-            resources.ApplyResources(this.delete_btn, "delete_btn");
             this.delete_btn.BackColor = System.Drawing.Color.Red;
             this.delete_btn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.delete_btn, "delete_btn");
             this.delete_btn.ForeColor = System.Drawing.Color.White;
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.UseVisualStyleBackColor = false;
@@ -75,19 +81,13 @@ namespace LHBeverage.UserControls.Component
             // 
             // Edit_btn
             // 
-            resources.ApplyResources(this.Edit_btn, "Edit_btn");
             this.Edit_btn.BackColor = System.Drawing.Color.Blue;
             this.Edit_btn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.Edit_btn, "Edit_btn");
             this.Edit_btn.ForeColor = System.Drawing.Color.White;
             this.Edit_btn.Name = "Edit_btn";
             this.Edit_btn.UseVisualStyleBackColor = false;
             this.Edit_btn.Click += new System.EventHandler(this.Edit_btn_Click);
-            // 
-            // CateImage
-            // 
-            resources.ApplyResources(this.CateImage, "CateImage");
-            this.CateImage.Name = "CateImage";
-            this.CateImage.TabStop = false;
             // 
             // AdminCardCategory
             // 
@@ -97,8 +97,8 @@ namespace LHBeverage.UserControls.Component
             this.Controls.Add(this.panel3);
             this.Name = "AdminCardCategory";
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CateImage)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

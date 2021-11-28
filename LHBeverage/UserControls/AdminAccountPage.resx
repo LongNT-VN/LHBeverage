@@ -117,419 +117,629 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SaveAccount_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 410</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Gender_cb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="Account_MyDetail_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 17</value>
+  <data name="changeLanguage_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="&gt;&gt;Age_tb.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="changeLanguage_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="changeLanguage_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="changeLanguage_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 359</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;UploadAvatar_btn.Name" xml:space="preserve">
-    <value>UploadAvatar_btn</value>
+  <data name="changeLanguage_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="changeLanguage_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
+  <data name="changeLanguage_btn.Text" xml:space="preserve">
+    <value>Vietnamese Laguage</value>
   </data>
-  <data name="lbl_pw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 185</value>
+  <data name="&gt;&gt;changeLanguage_btn.Name" xml:space="preserve">
+    <value>changeLanguage_btn</value>
   </data>
-  <data name="Email_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 306</value>
+  <data name="&gt;&gt;changeLanguage_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Age_tb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="Name_tb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="&gt;&gt;PhoneNb_tb.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;Account_MyDetail_panel.Name" xml:space="preserve">
+  <data name="&gt;&gt;changeLanguage_btn.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Address</value>
+  <data name="&gt;&gt;changeLanguage_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="Gender_cb.Items" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="Name_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="Address_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lbl_pw.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Logout_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;Avatar_Pb.Name" xml:space="preserve">
-    <value>Avatar_Pb</value>
+  <data name="Logout_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="Logout_btn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
+  <data name="Logout_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 410</value>
   </data>
-  <data name="Gender_cb.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="Logout_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 32</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 31</value>
-  </data>
-  <data name="&gt;&gt;Logout_btn.Name" xml:space="preserve">
-    <value>Logout_btn</value>
-  </data>
-  <data name="Seperate2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Address_tb.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;UploadAvatar_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UploadAvatar_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 224</value>
-  </data>
-  <data name="UploadAvatar_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;Age_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PhoneNb_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
+  <data name="Logout_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="Logout_btn.Text" xml:space="preserve">
     <value>Log out</value>
   </data>
-  <data name="Password_tb.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="&gt;&gt;Logout_btn.Name" xml:space="preserve">
+    <value>Logout_btn</value>
   </data>
-  <data name="&gt;&gt;Avatar_Pb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Logout_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Logout_btn.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="&gt;&gt;PhoneNb_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Logout_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="Avatar_Pb.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;lbl_pw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Email_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;Name_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="PhoneNb_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="lbl_pw.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Gender</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="checkBox_showPass.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="checkBox_showPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 248</value>
   </data>
   <data name="checkBox_showPass.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 17</value>
   </data>
-  <data name="&gt;&gt;Gender_cb.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="checkBox_showPass.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
-  <data name="&gt;&gt;Gender_cb.Name" xml:space="preserve">
-    <value>Gender_cb</value>
+  <data name="checkBox_showPass.Text" xml:space="preserve">
+    <value>Show password</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox_showPass.Name" xml:space="preserve">
+    <value>checkBox_showPass</value>
+  </data>
+  <data name="&gt;&gt;checkBox_showPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_showPass.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;checkBox_showPass.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SaveAccount_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="SaveAccount_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Gender_cb.Items1" xml:space="preserve">
-    <value>Female</value>
+  <data name="SaveAccount_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SaveAccount_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 410</value>
+  </data>
+  <data name="SaveAccount_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 32</value>
+  </data>
+  <data name="SaveAccount_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="SaveAccount_btn.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;SaveAccount_btn.Name" xml:space="preserve">
+    <value>SaveAccount_btn</value>
+  </data>
+  <data name="&gt;&gt;SaveAccount_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveAccount_btn.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;SaveAccount_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 276</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Email_tb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Email_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 306</value>
+  </data>
+  <data name="Email_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 19</value>
+  </data>
+  <data name="Email_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Email_tb.Name" xml:space="preserve">
+    <value>Email_tb</value>
+  </data>
+  <data name="&gt;&gt;Email_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Email_tb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;Email_tb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 276</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PhoneNb_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="PhoneNb_tb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="PhoneNb_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 306</value>
+  </data>
+  <data name="PhoneNb_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="PhoneNb_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;PhoneNb_tb.Name" xml:space="preserve">
+    <value>PhoneNb_tb</value>
+  </data>
+  <data name="&gt;&gt;PhoneNb_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PhoneNb_tb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;PhoneNb_tb.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="UploadAvatar_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;Avatar_Pb.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="UploadAvatar_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="SaveAccount_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 33</value>
+  <data name="UploadAvatar_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 224</value>
+  </data>
+  <data name="UploadAvatar_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 32</value>
+  </data>
+  <data name="UploadAvatar_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="UploadAvatar_btn.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="&gt;&gt;UploadAvatar_btn.Name" xml:space="preserve">
+    <value>UploadAvatar_btn</value>
+  </data>
+  <data name="&gt;&gt;UploadAvatar_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UploadAvatar_btn.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;UploadAvatar_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 342</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Address_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="Address_tb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Address_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 372</value>
+  </data>
+  <data name="Address_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 19</value>
+  </data>
+  <data name="Address_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Address_tb.Name" xml:space="preserve">
+    <value>Address_tb</value>
   </data>
   <data name="&gt;&gt;Address_tb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PhoneNb_tb.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;Address_tb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;Address_tb.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Gender_cb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Gender_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Gender_cb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="Gender_cb.Items" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Gender_cb.Items1" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Gender_cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 215</value>
+  </data>
+  <data name="Gender_cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="Gender_cb.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Gender_cb.Name" xml:space="preserve">
+    <value>Gender_cb</value>
+  </data>
+  <data name="&gt;&gt;Gender_cb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Gender_cb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;Gender_cb.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 185</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 113</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Age_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Age_tb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Age_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 143</value>
+  </data>
+  <data name="Age_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="Age_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Age_tb.Name" xml:space="preserve">
+    <value>Age_tb</value>
+  </data>
+  <data name="&gt;&gt;Age_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Age_tb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;Age_tb.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lbl_pw.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_pw.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="lbl_pw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 185</value>
+  </data>
+  <data name="lbl_pw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="lbl_pw.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_pw.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;lbl_pw.Name" xml:space="preserve">
+    <value>lbl_pw</value>
+  </data>
+  <data name="&gt;&gt;lbl_pw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_pw.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;lbl_pw.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Password_tb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Password_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 215</value>
+  </data>
+  <data name="Password_tb.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="Password_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 19</value>
+  </data>
+  <data name="Password_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Password_tb.Name" xml:space="preserve">
+    <value>Password_tb</value>
+  </data>
+  <data name="&gt;&gt;Password_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Password_tb.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;Password_tb.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 113</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Name_tb.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="Name_tb.Location" type="System.Drawing.Point, System.Drawing">
     <value>304, 143</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="Name_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 19</value>
   </data>
-  <data name="Age_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
+  <data name="Name_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;Gender_cb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Name_tb.Name" xml:space="preserve">
+    <value>Name_tb</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;Name_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 17</value>
-  </data>
-  <data name="&gt;&gt;Logout_btn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Name_tb.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="SaveAccount_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;Name_tb.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
-  <data name="&gt;&gt;Seperate2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_pw.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="&gt;&gt;Seperate2.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;UploadAvatar_btn.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 113</value>
+  <data name="Seperate2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="Seperate2.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 68</value>
   </data>
-  <data name="lbl_pw.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Account_MyDetail_panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AdminAccountPage</value>
-  </data>
-  <data name="&gt;&gt;Name_tb.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PhoneNb_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 306</value>
-  </data>
-  <data name="&gt;&gt;lbl_pw.Name" xml:space="preserve">
-    <value>lbl_pw</value>
-  </data>
-  <data name="Age_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="checkBox_showPass.Text" xml:space="preserve">
-    <value>Show password</value>
-  </data>
-  <data name="&gt;&gt;Email_tb.Name" xml:space="preserve">
-    <value>Email_tb</value>
-  </data>
-  <data name="&gt;&gt;Age_tb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Seperate2.Size" type="System.Drawing.Size, System.Drawing">
     <value>714, 4</value>
   </data>
-  <data name="&gt;&gt;openFileDialog_Avatar.Name" xml:space="preserve">
-    <value>openFileDialog_Avatar</value>
+  <data name="Seperate2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="Logout_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 411</value>
+  <data name="&gt;&gt;Seperate2.Name" xml:space="preserve">
+    <value>Seperate2</value>
   </data>
-  <data name="&gt;&gt;checkBox_showPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Seperate2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SaveAccount_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Seperate2.Parent" xml:space="preserve">
+    <value>Account_MyDetail_panel</value>
   </data>
-  <data name="Avatar_Pb.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;Seperate2.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="SaveAccount_btn.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
   </data>
-  <data name="Age_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 22</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 113</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 31</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 276</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="UploadAvatar_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 32</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Account</value>
   </data>
-  <data name="&gt;&gt;Age_tb.Name" xml:space="preserve">
-    <value>Age_tb</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 185</value>
-  </data>
-  <data name="Logout_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="Email_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 19</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="Account_MyDetail_panel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog_Avatar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Email_tb.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Address_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;Avatar_Pb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_pw.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="Password_tb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="checkBox_showPass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Password_tb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="Gender_cb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="Address_tb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;Email_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Password_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 19</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Phone number</value>
-  </data>
-  <data name="Avatar_Pb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 87</value>
-  </data>
-  <data name="Name_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 19</value>
-  </data>
-  <data name="Password_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 215</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="Avatar_Pb.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -854,256 +1064,76 @@
         rkJggg==
 </value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="UploadAvatar_btn.Text" xml:space="preserve">
-    <value>Change</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lbl_pw.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;Password_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 600</value>
-  </data>
-  <data name="Gender_cb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 215</value>
-  </data>
-  <data name="Address_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 372</value>
-  </data>
-  <data name="&gt;&gt;Gender_cb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;checkBox_showPass.Name" xml:space="preserve">
-    <value>checkBox_showPass</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="SaveAccount_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PhoneNb_tb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Account</value>
-  </data>
-  <data name="&gt;&gt;Password_tb.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="Logout_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 32</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Account_MyDetail_panel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 276</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="Account_MyDetail_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>920, 500</value>
-  </data>
-  <data name="Account_MyDetail_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="Address_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 19</value>
-  </data>
-  <data name="Account_MyDetail_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 50</value>
-  </data>
-  <data name="&gt;&gt;Logout_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Logout_btn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SaveAccount_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;checkBox_showPass.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Account_MyDetail_panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;SaveAccount_btn.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="Email_tb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="Gender_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 17</value>
-  </data>
-  <data name="&gt;&gt;UploadAvatar_btn.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Seperate2.Name" xml:space="preserve">
-    <value>Seperate2</value>
-  </data>
-  <data name="Age_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 143</value>
-  </data>
-  <data name="&gt;&gt;Address_tb.Name" xml:space="preserve">
-    <value>Address_tb</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;Password_tb.Name" xml:space="preserve">
-    <value>Password_tb</value>
-  </data>
-  <data name="&gt;&gt;checkBox_showPass.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="&gt;&gt;Logout_btn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="UploadAvatar_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="checkBox_showPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 248</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="Password_tb.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="checkBox_showPass.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lbl_pw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 17</value>
-  </data>
-  <data name="Seperate2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;Address_tb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
-  </data>
-  <data name="Gender_cb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="&gt;&gt;SaveAccount_btn.Name" xml:space="preserve">
-    <value>SaveAccount_btn</value>
-  </data>
-  <data name="&gt;&gt;Name_tb.Name" xml:space="preserve">
-    <value>Name_tb</value>
-  </data>
-  <data name="&gt;&gt;PhoneNb_tb.Name" xml:space="preserve">
-    <value>PhoneNb_tb</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;PhoneNb_tb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
+  <data name="Avatar_Pb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 87</value>
   </data>
   <data name="Avatar_Pb.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 131</value>
   </data>
-  <data name="&gt;&gt;Name_tb.Parent" xml:space="preserve">
+  <data name="Avatar_Pb.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Avatar_Pb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Avatar_Pb.Name" xml:space="preserve">
+    <value>Avatar_Pb</value>
+  </data>
+  <data name="&gt;&gt;Avatar_Pb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Avatar_Pb.Parent" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
+  <data name="&gt;&gt;Avatar_Pb.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="Account_MyDetail_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 50</value>
+  </data>
+  <data name="Account_MyDetail_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 500</value>
+  </data>
+  <data name="Account_MyDetail_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Account_MyDetail_panel.Name" xml:space="preserve">
     <value>Account_MyDetail_panel</value>
   </data>
-  <data name="&gt;&gt;Email_tb.Parent" xml:space="preserve">
-    <value>Account_MyDetail_panel</value>
+  <data name="&gt;&gt;Account_MyDetail_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 342</value>
+  <data name="&gt;&gt;Account_MyDetail_panel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;Seperate2.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;Account_MyDetail_panel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Age</value>
-  </data>
-  <data name="&gt;&gt;SaveAccount_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="openFileDialog_Avatar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>37</value>
   </metadata>
-  <metadata name="openFileDialog_Avatar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 600</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog_Avatar.Name" xml:space="preserve">
+    <value>openFileDialog_Avatar</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog_Avatar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdminAccountPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

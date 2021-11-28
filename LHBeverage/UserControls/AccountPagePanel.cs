@@ -32,11 +32,12 @@ namespace LHBeverage.UserControls
         void initDataAccountPage(Customer customer)
         {
             setmode();
-            AvatarTmp = new Bitmap(Avatar_Pb.Image);
             if (customer.Avatar != null)
             {
                 Avatar_Pb.Image = ConvertBase64toImage.ConverImageFromBase64(customer.Avatar);
             }
+            AvatarTmp = new Bitmap(Avatar_Pb.Image);
+           
             Name_tb.Text = customer.Name;
             Password_tb.Text = customer.Password;
             Age_tb.Text = customer.Age.ToString();
@@ -167,6 +168,7 @@ namespace LHBeverage.UserControls
                 customerTmp.Avatar = base64Avatar;
                 customerTmp.Authorized = "member";
                 CustomerConnect.UpdateCustomer(customerTmp);
+                LHBeverage.instance.renderCust(customerTmp);
                 if (changeLanguage.getLanguageMode() == "en")
                 {
                     MessageBox.Show("Update information successfull");

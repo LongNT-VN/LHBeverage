@@ -35,20 +35,14 @@ namespace LHBeverage.UserControls
             this.panel10 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.amountOrder_lbl = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.revenue_lbl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,9 +61,6 @@ namespace LHBeverage.UserControls
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -89,7 +80,7 @@ namespace LHBeverage.UserControls
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.amountOrder_lbl);
             this.panel6.Controls.Add(this.label15);
             this.panel6.Name = "panel6";
             // 
@@ -111,10 +102,10 @@ namespace LHBeverage.UserControls
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
-            // label14
+            // amountOrder_lbl
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
+            resources.ApplyResources(this.amountOrder_lbl, "amountOrder_lbl");
+            this.amountOrder_lbl.Name = "amountOrder_lbl";
             // 
             // label15
             // 
@@ -128,7 +119,7 @@ namespace LHBeverage.UserControls
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.revenue_lbl);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Name = "panel5";
             // 
@@ -150,55 +141,16 @@ namespace LHBeverage.UserControls
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
-            // label12
+            // revenue_lbl
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            resources.ApplyResources(this.revenue_lbl, "revenue_lbl");
+            this.revenue_lbl.Name = "revenue_lbl";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.ForeColor = System.Drawing.Color.Gray;
             this.label11.Name = "label11";
-            // 
-            // panel3
-            // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Name = "panel3";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label9);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.BlueViolet;
-            this.label9.Name = "label9";
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
             // 
             // panel2
             // 
@@ -241,12 +193,12 @@ namespace LHBeverage.UserControls
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.NumberCustomer_lbl);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // panel4
@@ -286,7 +238,6 @@ namespace LHBeverage.UserControls
             this.Controls.Add(this.welcome_lbl);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AdminDashboard";
@@ -300,11 +251,6 @@ namespace LHBeverage.UserControls
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -325,18 +271,13 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label amountOrder_lbl;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label revenue_lbl;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label6;
@@ -350,7 +291,6 @@ namespace LHBeverage.UserControls
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
     }
 }

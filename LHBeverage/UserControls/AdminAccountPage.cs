@@ -73,25 +73,33 @@ namespace LHBeverage.UserControls
         }
         void initDataAccountPage(Customer customer)
         {
-            //setmode();
-            AvatarTmp = new Bitmap(Avatar_Pb.Image);
             if (customer.Avatar != null)
             {
                 Avatar_Pb.Image = ConvertBase64toImage.ConverImageFromBase64(customer.Avatar);
             }
+            //setmode();
+            AvatarTmp = new Bitmap(Avatar_Pb.Image);
+           
             Name_tb.Text = customer.Name;
             Password_tb.Text = customer.Password;
             Age_tb.Text = customer.Age.ToString();
-
+       
             if (customer.Gender == null)
             {
-                Gender_cb.SelectedIndex = Gender_cb.Items.IndexOf("Male");
+                if (changeLanguage.getLanguageMode() == "en")
+                {
+                    Gender_cb.SelectedIndex = Gender_cb.Items.IndexOf("Male");
+                }
+                else
+                {
 
+                    Gender_cb.SelectedIndex = Gender_cb.Items.IndexOf("Nam");
+                }
             }
             else
             {
+               
                 Gender_cb.SelectedIndex = Gender_cb.Items.IndexOf(customer.Gender);
-
             }
             
             PhoneNb_tb.Text = customer.PhoneNumber;
@@ -126,7 +134,15 @@ namespace LHBeverage.UserControls
                 customerTmp.Age = Convert.ToInt32(Age_tb.Text);
                 if (Gender_cb.SelectedItem == null)
                 {
-                    customerTmp.Gender = "Male";
+                    if (changeLanguage.getLanguageMode() == "en")
+                    {
+                        customerTmp.Gender = "Male";
+                      
+                    }
+                    else
+                    {
+                        customerTmp.Gender = "Nam";
+                    }
                 }
                 else
                 {
@@ -163,6 +179,22 @@ namespace LHBeverage.UserControls
         private void Logout_btn_Click(object sender, EventArgs e)
         {
             AdminPage.instance.Logout();
+        }
+
+        private void changeLanguage_btn_Click(object sender, EventArgs e)
+        {
+            if (changeLanguage.getLanguageMode() == "en")
+            {
+                changeLanguage.UpdateConfig("language", "vi-VN");
+                Application.Restart();
+            }
+            else
+            {
+                changeLanguage.UpdateConfig("language", "en");
+                Application.Restart();
+            }
+
+
         }
     }
 }
